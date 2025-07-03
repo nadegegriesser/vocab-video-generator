@@ -2,124 +2,124 @@
   "level": "A1",
   "topics": [
     {
-      "fr": "Salutations et Adieux",
-      "en": "Greetings and Goodbyes"
+      "topic_fr": "Salutations et Présentations",
+      "topic_en": "Greetings and Introductions"
     },
     {
-      "fr": "Se présenter",
-      "en": "Introducing Oneself"
+      "topic_fr": "Informations Personnelles (Nom, Âge, Nationalité)",
+      "topic_en": "Personal Information (Name, Age, Nationality)"
     },
     {
-      "fr": "Les nombres (0-20)",
-      "en": "Numbers (0-20)"
+      "topic_fr": "La Famille",
+      "topic_en": "The Family"
     },
     {
-      "fr": "Les couleurs",
-      "en": "Colors"
+      "topic_fr": "Les Nombres (0-100)",
+      "topic_en": "Numbers (0-100)"
     },
     {
-      "fr": "La famille",
-      "en": "The Family"
+      "topic_fr": "Les Couleurs",
+      "topic_en": "Colors"
     },
     {
-      "fr": "Les animaux domestiques",
-      "en": "Pets"
+      "topic_fr": "Les Jours de la Semaine",
+      "topic_en": "Days of the Week"
     },
     {
-      "fr": "Les aliments de base",
-      "en": "Basic Foods"
+      "topic_fr": "Les Mois de l'Année",
+      "topic_en": "Months of the Year"
     },
     {
-      "fr": "Les boissons",
-      "en": "Drinks"
+      "topic_fr": "Les Saisons",
+      "topic_en": "The Seasons"
     },
     {
-      "fr": "Les objets quotidiens",
-      "en": "Everyday Objects"
+      "topic_fr": "La Météo",
+      "topic_en": "The Weather"
     },
     {
-      "fr": "Les pays et nationalités",
-      "en": "Countries and Nationalities"
+      "topic_fr": "Les Aliments et Boissons",
+      "topic_en": "Food and Drinks"
     },
     {
-      "fr": "Les professions",
-      "en": "Professions"
+      "topic_fr": "Les Repas (Petit-déjeuner, Déjeuner, Dîner)",
+      "topic_en": "Meals (Breakfast, Lunch, Dinner)"
     },
     {
-      "fr": "Les jours de la semaine",
-      "en": "Days of the Week"
+      "topic_fr": "Les Parties du Corps",
+      "topic_en": "Body Parts"
     },
     {
-      "fr": "Les mois de l'année",
-      "en": "Months of the Year"
+      "topic_fr": "Les Vêtements",
+      "topic_en": "Clothes"
     },
     {
-      "fr": "Les saisons",
-      "en": "Seasons"
+      "topic_fr": "La Maison et les Pièces",
+      "topic_en": "The House and Rooms"
     },
     {
-      "fr": "La météo",
-      "en": "The Weather"
+      "topic_fr": "Les Meubles",
+      "topic_en": "Furniture"
     },
     {
-      "fr": "Les lieux de la ville",
-      "en": "Places in the City"
+      "topic_fr": "La Routine Quotidienne (Verbes de base)",
+      "topic_en": "Daily Routine (Basic Verbs)"
     },
     {
-      "fr": "Les moyens de transport",
-      "en": "Means of Transport"
+      "topic_fr": "Les Professions et Métiers",
+      "topic_en": "Professions and Jobs"
     },
     {
-      "fr": "Les parties du corps",
-      "en": "Body Parts"
+      "topic_fr": "Les Animaux (Domestiques et de la Ferme)",
+      "topic_en": "Animals (Pets and Farm Animals)"
     },
     {
-      "fr": "Les vêtements",
-      "en": "Clothes"
+      "topic_fr": "Les Moyens de Transport",
+      "topic_en": "Means of Transport"
     },
     {
-      "fr": "Les pièces de la maison",
-      "en": "Rooms of the House"
+      "topic_fr": "Les Lieux dans la Ville (magasin, parc, école)",
+      "topic_en": "Places in Town (shop, park, school)"
     },
     {
-      "fr": "Les prépositions de lieu",
-      "en": "Prepositions of Place"
+      "topic_fr": "Les Adjectifs (Descriptions de base)",
+      "topic_en": "Adjectives (Basic Descriptions)"
     },
     {
-      "fr": "Les mots interrogatifs",
-      "en": "Question Words"
+      "topic_fr": "Les Verbes d'Action Communs",
+      "topic_en": "Common Action Verbs"
     },
     {
-      "fr": "Les adjectifs descriptifs simples",
-      "en": "Simple Descriptive Adjectives"
+      "topic_fr": "Les Émotions Simples",
+      "topic_en": "Simple Emotions"
     },
     {
-      "fr": "Les actions quotidiennes (verbes)",
-      "en": "Daily Actions (Verbs)"
+      "topic_fr": "Les Loisirs et Activités",
+      "topic_en": "Hobbies and Activities"
     },
     {
-      "fr": "L'heure",
-      "en": "Telling Time"
+      "topic_fr": "L'École et les Objets de la Classe",
+      "topic_en": "School and Classroom Objects"
     },
     {
-      "fr": "Les sentiments et émotions",
-      "en": "Feelings and Emotions"
+      "topic_fr": "Faire les Achats (Phrases de base)",
+      "topic_en": "Shopping (Basic Phrases)"
     },
     {
-      "fr": "Les chiffres (21-100)",
-      "en": "Numbers (21-100)"
+      "topic_fr": "Les Prépositions de Lieu (sur, sous, dans)",
+      "topic_en": "Prepositions of Place (on, under, in)"
     },
     {
-      "fr": "Les achats et les magasins",
-      "en": "Shopping and Shops"
+      "topic_fr": "L'Heure (Dire l'heure)",
+      "topic_en": "Time (Telling Time)"
     },
     {
-      "fr": "Les loisirs et sports",
-      "en": "Hobbies and Sports"
+      "topic_fr": "La Santé (Maladies simples, bien-être)",
+      "topic_en": "Health (Simple Illnesses, Well-being)"
     },
     {
-      "fr": "Les vacances et les fêtes",
-      "en": "Holidays and Celebrations"
+      "topic_fr": "Les Pays et Nationalités",
+      "topic_en": "Countries and Nationalities"
     }
   ]
 }
