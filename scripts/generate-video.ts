@@ -29,7 +29,7 @@ function saveTopics(topics: TopicEntry[]) {
         const topic = topics.shift();
         if (!topic) {
             console.log('✅ No topic left.');
-            return 1;
+            return;
         }
 
         const vocab = await generateVocabForTopic(topic.source, level, count, sourceLang, targetLang);
@@ -37,10 +37,7 @@ function saveTopics(topics: TopicEntry[]) {
         console.log(topic, vocab);
 
         saveTopics(topics);
-        
-        return 0;
     } catch (err) {
         console.error('❌ Failed to generate topics:', err);
-        return 1;
     }
 })();
