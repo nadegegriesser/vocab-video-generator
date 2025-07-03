@@ -36,8 +36,10 @@ function saveTopics(topics: TopicEntry[]) {
 
         console.log(topic, vocabs);
 
+        let i = 0;
         for (const vocab of vocabs) {
-            await synthesizeSpeech(vocab.source);
+            await synthesizeSpeech(vocab.source, `${i}.wav`);
+            i++;
         }
 
         saveTopics(topics);

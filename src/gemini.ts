@@ -57,7 +57,8 @@ Return as JSON array of objects with keys: source, target, exampleSource, exampl
     return <VocabEntry[]>JSON.parse(response.text!.replace('```json', '').replace('```', ''));
 }
 
-export async function synthesizeSpeech(text: string) {
+export async function synthesizeSpeech(text: string, fileName: string) {
+    console.log(text);
     const response = await ai.models.generateContent({
         model: "gemini-2.5-flash-preview-tts",
         contents: [{ parts: [{ text: `Say cheerfully: ${text}` }] }],
@@ -72,9 +73,9 @@ export async function synthesizeSpeech(text: string) {
     });
 
     const data = response.candidates?.[0]?.content?.parts?.[0]?.inlineData?.data!;
+    console.log(data);
     const audioBuffer = Buffer.from(data, 'base64');
 
-    const fileName = 'out.wav';
     await saveWaveFile(fileName, audioBuffer);
 }
 
