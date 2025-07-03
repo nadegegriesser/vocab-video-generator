@@ -42,6 +42,10 @@ jobs:
             ${{ matrix.targetLang }}
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+
+      - run: pip install gTTS
+
+      - run: gtts-cli 'hello' --output hello.mp3
             
       - name: 💾 Commit updated topic file
         if: success()
@@ -50,7 +54,7 @@ jobs:
           git config user.name "github-actions"
           git config user.email "actions@github.com"
           FILE=data/topics_${{ matrix.level }}_${{ matrix.sourceLang }}-${{ matrix.targetLang }}.json
-          git add "$FILE"
+          git add "$FILE" hello.mp3
           git diff --quiet && git diff --staged --quiet || git commit -m "📚 Update $FILE"
           git push
         env:
