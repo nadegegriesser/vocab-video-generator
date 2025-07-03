@@ -1,122 +1,122 @@
 [
   {
-    "source": "La vie quotidienne et les routines",
-    "target": "Daily Life and Routines"
+    "source": "La vie quotidienne et la routine",
+    "target": "Daily life and routine"
   },
   {
-    "source": "La famille et les relations personnelles",
-    "target": "Family and Personal Relationships"
+    "source": "Le travail et l'emploi",
+    "target": "Work and employment"
   },
   {
-    "source": "Les loisirs et les passe-temps",
-    "target": "Hobbies and Pastimes"
-  },
-  {
-    "source": "La nourriture et la cuisine",
-    "target": "Food and Cooking"
-  },
-  {
-    "source": "Le logement et l'habitat",
-    "target": "Housing and Accommodation"
+    "source": "Les études et la formation",
+    "target": "Studies and training"
   },
   {
     "source": "Les voyages et le tourisme",
-    "target": "Travel and Tourism"
+    "target": "Travel and tourism"
+  },
+  {
+    "source": "La culture et les loisirs",
+    "target": "Culture and hobbies"
   },
   {
     "source": "La santé et le bien-être",
-    "target": "Health and Well-being"
+    "target": "Health and well-being"
   },
   {
-    "source": "L'éducation et les études",
-    "target": "Education and Studies"
+    "source": "L'alimentation et la gastronomie",
+    "target": "Food and gastronomy"
   },
   {
-    "source": "Le travail et la carrière",
-    "target": "Work and Career"
+    "source": "Le logement et l'habitation",
+    "target": "Housing and accommodation"
   },
   {
     "source": "Les transports et la mobilité",
-    "target": "Transportation and Mobility"
+    "target": "Transport and mobility"
   },
   {
-    "source": "Les achats et le commerce",
-    "target": "Shopping and Commerce"
+    "source": "La famille et les relations personnelles",
+    "target": "Family and personal relationships"
   },
   {
-    "source": "Les émotions et les sentiments",
-    "target": "Emotions and Feelings"
+    "source": "Les vêtements et la mode",
+    "target": "Clothing and fashion"
   },
   {
-    "source": "Les opinions et les points de vue",
-    "target": "Opinions and Points of View"
-  },
-  {
-    "source": "Les actualités et les événements courants",
-    "target": "News and Current Events"
-  },
-  {
-    "source": "L'environnement et l'écologie",
-    "target": "The Environment and Ecology"
-  },
-  {
-    "source": "La technologie et le numérique",
-    "target": "Technology and the Digital World"
-  },
-  {
-    "source": "La culture et les traditions",
-    "target": "Culture and Traditions"
-  },
-  {
-    "source": "La mode et l'apparence",
-    "target": "Fashion and Appearance"
-  },
-  {
-    "source": "Le sport et l'activité physique",
-    "target": "Sports and Physical Activity"
-  },
-  {
-    "source": "Les médias et la communication",
-    "target": "Media and Communication"
-  },
-  {
-    "source": "La météo et le climat",
-    "target": "Weather and Climate"
-  },
-  {
-    "source": "Les problèmes quotidiens et les solutions",
-    "target": "Daily Problems and Solutions"
-  },
-  {
-    "source": "Les fêtes et les célébrations",
-    "target": "Holidays and Celebrations"
-  },
-  {
-    "source": "La description des personnes et des lieux",
-    "target": "Describing People and Places"
+    "source": "Le shopping et les commerces",
+    "target": "Shopping and retail"
   },
   {
     "source": "Les services publics et l'administration",
-    "target": "Public Services and Administration"
+    "target": "Public services and administration"
   },
   {
-    "source": "La citoyenneté et la société",
-    "target": "Citizenship and Society"
+    "source": "L'environnement et l'écologie",
+    "target": "Environment and ecology"
   },
   {
-    "source": "L'art et le divertissement",
-    "target": "Art and Entertainment"
+    "source": "La technologie et le numérique",
+    "target": "Technology and the digital world"
   },
   {
-    "source": "Les finances personnelles",
-    "target": "Personal Finance"
+    "source": "Les médias et l'actualité",
+    "target": "Media and current events"
   },
   {
-    "source": "La sécurité et l'urgence",
-    "target": "Safety and Emergency"
+    "source": "Les émotions et les sentiments",
+    "target": "Emotions and feelings"
   },
   {
-    "source": "La géographie et les pays du monde",
-    "target": "Geography and Countries of the World"
+    "source": "La météo et le climat",
+    "target": "Weather and climate"
+  },
+  {
+    "source": "Les villes et la vie urbaine",
+    "target": "Cities and urban life"
+  },
+  {
+    "source": "La campagne et la nature",
+    "target": "Countryside and nature"
+  },
+  {
+    "source": "Les sports et les activités physiques",
+    "target": "Sports and physical activities"
+  },
+  {
+    "source": "L'art et le spectacle",
+    "target": "Art and performance"
+  },
+  {
+    "source": "La description physique et les qualités personnelles",
+    "target": "Physical description and personal qualities"
+  },
+  {
+    "source": "Les problèmes sociaux et les défis",
+    "target": "Social issues and challenges"
+  },
+  {
+    "source": "Les fêtes et les traditions",
+    "target": "Celebrations and traditions"
+  },
+  {
+    "source": "Les interactions professionnelles",
+    "target": "Professional interactions"
+  },
+  {
+    "source": "La politique et la société",
+    "target": "Politics and society"
+  },
+  {
+    "source": "La sécurité et les urgences",
+    "target": "Safety and emergencies"
+  },
+  {
+    "source": "L'éducation et l'apprentissage tout au long de la vie",
+    "target": "Education and lifelong learning"
+  },
+  {
+    "source": "Les opinions et les arguments",
+    "target": "Opinions and arguments"
   }
 ]
