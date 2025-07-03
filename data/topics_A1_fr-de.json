@@ -1,127 +1,122 @@
-{
-  "sourceLang": "fr",
-  "targetLang": "de",
-  "level": "A1",
-  "topics": [
-    {
-      "source": "Salutations et présentations",
-      "target": "Begrüßungen und Vorstellungen"
-    },
-    {
-      "source": "L'alphabet",
-      "target": "Das Alphabet"
-    },
-    {
-      "source": "Les nombres (0-100)",
-      "target": "Die Zahlen (0-100)"
-    },
-    {
-      "source": "Les couleurs",
-      "target": "Die Farben"
-    },
-    {
-      "source": "Les jours de la semaine",
-      "target": "Die Wochentage"
-    },
-    {
-      "source": "Les mois de l'année",
-      "target": "Die Monate des Jahres"
-    },
-    {
-      "source": "Les saisons",
-      "target": "Die Jahreszeiten"
-    },
-    {
-      "source": "Ma famille",
-      "target": "Meine Familie"
-    },
-    {
-      "source": "Les professions",
-      "target": "Die Berufe"
-    },
-    {
-      "source": "Les nationalités et pays",
-      "target": "Die Nationalitäten und Länder"
-    },
-    {
-      "source": "Les descriptions (adjectifs basiques)",
-      "target": "Beschreibungen (grundlegende Adjektive)"
-    },
-    {
-      "source": "La maison et les pièces",
-      "target": "Das Haus und die Räume"
-    },
-    {
-      "source": "Les meubles",
-      "target": "Die Möbel"
-    },
-    {
-      "source": "Les objets du quotidien",
-      "target": "Die Alltagsgegenstände"
-    },
-    {
-      "source": "La nourriture (général)",
-      "target": "Das Essen (allgemein)"
-    },
-    {
-      "source": "Les fruits et légumes",
-      "target": "Das Obst und Gemüse"
-    },
-    {
-      "source": "Les boissons",
-      "target": "Die Getränke"
-    },
-    {
-      "source": "Les animaux domestiques",
-      "target": "Die Haustiere"
-    },
-    {
-      "source": "Les transports",
-      "target": "Die Verkehrsmittel"
-    },
-    {
-      "source": "Les lieux de la ville",
-      "target": "Die Orte in der Stadt"
-    },
-    {
-      "source": "Les vêtements",
-      "target": "Die Kleidung"
-    },
-    {
-      "source": "Le corps humain (parties basiques)",
-      "target": "Der menschliche Körper (grundlegende Teile)"
-    },
-    {
-      "source": "Les activités de loisirs",
-      "target": "Die Freizeitaktivitäten"
-    },
-    {
-      "source": "Le temps qu'il fait (météo)",
-      "target": "Das Wetter"
-    },
-    {
-      "source": "Les prépositions de lieu",
-      "target": "Die Präpositionen des Ortes"
-    },
-    {
-      "source": "L'heure",
-      "target": "Die Uhrzeit"
-    },
-    {
-      "source": "Les émotions et sentiments",
-      "target": "Die Emotionen und Gefühle"
-    },
-    {
-      "source": "Les verbes fréquents (être, avoir, aller, faire)",
-      "target": "Häufige Verben (sein, haben, gehen, machen)"
-    },
-    {
-      "source": "Faire les courses (nourriture)",
-      "target": "Einkaufen (Lebensmittel)"
-    },
-    {
-      "source": "Au restaurant (commander)",
-      "target": "Im Restaurant (bestellen)"
-    }
-  ]
-}
+[
+  {
+    "source": "Les salutations",
+    "target": "Die Begrüßungen"
+  },
+  {
+    "source": "Se présenter",
+    "target": "Sich vorstellen"
+  },
+  {
+    "source": "L'âge",
+    "target": "Das Alter"
+  },
+  {
+    "source": "La famille",
+    "target": "Die Familie"
+  },
+  {
+    "source": "Les nationalités et les pays",
+    "target": "Die Nationalitäten und die Länder"
+  },
+  {
+    "source": "Les nombres (0-100)",
+    "target": "Die Zahlen (0-100)"
+  },
+  {
+    "source": "Les jours de la semaine",
+    "target": "Die Wochentage"
+  },
+  {
+    "source": "Les mois de l'année",
+    "target": "Die Monate des Jahres"
+  },
+  {
+    "source": "Les saisons",
+    "target": "Die Jahreszeiten"
+  },
+  {
+    "source": "Les couleurs",
+    "target": "Die Farben"
+  },
+  {
+    "source": "Les adjectifs simples (description)",
+    "target": "Einfache Adjektive (Beschreibung)"
+  },
+  {
+    "source": "La météo",
+    "target": "Das Wetter"
+  },
+  {
+    "source": "La nourriture et les boissons",
+    "target": "Essen und Getränke"
+  },
+  {
+    "source": "Les fruits et légumes",
+    "target": "Obst und Gemüse"
+  },
+  {
+    "source": "Les repas (petit-déjeuner, déjeuner, dîner)",
+    "target": "Die Mahlzeiten (Frühstück, Mittagessen, Abendessen)"
+  },
+  {
+    "source": "Les animaux domestiques et de la ferme",
+    "target": "Die Haustiere und Bauernhoftiere"
+  },
+  {
+    "source": "Les parties du corps",
+    "target": "Die Körperteile"
+  },
+  {
+    "source": "Les vêtements",
+    "target": "Die Kleidung"
+  },
+  {
+    "source": "La maison et les pièces",
+    "target": "Das Haus und die Zimmer"
+  },
+  {
+    "source": "Les meubles",
+    "target": "Die Möbel"
+  },
+  {
+    "source": "La ville et les lieux (parc, école, magasin)",
+    "target": "Die Stadt und die Orte (Park, Schule, Geschäft)"
+  },
+  {
+    "source": "Les transports (bus, train, voiture)",
+    "target": "Die Transportmittel (Bus, Zug, Auto)"
+  },
+  {
+    "source": "Les professions",
+    "target": "Die Berufe"
+  },
+  {
+    "source": "Les activités de loisirs",
+    "target": "Die Freizeitaktivitäten"
+  },
+  {
+    "source": "La routine quotidienne",
+    "target": "Der Tagesablauf"
+  },
+  {
+    "source": "Les objets de la classe",
+    "target": "Die Gegenstände im Klassenzimmer"
+  },
+  {
+    "source": "Les émotions et les sentiments",
+    "target": "Die Emotionen und Gefühle"
+  },
+  {
+    "source": "L'heure (dire l'heure)",
+    "target": "Die Uhrzeit (die Uhrzeit sagen)"
+  },
+  {
+    "source": "Les directions simples (gauche, droite)",
+    "target": "Einfache Richtungsangaben (links, rechts)"
+  },
+  {
+    "source": "Les prépositions de lieu (sur, sous, dans)",
+    "target": "Die Präpositionen des Ortes (auf, unter, in)"
+  }
+]
