@@ -13,14 +13,14 @@ const level = args[1] || 'A1';
 const sourceLang = args[2] || 'fr';
 const targetLang = args[3] || 'de';
 
-async function generateTopics(): Promise<string[]> {
+async function generateTopics(): Promise<any> {
     const prompt = `
-Generate ${count} vocabulary topics for language learners at ${level} level.
+Generate ${count} vocabulary topics for ${sourceLang} language learners at ${level} level.
 The topics should be relevant for learners of ${sourceLang} translating into ${targetLang}.
 For each topic, provide:
 - Topic name in ${sourceLang}
 - Translation in ${targetLang}
-Return as JSON object with level and topics as JSON array.
+Return as JSON object with keys: sourceLang, targetLang, level and topics. topics is a JSON array with keys: source, target.
 `;
 
     const response = await ai.models.generateContent({
@@ -39,7 +39,7 @@ Return as JSON object with level and topics as JSON array.
 
         fs.mkdirSync('data', { recursive: true });
 
-        const fileName = `data/topics_${count}_${level}_${sourceLang}-${targetLang}.json`;
+        const fileName = `data/topics_${level}_${sourceLang}-${targetLang}.json`;
 
         fs.writeFileSync(fileName, JSON.stringify(topics, null, 2));
         console.log(`✅ Saved topics to ${fileName}`);
