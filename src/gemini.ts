@@ -58,45 +58,45 @@ Return as JSON array of objects with keys: source, target, exampleSource, exampl
 }
 
 export async function synthesizeSpeech(text: string) {
-   const response = await ai.models.generateContent({
-      model: "gemini-2.5-flash-preview-tts",
-      contents: [{ parts: [{ text: text }] }],
-      config: {
+    const response = await ai.models.generateContent({
+        model: "gemini-2.5-flash-preview-tts",
+        contents: [{ parts: [{ text: `Say cheerfully: ${text}` }] }],
+        config: {
             responseModalities: ['AUDIO'],
             speechConfig: {
-               voiceConfig: {
-                  prebuiltVoiceConfig: { voiceName: 'Kore' },
-               },
-            },
-      },
-   });
+                voiceConfig: {
+                    prebuiltVoiceConfig: { voiceName: 'Kore' }
+                }
+            }
+        }
+    });
 
-   const data = response.candidates?.[0]?.content?.parts?.[0]?.inlineData?.data!;
-   const audioBuffer = Buffer.from(data, 'base64');
+    const data = response.candidates?.[0]?.content?.parts?.[0]?.inlineData?.data!;
+    const audioBuffer = Buffer.from(data, 'base64');
 
-   const fileName = 'out.wav';
-   await saveWaveFile(fileName, audioBuffer);
+    const fileName = 'out.wav';
+    await saveWaveFile(fileName, audioBuffer);
 }
 
 async function saveWaveFile(
-   filename: string,
-   pcmData: any,
-   channels = 1,
-   rate = 24000,
-   sampleWidth = 2,
+    filename: string,
+    pcmData: any,
+    channels = 1,
+    rate = 24000,
+    sampleWidth = 2,
 ) {
-   return new Promise((resolve, reject) => {
-      const writer = new FileWriter(filename, {
+    return new Promise((resolve, reject) => {
+        const writer = new FileWriter(filename, {
             channels,
             sampleRate: rate,
             bitDepth: sampleWidth * 8,
-      });
+        });
 
-      writer.on('finish', resolve);
-      writer.on('error', reject);
+        writer.on('finish', resolve);
+        writer.on('error', reject);
 
-      writer.write(pcmData);
-      writer.end();
-   });
+        writer.write(pcmData);
+        writer.end();
+    });
 }
 

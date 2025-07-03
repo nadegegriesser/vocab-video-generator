@@ -42,6 +42,6 @@ function saveTopics(topics: TopicEntry[]) {
 
         saveTopics(topics);
     } catch (err) {
-        console.error('❌ Failed to generate topics:', err);
+        console.error('❌ Failed to generate video:', err);
     }
 })();
