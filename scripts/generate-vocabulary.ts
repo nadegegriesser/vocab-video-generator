@@ -43,9 +43,10 @@ Return as JSON array of objects with keys: source, target, exampleSource, exampl
 (async () => {
     try {
         const topics = loadTopics();
-        for (const [i, topic] of topics.topics.entries()) {
-            const vocab = await generateVocab(topic);
-            console.log(topic, vocab);
+        for (const [i, topic] of topics) {
+            console.log(topic);
+            const vocab = await generateVocab(topic.source);
+            console.log('Vocab for topic', topic, 'level', level, vocab);
             break;
         }
     } catch (err) {

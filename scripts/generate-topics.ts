@@ -19,8 +19,8 @@ Generate ${count} vocabulary topics for ${sourceLang} language learners at ${lev
 The topics should be relevant for learners of ${sourceLang} translating into ${targetLang}.
 For each topic, provide:
 - Topic name in ${sourceLang}
-- Translation in ${targetLang}
-Return as JSON object with keys: sourceLang, targetLang, level and topics. topics is a JSON array with keys: source, target.
+- Its translation in ${targetLang}
+Return as JSON array with keys: source, target.
 `;
 
     const response = await ai.models.generateContent({
