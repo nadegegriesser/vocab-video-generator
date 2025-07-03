@@ -1,0 +1,182 @@
+[
+  {
+    "source": "Bonjour",
+    "target": "Guten Tag / Hallo",
+    "exampleSource": "Bonjour, comment ça va ?",
+    "exampleTarget": "Guten Tag, wie geht es Ihnen/dir?"
+  },
+  {
+    "source": "Bonsoir",
+    "target": "Guten Abend",
+    "exampleSource": "Bonsoir, Madame.",
+    "exampleTarget": "Guten Abend, Frau."
+  },
+  {
+    "source": "Salut",
+    "target": "Hallo / Tschüss (informell)",
+    "exampleSource": "Salut, Paul ! Ça va ?",
+    "exampleTarget": "Hallo, Paul! Geht es dir gut?"
+  },
+  {
+    "source": "Au revoir",
+    "target": "Auf Wiedersehen",
+    "exampleSource": "Au revoir et bonne journée !",
+    "exampleTarget": "Auf Wiedersehen und einen schönen Tag!"
+  },
+  {
+    "source": "Bonne nuit",
+    "target": "Gute Nacht",
+    "exampleSource": "Bonne nuit, dors bien.",
+    "exampleTarget": "Gute Nacht, schlaf gut."
+  },
+  {
+    "source": "Je m'appelle...",
+    "target": "Ich heiße...",
+    "exampleSource": "Je m'appelle Marie.",
+    "exampleTarget": "Ich heiße Marie."
+  },
+  {
+    "source": "Comment vous appelez-vous ?",
+    "target": "Wie heißen Sie? (formell)",
+    "exampleSource": "Bonjour, comment vous appelez-vous ?",
+    "exampleTarget": "Guten Tag, wie heißen Sie?"
+  },
+  {
+    "source": "Comment tu t'appelles ?",
+    "target": "Wie heißt du? (informell)",
+    "exampleSource": "Salut, comment tu t'appelles ?",
+    "exampleTarget": "Hallo, wie heißt du?"
+  },
+  {
+    "source": "Enchanté(e)",
+    "target": "Angenehm / Freut mich",
+    "exampleSource": "Enchanté de vous rencontrer.",
+    "exampleTarget": "Freut mich, Sie kennenzulernen."
+  },
+  {
+    "source": "Monsieur",
+    "target": "Herr",
+    "exampleSource": "Bonjour, Monsieur Dubois.",
+    "exampleTarget": "Guten Tag, Herr Dubois."
+  },
+  {
+    "source": "Madame",
+    "target": "Frau",
+    "exampleSource": "Bonsoir, Madame Dupont.",
+    "exampleTarget": "Guten Abend, Frau Dupont."
+  },
+  {
+    "source": "Mademoiselle",
+    "target": "Fräulein",
+    "exampleSource": "Mademoiselle, votre table est prête.",
+    "exampleTarget": "Fräulein, Ihr Tisch ist bereit."
+  },
+  {
+    "source": "Comment ça va ?",
+    "target": "Wie geht es Ihnen/dir?",
+    "exampleSource": "Bonjour, comment ça va aujourd'hui ?",
+    "exampleTarget": "Guten Tag, wie geht es Ihnen/dir heute?"
+  },
+  {
+    "source": "Ça va bien.",
+    "target": "Mir geht es gut.",
+    "exampleSource": "Ça va bien, merci.",
+    "exampleTarget": "Mir geht es gut, danke."
+  },
+  {
+    "source": "Ça va mal.",
+    "target": "Mir geht es schlecht.",
+    "exampleSource": "Non, ça va mal aujourd'hui.",
+    "exampleTarget": "Nein, mir geht es heute schlecht."
+  },
+  {
+    "source": "Ça va.",
+    "target": "Es geht.",
+    "exampleSource": "Ça va, pas mal.",
+    "exampleTarget": "Es geht, nicht schlecht."
+  },
+  {
+    "source": "Et vous ?",
+    "target": "Und Sie? (formell)",
+    "exampleSource": "Je vais bien, et vous ?",
+    "exampleTarget": "Mir geht es gut, und Ihnen?"
+  },
+  {
+    "source": "Et toi ?",
+    "target": "Und du? (informell)",
+    "exampleSource": "Je vais bien, et toi ?",
+    "exampleTarget": "Mir geht es gut, und dir?"
+  },
+  {
+    "source": "Merci",
+    "target": "Danke",
+    "exampleSource": "Merci beaucoup pour votre aide.",
+    "exampleTarget": "Vielen Dank für Ihre Hilfe."
+  },
+  {
+    "source": "De rien",
+    "target": "Gern geschehen / Bitte schön",
+    "exampleSource": "Merci ! - De rien.",
+    "exampleTarget": "Danke! - Gern geschehen."
+  },
+  {
+    "source": "S'il vous plaît",
+    "target": "Bitte (formell)",
+    "exampleSource": "Une tasse de café, s'il vous plaît.",
+    "exampleTarget": "Eine Tasse Kaffee, bitte."
+  },
+  {
+    "source": "S'il te plaît",
+    "target": "Bitte (informell)",
+    "exampleSource": "Passe-moi le sel, s'il te plaît.",
+    "exampleTarget": "Gib mir das Salz, bitte."
+  },
+  {
+    "source": "Excusez-moi",
+    "target": "Entschuldigen Sie mich",
+    "exampleSource": "Excusez-moi, où sont les toilettes ?",
+    "exampleTarget": "Entschuldigen Sie mich, wo sind die Toiletten?"
+  },
+  {
+    "source": "Pardon",
+    "target": "Entschuldigung / Verzeihung",
+    "exampleSource": "Pardon, je n'ai pas compris.",
+    "exampleTarget": "Entschuldigung, ich habe nicht verstanden."
+  },
+  {
+    "source": "Je suis...",
+    "target": "Ich bin...",
+    "exampleSource": "Je suis étudiant.",
+    "exampleTarget": "Ich bin Student."
+  },
+  {
+    "source": "Vous êtes...",
+    "target": "Sie sind... (formell)",
+    "exampleSource": "Vous êtes de Paris ?",
+    "exampleTarget": "Sind Sie aus Paris?"
+  },
+  {
+    "source": "Tu es...",
+    "target": "Du bist... (informell)",
+    "exampleSource": "Tu es allemand ?",
+    "exampleTarget": "Bist du Deutscher?"
+  },
+  {
+    "source": "Bienvenue",
+    "target": "Willkommen",
+    "exampleSource": "Bienvenue à Paris !",
+    "exampleTarget": "Willkommen in Paris!"
+  },
+  {
+    "source": "À bientôt",
+    "target": "Bis bald",
+    "exampleSource": "Au revoir, à bientôt !",
+    "exampleTarget": "Auf Wiedersehen, bis bald!"
+  },
+  {
+    "source": "À demain",
+    "target": "Bis morgen",
+    "exampleSource": "Bonne nuit, à demain !",
+    "exampleTarget": "Gute Nacht, bis morgen!"
+  }
+]
