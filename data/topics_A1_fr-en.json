@@ -12,6 +12,30 @@
     "target": "Colors"
   },
   {
+    "source": "La famille",
+    "target": "The Family"
+  },
+  {
+    "source": "Les professions",
+    "target": "Professions"
+  },
+  {
+    "source": "Les nationalités et pays",
+    "target": "Nationalities and Countries"
+  },
+  {
+    "source": "Les objets du quotidien (maison)",
+    "target": "Everyday Objects (home)"
+  },
+  {
+    "source": "L'alimentation de base",
+    "target": "Basic Food Items"
+  },
+  {
+    "source": "Les boissons",
+    "target": "Drinks"
+  },
+  {
     "source": "Les jours de la semaine",
     "target": "Days of the Week"
   },
@@ -24,99 +48,75 @@
     "target": "Seasons"
   },
   {
-    "source": "La météo et le temps",
-    "target": "Weather and Time"
+    "source": "La météo de base",
+    "target": "Basic Weather"
   },
   {
-    "source": "La famille",
-    "target": "The Family"
+    "source": "Les animaux domestiques",
+    "target": "Pets"
   },
   {
-    "source": "Les adjectifs descriptifs de base",
-    "target": "Basic Descriptive Adjectives"
-  },
-  {
-    "source": "Les professions et métiers",
-    "target": "Professions and Occupations"
-  },
-  {
-    "source": "Les pays et nationalités",
-    "target": "Countries and Nationalities"
-  },
-  {
-    "source": "Les objets du quotidien",
-    "target": "Everyday Objects"
-  },
-  {
-    "source": "L'alimentation et les boissons de base",
-    "target": "Basic Food and Drinks"
-  },
-  {
-    "source": "Les animaux domestiques et de la ferme",
-    "target": "Pets and Farm Animals"
-  },
-  {
-    "source": "Les lieux dans une ville",
-    "target": "Places in a City"
-  },
-  {
-    "source": "Les verbes courants A1",
-    "target": "Common A1 Verbs"
-  },
-  {
-    "source": "Les prépositions de lieu",
-    "target": "Prepositions of Place"
-  },
-  {
-    "source": "Les mots interrogatifs",
-    "target": "Question Words"
-  },
-  {
-    "source": "L'heure et comment la dire",
-    "target": "Time and How to Tell It"
-  },
-  {
-    "source": "Les activités quotidiennes",
-    "target": "Daily Activities"
+    "source": "Les adjectifs descriptifs",
+    "target": "Descriptive Adjectives"
   },
   {
     "source": "Les vêtements de base",
-    "target": "Basic Clothing"
+    "target": "Basic Clothes"
   },
   {
-    "source": "Les parties du corps",
-    "target": "Body Parts"
+    "source": "Les parties du corps (base)",
+    "target": "Basic Body Parts"
   },
   {
-    "source": "Les moyens de transport",
-    "target": "Means of Transport"
+    "source": "Les lieux en ville",
+    "target": "Places in a City"
   },
   {
-    "source": "Les loisirs et temps libre",
-    "target": "Hobbies and Free Time"
+    "source": "Les moyens de transport (base)",
+    "target": "Basic Means of Transport"
   },
   {
-    "source": "Le shopping et les achats simples",
-    "target": "Shopping and Simple Purchases"
+    "source": "Les loisirs et activités",
+    "target": "Hobbies and Activities"
   },
   {
-    "source": "Les directions et l'orientation",
-    "target": "Directions and Orientation"
+    "source": "Les fournitures scolaires",
+    "target": "School Supplies"
   },
   {
-    "source": "Les émotions et sentiments",
-    "target": "Emotions and Feelings"
+    "source": "Les pièces de la maison",
+    "target": "Rooms in a House"
   },
   {
-    "source": "La maison et les pièces",
-    "target": "The House and Rooms"
+    "source": "Les meubles de base",
+    "target": "Basic Furniture"
   },
   {
-    "source": "Les matières scolaires",
-    "target": "School Subjects"
+    "source": "L'heure",
+    "target": "Time"
   },
   {
-    "source": "La santé et le bien-être",
-    "target": "Health and Well-being"
+    "source": "Les fruits",
+    "target": "Fruits"
+  },
+  {
+    "source": "Les légumes",
+    "target": "Vegetables"
+  },
+  {
+    "source": "Les formes de base",
+    "target": "Basic Shapes"
+  },
+  {
+    "source": "Les sentiments et émotions (base)",
+    "target": "Basic Feelings and Emotions"
+  },
+  {
+    "source": "Les prépositions de lieu (base)",
+    "target": "Basic Prepositions of Place"
+  },
+  {
+    "source": "Les verbes essentiels (A1)",
+    "target": "Essential A1 Verbs"
   }
 ]
