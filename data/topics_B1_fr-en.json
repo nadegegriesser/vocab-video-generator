@@ -1,127 +1,122 @@
-{
-  "sourceLang": "fr",
-  "targetLang": "en",
-  "level": "B1",
-  "topics": [
-    {
-      "source": "La routine quotidienne",
-      "target": "Daily Routine"
-    },
-    {
-      "source": "Les courses et le supermarché",
-      "target": "Shopping and the Supermarket"
-    },
-    {
-      "source": "Les transports en commun",
-      "target": "Public Transportation"
-    },
-    {
-      "source": "Le logement et la maison",
-      "target": "Housing and the Home"
-    },
-    {
-      "source": "Les repas et la gastronomie",
-      "target": "Meals and Gastronomy"
-    },
-    {
-      "source": "Décrire les personnes",
-      "target": "Describing People"
-    },
-    {
-      "source": "Les émotions et les sentiments",
-      "target": "Emotions and Feelings"
-    },
-    {
-      "source": "La famille et les relations",
-      "target": "Family and Relationships"
-    },
-    {
-      "source": "Les amis et les sorties",
-      "target": "Friends and Outings"
-    },
-    {
-      "source": "Les fêtes et les traditions",
-      "target": "Celebrations and Traditions"
-    },
-    {
-      "source": "Le monde du travail",
-      "target": "The World of Work"
-    },
-    {
-      "source": "Les études et l'éducation",
-      "target": "Studies and Education"
-    },
-    {
-      "source": "Les professions et les métiers",
-      "target": "Professions and Trades"
-    },
-    {
-      "source": "La recherche d'emploi",
-      "target": "Job Seeking"
-    },
-    {
-      "source": "La vie au bureau",
-      "target": "Office Life"
-    },
-    {
-      "source": "La santé et le corps humain",
-      "target": "Health and the Human Body"
-    },
-    {
-      "source": "Les maladies et les remèdes",
-      "target": "Illnesses and Remedies"
-    },
-    {
-      "source": "Le sport et les loisirs",
-      "target": "Sport and Hobbies"
-    },
-    {
-      "source": "Les habitudes saines",
-      "target": "Healthy Habits"
-    },
-    {
-      "source": "Les visites médicales",
-      "target": "Medical Appointments"
-    },
-    {
-      "source": "Le tourisme et les voyages",
-      "target": "Tourism and Travel"
-    },
-    {
-      "source": "La géographie et les pays",
-      "target": "Geography and Countries"
-    },
-    {
-      "source": "L'hôtel et l'hébergement",
-      "target": "Hotel and Accommodation"
-    },
-    {
-      "source": "Les activités culturelles",
-      "target": "Cultural Activities"
-    },
-    {
-      "source": "Les monuments et les villes",
-      "target": "Monuments and Cities"
-    },
-    {
-      "source": "Les informations et les médias",
-      "target": "News and Media"
-    },
-    {
-      "source": "L'environnement et l'écologie",
-      "target": "Environment and Ecology"
-    },
-    {
-      "source": "La politique et la citoyenneté",
-      "target": "Politics and Citizenship"
-    },
-    {
-      "source": "Les problèmes de société",
-      "target": "Social Issues"
-    },
-    {
-      "source": "L'économie et l'argent",
-      "target": "Economy and Money"
-    }
-  ]
-}
+[
+  {
+    "source": "La vie quotidienne et les routines",
+    "target": "Daily Life and Routines"
+  },
+  {
+    "source": "La famille et les relations personnelles",
+    "target": "Family and Personal Relationships"
+  },
+  {
+    "source": "Les loisirs et les passe-temps",
+    "target": "Hobbies and Pastimes"
+  },
+  {
+    "source": "La nourriture et la cuisine",
+    "target": "Food and Cooking"
+  },
+  {
+    "source": "Le logement et l'habitat",
+    "target": "Housing and Accommodation"
+  },
+  {
+    "source": "Les voyages et le tourisme",
+    "target": "Travel and Tourism"
+  },
+  {
+    "source": "La santé et le bien-être",
+    "target": "Health and Well-being"
+  },
+  {
+    "source": "L'éducation et les études",
+    "target": "Education and Studies"
+  },
+  {
+    "source": "Le travail et la carrière",
+    "target": "Work and Career"
+  },
+  {
+    "source": "Les transports et la mobilité",
+    "target": "Transportation and Mobility"
+  },
+  {
+    "source": "Les achats et le commerce",
+    "target": "Shopping and Commerce"
+  },
+  {
+    "source": "Les émotions et les sentiments",
+    "target": "Emotions and Feelings"
+  },
+  {
+    "source": "Les opinions et les points de vue",
+    "target": "Opinions and Points of View"
+  },
+  {
+    "source": "Les actualités et les événements courants",
+    "target": "News and Current Events"
+  },
+  {
+    "source": "L'environnement et l'écologie",
+    "target": "The Environment and Ecology"
+  },
+  {
+    "source": "La technologie et le numérique",
+    "target": "Technology and the Digital World"
+  },
+  {
+    "source": "La culture et les traditions",
+    "target": "Culture and Traditions"
+  },
+  {
+    "source": "La mode et l'apparence",
+    "target": "Fashion and Appearance"
+  },
+  {
+    "source": "Le sport et l'activité physique",
+    "target": "Sports and Physical Activity"
+  },
+  {
+    "source": "Les médias et la communication",
+    "target": "Media and Communication"
+  },
+  {
+    "source": "La météo et le climat",
+    "target": "Weather and Climate"
+  },
+  {
+    "source": "Les problèmes quotidiens et les solutions",
+    "target": "Daily Problems and Solutions"
+  },
+  {
+    "source": "Les fêtes et les célébrations",
+    "target": "Holidays and Celebrations"
+  },
+  {
+    "source": "La description des personnes et des lieux",
+    "target": "Describing People and Places"
+  },
+  {
+    "source": "Les services publics et l'administration",
+    "target": "Public Services and Administration"
+  },
+  {
+    "source": "La citoyenneté et la société",
+    "target": "Citizenship and Society"
+  },
+  {
+    "source": "L'art et le divertissement",
+    "target": "Art and Entertainment"
+  },
+  {
+    "source": "Les finances personnelles",
+    "target": "Personal Finance"
+  },
+  {
+    "source": "La sécurité et l'urgence",
+    "target": "Safety and Emergency"
+  },
+  {
+    "source": "La géographie et les pays du monde",
+    "target": "Geography and Countries of the World"
+  }
+]
