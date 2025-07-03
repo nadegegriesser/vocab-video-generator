@@ -1,0 +1,125 @@
+{
+  "level": "B1",
+  "topics": [
+    {
+      "topic_fr": "La routine quotidienne",
+      "topic_en": "Daily Routine"
+    },
+    {
+      "topic_fr": "La maison et le logement",
+      "topic_en": "House and Home"
+    },
+    {
+      "topic_fr": "L'alimentation et les repas",
+      "topic_en": "Food and Meals"
+    },
+    {
+      "topic_fr": "Les courses et le shopping",
+      "topic_en": "Groceries and Shopping"
+    },
+    {
+      "topic_fr": "Les vêtements et la mode",
+      "topic_en": "Clothes and Fashion"
+    },
+    {
+      "topic_fr": "La famille et les amis",
+      "topic_en": "Family and Friends"
+    },
+    {
+      "topic_fr": "Les loisirs et les passe-temps",
+      "topic_en": "Hobbies and Pastimes"
+    },
+    {
+      "topic_fr": "La santé et le bien-être",
+      "topic_en": "Health and Well-being"
+    },
+    {
+      "topic_fr": "Les émotions et les sentiments",
+      "topic_en": "Emotions and Feelings"
+    },
+    {
+      "topic_fr": "Décrire les personnes et leur personnalité",
+      "topic_en": "Describing People and Their Personality"
+    },
+    {
+      "topic_fr": "Le voyage et le tourisme",
+      "topic_en": "Travel and Tourism"
+    },
+    {
+      "topic_fr": "Les transports en commun",
+      "topic_en": "Public Transportation"
+    },
+    {
+      "topic_fr": "L'hébergement (hôtel, Airbnb)",
+      "topic_en": "Accommodation (hotel, Airbnb)"
+    },
+    {
+      "topic_fr": "La météo et le climat",
+      "topic_en": "Weather and Climate"
+    },
+    {
+      "topic_fr": "L'environnement et l'écologie",
+      "topic_en": "Environment and Ecology"
+    },
+    {
+      "topic_fr": "L'éducation et les études",
+      "topic_en": "Education and Studies"
+    },
+    {
+      "topic_fr": "Le travail et la carrière",
+      "topic_en": "Work and Career"
+    },
+    {
+      "topic_fr": "Les compétences et les qualifications",
+      "topic_en": "Skills and Qualifications"
+    },
+    {
+      "topic_fr": "Les services publics et l'administration",
+      "topic_en": "Public Services and Administration"
+    },
+    {
+      "topic_fr": "La ville et la campagne",
+      "topic_en": "City and Countryside"
+    },
+    {
+      "topic_fr": "La culture et les traditions",
+      "topic_en": "Culture and Traditions"
+    },
+    {
+      "topic_fr": "Les médias et l'information",
+      "topic_en": "Media and Information"
+    },
+    {
+      "topic_fr": "Les arts et le spectacle",
+      "topic_en": "Arts and Performance"
+    },
+    {
+      "topic_fr": "Exprimer son opinion",
+      "topic_en": "Expressing Opinions"
+    },
+    {
+      "topic_fr": "Raconter un événement ou une histoire",
+      "topic_en": "Describing an Event or Story"
+    },
+    {
+      "topic_fr": "Les problèmes et les solutions",
+      "topic_en": "Problems and Solutions"
+    },
+    {
+      "topic_fr": "Les nouvelles technologies",
+      "topic_en": "New Technologies"
+    },
+    {
+      "topic_fr": "La banque et l'argent",
+      "topic_en": "Banking and Money"
+    },
+    {
+      "topic_fr": "Les fêtes et les célébrations",
+      "topic_en": "Festivals and Celebrations"
+    },
+    {
+      "topic_fr": "Les sports et les activités physiques",
+      "topic_en": "Sports and Physical Activities"
+    }
+  ]
+}
