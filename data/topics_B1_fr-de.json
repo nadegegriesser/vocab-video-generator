@@ -1,122 +1,122 @@
 [
   {
-    "source": "La vie quotidienne",
-    "target": "Alltag"
+    "source": "La vie quotidienne en ville",
+    "target": "Der Alltag in der Stadt"
   },
   {
-    "source": "Le monde du travail",
-    "target": "Arbeitswelt"
+    "source": "Les loisirs et les passe-temps",
+    "target": "Freizeitaktivitäten und Hobbys"
   },
   {
-    "source": "Les études et la formation",
-    "target": "Studium und Ausbildung"
+    "source": "La nourriture et la cuisine",
+    "target": "Essen und Kochen"
   },
   {
-    "source": "Les loisirs et les passions",
-    "target": "Freizeit und Hobbys"
+    "source": "Les transports en commun",
+    "target": "Öffentliche Verkehrsmittel"
   },
   {
-    "source": "Les voyages et le tourisme",
-    "target": "Reisen und Tourismus"
+    "source": "Les achats et le commerce",
+    "target": "Einkaufen und Handel"
   },
   {
     "source": "La santé et le bien-être",
     "target": "Gesundheit und Wohlbefinden"
   },
   {
-    "source": "La cuisine et l'alimentation",
-    "target": "Kochen und Ernährung"
-  },
-  {
     "source": "L'environnement et l'écologie",
     "target": "Umwelt und Ökologie"
   },
   {
-    "source": "La technologie et le numérique",
-    "target": "Technologie und digitale Welt"
+    "source": "Le travail et la carrière",
+    "target": "Arbeit und Karriere"
   },
   {
-    "source": "Le logement et la maison",
-    "target": "Wohnen und Zuhause"
+    "source": "L'éducation et les études",
+    "target": "Bildung und Studium"
   },
   {
-    "source": "Les achats et la consommation",
-    "target": "Einkaufen und Konsum"
+    "source": "Les vacances et le tourisme",
+    "target": "Urlaub und Tourismus"
+  },
+  {
+    "source": "Les médias et l'information",
+    "target": "Medien und Information"
   },
   {
     "source": "La famille et les relations",
     "target": "Familie und Beziehungen"
   },
   {
-    "source": "La ville et la campagne",
-    "target": "Stadt und Land"
-  },
-  {
-    "source": "Le système éducatif",
-    "target": "Bildungssystem"
-  },
-  {
-    "source": "Les médias et l'information",
-    "target": "Medien und Nachrichten"
-  },
-  {
-    "source": "La mode et l'apparence",
-    "target": "Mode und Aussehen"
-  },
-  {
-    "source": "Les sports et l'exercice",
-    "target": "Sport und Bewegung"
-  },
-  {
-    "source": "La politique et la société",
-    "target": "Politik und Gesellschaft"
+    "source": "Les sports et les activités physiques",
+    "target": "Sport und körperliche Aktivitäten"
   },
   {
     "source": "Les sentiments et les émotions",
     "target": "Gefühle und Emotionen"
   },
   {
-    "source": "Exprimer son opinion",
-    "target": "Meinung äußern"
+    "source": "La météo et le climat",
+    "target": "Wetter und Klima"
   },
   {
-    "source": "L'argent et les finances",
-    "target": "Geld und Finanzen"
+    "source": "Le logement et l'habitat",
+    "target": "Wohnung und Wohnen"
   },
   {
-    "source": "La nature et le paysage",
-    "target": "Natur und Landschaft"
+    "source": "L'administration et les services publics",
+    "target": "Verwaltung und öffentliche Dienste"
   },
   {
-    "source": "La météo et les saisons",
-    "target": "Wetter und Jahreszeiten"
+    "source": "La technologie et le numérique",
+    "target": "Technologie und Digitales"
   },
   {
-    "source": "Les transports et la mobilité",
-    "target": "Verkehr und Mobilität"
+    "source": "Les problèmes de société",
+    "target": "Gesellschaftliche Probleme"
   },
   {
-    "source": "Les problèmes sociaux",
-    "target": "Soziale Probleme"
+    "source": "La politique et la citoyenneté",
+    "target": "Politik und Bürgerschaft"
+  },
+  {
+    "source": "L'économie et les finances",
+    "target": "Wirtschaft und Finanzen"
+  },
+  {
+    "source": "L'art et la culture",
+    "target": "Kunst und Kultur"
+  },
+  {
+    "source": "La mode et l'habillement",
+    "target": "Mode und Kleidung"
+  },
+  {
+    "source": "Les animaux et la nature",
+    "target": "Tiere und Natur"
+  },
+  {
+    "source": "Les fêtes et les traditions",
+    "target": "Feste und Traditionen"
+  },
+  {
+    "source": "Les voyages",
+    "target": "Reisen"
   },
   {
     "source": "Les urgences et les premiers secours",
     "target": "Notfälle und Erste Hilfe"
   },
   {
-    "source": "Les démarches administratives",
-    "target": "Behördengänge"
+    "source": "Les descriptions physiques et de caractère",
+    "target": "Physische und Charakterbeschreibungen"
   },
   {
-    "source": "Les fêtes et les célébrations",
-    "target": "Feste und Feiern"
+    "source": "Les opinions et les débats",
+    "target": "Meinungen und Debatten"
   },
   {
-    "source": "La description de personnes",
-    "target": "Personenbeschreibung"
-  },
-  {
-    "source": "Les projets d'avenir",
-    "target": "Zukunftspläne"
+    "source": "Les professions et les métiers",
+    "target": "Berufe und Handwerke"
   }
 ]
