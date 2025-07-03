@@ -71,7 +71,7 @@ export async function synthesizeSpeech(text: string, fileName: string) {
             }
         }
     });
-
+    console.log(response);
     const data = response.candidates?.[0]?.content?.parts?.[0]?.inlineData?.data!;
     console.log(data);
     const audioBuffer = Buffer.from(data, 'base64');
