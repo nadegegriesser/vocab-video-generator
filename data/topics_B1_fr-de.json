@@ -1,127 +1,122 @@
-{
-  "sourceLang": "fr",
-  "targetLang": "de",
-  "level": "B1",
-  "topics": [
-    {
-      "source": "La vie quotidienne",
-      "target": "Der Alltag"
-    },
-    {
-      "source": "La famille et les relations",
-      "target": "Familie und Beziehungen"
-    },
-    {
-      "source": "Le logement et l'habitat",
-      "target": "Wohnen und Wohnraum"
-    },
-    {
-      "source": "La nourriture et la cuisine",
-      "target": "Essen und Kochen"
-    },
-    {
-      "source": "Faire les courses et le commerce",
-      "target": "Einkaufen und Handel"
-    },
-    {
-      "source": "Les voyages et les vacances",
-      "target": "Reisen und Urlaub"
-    },
-    {
-      "source": "Le monde du travail et les métiers",
-      "target": "Arbeitswelt und Berufe"
-    },
-    {
-      "source": "L'éducation et les études",
-      "target": "Bildung und Studium"
-    },
-    {
-      "source": "La santé et le bien-être",
-      "target": "Gesundheit und Wohlbefinden"
-    },
-    {
-      "source": "Les loisirs et les passe-temps",
-      "target": "Freizeit und Hobbys"
-    },
-    {
-      "source": "La météo et le climat",
-      "target": "Wetter und Klima"
-    },
-    {
-      "source": "La ville et la campagne",
-      "target": "Stadt und Land"
-    },
-    {
-      "source": "Les transports",
-      "target": "Verkehrsmittel"
-    },
-    {
-      "source": "La technologie et les médias",
-      "target": "Technologie und Medien"
-    },
-    {
-      "source": "Les émotions et les sentiments",
-      "target": "Gefühle und Emotionen"
-    },
-    {
-      "source": "Les vêtements et la mode",
-      "target": "Kleidung und Mode"
-    },
-    {
-      "source": "Le sport et l'activité physique",
-      "target": "Sport und körperliche Aktivität"
-    },
-    {
-      "source": "La culture et les arts",
-      "target": "Kultur und Künste"
-    },
-    {
-      "source": "L'environnement et l'écologie",
-      "target": "Umwelt und Ökologie"
-    },
-    {
-      "source": "L'argent et les finances personnelles",
-      "target": "Geld und persönliche Finanzen"
-    },
-    {
-      "source": "Les démarches administratives",
-      "target": "Behördengänge"
-    },
-    {
-      "source": "Les problèmes et les solutions",
-      "target": "Probleme und Lösungen"
-    },
-    {
-      "source": "Décrire les personnes, les lieux et les objets",
-      "target": "Personen, Orte und Gegenstände beschreiben"
-    },
-    {
-      "source": "Exprimer son opinion et argumenter",
-      "target": "Meinung äußern und argumentieren"
-    },
-    {
-      "source": "Les événements sociaux et les invitations",
-      "target": "Soziale Anlässe und Einladungen"
-    },
-    {
-      "source": "La communication (téléphone, e-mail)",
-      "target": "Kommunikation (Telefon, E-Mail)"
-    },
-    {
-      "source": "Les services publics",
-      "target": "Öffentliche Dienste"
-    },
-    {
-      "source": "La nature et les animaux",
-      "target": "Natur und Tiere"
-    },
-    {
-      "source": "Les fêtes et les traditions",
-      "target": "Feste und Traditionen"
-    },
-    {
-      "source": "Les accidents et les urgences",
-      "target": "Unfälle und Notfälle"
-    }
-  ]
-}
+[
+  {
+    "source": "La vie quotidienne",
+    "target": "Der Alltag"
+  },
+  {
+    "source": "La famille et les amis",
+    "target": "Familie und Freunde"
+  },
+  {
+    "source": "Le logement",
+    "target": "Die Wohnung / Unterkunft"
+  },
+  {
+    "source": "La nourriture et les boissons",
+    "target": "Essen und Trinken"
+  },
+  {
+    "source": "Les courses et le shopping",
+    "target": "Einkaufen"
+  },
+  {
+    "source": "Les transports",
+    "target": "Verkehrsmittel"
+  },
+  {
+    "source": "Les loisirs et les hobbies",
+    "target": "Freizeit und Hobbys"
+  },
+  {
+    "source": "La santé et le corps",
+    "target": "Gesundheit und Körper"
+  },
+  {
+    "source": "Les maladies et les symptômes",
+    "target": "Krankheiten und Symptome"
+  },
+  {
+    "source": "Les études et l'éducation",
+    "target": "Studium und Bildung"
+  },
+  {
+    "source": "Le travail et la carrière",
+    "target": "Arbeit und Karriere"
+  },
+  {
+    "source": "Les professions",
+    "target": "Berufe"
+  },
+  {
+    "source": "La description physique",
+    "target": "Körperliche Beschreibung"
+  },
+  {
+    "source": "La description de la personnalité",
+    "target": "Charakterbeschreibung"
+  },
+  {
+    "source": "Voyager et les vacances",
+    "target": "Reisen und Urlaub"
+  },
+  {
+    "source": "Les sports",
+    "target": "Sportarten"
+  },
+  {
+    "source": "Les médias et l'information",
+    "target": "Medien und Informationen"
+  },
+  {
+    "source": "La météo et le climat",
+    "target": "Wetter und Klima"
+  },
+  {
+    "source": "Les fêtes et célébrations",
+    "target": "Feste und Feiern"
+  },
+  {
+    "source": "Les sentiments et les émotions",
+    "target": "Gefühle und Emotionen"
+  },
+  {
+    "source": "Exprimer son opinion",
+    "target": "Die eigene Meinung äußern"
+  },
+  {
+    "source": "Les problèmes et solutions",
+    "target": "Probleme und Lösungen"
+  },
+  {
+    "source": "L'environnement",
+    "target": "Die Umwelt"
+  },
+  {
+    "source": "La ville et la campagne",
+    "target": "Stadt und Land"
+  },
+  {
+    "source": "L'administration et les démarches",
+    "target": "Verwaltung und Formalitäten"
+  },
+  {
+    "source": "Les nouvelles technologies",
+    "target": "Neue Technologien"
+  },
+  {
+    "source": "La culture et l'art",
+    "target": "Kultur und Kunst"
+  },
+  {
+    "source": "Les pays et les nationalités",
+    "target": "Länder und Nationalitäten"
+  },
+  {
+    "source": "Les chiffres et les quantités",
+    "target": "Zahlen und Mengen"
+  },
+  {
+    "source": "Les services (poste, banque, etc.)",
+    "target": "Dienstleistungen (Post, Bank etc.)"
+  }
+]
