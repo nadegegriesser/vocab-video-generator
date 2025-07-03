@@ -2,8 +2,10 @@ name: Generate Topics
 
 on:
   push:
-    branches:
-      - main
+    paths: [
+      .github/workflows/generate-topics.yaml,
+      scripts/generate-topics.ts
+    ]
 
 jobs:
   generate-topics:

@@ -2,8 +2,10 @@ name: Daily Vocabulary Video
 
 on:
   push:
-      branches:
-        - main
+    paths: [
+      .github/workflows/daily-video.yaml,
+      scripts/generate-vocabulary.ts
+    ]
   #schedule:
   #  - cron: '0 6 * * *' # Jeden Tag um 6 Uhr UTC
   workflow_dispatch:
@@ -31,8 +33,23 @@ jobs:
       - run: npm run build
 
       - name: Generate vocabulary
-        run: node dist/scripts/generate-vocabulary.js \
+        run: |
+          node dist/scripts/generate-vocabulary.js \
             ${{ matrix.count }} \
             ${{ matrix.level }} \
             ${{ matrix.sourceLang }} \
             ${{ matrix.targetLang }}
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+
+      - name: 💾 Commit generated vocabulary file
+        run: |
+          git pull
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          FILE=data/vocab_*.json
+          git add "$FILE"
+          git commit -m "📚 Add $FILE on push"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

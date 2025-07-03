@@ -43,10 +43,14 @@ Return as JSON array of objects with keys: source, target, exampleSource, exampl
 (async () => {
     try {
         const topics = loadTopics();
-        for (const [i, topic] of topics) {
+        for (const [i, topic] of topics.entries()) {
             console.log(topic);
             const vocab = await generateVocab(topic.source);
-            console.log('Vocab for topic', topic, 'level', level, vocab);
+
+            const fileName = `data/vocab_${level}_${sourceLang}-${targetLang}_${topic.source.replace(/\s+/g, '_')}.json`;
+
+            fs.writeFileSync(fileName, JSON.stringify(vocab, null, 2));
+            console.log(`✅ Saved vocab to ${fileName}`);
             break;
         }
     } catch (err) {
