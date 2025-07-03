@@ -38,6 +38,7 @@ export async function generateVocabForTopic(
 ): Promise<VocabEntry[]> {
     const prompt = `
 Generate ${count} vocabulary entries for the topic "${topic}" in ${sourceLang} for language learners at ${level} level.
+For nouns add an article.
 The topics should be relevant for learners of ${sourceLang} translating into ${targetLang}.
 For each word, provide:
 - The word in ${sourceLang}
