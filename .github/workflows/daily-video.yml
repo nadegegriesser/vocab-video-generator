@@ -1,0 +1,30 @@
+name: Daily Vocabulary Video
+
+on:
+  #schedule:
+  #  - cron: '0 6 * * *' # Jeden Tag um 6 Uhr UTC
+  workflow_dispatch:
+
+jobs:
+  daily-video:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - run: npm install
+
+      - run: npm run build
+
+      - name: Run daily video generator
+        run: node scripts/generate-daily-video.ts
+
+      - name: Commit updated topics.json
+        run: |
+          git add data/topics.json
+          git commit -m "Remove used topic"
+          git push

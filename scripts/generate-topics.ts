@@ -1,9 +1,10 @@
 import fs from 'fs';
 import dotenv from 'dotenv';
-import axios from 'axios';
-import https from 'https';
+import { GoogleGenAI } from '@google/genai';
 
 dotenv.config();
+
+const ai = new GoogleGenAI({vertexai: false, apiKey: process.env.GEMINI_API_KEY});
 
 // 🧾 Eingabeparameter: Anzahl, Level, Quell- und Zielsprache
 const args = process.argv.slice(2);
@@ -22,40 +23,26 @@ For each topic, provide:
 Return as JSON object with level and topics as JSON array.
 `;
 
-    const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${process.env.GEMINI_API_KEY}`;
-    const body = {
-        contents: [
-            {
-                "parts": [
-                    {
-                        "text": prompt
-                    }
-                ]
-            }
-        ]
-    };
+    const response = await ai.models.generateContent({
+        model: 'gemini-2.5-flash',
+        contents: prompt
+    });
 
-    const response = await axios.create({
-        httpsAgent: new https.Agent({
-            rejectUnauthorized: false
-        })
-    }).post(url, body);
-    console.log(response.data.candidates[0].content.parts[0].text);
-    return JSON.parse(response.data.candidates[0].content.parts[0].text.replace('```json', '').replace('```', ''));
+    return JSON.parse(response.text!.replace('```json', '').replace('```', ''));
 }
 
 (async () => {
     try {
         const topics = await generateTopics();
 
+        console.log(topics);
+
         fs.mkdirSync('data', { recursive: true });
 
-        const fileName = `data/topics_${count}_${level}_${sourceLang}-${targetLang}.json`
-            .replace(/\s+/g, '_')
-            .toLowerCase();
+        const fileName = `data/topics_${count}_${level}_${sourceLang}-${targetLang}.json`;
 
         fs.writeFileSync(fileName, JSON.stringify(topics, null, 2));
-        console.log(`✅ Saved ${topics.length} topics to ${fileName}`);
+        console.log(`✅ Saved topics to ${fileName}`);
     } catch (err) {
         console.error('❌ Failed to generate topics:', err);
     }
