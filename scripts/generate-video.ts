@@ -1,6 +1,6 @@
 import fs from 'fs';
-import { generateVocabForTopic } from '../src/gemini';
-import { TopicEntry } from '../src/types';
+import { generateVocabForTopic } from '../src/gemini.js';
+import { TopicEntry } from '../src/types.js';
 
 // 🧾 Eingabeparameter: Anzahl, Level, Quell- und Zielsprache
 const args = process.argv.slice(2);

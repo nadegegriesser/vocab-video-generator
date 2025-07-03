@@ -1,5 +1,5 @@
 import fs from 'fs';
-import { generateTopics } from '../src/gemini';
+import { generateTopics } from '../src/gemini.js';
 
 // 🧾 Eingabeparameter: Anzahl, Level, Quell- und Zielsprache
 const args = process.argv.slice(2);
