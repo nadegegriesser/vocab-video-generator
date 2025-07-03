@@ -1,127 +1,122 @@
-{
-  "sourceLang": "fr",
-  "targetLang": "en",
-  "level": "B2",
-  "topics": [
-    {
-      "source": "La laïcité et la sécularisation",
-      "target": "Secularism and Secularization"
-    },
-    {
-      "source": "Le système politique français",
-      "target": "The French Political System"
-    },
-    {
-      "source": "Les enjeux sociaux contemporains",
-      "target": "Contemporary Social Issues"
-    },
-    {
-      "source": "L'immigration et l'intégration",
-      "target": "Immigration and Integration"
-    },
-    {
-      "source": "Le droit et la justice",
-      "target": "Law and Justice"
-    },
-    {
-      "source": "L'économie française et européenne",
-      "target": "The French and European Economy"
-    },
-    {
-      "source": "Le monde du travail et l'emploi",
-      "target": "The World of Work and Employment"
-    },
-    {
-      "source": "Le changement climatique et l'écologie",
-      "target": "Climate Change and Ecology"
-    },
-    {
-      "source": "Les médias et l'information",
-      "target": "Media and Information"
-    },
-    {
-      "source": "La santé et le système de soins",
-      "target": "Health and the Healthcare System"
-    },
-    {
-      "source": "L'éducation et le système scolaire",
-      "target": "Education and the School System"
-    },
-    {
-      "source": "La culture et le patrimoine",
-      "target": "Culture and Heritage"
-    },
-    {
-      "source": "La science et la recherche",
-      "target": "Science and Research"
-    },
-    {
-      "source": "L'entrepreneuriat et l'innovation",
-      "target": "Entrepreneurship and Innovation"
-    },
-    {
-      "source": "Le logement et l'urbanisme",
-      "target": "Housing and Urban Planning"
-    },
-    {
-      "source": "La sécurité et la délinquance",
-      "target": "Security and Crime"
-    },
-    {
-      "source": "Les élections et la démocratie",
-      "target": "Elections and Democracy"
-    },
-    {
-      "source": "La francophonie et la diversité linguistique",
-      "target": "Francophonie and Linguistic Diversity"
-    },
-    {
-      "source": "Les relations internationales et la diplomatie",
-      "target": "International Relations and Diplomacy"
-    },
-    {
-      "source": "Le sport et ses enjeux sociaux",
-      "target": "Sport and its Social Implications"
-    },
-    {
-      "source": "La technologie et le numérique",
-      "target": "Technology and the Digital World"
-    },
-    {
-      "source": "La vie associative et le bénévolat",
-      "target": "Community Life and Volunteering"
-    },
-    {
-      "source": "La gastronomie et l'art de vivre",
-      "target": "Gastronomy and the Art of Living"
-    },
-    {
-      "source": "Les mouvements sociaux et la contestation",
-      "target": "Social Movements and Protest"
-    },
-    {
-      "source": "La réforme des retraites",
-      "target": "Pension Reform"
-    },
-    {
-      "source": "Les inégalités sociales et la précarité",
-      "target": "Social Inequalities and Precariousness"
-    },
-    {
-      "source": "Le tourisme et l'industrie hôtelière",
-      "target": "Tourism and the Hospitality Industry"
-    },
-    {
-      "source": "La psychologie et le bien-être mental",
-      "target": "Psychology and Mental Well-being"
-    },
-    {
-      "source": "L'environnement urbain et rural",
-      "target": "Urban and Rural Environment"
-    },
-    {
-      "source": "La consommation et le développement durable",
-      "target": "Consumption and Sustainable Development"
-    }
-  ]
-}
+[
+  {
+    "source": "La laïcité et ses implications",
+    "target": "Secularism and its implications"
+  },
+  {
+    "source": "Le système éducatif et l'enseignement supérieur",
+    "target": "The education system and higher education"
+  },
+  {
+    "source": "Les enjeux de l'immigration et de l'intégration",
+    "target": "The challenges of immigration and integration"
+  },
+  {
+    "source": "La protection sociale et le système de santé",
+    "target": "Social welfare and the healthcare system"
+  },
+  {
+    "source": "Les mouvements sociaux et la contestation",
+    "target": "Social movements and protest"
+  },
+  {
+    "source": "L'économie circulaire et le développement durable",
+    "target": "The circular economy and sustainable development"
+  },
+  {
+    "source": "Le changement climatique et la transition énergétique",
+    "target": "Climate change and the energy transition"
+  },
+  {
+    "source": "La biodiversité et la protection de l'environnement",
+    "target": "Biodiversity and environmental protection"
+  },
+  {
+    "source": "L'intelligence artificielle et l'éthique",
+    "target": "Artificial intelligence and ethics"
+  },
+  {
+    "source": "La cybersécurité et la protection des données",
+    "target": "Cybersecurity and data protection"
+  },
+  {
+    "source": "Les médias, l'information et les fausses nouvelles",
+    "target": "Media, information, and fake news"
+  },
+  {
+    "source": "La politique française et les institutions",
+    "target": "French politics and institutions"
+  },
+  {
+    "source": "L'égalité femmes-hommes et la parité",
+    "target": "Gender equality and parity"
+  },
+  {
+    "source": "Le marché du travail et l'emploi",
+    "target": "The labor market and employment"
+  },
+  {
+    "source": "L'entrepreneuriat et l'innovation",
+    "target": "Entrepreneurship and innovation"
+  },
+  {
+    "source": "La mondialisation et le commerce international",
+    "target": "Globalization and international trade"
+  },
+  {
+    "source": "La justice et le système judiciaire",
+    "target": "Justice and the judicial system"
+  },
+  {
+    "source": "Le patrimoine culturel et les arts",
+    "target": "Cultural heritage and the arts"
+  },
+  {
+    "source": "Le cinéma français et la francophonie",
+    "target": "French cinema and the Francophonie"
+  },
+  {
+    "source": "L'urbanisme, le logement et les transports",
+    "target": "Urban planning, housing, and transport"
+  },
+  {
+    "source": "La gastronomie française et les traditions culinaires",
+    "target": "French gastronomy and culinary traditions"
+  },
+  {
+    "source": "Le sport professionnel et ses dérives",
+    "target": "Professional sport and its excesses/abuses"
+  },
+  {
+    "source": "Les relations internationales et la géopolitique",
+    "target": "International relations and geopolitics"
+  },
+  {
+    "source": "La diplomatie et la résolution des conflits",
+    "target": "Diplomacy and conflict resolution"
+  },
+  {
+    "source": "La place de la France en Europe et dans le monde",
+    "target": "France's place in Europe and the world"
+  },
+  {
+    "source": "L'évolution de la famille et des mœurs",
+    "target": "The evolution of family and social customs"
+  },
+  {
+    "source": "Le vieillissement de la population et ses défis",
+    "target": "Population aging and its challenges"
+  },
+  {
+    "source": "La consommation et la société de consommation",
+    "target": "Consumption and the consumer society"
+  },
+  {
+    "source": "Le bénévolat et l'engagement associatif",
+    "target": "Volunteering and community involvement"
+  },
+  {
+    "source": "L'influence des réseaux sociaux",
+    "target": "The influence of social media"
+  }
+]
