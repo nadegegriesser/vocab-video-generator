@@ -1,122 +1,122 @@
 [
   {
-    "source": "Se présenter",
-    "target": "Sich vorstellen"
+    "source": "Se présenter / Donner des informations personnelles",
+    "target": "Sich vorstellen / Persönliche Informationen geben"
   },
   {
-    "source": "La famille",
-    "target": "Die Familie"
+    "source": "La famille et les amis",
+    "target": "Familie und Freunde"
   },
   {
-    "source": "Les nationalités et les langues",
-    "target": "Die Nationalitäten und Sprachen"
+    "source": "La maison et l'appartement",
+    "target": "Das Haus und die Wohnung"
   },
   {
-    "source": "Décrire les personnes",
-    "target": "Personen beschreiben"
+    "source": "Les pièces de la maison",
+    "target": "Die Zimmer des Hauses"
   },
   {
-    "source": "Les couleurs",
-    "target": "Die Farben"
-  },
-  {
-    "source": "Les chiffres et les nombres",
-    "target": "Die Zahlen"
+    "source": "Les meubles et objets du quotidien",
+    "target": "Möbel und Alltagsgegenstände"
   },
   {
     "source": "La routine quotidienne",
     "target": "Der Tagesablauf"
   },
   {
-    "source": "Les repas et la nourriture",
-    "target": "Die Mahlzeiten und das Essen"
+    "source": "Les repas et l'alimentation",
+    "target": "Mahlzeiten und Ernährung"
   },
   {
-    "source": "Les boissons",
-    "target": "Die Getränke"
+    "source": "Faire les courses (nourriture)",
+    "target": "Einkäufe erledigen (Lebensmittel)"
   },
   {
-    "source": "Les activités de loisirs",
-    "target": "Die Freizeitaktivitäten"
+    "source": "Les vêtements et les accessoires",
+    "target": "Kleidung und Accessoires"
   },
   {
-    "source": "Le sport",
-    "target": "Der Sport"
-  },
-  {
-    "source": "Les achats et le shopping",
-    "target": "Das Einkaufen und Shopping"
-  },
-  {
-    "source": "Les vêtements",
-    "target": "Die Kleidung"
-  },
-  {
-    "source": "La maison et les pièces",
-    "target": "Das Haus und die Räume"
-  },
-  {
-    "source": "Les meubles",
-    "target": "Die Möbel"
+    "source": "Faire du shopping (vêtements)",
+    "target": "Einkaufen (Kleidung)"
   },
   {
     "source": "La ville et les lieux publics",
     "target": "Die Stadt und öffentliche Orte"
   },
   {
-    "source": "Les transports",
-    "target": "Die Verkehrsmittel"
+    "source": "Se déplacer / Les transports",
+    "target": "Sich fortbewegen / Verkehrsmittel"
   },
   {
-    "source": "La météo",
-    "target": "Das Wetter"
+    "source": "Demander son chemin / Donner des directions",
+    "target": "Nach dem Weg fragen / Wegbeschreibungen geben"
   },
   {
-    "source": "Les jours de la semaine et les mois",
-    "target": "Die Wochentage und Monate"
+    "source": "Les loisirs et les passe-temps",
+    "target": "Hobbys und Freizeitbeschäftigungen"
   },
   {
-    "source": "Les saisons",
-    "target": "Die Jahreszeiten"
+    "source": "Les sports et les activités physiques",
+    "target": "Sportarten und körperliche Aktivitäten"
   },
   {
-    "source": "L'heure",
-    "target": "Die Uhrzeit"
+    "source": "La musique et le cinéma",
+    "target": "Musik und Kino"
   },
   {
-    "source": "Le corps humain",
-    "target": "Der menschliche Körper"
+    "source": "Le travail et les professions",
+    "target": "Arbeit und Berufe"
   },
   {
-    "source": "La santé et la maladie",
-    "target": "Die Gesundheit und die Krankheit"
+    "source": "L'école et les études",
+    "target": "Schule und Studium"
   },
   {
-    "source": "Les études et l'école",
-    "target": "Das Studium und die Schule"
+    "source": "Décrire les personnes (physique)",
+    "target": "Personen beschreiben (Aussehen)"
   },
   {
-    "source": "Les professions",
-    "target": "Die Berufe"
+    "source": "Décrire les personnes (personnalité)",
+    "target": "Personen beschreiben (Persönlichkeit)"
   },
   {
-    "source": "Les salutations et les formules de politesse",
-    "target": "Die Begrüßungen und Höflichkeitsformeln"
+    "source": "Parler de la météo et des saisons",
+    "target": "Über das Wetter und die Jahreszeiten sprechen"
   },
   {
-    "source": "Les émotions et les sentiments simples",
-    "target": "Einfache Emotionen und Gefühle"
+    "source": "Les pays et les nationalités",
+    "target": "Länder und Nationalitäten"
   },
   {
-    "source": "Demander et donner des directions",
-    "target": "Nach dem Weg fragen und Wegbeschreibungen geben"
+    "source": "Les fêtes et les célébrations",
+    "target": "Feste und Feiern"
   },
   {
-    "source": "Voyager et les vacances",
-    "target": "Reisen und der Urlaub"
+    "source": "La santé et le corps humain",
+    "target": "Gesundheit und der menschliche Körper"
   },
   {
-    "source": "Au restaurant et commander",
-    "target": "Im Restaurant und bestellen"
+    "source": "Exprimer des émotions et des sentiments",
+    "target": "Emotionen und Gefühle ausdrücken"
+  },
+  {
+    "source": "Les voyages et les vacances",
+    "target": "Reisen und Urlaub"
+  },
+  {
+    "source": "Les couleurs et les formes",
+    "target": "Farben und Formen"
+  },
+  {
+    "source": "Les animaux",
+    "target": "Tiere"
+  },
+  {
+    "source": "La nature et l'environnement",
+    "target": "Natur und Umwelt"
+  },
+  {
+    "source": "La technologie et l'internet",
+    "target": "Technologie und das Internet"
   }
 ]
