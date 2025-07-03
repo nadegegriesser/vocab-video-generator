@@ -1,122 +1,122 @@
 [
   {
-    "source": "La vie quotidienne",
-    "target": "Daily life"
+    "source": "Présentations",
+    "target": "Introductions"
   },
   {
-    "source": "La famille et les amis",
-    "target": "Family and friends"
-  },
-  {
-    "source": "La maison et les meubles",
-    "target": "The house and furniture"
-  },
-  {
-    "source": "La nourriture et les boissons",
-    "target": "Food and drinks"
-  },
-  {
-    "source": "Les repas",
-    "target": "Meals"
-  },
-  {
-    "source": "Faire les courses (alimentaires)",
-    "target": "Grocery shopping"
-  },
-  {
-    "source": "Les vêtements et les accessoires",
-    "target": "Clothes and accessories"
-  },
-  {
-    "source": "Les transports",
-    "target": "Transportation"
-  },
-  {
-    "source": "Les voyages et les vacances",
-    "target": "Travel and holidays"
-  },
-  {
-    "source": "La météo",
-    "target": "The weather"
-  },
-  {
-    "source": "La santé et le corps humain",
-    "target": "Health and the human body"
-  },
-  {
-    "source": "Les loisirs et les passe-temps",
-    "target": "Hobbies and pastimes"
-  },
-  {
-    "source": "Le travail et les études",
-    "target": "Work and studies"
+    "source": "La famille",
+    "target": "The family"
   },
   {
     "source": "Décrire les personnes",
     "target": "Describing people"
   },
   {
-    "source": "Décrire les objets et les lieux",
-    "target": "Describing objects and places"
+    "source": "La routine quotidienne",
+    "target": "Daily routine"
   },
   {
-    "source": "Les émotions et les sentiments",
-    "target": "Emotions and feelings"
+    "source": "Les repas",
+    "target": "Meals"
   },
   {
-    "source": "Les verbes d'action quotidiens",
-    "target": "Daily action verbs"
+    "source": "Les aliments et les boissons",
+    "target": "Food and drinks"
   },
   {
-    "source": "Les nombres, les dates et l'heure",
-    "target": "Numbers, dates and time"
+    "source": "Faire les courses alimentaires",
+    "target": "Grocery shopping"
   },
   {
-    "source": "Les couleurs et les formes",
-    "target": "Colors and shapes"
+    "source": "Au restaurant",
+    "target": "At the restaurant"
   },
   {
-    "source": "La nature et l'environnement",
-    "target": "Nature and the environment"
+    "source": "La maison et ses pièces",
+    "target": "The house and its rooms"
   },
   {
-    "source": "La ville et la campagne",
-    "target": "The city and the countryside"
+    "source": "Les meubles",
+    "target": "Furniture"
   },
   {
-    "source": "Les prépositions de lieu",
-    "target": "Prepositions of place"
+    "source": "Les tâches ménagères",
+    "target": "Household chores"
   },
   {
-    "source": "Les animaux domestiques et de la ferme",
-    "target": "Pets and farm animals"
+    "source": "Les vêtements",
+    "target": "Clothes"
   },
   {
-    "source": "Les fêtes et les célébrations",
-    "target": "Festivals and celebrations"
+    "source": "Les accessoires de mode",
+    "target": "Fashion accessories"
   },
   {
-    "source": "Les professions",
-    "target": "Professions"
+    "source": "Les magasins et commerces",
+    "target": "Shops and businesses"
+  },
+  {
+    "source": "Les prix et l'argent",
+    "target": "Prices and money"
+  },
+  {
+    "source": "Les loisirs et passe-temps",
+    "target": "Hobbies and pastimes"
   },
   {
     "source": "Les sports",
     "target": "Sports"
   },
   {
-    "source": "Les magasins et les commerces",
-    "target": "Shops and businesses"
+    "source": "Les vacances et le voyage",
+    "target": "Holidays and travel"
   },
   {
-    "source": "Les outils et les objets du quotidien",
-    "target": "Tools and everyday objects"
+    "source": "Les moyens de transport",
+    "target": "Means of transport"
   },
   {
-    "source": "Les sensations (froid, chaud, faim, soif)",
-    "target": "Sensations (cold, hot, hunger, thirst)"
+    "source": "Demander son chemin",
+    "target": "Asking for directions"
   },
   {
-    "source": "La communication (téléphone, e-mail)",
-    "target": "Communication (phone, email)"
+    "source": "La ville",
+    "target": "The city"
+  },
+  {
+    "source": "La campagne",
+    "target": "The countryside"
+  },
+  {
+    "source": "Les lieux publics",
+    "target": "Public places"
+  },
+  {
+    "source": "La météo",
+    "target": "The weather"
+  },
+  {
+    "source": "Le corps humain",
+    "target": "The human body"
+  },
+  {
+    "source": "La santé et les maladies",
+    "target": "Health and illnesses"
+  },
+  {
+    "source": "Exprimer les émotions",
+    "target": "Expressing emotions"
+  },
+  {
+    "source": "Les métiers et professions",
+    "target": "Jobs and professions"
+  },
+  {
+    "source": "L'heure",
+    "target": "Telling time"
+  },
+  {
+    "source": "Les jours, mois et saisons",
+    "target": "Days, months, and seasons"
   }
 ]
