@@ -1,122 +1,122 @@
 [
   {
-    "source": "La santé mentale et le bien-être psychologique",
-    "target": "Mental health and psychological well-being"
+    "source": "La Laïcité et ses Implications",
+    "target": "Secularism and its Implications"
   },
   {
-    "source": "L'impact des réseaux sociaux sur la société",
-    "target": "The impact of social media on society"
+    "source": "Le Système Judiciaire Français",
+    "target": "The French Judicial System"
   },
   {
-    "source": "Le télétravail et l'organisation du travail",
-    "target": "Remote work and work organization"
+    "source": "La Fiscalité et le Budget de l'État",
+    "target": "Taxation and the State Budget"
   },
   {
-    "source": "Les défis de l'éducation numérique",
-    "target": "Challenges of digital education"
+    "source": "Les Enjeux Sociaux Contemporains",
+    "target": "Contemporary Social Issues"
   },
   {
-    "source": "La crise climatique et les solutions énergétiques",
-    "target": "The climate crisis and energy solutions"
+    "source": "Le Droit du Travail et les Syndicats",
+    "target": "Labor Law and Trade Unions"
   },
   {
-    "source": "L'égalité des genres et les droits des femmes",
-    "target": "Gender equality and women's rights"
+    "source": "Le Changement Climatique et la Transition Énergétique",
+    "target": "Climate Change and Energy Transition"
   },
   {
-    "source": "Le rôle des médias dans la diffusion de l'information",
-    "target": "The role of media in information dissemination"
+    "source": "Les Nouvelles Technologies et l'Intelligence Artificielle",
+    "target": "New Technologies and Artificial Intelligence"
   },
   {
-    "source": "L'urbanisation et la vie en ville",
-    "target": "Urbanization and city living"
+    "source": "L'Économie Circulaire et le Développement Durable",
+    "target": "Circular Economy and Sustainable Development"
   },
   {
-    "source": "La gastronomie française et les habitudes alimentaires",
-    "target": "French gastronomy and eating habits"
+    "source": "Le Système de Santé Français (Sécurité Sociale)",
+    "target": "The French Healthcare System (Social Security)"
   },
   {
-    "source": "Le vieillissement de la population et ses enjeux",
-    "target": "Population aging and its challenges"
+    "source": "La Presse et les Médias à l'Ère Numérique",
+    "target": "The Press and Media in the Digital Age"
   },
   {
-    "source": "L'innovation technologique et l'éthique",
-    "target": "Technological innovation and ethics"
+    "source": "Le Patrimoine Culturel et l'Industrie Touristique",
+    "target": "Cultural Heritage and the Tourism Industry"
   },
   {
-    "source": "La biodiversité et la protection de la nature",
-    "target": "Biodiversity and nature protection"
+    "source": "Le Cinéma Français et son Influence",
+    "target": "French Cinema and its Influence"
   },
   {
-    "source": "Le tourisme durable et responsable",
-    "target": "Sustainable and responsible tourism"
+    "source": "Le Système Éducatif Français (de la Maternelle à l'Université)",
+    "target": "The French Education System (from Nursery School to University)"
   },
   {
-    "source": "Les enjeux de la mondialisation et du commerce international",
-    "target": "The challenges of globalization and international trade"
+    "source": "Les Mouvements Sociaux et la Protestation Civique",
+    "target": "Social Movements and Civic Protest"
   },
   {
-    "source": "La justice sociale et les inégalités économiques",
-    "target": "Social justice and economic inequalities"
+    "source": "L'Urbanisme et l'Aménagement du Territoire",
+    "target": "Urban Planning and Regional Development"
   },
   {
-    "source": "La culture d'entreprise et le management",
-    "target": "Corporate culture and management"
+    "source": "La Recherche Scientifique et l'Éthique",
+    "target": "Scientific Research and Ethics"
   },
   {
-    "source": "Le système judiciaire et la législation",
-    "target": "The judicial system and legislation"
+    "source": "La Géopolitique et les Relations Internationales",
+    "target": "Geopolitics and International Relations"
   },
   {
-    "source": "L'art contemporain et ses interprétations",
-    "target": "Contemporary art and its interpretations"
+    "source": "La Consommation et les Tendances du Marché",
+    "target": "Consumption and Market Trends"
   },
   {
-    "source": "Le bénévolat et l'engagement associatif",
-    "target": "Volunteering and community involvement"
+    "source": "Le Monde Associatif et le Bénévolat",
+    "target": "The Associative Sector and Volunteering"
   },
   {
-    "source": "Les débats sur l'intelligence artificielle",
-    "target": "Debates on artificial intelligence"
+    "source": "Les Droits de l'Homme et les Libertés Fondamentales",
+    "target": "Human Rights and Fundamental Freedoms"
   },
   {
-    "source": "La gestion du stress et la pleine conscience",
-    "target": "Stress management and mindfulness"
+    "source": "La Sécurité Routière et les Transports en Commun",
+    "target": "Road Safety and Public Transport"
   },
   {
-    "source": "Le marché de l'emploi et les compétences requises",
-    "target": "The job market and required skills"
+    "source": "L'Artisanat et les Métiers d'Art",
+    "target": "Craftsmanship and Artistic Trades"
   },
   {
-    "source": "La souveraineté numérique et la cybersécurité",
-    "target": "Digital sovereignty and cybersecurity"
+    "source": "La Gastronomie Française et les Appellations d'Origine",
+    "target": "French Gastronomy and Protected Designations of Origin"
   },
   {
-    "source": "L'histoire et la mémoire collective",
-    "target": "History and collective memory"
+    "source": "Les Enjeux de la Vieillesse et les Services aux Aînés",
+    "target": "Issues of Old Age and Services for Seniors"
   },
   {
-    "source": "Les mouvements sociaux et le militantisme",
-    "target": "Social movements and activism"
+    "source": "La Cybercriminalité et la Protection des Données",
+    "target": "Cybercrime and Data Protection"
   },
   {
-    "source": "Les défis de l'intégration des migrants",
-    "target": "Challenges of migrant integration"
+    "source": "Le Sport Professionnel et Amateur",
+    "target": "Professional and Amateur Sports"
   },
   {
-    "source": "La philosophie de l'environnement",
-    "target": "Environmental philosophy"
+    "source": "La Diversité Culturelle et l'Intégration",
+    "target": "Cultural Diversity and Integration"
   },
   {
-    "source": "L'économie circulaire et le recyclage",
-    "target": "Circular economy and recycling"
+    "source": "Les Faux-Amis et les Nuances Lexicales",
+    "target": "False Friends and Lexical Nuances"
   },
   {
-    "source": "Les politiques de santé publique",
-    "target": "Public health policies"
+    "source": "L'Entrepreneuriat et l'Innovation Sociale",
+    "target": "Entrepreneurship and Social Innovation"
   },
   {
-    "source": "La liberté d'expression et ses limites",
-    "target": "Freedom of speech and its limits"
+    "source": "Le Logement et l'Immobilier",
+    "target": "Housing and Real Estate"
   }
 ]
