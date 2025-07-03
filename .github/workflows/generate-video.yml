@@ -33,7 +33,7 @@ jobs:
 
       - run: npm run build
 
-      - name: Generate vocabulary
+      - name: Generate video
         run: |
           node dist/scripts/generate-video.js \
             ${{ matrix.count }} \
