@@ -1,5 +1,5 @@
 import fs from 'fs';
-import { generateVocabForTopic } from '../src/gemini.js';
+import { generateVocabForTopic, synthesizeSpeech } from '../src/gemini.js';
 import { TopicEntry } from '../src/types.js';
 
 // 🧾 Eingabeparameter: Anzahl, Level, Quell- und Zielsprache
@@ -32,9 +32,13 @@ function saveTopics(topics: TopicEntry[]) {
             return;
         }
 
-        const vocab = await generateVocabForTopic(topic.source, level, count, sourceLang, targetLang);
+        const vocabs = await generateVocabForTopic(topic.source, level, count, sourceLang, targetLang);
 
-        console.log(topic, vocab);
+        console.log(topic, vocabs);
+
+        for (const vocab of vocabs) {
+            await synthesizeSpeech(vocab.source);
+        }
 
         saveTopics(topics);
     } catch (err) {
