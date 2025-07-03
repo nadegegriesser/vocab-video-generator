@@ -3,7 +3,7 @@ name: Generate Topics
 on:
   push:
     paths: [
-      .github/workflows/generate-topics.yaml,
+      .github/workflows/generate-topics.yml,
       scripts/generate-topics.ts,
       src/gemini.ts,
       src/types.ts

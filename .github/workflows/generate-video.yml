@@ -3,7 +3,7 @@ name: Generate Video
 on:
   push:
     paths: [
-      .github/workflows/generate-video.yaml,
+      .github/workflows/generate-video.yml,
       scripts/generate-video.ts,
       src/**
     ]
