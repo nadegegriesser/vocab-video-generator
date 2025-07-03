@@ -10,10 +10,10 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        level: [A1]
+        level: [A1, A2, B1, B2]
         count: [30]
         sourceLang: [fr]
-        targetLang: [de]
+        targetLang: [de, en]
 
     steps:
       - name: 📥 Checkout repository
@@ -24,20 +24,27 @@ jobs:
         with:
           node-version: '20'
 
-      - name: 📦 Install dependencies
-        run: npm install
+      - run: npm install
+
+      - run: npm run build
 
       - name: 🚀 Generate topics
         run: |
-          npx ts-node scripts/generate-topics.ts \
+          node dist/scripts/generate-topics.js \
             ${{ matrix.count }} \
             ${{ matrix.level }} \
             ${{ matrix.sourceLang }} \
             ${{ matrix.targetLang }}
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
 
       - name: 💾 Commit generated topic file
         run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
           FILE=data/topics_${{ matrix.count }}_${{ matrix.level }}_${{ matrix.sourceLang }}-${{ matrix.targetLang }}.json
           git add "$FILE"
           git commit -m "📚 Add $FILE on push"
           git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

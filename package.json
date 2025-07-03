@@ -5,8 +5,7 @@
   "main": "dist/index.js",
   "type": "module",
   "scripts": {
-    "start": "tsc && node dist/index.js",
-    "dev": "ts-node src/index.ts",
+    "build": "tsc --build",
     "generate-topics": "ts-node scripts/generate-topics.ts",
     "generate-daily": "ts-node scripts/generate-daily-video.ts"
   },
