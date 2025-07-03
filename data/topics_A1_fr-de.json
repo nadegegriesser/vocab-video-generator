@@ -1,126 +1,122 @@
 [
   {
-    "source": "Salutations et présentations",
+    "source": "Salutations et Présentations",
     "target": "Begrüßungen und Vorstellungen"
   },
   {
-    "source": "Les informations personnelles",
-    "target": "Persönliche Informationen"
+    "source": "L'Alphabet",
+    "target": "Das Alphabet"
   },
   {
-    "source": "La famille",
-    "target": "Die Familie"
+    "source": "Les Nombres (0-20)",
+    "target": "Die Zahlen (0-20)"
   },
   {
-    "source": "Les nombres (0-100)",
-    "target": "Die Zahlen (0-100)"
-  },
-  {
-    "source": "Les couleurs",
+    "source": "Les Couleurs",
     "target": "Die Farben"
   },
   {
-    "source": "Les jours de la semaine",
+    "source": "Les Jours de la Semaine",
     "target": "Die Wochentage"
   },
   {
-    "source": "Les mois de l'année",
+    "source": "Les Mois de l'Année",
     "target": "Die Monate des Jahres"
   },
   {
-    "source": "Les saisons",
+    "source": "Les Saisons",
     "target": "Die Jahreszeiten"
   },
   {
-    "source": "La météo",
-    "target": "Das Wetter"
+    "source": "Ma Famille",
+    "target": "Meine Familie"
   },
   {
-    "source": "Les aliments et les boissons",
-    "target": "Die Lebensmittel und Getränke"
-  },
-  {
-    "source": "Au restaurant / Commander",
-    "target": "Im Restaurant / Bestellen"
-  },
-  {
-    "source": "Les animaux domestiques",
+    "source": "Les Animaux Domestiques",
     "target": "Die Haustiere"
   },
   {
-    "source": "La routine quotidienne",
-    "target": "Der Tagesablauf"
+    "source": "Les Parties du Corps",
+    "target": "Die Körperteile"
   },
   {
-    "source": "La maison et ses pièces",
-    "target": "Das Haus und seine Räume"
+    "source": "Les Vêtements (basiques)",
+    "target": "Die Kleidung (Grundlagen)"
   },
   {
-    "source": "Les meubles",
-    "target": "Die Möbel"
+    "source": "La Nourriture (fruits et légumes)",
+    "target": "Das Essen (Obst und Gemüse)"
   },
   {
-    "source": "La ville et les lieux",
-    "target": "Die Stadt und Orte"
+    "source": "Les Boissons",
+    "target": "Die Getränke"
   },
   {
-    "source": "Les moyens de transport",
-    "target": "Die Verkehrsmittel"
+    "source": "Les Repas",
+    "target": "Die Mahlzeiten"
   },
   {
-    "source": "Les loisirs et activités",
-    "target": "Die Hobbys und Aktivitäten"
+    "source": "Ma Maison (les pièces)",
+    "target": "Mein Haus (die Zimmer)"
   },
   {
-    "source": "Les vêtements",
-    "target": "Die Kleidung"
+    "source": "Les Objets du Quotidien",
+    "target": "Die Alltagsgegenstände"
   },
   {
-    "source": "Le corps humain",
-    "target": "Der menschliche Körper"
+    "source": "À l'École (objets et matières)",
+    "target": "In der Schule (Gegenstände und Fächer)"
   },
   {
-    "source": "Les émotions et sentiments",
-    "target": "Die Emotionen und Gefühle"
-  },
-  {
-    "source": "Les pays et nationalités",
-    "target": "Die Länder und Nationalitäten"
-  },
-  {
-    "source": "Les professions",
+    "source": "Les Professions",
     "target": "Die Berufe"
   },
   {
-    "source": "L'école et les matières",
-    "target": "Die Schule und die Schulfächer"
+    "source": "Les Nationalités",
+    "target": "Die Nationalitäten"
   },
   {
-    "source": "L'heure",
-    "target": "Die Uhrzeit"
+    "source": "Les Pays (communs)",
+    "target": "Die Länder (häufige)"
   },
   {
-    "source": "Demander son chemin",
-    "target": "Nach dem Weg fragen"
+    "source": "Le Temps (météo)",
+    "target": "Das Wetter"
   },
   {
-    "source": "Faire du shopping",
-    "target": "Einkaufen"
+    "source": "Les Activités de Loisirs",
+    "target": "Die Freizeitaktivitäten"
   },
   {
-    "source": "Les adjectifs courants",
-    "target": "Häufige Adjektive"
+    "source": "Les Adjectifs (description simple)",
+    "target": "Die Adjektive (einfache Beschreibung)"
   },
   {
-    "source": "Les prépositions de lieu",
-    "target": "Die Präpositionen des Ortes"
+    "source": "Les Verbes (être, avoir, aller, faire)",
+    "target": "Die Verben (sein, haben, gehen, machen)"
   },
   {
-    "source": "Les objets du quotidien",
-    "target": "Alltagsgegenstände"
+    "source": "Les Transports",
+    "target": "Die Transportmittel"
   },
   {
-    "source": "La santé (expressions de base)",
-    "target": "Die Gesundheit (Grundausdrücke)"
+    "source": "En Ville (lieux)",
+    "target": "In der Stadt (Orte)"
+  },
+  {
+    "source": "Les Prépositions de Lieu (basiques)",
+    "target": "Die Präpositionen des Ortes (grundlegend)"
+  },
+  {
+    "source": "Les Émotions et Sentiments (simples)",
+    "target": "Die Emotionen und Gefühle (einfach)"
+  },
+  {
+    "source": "Faire les Courses (basique)",
+    "target": "Einkaufen (grundlegend)"
+  },
+  {
+    "source": "Commander au Café",
+    "target": "Im Café bestellen"
   }
 ]
