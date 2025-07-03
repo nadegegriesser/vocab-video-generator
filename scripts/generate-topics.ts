@@ -1,5 +1,6 @@
 import fs from 'fs';
 import { generateTopics } from '../src/gemini.js';
+import { error } from 'console';
 
 // 🧾 Eingabeparameter: Anzahl, Level, Quell- und Zielsprache
 const args = process.argv.slice(2);
@@ -13,7 +14,7 @@ const topicsPath = `data/topics_${level}_${sourceLang}-${targetLang}.json`;
     try {
         if (fs.existsSync(topicsPath)) {
             console.log(`✅ ${topicsPath} already exists, skipping...`);
-            return 1;
+            return;
         }
 
         const topics = await generateTopics(level, count, sourceLang, targetLang);
@@ -23,10 +24,7 @@ const topicsPath = `data/topics_${level}_${sourceLang}-${targetLang}.json`;
         fs.writeFileSync(topicsPath, JSON.stringify(topics, null, 2));
         
         console.log(`✅ Saved topics to ${topicsPath}`);
-        
-        return 0;
     } catch (err) {
         console.error('❌ Failed to generate topics:', err);
-        return 1;
     }
 })();
