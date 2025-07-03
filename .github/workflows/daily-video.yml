@@ -31,7 +31,7 @@ jobs:
       - run: npm run build
 
       - name: Generate vocabulary
-        run: node scripts/generate-vocabulary.ts \
+        run: node dist/scripts/generate-vocabulary.js \
             ${{ matrix.count }} \
             ${{ matrix.level }} \
             ${{ matrix.sourceLang }} \
