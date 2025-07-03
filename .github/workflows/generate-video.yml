@@ -17,10 +17,10 @@ jobs:
     strategy:
       max-parallel: 1
       matrix:
-        level: [A1, A2, B1, B2]
+        level: [A1]
         count: [30]
         sourceLang: [fr]
-        targetLang: [de, en]
+        targetLang: [de]
     steps:
       - uses: actions/checkout@v4
 

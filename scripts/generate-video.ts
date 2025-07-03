@@ -38,7 +38,7 @@ function saveTopics(topics: TopicEntry[]) {
 
         let i = 0;
         for (const vocab of vocabs) {
-            await synthesizeSpeech(vocab.source, `${i}.wav`);
+            await synthesizeSpeech(vocab.source, `${level}_${sourceLang}-${targetLang}_${i}.wav`);
             i++;
         }
 
