@@ -1,0 +1,131 @@
+{
+  "sourceLang": "fr",
+  "targetLang": "de",
+  "level": "B2",
+  "topics": [
+    {
+      "source": "Le système politique français",
+      "target": "Das französische politische System"
+    },
+    {
+      "source": "Les débats de société actuels",
+      "target": "Aktuelle gesellschaftliche Debatten"
+    },
+    {
+      "source": "La laïcité et ses enjeux",
+      "target": "Laizismus und seine Herausforderungen"
+    },
+    {
+      "source": "Le marché du travail en France",
+      "target": "Der Arbeitsmarkt in Frankreich"
+    },
+    {
+      "source": "L'entrepreneuriat et les startups",
+      "target": "Unternehmertum und Start-ups"
+    },
+    {
+      "source": "Le développement durable et l'écologie",
+      "target": "Nachhaltige Entwicklung und Ökologie"
+    },
+    {
+      "source": "Le changement climatique et ses impacts",
+      "target": "Der Klimawandel und seine Auswirkungen"
+    },
+    {
+      "source": "Le système éducatif français",
+      "target": "Das französische Bildungssystem"
+    },
+    {
+      "source": "Les études supérieures et l'orientation",
+      "target": "Hochschulstudium und Berufsberatung"
+    },
+    {
+      "source": "La santé publique et le système de soins",
+      "target": "Öffentliche Gesundheit und das Gesundheitssystem"
+    },
+    {
+      "source": "Les nouvelles technologies et l'innovation",
+      "target": "Neue Technologien und Innovation"
+    },
+    {
+      "source": "L'intelligence artificielle et son avenir",
+      "target": "Künstliche Intelligenz und ihre Zukunft"
+    },
+    {
+      "source": "Les réseaux sociaux et la vie privée",
+      "target": "Soziale Netzwerke und Datenschutz"
+    },
+    {
+      "source": "Le patrimoine culturel et les arts",
+      "target": "Kulturerbe und Künste"
+    },
+    {
+      "source": "Le cinéma français et européen",
+      "target": "Französisches und europäisches Kino"
+    },
+    {
+      "source": "La littérature contemporaine",
+      "target": "Zeitgenössische Literatur"
+    },
+    {
+      "source": "Les médias et la désinformation",
+      "target": "Medien und Desinformation"
+    },
+    {
+      "source": "L'Union Européenne : défis et perspectives",
+      "target": "Die Europäische Union: Herausforderungen und Perspektiven"
+    },
+    {
+      "source": "L'immigration et l'intégration",
+      "target": "Einwanderung und Integration"
+    },
+    {
+      "source": "La jeunesse et son avenir",
+      "target": "Jugend und ihre Zukunft"
+    },
+    {
+      "source": "La sécurité et le terrorisme",
+      "target": "Sicherheit und Terrorismus"
+    },
+    {
+      "source": "La gastronomie et l'art de vivre",
+      "target": "Gastronomie und Lebenskunst"
+    },
+    {
+      "source": "Le sport de haut niveau et ses enjeux",
+      "target": "Leistungssport und seine Herausforderungen"
+    },
+    {
+      "source": "Les transports en ville et la mobilité",
+      "target": "Städtischer Verkehr und Mobilität"
+    },
+    {
+      "source": "La justice et le système juridique",
+      "target": "Justiz und Rechtssystem"
+    },
+    {
+      "source": "Les relations franco-allemandes",
+      "target": "Die deutsch-französischen Beziehungen"
+    },
+    {
+      "source": "L'administration et la bureaucratie",
+      "target": "Verwaltung und Bürokratie"
+    },
+    {
+      "source": "Le volontariat et l'engagement associatif",
+      "target": "Freiwilligenarbeit und bürgerschaftliches Engagement"
+    },
+    {
+      "source": "La mode et les tendances",
+      "target": "Mode und Trends"
+    },
+    {
+      "source": "Résidence et logement en France",
+      "target": "Wohnen und Wohnraum in Frankreich"
+    },
+    {
+      "source": "Le tourisme durable et responsable",
+      "target": "Nachhaltiger und verantwortungsvoller Tourismus"
+    }
+  ]
+}
