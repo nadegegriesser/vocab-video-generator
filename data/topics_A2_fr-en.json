@@ -1,122 +1,122 @@
 [
   {
-    "source": "La routine quotidienne",
-    "target": "The daily routine"
+    "source": "La vie quotidienne",
+    "target": "Daily life"
   },
   {
-    "source": "Les loisirs et passe-temps",
-    "target": "Hobbies and pastimes"
+    "source": "La famille et les amis",
+    "target": "Family and friends"
   },
   {
-    "source": "La famille et les relations",
-    "target": "Family and relationships"
+    "source": "Les descriptions physiques",
+    "target": "Physical descriptions"
   },
   {
-    "source": "Faire les courses (alimentation)",
-    "target": "Grocery shopping"
+    "source": "Les vêtements",
+    "target": "Clothes"
+  },
+  {
+    "source": "La nourriture et les boissons",
+    "target": "Food and drinks"
+  },
+  {
+    "source": "Faire les courses",
+    "target": "Shopping (groceries/general)"
   },
   {
     "source": "Au restaurant",
     "target": "At the restaurant"
   },
   {
-    "source": "Décrire les personnes",
-    "target": "Describing people"
+    "source": "Les activités de loisirs",
+    "target": "Leisure activities"
   },
   {
-    "source": "Décrire les lieux",
-    "target": "Describing places"
+    "source": "Les sports",
+    "target": "Sports"
+  },
+  {
+    "source": "Les vacances et les voyages",
+    "target": "Holidays and travel"
+  },
+  {
+    "source": "Les transports",
+    "target": "Transportation"
   },
   {
     "source": "La maison et les meubles",
     "target": "Home and furniture"
   },
   {
-    "source": "La ville et les transports",
-    "target": "The city and transport"
+    "source": "Les pièces de la maison",
+    "target": "Rooms of the house"
   },
   {
-    "source": "La météo et le climat",
-    "target": "Weather and climate"
+    "source": "La météo et les saisons",
+    "target": "Weather and seasons"
   },
   {
-    "source": "La santé et le corps",
-    "target": "Health and the body"
+    "source": "Les jours, mois et dates",
+    "target": "Days, months, and dates"
   },
   {
-    "source": "Les vêtements et la mode",
-    "target": "Clothes and fashion"
+    "source": "Les nombres et l'heure",
+    "target": "Numbers and time"
   },
   {
-    "source": "Le travail et les études",
-    "target": "Work and studies"
+    "source": "Les professions et le travail",
+    "target": "Professions and work"
   },
   {
-    "source": "Les voyages et les vacances",
-    "target": "Travel and holidays"
+    "source": "L'école et les études",
+    "target": "School and studies"
   },
   {
-    "source": "Faire du shopping (général)",
-    "target": "General shopping"
+    "source": "La santé et le corps humain",
+    "target": "Health and the human body"
   },
   {
-    "source": "Les émotions et sentiments",
+    "source": "Les émotions et les sentiments",
     "target": "Emotions and feelings"
   },
   {
-    "source": "Faire des projets",
-    "target": "Making plans"
+    "source": "Les pays et les nationalités",
+    "target": "Countries and nationalities"
   },
   {
-    "source": "Demander son chemin",
-    "target": "Asking for directions"
+    "source": "Les animaux domestiques",
+    "target": "Pets"
   },
   {
-    "source": "Donner son avis",
-    "target": "Giving opinions"
+    "source": "Les achats et les prix",
+    "target": "Purchases and prices"
   },
   {
-    "source": "L'argent et la banque",
-    "target": "Money and banking"
+    "source": "Les couleurs",
+    "target": "Colors"
   },
   {
-    "source": "La technologie et internet",
-    "target": "Technology and the internet"
+    "source": "Les prépositions de lieu",
+    "target": "Prepositions of place"
   },
   {
-    "source": "Les sports et activités",
-    "target": "Sports and activities"
+    "source": "Les lieux publics",
+    "target": "Public places"
   },
   {
-    "source": "Les services publics",
-    "target": "Public services"
+    "source": "Donner des indications",
+    "target": "Giving directions"
   },
   {
-    "source": "Préparer un repas",
-    "target": "Preparing a meal"
-  },
-  {
-    "source": "Les animaux",
-    "target": "Animals"
-  },
-  {
-    "source": "La nature et l'environnement",
-    "target": "Nature and the environment"
+    "source": "Les problèmes courants",
+    "target": "Common problems"
   },
   {
     "source": "Les fêtes et célébrations",
     "target": "Holidays and celebrations"
   },
   {
-    "source": "Les problèmes quotidiens",
-    "target": "Everyday problems"
-  },
-  {
-    "source": "L'école et l'éducation",
-    "target": "School and education"
-  },
-  {
-    "source": "Les conversations téléphoniques",
-    "target": "Telephone conversations"
+    "source": "Les adjectifs courants",
+    "target": "Common adjectives"
   }
 ]
