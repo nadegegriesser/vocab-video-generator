@@ -2,124 +2,124 @@
   "level": "A1",
   "topics": [
     {
-      "fr": "Salutations et Adieux",
-      "de": "Begrüßungen und Abschiede"
+      "fr": "Les Salutations et Présentations",
+      "de": "Die Begrüßungen und Vorstellungen"
     },
     {
-      "fr": "Se présenter",
-      "de": "Sich vorstellen"
+      "fr": "Les Nombres (0-20)",
+      "de": "Die Zahlen (0-20)"
     },
     {
-      "fr": "Les nombres de 0 à 20",
-      "de": "Die Zahlen von 0 bis 20"
-    },
-    {
-      "fr": "Les couleurs",
+      "fr": "Les Couleurs",
       "de": "Die Farben"
     },
     {
-      "fr": "La famille",
-      "de": "Die Familie"
-    },
-    {
-      "fr": "La nourriture et les boissons (basiques)",
-      "de": "Essen und Trinken (Grundlagen)"
-    },
-    {
-      "fr": "Les animaux (communs)",
-      "de": "Die Tiere (häufig)"
-    },
-    {
-      "fr": "Les parties du corps",
-      "de": "Die Körperteile"
-    },
-    {
-      "fr": "Les vêtements (basiques)",
-      "de": "Die Kleidung (Grundlagen)"
-    },
-    {
-      "fr": "La maison et les pièces",
-      "de": "Das Haus und die Räume"
-    },
-    {
-      "fr": "Les meubles",
-      "de": "Die Möbel"
-    },
-    {
-      "fr": "Les objets du quotidien",
-      "de": "Alltagsgegenstände"
-    },
-    {
-      "fr": "Les professions",
-      "de": "Die Berufe"
-    },
-    {
-      "fr": "Les pays et nationalités",
-      "de": "Länder und Nationalitäten"
-    },
-    {
-      "fr": "Les jours de la semaine",
+      "fr": "Les Jours de la Semaine",
       "de": "Die Wochentage"
     },
     {
-      "fr": "Les mois de l'année",
+      "fr": "Les Mois de l'Année",
       "de": "Die Monate des Jahres"
     },
     {
-      "fr": "Les saisons",
+      "fr": "Les Saisons",
       "de": "Die Jahreszeiten"
     },
     {
-      "fr": "La météo",
+      "fr": "La Famille",
+      "de": "Die Familie"
+    },
+    {
+      "fr": "Les Aliments de Base",
+      "de": "Die Grundnahrungsmittel"
+    },
+    {
+      "fr": "Les Boissons",
+      "de": "Die Getränke"
+    },
+    {
+      "fr": "Les Animaux Domestiques",
+      "de": "Die Haustiere"
+    },
+    {
+      "fr": "Les Objets de la Classe",
+      "de": "Die Gegenstände im Klassenzimmer"
+    },
+    {
+      "fr": "La Maison et les Pièces",
+      "de": "Das Haus und die Zimmer"
+    },
+    {
+      "fr": "Les Meubles de Base",
+      "de": "Die grundlegenden Möbel"
+    },
+    {
+      "fr": "Les Vêtements de Tous les Jours",
+      "de": "Die Alltagskleidung"
+    },
+    {
+      "fr": "La Météo",
       "de": "Das Wetter"
     },
     {
-      "fr": "Les loisirs et le temps libre",
-      "de": "Hobbys und Freizeit"
+      "fr": "Les Pays et Nationalités",
+      "de": "Die Länder und Nationalitäten"
     },
     {
-      "fr": "Les moyens de transport",
+      "fr": "Les Professions Courantes",
+      "de": "Die gängigen Berufe"
+    },
+    {
+      "fr": "Les Moyens de Transport",
       "de": "Die Verkehrsmittel"
     },
     {
-      "fr": "La ville / Le village",
-      "de": "Die Stadt / Das Dorf"
+      "fr": "Les Parties du Corps",
+      "de": "Die Körperteile"
     },
     {
-      "fr": "Les magasins et le shopping",
-      "de": "Geschäfte und Einkaufen"
+      "fr": "Les Lieux dans la Ville",
+      "de": "Die Orte in der Stadt"
     },
     {
-      "fr": "Décrire les personnes (adjectifs basiques)",
-      "de": "Personen beschreiben (Grundlagen Adjektive)"
+      "fr": "Les Adjectifs Descriptifs",
+      "de": "Die beschreibenden Adjektive"
     },
     {
-      "fr": "Décrire les objets (adjectifs basiques)",
-      "de": "Gegenstände beschreiben (Grundlagen Adjektive)"
+      "fr": "Les Questions de Base",
+      "de": "Die grundlegenden Fragen"
     },
     {
-      "fr": "Les émotions et les sentiments",
-      "de": "Gefühle und Emotionen"
-    },
-    {
-      "fr": "L'heure",
+      "fr": "L'Heure",
       "de": "Die Uhrzeit"
     },
     {
-      "fr": "La routine quotidienne",
-      "de": "Der Tagesablauf"
+      "fr": "Faire les Courses",
+      "de": "Einkaufen"
     },
     {
-      "fr": "L'école et la salle de classe",
-      "de": "Die Schule und das Klassenzimmer"
+      "fr": "Les Hobbies et Loisirs",
+      "de": "Die Hobbys und Freizeitaktivitäten"
     },
     {
-      "fr": "Les directions (basiques)",
-      "de": "Die Richtungen (Grundlagen)"
+      "fr": "Les Prépositions de Lieu",
+      "de": "Die Präpositionen des Ortes"
     },
     {
-      "fr": "Les prépositions de lieu (basiques)",
-      "de": "Die Präpositionen des Ortes (Grundlagen)"
+      "fr": "Les Verbes d'Action Quotidiens",
+      "de": "Die täglichen Aktionsverben"
+    },
+    {
+      "fr": "Les Sensations et Émotions",
+      "de": "Die Gefühle und Emotionen"
+    },
+    {
+      "fr": "Les Fruits et Légumes",
+      "de": "Das Obst und Gemüse"
+    },
+    {
+      "fr": "Les Sports",
+      "de": "Die Sportarten"
     }
   ]
 }
