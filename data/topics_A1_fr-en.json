@@ -1,122 +1,122 @@
 [
   {
-    "source": "Les Salutations et Présentations",
+    "source": "Les salutations et présentations",
     "target": "Greetings and Introductions"
   },
   {
-    "source": "Les Informations Personnelles",
-    "target": "Personal Information"
-  },
-  {
-    "source": "Les Membres de la Famille",
-    "target": "Family Members"
-  },
-  {
-    "source": "Les Nombres (0-20)",
+    "source": "Les nombres (0-20)",
     "target": "Numbers (0-20)"
   },
   {
-    "source": "Les Couleurs",
+    "source": "Les couleurs",
     "target": "Colors"
   },
   {
-    "source": "Les Jours de la Semaine",
+    "source": "Les jours de la semaine",
     "target": "Days of the Week"
   },
   {
-    "source": "Les Mois de l'Année",
+    "source": "Les mois de l'année",
     "target": "Months of the Year"
   },
   {
-    "source": "Les Saisons",
+    "source": "Les saisons",
     "target": "Seasons"
   },
   {
-    "source": "La Météo Basique",
-    "target": "Basic Weather"
+    "source": "La météo et le temps",
+    "target": "Weather and Time"
   },
   {
-    "source": "Les Aliments et Boissons Courants",
-    "target": "Common Foods and Drinks"
+    "source": "La famille",
+    "target": "The Family"
   },
   {
-    "source": "Les Animaux Domestiques et de la Ferme",
-    "target": "Pets and Farm Animals"
-  },
-  {
-    "source": "Les Objets du Quotidien",
-    "target": "Everyday Objects"
-  },
-  {
-    "source": "Les Lieux dans la Ville",
-    "target": "Places in the City"
-  },
-  {
-    "source": "Les Moyens de Transport",
-    "target": "Means of Transport"
-  },
-  {
-    "source": "Les Professions Simples",
-    "target": "Simple Professions"
-  },
-  {
-    "source": "Les Parties du Corps",
-    "target": "Body Parts"
-  },
-  {
-    "source": "Les Adjectifs Descriptifs (Basiques)",
+    "source": "Les adjectifs descriptifs de base",
     "target": "Basic Descriptive Adjectives"
   },
   {
-    "source": "Les Verbes Communs (Être, Avoir, Aller, Faire)",
-    "target": "Common Verbs (To be, To have, To go, To do/make)"
+    "source": "Les professions et métiers",
+    "target": "Professions and Occupations"
   },
   {
-    "source": "Les Vêtements de Base",
-    "target": "Basic Clothing"
+    "source": "Les pays et nationalités",
+    "target": "Countries and Nationalities"
   },
   {
-    "source": "Les Pays et Nationalités Communs",
-    "target": "Common Countries and Nationalities"
+    "source": "Les objets du quotidien",
+    "target": "Everyday Objects"
   },
   {
-    "source": "L'Heure et les Moments de la Journée",
-    "target": "Time and Times of Day"
+    "source": "L'alimentation et les boissons de base",
+    "target": "Basic Food and Drinks"
   },
   {
-    "source": "Les Activités Quotidiennes Simples",
-    "target": "Simple Daily Activities"
+    "source": "Les animaux domestiques et de la ferme",
+    "target": "Pets and Farm Animals"
   },
   {
-    "source": "Les Émotions et Sentiments Basiques",
-    "target": "Basic Emotions and Feelings"
+    "source": "Les lieux dans une ville",
+    "target": "Places in a City"
   },
   {
-    "source": "Les Prépositions de Lieu",
+    "source": "Les verbes courants A1",
+    "target": "Common A1 Verbs"
+  },
+  {
+    "source": "Les prépositions de lieu",
     "target": "Prepositions of Place"
   },
   {
-    "source": "Les Mots Interrogatifs",
+    "source": "Les mots interrogatifs",
     "target": "Question Words"
   },
   {
-    "source": "Faire les Courses (Vocabulaire de Base)",
-    "target": "Shopping (Basic Vocabulary)"
+    "source": "L'heure et comment la dire",
+    "target": "Time and How to Tell It"
   },
   {
-    "source": "Les Pièces de la Maison",
-    "target": "Rooms of the House"
+    "source": "Les activités quotidiennes",
+    "target": "Daily Activities"
   },
   {
-    "source": "Les Fêtes et Célébrations (Basiques)",
-    "target": "Basic Holidays and Celebrations"
+    "source": "Les vêtements de base",
+    "target": "Basic Clothing"
   },
   {
-    "source": "La Nature et l'Environnement (Basique)",
-    "target": "Basic Nature and Environment"
+    "source": "Les parties du corps",
+    "target": "Body Parts"
   },
   {
-    "source": "Les Directions (Demander et Indiquer)",
-    "target": "Directions (Asking and Giving)"
+    "source": "Les moyens de transport",
+    "target": "Means of Transport"
+  },
+  {
+    "source": "Les loisirs et temps libre",
+    "target": "Hobbies and Free Time"
+  },
+  {
+    "source": "Le shopping et les achats simples",
+    "target": "Shopping and Simple Purchases"
+  },
+  {
+    "source": "Les directions et l'orientation",
+    "target": "Directions and Orientation"
+  },
+  {
+    "source": "Les émotions et sentiments",
+    "target": "Emotions and Feelings"
+  },
+  {
+    "source": "La maison et les pièces",
+    "target": "The House and Rooms"
+  },
+  {
+    "source": "Les matières scolaires",
+    "target": "School Subjects"
+  },
+  {
+    "source": "La santé et le bien-être",
+    "target": "Health and Well-being"
   }
 ]
