@@ -1,10 +1,5 @@
 import fs from 'fs';
-import dotenv from 'dotenv';
-import { GoogleGenAI } from '@google/genai';
-
-dotenv.config();
-
-const ai = new GoogleGenAI({vertexai: false, apiKey: process.env.GEMINI_API_KEY});
+import { generateTopics } from '../src/gemini';
 
 // 🧾 Eingabeparameter: Anzahl, Level, Quell- und Zielsprache
 const args = process.argv.slice(2);
@@ -13,29 +8,9 @@ const level = args[1] || 'A1';
 const sourceLang = args[2] || 'fr';
 const targetLang = args[3] || 'de';
 
-async function generateTopics(): Promise<any> {
-    const prompt = `
-Generate ${count} vocabulary topics for ${sourceLang} language learners at ${level} level.
-The topics should be relevant for learners of ${sourceLang} translating into ${targetLang}.
-For each topic, provide:
-- Topic name in ${sourceLang}
-- Its translation in ${targetLang}
-Return as JSON array with keys: source, target.
-`;
-
-    const response = await ai.models.generateContent({
-        model: 'gemini-2.5-flash',
-        contents: prompt
-    });
-
-    return JSON.parse(response.text!.replace('```json', '').replace('```', ''));
-}
-
 (async () => {
     try {
-        const topics = await generateTopics();
-
-        console.log(topics);
+        const topics = await generateTopics(level, count, sourceLang, targetLang);
 
         fs.mkdirSync('data', { recursive: true });
 

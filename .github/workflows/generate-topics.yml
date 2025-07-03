@@ -4,7 +4,9 @@ on:
   push:
     paths: [
       .github/workflows/generate-topics.yaml,
-      scripts/generate-topics.ts
+      scripts/generate-topics.ts,
+      src/gemini.ts,
+      src/types.ts
     ]
 
 jobs:
