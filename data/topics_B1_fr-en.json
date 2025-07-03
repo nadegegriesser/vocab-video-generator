@@ -1,55 +1,59 @@
 [
   {
-    "source": "La vie quotidienne et la routine",
-    "target": "Daily life and routine"
+    "source": "La vie quotidienne",
+    "target": "Daily life"
   },
   {
-    "source": "Le travail et l'emploi",
-    "target": "Work and employment"
+    "source": "Les loisirs et les passe-temps",
+    "target": "Hobbies and pastimes"
   },
   {
-    "source": "Les études et la formation",
-    "target": "Studies and training"
+    "source": "La famille et les relations",
+    "target": "Family and relationships"
   },
   {
-    "source": "Les voyages et le tourisme",
-    "target": "Travel and tourism"
+    "source": "Les descriptions physiques et de personnalité",
+    "target": "Physical and personality descriptions"
   },
   {
-    "source": "La culture et les loisirs",
-    "target": "Culture and hobbies"
+    "source": "Les émotions et les sentiments",
+    "target": "Emotions and feelings"
   },
   {
     "source": "La santé et le bien-être",
     "target": "Health and well-being"
   },
   {
-    "source": "L'alimentation et la gastronomie",
-    "target": "Food and gastronomy"
+    "source": "La nourriture et la cuisine",
+    "target": "Food and cooking"
   },
   {
-    "source": "Le logement et l'habitation",
-    "target": "Housing and accommodation"
+    "source": "Les voyages et le tourisme",
+    "target": "Travel and tourism"
   },
   {
-    "source": "Les transports et la mobilité",
-    "target": "Transport and mobility"
-  },
-  {
-    "source": "La famille et les relations personnelles",
-    "target": "Family and personal relationships"
+    "source": "Le logement et la maison",
+    "target": "Housing and home"
   },
   {
     "source": "Les vêtements et la mode",
     "target": "Clothing and fashion"
   },
   {
-    "source": "Le shopping et les commerces",
-    "target": "Shopping and retail"
+    "source": "Les courses et le shopping",
+    "target": "Shopping and errands"
   },
   {
-    "source": "Les services publics et l'administration",
-    "target": "Public services and administration"
+    "source": "Le monde du travail",
+    "target": "The world of work"
+  },
+  {
+    "source": "L'éducation et les études",
+    "target": "Education and studies"
+  },
+  {
+    "source": "Les médias et l'information",
+    "target": "Media and information"
   },
   {
     "source": "L'environnement et l'écologie",
@@ -57,66 +61,62 @@
   },
   {
     "source": "La technologie et le numérique",
-    "target": "Technology and the digital world"
+    "target": "Technology and digital"
   },
   {
-    "source": "Les médias et l'actualité",
-    "target": "Media and current events"
+    "source": "Les transports",
+    "target": "Transportation"
   },
   {
-    "source": "Les émotions et les sentiments",
-    "target": "Emotions and feelings"
+    "source": "La ville et la campagne",
+    "target": "City and countryside"
   },
   {
-    "source": "La météo et le climat",
-    "target": "Weather and climate"
+    "source": "Les services publics",
+    "target": "Public services"
   },
   {
-    "source": "Les villes et la vie urbaine",
-    "target": "Cities and urban life"
+    "source": "L'argent et la finance personnelle",
+    "target": "Money and personal finance"
   },
   {
-    "source": "La campagne et la nature",
-    "target": "Countryside and nature"
+    "source": "Exprimer son opinion et débattre",
+    "target": "Expressing one's opinion and debating"
   },
   {
-    "source": "Les sports et les activités physiques",
-    "target": "Sports and physical activities"
+    "source": "Les problèmes de société",
+    "target": "Social issues"
   },
   {
-    "source": "L'art et le spectacle",
-    "target": "Art and performance"
+    "source": "La culture et l'art",
+    "target": "Culture and art"
   },
   {
-    "source": "La description physique et les qualités personnelles",
-    "target": "Physical description and personal qualities"
+    "source": "Les événements et les célébrations",
+    "target": "Events and celebrations"
   },
   {
-    "source": "Les problèmes sociaux et les défis",
-    "target": "Social issues and challenges"
+    "source": "Le climat et la météo",
+    "target": "Climate and weather"
   },
   {
-    "source": "Les fêtes et les traditions",
-    "target": "Celebrations and traditions"
+    "source": "Les projets d'avenir et les rêves",
+    "target": "Future plans and dreams"
   },
   {
-    "source": "Les interactions professionnelles",
-    "target": "Professional interactions"
+    "source": "Les problèmes et les solutions",
+    "target": "Problems and solutions"
   },
   {
-    "source": "La politique et la société",
-    "target": "Politics and society"
+    "source": "Le volontariat et l'engagement social",
+    "target": "Volunteering and social engagement"
   },
   {
-    "source": "La sécurité et les urgences",
-    "target": "Safety and emergencies"
+    "source": "La justice et la citoyenneté",
+    "target": "Justice and citizenship"
   },
   {
-    "source": "L'éducation et l'apprentissage tout au long de la vie",
-    "target": "Education and lifelong learning"
-  },
-  {
-    "source": "Les opinions et les arguments",
-    "target": "Opinions and arguments"
+    "source": "Le sport et l'activité physique",
+    "target": "Sport and physical activity"
   }
 ]
