@@ -44,6 +44,7 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
             
       - name: 💾 Commit updated topic file
+        if: success()
         run: |
           git pull
           git config user.name "github-actions"

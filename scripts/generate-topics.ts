@@ -13,7 +13,7 @@ const topicsPath = `data/topics_${level}_${sourceLang}-${targetLang}.json`;
     try {
         if (fs.existsSync(topicsPath)) {
             console.log(`✅ ${topicsPath} already exists, skipping...`);
-            return;
+            return 1;
         }
 
         const topics = await generateTopics(level, count, sourceLang, targetLang);
@@ -21,8 +21,12 @@ const topicsPath = `data/topics_${level}_${sourceLang}-${targetLang}.json`;
         fs.mkdirSync('data', { recursive: true });
 
         fs.writeFileSync(topicsPath, JSON.stringify(topics, null, 2));
+        
         console.log(`✅ Saved topics to ${topicsPath}`);
+        
+        return 0;
     } catch (err) {
         console.error('❌ Failed to generate topics:', err);
+        return 1;
     }
 })();
