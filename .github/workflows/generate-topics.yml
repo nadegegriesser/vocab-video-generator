@@ -9,6 +9,7 @@ jobs:
   generate-topics:
     runs-on: ubuntu-latest
     strategy:
+      max-parallel: 1
       matrix:
         level: [A1, A2, B1, B2]
         count: [30]

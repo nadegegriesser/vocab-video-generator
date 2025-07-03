@@ -35,6 +35,8 @@ Return as JSON object with level and topics as JSON array.
     try {
         const topics = await generateTopics();
 
+        console.log(topics);
+
         fs.mkdirSync('data', { recursive: true });
 
         const fileName = `data/topics_${count}_${level}_${sourceLang}-${targetLang}.json`;
