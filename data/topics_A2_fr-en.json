@@ -1,30 +1,18 @@
 [
   {
-    "source": "Présentations",
-    "target": "Introductions"
-  },
-  {
-    "source": "La famille",
-    "target": "The family"
-  },
-  {
-    "source": "Décrire les personnes",
-    "target": "Describing people"
-  },
-  {
     "source": "La routine quotidienne",
-    "target": "Daily routine"
+    "target": "The daily routine"
   },
   {
-    "source": "Les repas",
-    "target": "Meals"
+    "source": "Les loisirs et passe-temps",
+    "target": "Hobbies and pastimes"
   },
   {
-    "source": "Les aliments et les boissons",
-    "target": "Food and drinks"
+    "source": "La famille et les relations",
+    "target": "Family and relationships"
   },
   {
-    "source": "Faire les courses alimentaires",
+    "source": "Faire les courses (alimentation)",
     "target": "Grocery shopping"
   },
   {
@@ -32,91 +20,103 @@
     "target": "At the restaurant"
   },
   {
-    "source": "La maison et ses pièces",
-    "target": "The house and its rooms"
+    "source": "Décrire les personnes",
+    "target": "Describing people"
   },
   {
-    "source": "Les meubles",
-    "target": "Furniture"
+    "source": "Décrire les lieux",
+    "target": "Describing places"
   },
   {
-    "source": "Les tâches ménagères",
-    "target": "Household chores"
+    "source": "La maison et les meubles",
+    "target": "Home and furniture"
   },
   {
-    "source": "Les vêtements",
-    "target": "Clothes"
+    "source": "La ville et les transports",
+    "target": "The city and transport"
   },
   {
-    "source": "Les accessoires de mode",
-    "target": "Fashion accessories"
+    "source": "La météo et le climat",
+    "target": "Weather and climate"
   },
   {
-    "source": "Les magasins et commerces",
-    "target": "Shops and businesses"
+    "source": "La santé et le corps",
+    "target": "Health and the body"
   },
   {
-    "source": "Les prix et l'argent",
-    "target": "Prices and money"
+    "source": "Les vêtements et la mode",
+    "target": "Clothes and fashion"
   },
   {
-    "source": "Les loisirs et passe-temps",
-    "target": "Hobbies and pastimes"
+    "source": "Le travail et les études",
+    "target": "Work and studies"
   },
   {
-    "source": "Les sports",
-    "target": "Sports"
+    "source": "Les voyages et les vacances",
+    "target": "Travel and holidays"
   },
   {
-    "source": "Les vacances et le voyage",
-    "target": "Holidays and travel"
+    "source": "Faire du shopping (général)",
+    "target": "General shopping"
   },
   {
-    "source": "Les moyens de transport",
-    "target": "Means of transport"
+    "source": "Les émotions et sentiments",
+    "target": "Emotions and feelings"
+  },
+  {
+    "source": "Faire des projets",
+    "target": "Making plans"
   },
   {
     "source": "Demander son chemin",
     "target": "Asking for directions"
   },
   {
-    "source": "La ville",
-    "target": "The city"
+    "source": "Donner son avis",
+    "target": "Giving opinions"
   },
   {
-    "source": "La campagne",
-    "target": "The countryside"
+    "source": "L'argent et la banque",
+    "target": "Money and banking"
   },
   {
-    "source": "Les lieux publics",
-    "target": "Public places"
+    "source": "La technologie et internet",
+    "target": "Technology and the internet"
   },
   {
-    "source": "La météo",
-    "target": "The weather"
+    "source": "Les sports et activités",
+    "target": "Sports and activities"
   },
   {
-    "source": "Le corps humain",
-    "target": "The human body"
+    "source": "Les services publics",
+    "target": "Public services"
   },
   {
-    "source": "La santé et les maladies",
-    "target": "Health and illnesses"
+    "source": "Préparer un repas",
+    "target": "Preparing a meal"
   },
   {
-    "source": "Exprimer les émotions",
-    "target": "Expressing emotions"
+    "source": "Les animaux",
+    "target": "Animals"
   },
   {
-    "source": "Les métiers et professions",
-    "target": "Jobs and professions"
+    "source": "La nature et l'environnement",
+    "target": "Nature and the environment"
   },
   {
-    "source": "L'heure",
-    "target": "Telling time"
+    "source": "Les fêtes et célébrations",
+    "target": "Holidays and celebrations"
   },
   {
-    "source": "Les jours, mois et saisons",
-    "target": "Days, months, and seasons"
+    "source": "Les problèmes quotidiens",
+    "target": "Everyday problems"
+  },
+  {
+    "source": "L'école et l'éducation",
+    "target": "School and education"
+  },
+  {
+    "source": "Les conversations téléphoniques",
+    "target": "Telephone conversations"
   }
 ]
