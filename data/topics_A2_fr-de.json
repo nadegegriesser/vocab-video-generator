@@ -1,122 +1,122 @@
 [
   {
-    "source": "Se présenter et saluer",
-    "target": "Sich vorstellen und grüßen"
+    "source": "La routine quotidienne",
+    "target": "Der Tagesablauf"
   },
   {
-    "source": "La famille et les relations",
-    "target": "Die Familie und Beziehungen"
+    "source": "L'alimentation et les boissons",
+    "target": "Essen und Trinken"
   },
   {
-    "source": "Les professions et le travail",
-    "target": "Die Berufe und die Arbeit"
-  },
-  {
-    "source": "Les pays et les nationalités",
-    "target": "Länder und Nationalitäten"
-  },
-  {
-    "source": "Les chiffres et les nombres",
-    "target": "Zahlen und Ziffern"
-  },
-  {
-    "source": "Les jours de la semaine",
-    "target": "Die Wochentage"
-  },
-  {
-    "source": "Les mois et les saisons",
-    "target": "Monate und Jahreszeiten"
-  },
-  {
-    "source": "L'heure et la durée",
-    "target": "Die Uhrzeit und Dauer"
-  },
-  {
-    "source": "La météo et le climat",
-    "target": "Das Wetter und Klima"
-  },
-  {
-    "source": "Les couleurs",
-    "target": "Die Farben"
-  },
-  {
-    "source": "Les vêtements et les accessoires",
-    "target": "Die Kleidung und Accessoires"
-  },
-  {
-    "source": "La nourriture et les boissons",
-    "target": "Essen und Getränke"
-  },
-  {
-    "source": "Au restaurant et au café",
-    "target": "Im Restaurant und Café"
-  },
-  {
-    "source": "Faire les courses (nourriture)",
-    "target": "Einkaufen (Lebensmittel)"
-  },
-  {
-    "source": "La maison et les pièces",
-    "target": "Das Haus und die Zimmer"
-  },
-  {
-    "source": "Les meubles et l'équipement",
-    "target": "Die Möbel und Ausstattung"
-  },
-  {
-    "source": "La ville et les lieux publics",
-    "target": "Die Stadt und öffentliche Orte"
-  },
-  {
-    "source": "Les transports et les déplacements",
-    "target": "Die Verkehrsmittel und Fahrten"
-  },
-  {
-    "source": "Les loisirs et les hobbies",
-    "target": "Die Hobbys und Freizeit"
-  },
-  {
-    "source": "Les sports et activités physiques",
-    "target": "Die Sportarten und körperliche Aktivitäten"
-  },
-  {
-    "source": "Les vacances et les voyages",
-    "target": "Urlaub und Reisen"
-  },
-  {
-    "source": "La santé et le corps humain",
-    "target": "Die Gesundheit und der menschliche Körper"
-  },
-  {
-    "source": "Les sentiments et les émotions",
-    "target": "Gefühle und Emotionen"
+    "source": "Faire les courses (alimentaires)",
+    "target": "Lebensmittel einkaufen"
   },
   {
     "source": "Décrire les personnes",
     "target": "Personen beschreiben"
   },
   {
-    "source": "Décrire les objets",
-    "target": "Objekte beschreiben"
+    "source": "Décrire les lieux",
+    "target": "Orte beschreiben"
   },
   {
-    "source": "Les activités quotidiennes",
-    "target": "Tägliche Aktivitäten"
+    "source": "La famille et les amis",
+    "target": "Familie und Freunde"
   },
   {
-    "source": "Les prépositions de lieu et de temps",
-    "target": "Präpositionen des Ortes und der Zeit"
+    "source": "La maison et le logement",
+    "target": "Das Haus und die Wohnung"
   },
   {
-    "source": "Donner des indications et des directions",
-    "target": "Wegbeschreibungen geben"
+    "source": "Les pièces de la maison",
+    "target": "Die Zimmer im Haus"
   },
   {
-    "source": "Au téléphone et la communication",
-    "target": "Am Telefon und Kommunikation"
+    "source": "Les meubles",
+    "target": "Die Möbel"
   },
   {
-    "source": "Les fêtes et célébrations",
-    "target": "Feste und Feiern"
+    "source": "Les vêtements et la mode",
+    "target": "Kleidung und Mode"
+  },
+  {
+    "source": "La météo",
+    "target": "Das Wetter"
+  },
+  {
+    "source": "Les saisons",
+    "target": "Die Jahreszeiten"
+  },
+  {
+    "source": "La santé et le corps",
+    "target": "Gesundheit und Körper"
+  },
+  {
+    "source": "Chez le médecin",
+    "target": "Beim Arzt"
+  },
+  {
+    "source": "Les voyages et les vacances",
+    "target": "Reisen und Urlaub"
+  },
+  {
+    "source": "Les moyens de transport",
+    "target": "Die Verkehrsmittel"
+  },
+  {
+    "source": "En ville",
+    "target": "In der Stadt"
+  },
+  {
+    "source": "Les indications routières",
+    "target": "Wegbeschreibungen"
+  },
+  {
+    "source": "Les loisirs et le temps libre",
+    "target": "Hobbys und Freizeit"
+  },
+  {
+    "source": "Les sports",
+    "target": "Die Sportarten"
+  },
+  {
+    "source": "L'éducation et les études",
+    "target": "Bildung und Studium"
+  },
+  {
+    "source": "Les professions",
+    "target": "Die Berufe"
+  },
+  {
+    "source": "La communication (téléphone, e-mail)",
+    "target": "Kommunikation (Telefon, E-Mail)"
+  },
+  {
+    "source": "Les sentiments et les émotions",
+    "target": "Gefühle und Emotionen"
+  },
+  {
+    "source": "Les couleurs",
+    "target": "Die Farben"
+  },
+  {
+    "source": "Les nombres et les quantités",
+    "target": "Zahlen und Mengen"
+  },
+  {
+    "source": "Le temps et les dates",
+    "target": "Zeit und Daten"
+  },
+  {
+    "source": "Préparer les repas (verbes)",
+    "target": "Mahlzeiten zubereiten (Verben)"
+  },
+  {
+    "source": "Les animaux",
+    "target": "Die Tiere"
+  },
+  {
+    "source": "Les services/lieux publics",
+    "target": "Öffentliche Dienste/Orte"
   }
 ]

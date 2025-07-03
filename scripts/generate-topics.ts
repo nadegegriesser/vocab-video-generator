@@ -13,6 +13,7 @@ const topicsPath = `data/topics_${level}_${sourceLang}-${targetLang}.json`;
     try {
         if (fs.existsSync(topicsPath)) {
             console.log(`✅ ${topicsPath} already exists, skipping...`);
+            return;
         }
 
         const topics = await generateTopics(level, count, sourceLang, targetLang);
