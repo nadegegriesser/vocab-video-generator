@@ -1,127 +1,122 @@
-{
-  "sourceLang": "fr",
-  "targetLang": "en",
-  "level": "A1",
-  "topics": [
-    {
-      "source": "Salutations et Adieux",
-      "target": "Greetings and Farewells"
-    },
-    {
-      "source": "Se Présenter et Parler de Soi",
-      "target": "Introducing Oneself and Talking About Oneself"
-    },
-    {
-      "source": "Les Nombres (0-20)",
-      "target": "Numbers (0-20)"
-    },
-    {
-      "source": "Les Couleurs",
-      "target": "Colors"
-    },
-    {
-      "source": "Les Jours de la Semaine",
-      "target": "Days of the Week"
-    },
-    {
-      "source": "Les Mois de l'Année",
-      "target": "Months of the Year"
-    },
-    {
-      "source": "Les Saisons",
-      "target": "Seasons"
-    },
-    {
-      "source": "La Météo",
-      "target": "The Weather"
-    },
-    {
-      "source": "La Famille et les Proches",
-      "target": "Family and Relatives"
-    },
-    {
-      "source": "Les Objets Courants du Quotidien",
-      "target": "Common Everyday Objects"
-    },
-    {
-      "source": "Les Aliments et Boissons Basiques",
-      "target": "Basic Foods and Drinks"
-    },
-    {
-      "source": "Les Animaux Communs",
-      "target": "Common Animals"
-    },
-    {
-      "source": "Les Vêtements Essentiels",
-      "target": "Essential Clothes"
-    },
-    {
-      "source": "Les Parties du Corps Humain",
-      "target": "Parts of the Human Body"
-    },
-    {
-      "source": "Les Professions et Métiers",
-      "target": "Professions and Occupations"
-    },
-    {
-      "source": "Les Pays et Capitales",
-      "target": "Countries and Capitals"
-    },
-    {
-      "source": "Les Nationalités",
-      "target": "Nationalities"
-    },
-    {
-      "source": "Les Moyens de Transport",
-      "target": "Means of Transport"
-    },
-    {
-      "source": "Les Lieux Publics en Ville",
-      "target": "Public Places in Town"
-    },
-    {
-      "source": "Les Adjectifs Descriptifs",
-      "target": "Descriptive Adjectives"
-    },
-    {
-      "source": "Les Verbes Fondamentaux (être, avoir, faire, aller...)",
-      "target": "Fundamental Verbs (to be, to have, to do/make, to go...)"
-    },
-    {
-      "source": "Les Actions Quotidiennes",
-      "target": "Daily Actions"
-    },
-    {
-      "source": "Dire l'Heure",
-      "target": "Telling the Time"
-    },
-    {
-      "source": "Les Prépositions de Lieu",
-      "target": "Prepositions of Place"
-    },
-    {
-      "source": "Les Mots Interrogatifs",
-      "target": "Question Words"
-    },
-    {
-      "source": "Les Émotions et Sentiments",
-      "target": "Emotions and Feelings"
-    },
-    {
-      "source": "La Maison et les Pièces",
-      "target": "The House and Rooms"
-    },
-    {
-      "source": "Les Hobbies et Loisirs",
-      "target": "Hobbies and Leisure Activities"
-    },
-    {
-      "source": "Faire du Shopping Basique",
-      "target": "Basic Shopping"
-    },
-    {
-      "source": "Demander et Donner des Informations Simples",
-      "target": "Asking for and Giving Simple Information"
-    }
-  ]
-}
+[
+  {
+    "source": "Salutations et Adieux",
+    "target": "Greetings and Goodbyes"
+  },
+  {
+    "source": "Se Présenter",
+    "target": "Introducing Oneself"
+  },
+  {
+    "source": "Les Nationalités",
+    "target": "Nationalities"
+  },
+  {
+    "source": "Les Professions",
+    "target": "Professions"
+  },
+  {
+    "source": "La Famille",
+    "target": "The Family"
+  },
+  {
+    "source": "Les Nombres (0-20)",
+    "target": "Numbers (0-20)"
+  },
+  {
+    "source": "Les Couleurs",
+    "target": "Colors"
+  },
+  {
+    "source": "Les Jours de la Semaine",
+    "target": "Days of the Week"
+  },
+  {
+    "source": "Les Mois de l'Année",
+    "target": "Months of the Year"
+  },
+  {
+    "source": "Les Saisons",
+    "target": "Seasons"
+  },
+  {
+    "source": "Les Objets de la Classe",
+    "target": "Classroom Objects"
+  },
+  {
+    "source": "La Maison et les Pièces",
+    "target": "The House and Rooms"
+  },
+  {
+    "source": "Les Meubles",
+    "target": "Furniture"
+  },
+  {
+    "source": "La Nourriture (Général)",
+    "target": "Food (General)"
+  },
+  {
+    "source": "Les Fruits",
+    "target": "Fruits"
+  },
+  {
+    "source": "Les Légumes",
+    "target": "Vegetables"
+  },
+  {
+    "source": "Les Boissons",
+    "target": "Drinks"
+  },
+  {
+    "source": "Les Repas",
+    "target": "Meals"
+  },
+  {
+    "source": "Les Lieux dans la Ville",
+    "target": "Places in the City"
+  },
+  {
+    "source": "Les Moyens de Transport",
+    "target": "Means of Transport"
+  },
+  {
+    "source": "Les Vêtements",
+    "target": "Clothes"
+  },
+  {
+    "source": "Les Parties du Corps",
+    "target": "Parts of the Body"
+  },
+  {
+    "source": "Les Animaux Domestiques",
+    "target": "Pets"
+  },
+  {
+    "source": "Les Adjectifs de Description (Physique)",
+    "target": "Descriptive Adjectives (Physical)"
+  },
+  {
+    "source": "Les Émotions et Sentiments",
+    "target": "Emotions and Feelings"
+  },
+  {
+    "source": "Le Temps Qu'il Fait",
+    "target": "The Weather"
+  },
+  {
+    "source": "Les Loisirs et Hobbies",
+    "target": "Leisure Activities and Hobbies"
+  },
+  {
+    "source": "Les Magasins et le Shopping",
+    "target": "Shops and Shopping"
+  },
+  {
+    "source": "Les Nombres (21-100)",
+    "target": "Numbers (21-100)"
+  },
+  {
+    "source": "Les Objets Personnels",
+    "target": "Personal Objects"
+  }
+]
