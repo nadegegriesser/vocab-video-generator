@@ -1,23 +1,15 @@
 [
   {
-    "source": "Salutations et Adieux",
-    "target": "Greetings and Goodbyes"
+    "source": "Les Salutations et Présentations",
+    "target": "Greetings and Introductions"
   },
   {
-    "source": "Se Présenter",
-    "target": "Introducing Oneself"
+    "source": "Les Informations Personnelles",
+    "target": "Personal Information"
   },
   {
-    "source": "Les Nationalités",
-    "target": "Nationalities"
-  },
-  {
-    "source": "Les Professions",
-    "target": "Professions"
-  },
-  {
-    "source": "La Famille",
-    "target": "The Family"
+    "source": "Les Membres de la Famille",
+    "target": "Family Members"
   },
   {
     "source": "Les Nombres (0-20)",
@@ -40,36 +32,20 @@
     "target": "Seasons"
   },
   {
-    "source": "Les Objets de la Classe",
-    "target": "Classroom Objects"
+    "source": "La Météo Basique",
+    "target": "Basic Weather"
   },
   {
-    "source": "La Maison et les Pièces",
-    "target": "The House and Rooms"
+    "source": "Les Aliments et Boissons Courants",
+    "target": "Common Foods and Drinks"
   },
   {
-    "source": "Les Meubles",
-    "target": "Furniture"
+    "source": "Les Animaux Domestiques et de la Ferme",
+    "target": "Pets and Farm Animals"
   },
   {
-    "source": "La Nourriture (Général)",
-    "target": "Food (General)"
-  },
-  {
-    "source": "Les Fruits",
-    "target": "Fruits"
-  },
-  {
-    "source": "Les Légumes",
-    "target": "Vegetables"
-  },
-  {
-    "source": "Les Boissons",
-    "target": "Drinks"
-  },
-  {
-    "source": "Les Repas",
-    "target": "Meals"
+    "source": "Les Objets du Quotidien",
+    "target": "Everyday Objects"
   },
   {
     "source": "Les Lieux dans la Ville",
@@ -80,43 +56,67 @@
     "target": "Means of Transport"
   },
   {
-    "source": "Les Vêtements",
-    "target": "Clothes"
+    "source": "Les Professions Simples",
+    "target": "Simple Professions"
   },
   {
     "source": "Les Parties du Corps",
-    "target": "Parts of the Body"
+    "target": "Body Parts"
   },
   {
-    "source": "Les Animaux Domestiques",
-    "target": "Pets"
+    "source": "Les Adjectifs Descriptifs (Basiques)",
+    "target": "Basic Descriptive Adjectives"
   },
   {
-    "source": "Les Adjectifs de Description (Physique)",
-    "target": "Descriptive Adjectives (Physical)"
+    "source": "Les Verbes Communs (Être, Avoir, Aller, Faire)",
+    "target": "Common Verbs (To be, To have, To go, To do/make)"
   },
   {
-    "source": "Les Émotions et Sentiments",
-    "target": "Emotions and Feelings"
+    "source": "Les Vêtements de Base",
+    "target": "Basic Clothing"
   },
   {
-    "source": "Le Temps Qu'il Fait",
-    "target": "The Weather"
+    "source": "Les Pays et Nationalités Communs",
+    "target": "Common Countries and Nationalities"
   },
   {
-    "source": "Les Loisirs et Hobbies",
-    "target": "Leisure Activities and Hobbies"
+    "source": "L'Heure et les Moments de la Journée",
+    "target": "Time and Times of Day"
   },
   {
-    "source": "Les Magasins et le Shopping",
-    "target": "Shops and Shopping"
+    "source": "Les Activités Quotidiennes Simples",
+    "target": "Simple Daily Activities"
   },
   {
-    "source": "Les Nombres (21-100)",
-    "target": "Numbers (21-100)"
+    "source": "Les Émotions et Sentiments Basiques",
+    "target": "Basic Emotions and Feelings"
   },
   {
-    "source": "Les Objets Personnels",
-    "target": "Personal Objects"
+    "source": "Les Prépositions de Lieu",
+    "target": "Prepositions of Place"
+  },
+  {
+    "source": "Les Mots Interrogatifs",
+    "target": "Question Words"
+  },
+  {
+    "source": "Faire les Courses (Vocabulaire de Base)",
+    "target": "Shopping (Basic Vocabulary)"
+  },
+  {
+    "source": "Les Pièces de la Maison",
+    "target": "Rooms of the House"
+  },
+  {
+    "source": "Les Fêtes et Célébrations (Basiques)",
+    "target": "Basic Holidays and Celebrations"
+  },
+  {
+    "source": "La Nature et l'Environnement (Basique)",
+    "target": "Basic Nature and Environment"
+  },
+  {
+    "source": "Les Directions (Demander et Indiquer)",
+    "target": "Directions (Asking and Giving)"
   }
 ]
