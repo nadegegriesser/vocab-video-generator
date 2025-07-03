@@ -1,127 +1,122 @@
-{
-  "sourceLang": "fr",
-  "targetLang": "en",
-  "level": "A2",
-  "topics": [
-    {
-      "source": "La famille",
-      "target": "The Family"
-    },
-    {
-      "source": "Les amis et les relations",
-      "target": "Friends and Relationships"
-    },
-    {
-      "source": "Les parties du corps",
-      "target": "Parts of the Body"
-    },
-    {
-      "source": "Les vêtements et les accessoires",
-      "target": "Clothes and Accessories"
-    },
-    {
-      "source": "La nourriture et les boissons",
-      "target": "Food and Drinks"
-    },
-    {
-      "source": "Faire les courses (nourriture)",
-      "target": "Grocery Shopping (Food)"
-    },
-    {
-      "source": "Les repas et la cuisine",
-      "target": "Meals and Cooking"
-    },
-    {
-      "source": "La maison et les pièces",
-      "target": "The House and Rooms"
-    },
-    {
-      "source": "Les meubles et les objets quotidiens",
-      "target": "Furniture and Everyday Objects"
-    },
-    {
-      "source": "La routine quotidienne",
-      "target": "Daily Routine"
-    },
-    {
-      "source": "Les activités de loisirs",
-      "target": "Leisure Activities"
-    },
-    {
-      "source": "Les sports",
-      "target": "Sports"
-    },
-    {
-      "source": "La ville et les lieux publics",
-      "target": "The City and Public Places"
-    },
-    {
-      "source": "Les transports",
-      "target": "Transportation"
-    },
-    {
-      "source": "Les directions et l'orientation",
-      "target": "Directions and Orientation"
-    },
-    {
-      "source": "Les métiers et le travail",
-      "target": "Professions and Work"
-    },
-    {
-      "source": "L'école et les études",
-      "target": "School and Studies"
-    },
-    {
-      "source": "Le temps qu'il fait (la météo)",
-      "target": "The Weather"
-    },
-    {
-      "source": "Les saisons et les mois",
-      "target": "Seasons and Months"
-    },
-    {
-      "source": "Les couleurs",
-      "target": "Colors"
-    },
-    {
-      "source": "Les chiffres et les nombres",
-      "target": "Numbers"
-    },
-    {
-      "source": "L'heure et la durée",
-      "target": "Time and Duration"
-    },
-    {
-      "source": "Les adjectifs courants (description)",
-      "target": "Common Adjectives (Description)"
-    },
-    {
-      "source": "Les verbes d'action courants",
-      "target": "Common Action Verbs"
-    },
-    {
-      "source": "Les prépositions de lieu et de temps",
-      "target": "Prepositions of Place and Time"
-    },
-    {
-      "source": "Exprimer des goûts et des préférences",
-      "target": "Expressing Tastes and Preferences"
-    },
-    {
-      "source": "Les problèmes de santé simples",
-      "target": "Simple Health Problems"
-    },
-    {
-      "source": "Voyager et les vacances",
-      "target": "Travel and Holidays"
-    },
-    {
-      "source": "La technologie de base (téléphone, ordinateur)",
-      "target": "Basic Technology (Phone, Computer)"
-    },
-    {
-      "source": "L'environnement et la nature (simple)",
-      "target": "Environment and Nature (simple)"
-    }
-  ]
-}
+[
+  {
+    "source": "La vie quotidienne",
+    "target": "Daily life"
+  },
+  {
+    "source": "La famille et les amis",
+    "target": "Family and friends"
+  },
+  {
+    "source": "La maison et les meubles",
+    "target": "The house and furniture"
+  },
+  {
+    "source": "La nourriture et les boissons",
+    "target": "Food and drinks"
+  },
+  {
+    "source": "Les repas",
+    "target": "Meals"
+  },
+  {
+    "source": "Faire les courses (alimentaires)",
+    "target": "Grocery shopping"
+  },
+  {
+    "source": "Les vêtements et les accessoires",
+    "target": "Clothes and accessories"
+  },
+  {
+    "source": "Les transports",
+    "target": "Transportation"
+  },
+  {
+    "source": "Les voyages et les vacances",
+    "target": "Travel and holidays"
+  },
+  {
+    "source": "La météo",
+    "target": "The weather"
+  },
+  {
+    "source": "La santé et le corps humain",
+    "target": "Health and the human body"
+  },
+  {
+    "source": "Les loisirs et les passe-temps",
+    "target": "Hobbies and pastimes"
+  },
+  {
+    "source": "Le travail et les études",
+    "target": "Work and studies"
+  },
+  {
+    "source": "Décrire les personnes",
+    "target": "Describing people"
+  },
+  {
+    "source": "Décrire les objets et les lieux",
+    "target": "Describing objects and places"
+  },
+  {
+    "source": "Les émotions et les sentiments",
+    "target": "Emotions and feelings"
+  },
+  {
+    "source": "Les verbes d'action quotidiens",
+    "target": "Daily action verbs"
+  },
+  {
+    "source": "Les nombres, les dates et l'heure",
+    "target": "Numbers, dates and time"
+  },
+  {
+    "source": "Les couleurs et les formes",
+    "target": "Colors and shapes"
+  },
+  {
+    "source": "La nature et l'environnement",
+    "target": "Nature and the environment"
+  },
+  {
+    "source": "La ville et la campagne",
+    "target": "The city and the countryside"
+  },
+  {
+    "source": "Les prépositions de lieu",
+    "target": "Prepositions of place"
+  },
+  {
+    "source": "Les animaux domestiques et de la ferme",
+    "target": "Pets and farm animals"
+  },
+  {
+    "source": "Les fêtes et les célébrations",
+    "target": "Festivals and celebrations"
+  },
+  {
+    "source": "Les professions",
+    "target": "Professions"
+  },
+  {
+    "source": "Les sports",
+    "target": "Sports"
+  },
+  {
+    "source": "Les magasins et les commerces",
+    "target": "Shops and businesses"
+  },
+  {
+    "source": "Les outils et les objets du quotidien",
+    "target": "Tools and everyday objects"
+  },
+  {
+    "source": "Les sensations (froid, chaud, faim, soif)",
+    "target": "Sensations (cold, hot, hunger, thirst)"
+  },
+  {
+    "source": "La communication (téléphone, e-mail)",
+    "target": "Communication (phone, email)"
+  }
+]
