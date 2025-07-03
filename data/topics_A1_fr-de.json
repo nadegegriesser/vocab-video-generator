@@ -1,27 +1,23 @@
 [
   {
-    "source": "Les salutations",
-    "target": "Die Begrüßungen"
+    "source": "Salutations et présentations",
+    "target": "Begrüßungen und Vorstellungen"
   },
   {
-    "source": "Se présenter",
-    "target": "Sich vorstellen"
-  },
-  {
-    "source": "L'âge",
-    "target": "Das Alter"
+    "source": "Les informations personnelles",
+    "target": "Persönliche Informationen"
   },
   {
     "source": "La famille",
     "target": "Die Familie"
   },
   {
-    "source": "Les nationalités et les pays",
-    "target": "Die Nationalitäten und die Länder"
-  },
-  {
     "source": "Les nombres (0-100)",
     "target": "Die Zahlen (0-100)"
+  },
+  {
+    "source": "Les couleurs",
+    "target": "Die Farben"
   },
   {
     "source": "Les jours de la semaine",
@@ -36,87 +32,95 @@
     "target": "Die Jahreszeiten"
   },
   {
-    "source": "Les couleurs",
-    "target": "Die Farben"
-  },
-  {
-    "source": "Les adjectifs simples (description)",
-    "target": "Einfache Adjektive (Beschreibung)"
-  },
-  {
     "source": "La météo",
     "target": "Das Wetter"
   },
   {
-    "source": "La nourriture et les boissons",
-    "target": "Essen und Getränke"
+    "source": "Les aliments et les boissons",
+    "target": "Die Lebensmittel und Getränke"
   },
   {
-    "source": "Les fruits et légumes",
-    "target": "Obst und Gemüse"
+    "source": "Au restaurant / Commander",
+    "target": "Im Restaurant / Bestellen"
   },
   {
-    "source": "Les repas (petit-déjeuner, déjeuner, dîner)",
-    "target": "Die Mahlzeiten (Frühstück, Mittagessen, Abendessen)"
-  },
-  {
-    "source": "Les animaux domestiques et de la ferme",
-    "target": "Die Haustiere und Bauernhoftiere"
-  },
-  {
-    "source": "Les parties du corps",
-    "target": "Die Körperteile"
-  },
-  {
-    "source": "Les vêtements",
-    "target": "Die Kleidung"
-  },
-  {
-    "source": "La maison et les pièces",
-    "target": "Das Haus und die Zimmer"
-  },
-  {
-    "source": "Les meubles",
-    "target": "Die Möbel"
-  },
-  {
-    "source": "La ville et les lieux (parc, école, magasin)",
-    "target": "Die Stadt und die Orte (Park, Schule, Geschäft)"
-  },
-  {
-    "source": "Les transports (bus, train, voiture)",
-    "target": "Die Transportmittel (Bus, Zug, Auto)"
-  },
-  {
-    "source": "Les professions",
-    "target": "Die Berufe"
-  },
-  {
-    "source": "Les activités de loisirs",
-    "target": "Die Freizeitaktivitäten"
+    "source": "Les animaux domestiques",
+    "target": "Die Haustiere"
   },
   {
     "source": "La routine quotidienne",
     "target": "Der Tagesablauf"
   },
   {
-    "source": "Les objets de la classe",
-    "target": "Die Gegenstände im Klassenzimmer"
+    "source": "La maison et ses pièces",
+    "target": "Das Haus und seine Räume"
   },
   {
-    "source": "Les émotions et les sentiments",
+    "source": "Les meubles",
+    "target": "Die Möbel"
+  },
+  {
+    "source": "La ville et les lieux",
+    "target": "Die Stadt und Orte"
+  },
+  {
+    "source": "Les moyens de transport",
+    "target": "Die Verkehrsmittel"
+  },
+  {
+    "source": "Les loisirs et activités",
+    "target": "Die Hobbys und Aktivitäten"
+  },
+  {
+    "source": "Les vêtements",
+    "target": "Die Kleidung"
+  },
+  {
+    "source": "Le corps humain",
+    "target": "Der menschliche Körper"
+  },
+  {
+    "source": "Les émotions et sentiments",
     "target": "Die Emotionen und Gefühle"
   },
   {
-    "source": "L'heure (dire l'heure)",
-    "target": "Die Uhrzeit (die Uhrzeit sagen)"
+    "source": "Les pays et nationalités",
+    "target": "Die Länder und Nationalitäten"
   },
   {
-    "source": "Les directions simples (gauche, droite)",
-    "target": "Einfache Richtungsangaben (links, rechts)"
+    "source": "Les professions",
+    "target": "Die Berufe"
   },
   {
-    "source": "Les prépositions de lieu (sur, sous, dans)",
-    "target": "Die Präpositionen des Ortes (auf, unter, in)"
+    "source": "L'école et les matières",
+    "target": "Die Schule und die Schulfächer"
+  },
+  {
+    "source": "L'heure",
+    "target": "Die Uhrzeit"
+  },
+  {
+    "source": "Demander son chemin",
+    "target": "Nach dem Weg fragen"
+  },
+  {
+    "source": "Faire du shopping",
+    "target": "Einkaufen"
+  },
+  {
+    "source": "Les adjectifs courants",
+    "target": "Häufige Adjektive"
+  },
+  {
+    "source": "Les prépositions de lieu",
+    "target": "Die Präpositionen des Ortes"
+  },
+  {
+    "source": "Les objets du quotidien",
+    "target": "Alltagsgegenstände"
+  },
+  {
+    "source": "La santé (expressions de base)",
+    "target": "Die Gesundheit (Grundausdrücke)"
   }
 ]
