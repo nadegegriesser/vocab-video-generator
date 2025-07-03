@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",                    // Modern JavaScript output
+    "module": "ES2022",                    // Use native ES modules
+    "moduleResolution": "node",            // Resolve via Node.js style
+    "outDir": "dist",                      // Compiled output goes here
+    "rootDir": ".",                        // Root includes src/ and scripts/
+    "esModuleInterop": true,               // Allow CommonJS imports like 'import fs from "fs"'
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,                        // Enable all strict type checks
+    "skipLibCheck": true                   // Skip .d.ts checks for faster build
+  },
+  "include": ["src", "scripts"]
+}

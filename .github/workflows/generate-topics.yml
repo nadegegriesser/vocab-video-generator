@@ -1,0 +1,43 @@
+name: Generate Topics
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  generate-topics:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        level: [A1]
+        count: [30]
+        sourceLang: [fr]
+        targetLang: [de]
+
+    steps:
+      - name: 📥 Checkout repository
+        uses: actions/checkout@v4
+
+      - name: 🧰 Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: 📦 Install dependencies
+        run: npm install
+
+      - name: 🚀 Generate topics
+        run: |
+          npx ts-node scripts/generate-topics.ts \
+            ${{ matrix.count }} \
+            ${{ matrix.level }} \
+            ${{ matrix.sourceLang }} \
+            ${{ matrix.targetLang }}
+
+      - name: 💾 Commit generated topic file
+        run: |
+          FILE=data/topics_${{ matrix.count }}_${{ matrix.level }}_${{ matrix.sourceLang }}-${{ matrix.targetLang }}.json
+          git add "$FILE"
+          git commit -m "📚 Add $FILE on push"
+          git push

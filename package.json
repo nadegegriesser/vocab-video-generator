@@ -1,0 +1,26 @@
+{
+  "name": "vocab-video-generator",
+  "version": "1.0.0",
+  "description": "Generate vocabulary videos using Gemini API, TTS, Hugging Face, and FFmpeg",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "tsc && node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "generate-topics": "ts-node scripts/generate-topics.ts",
+    "generate-daily": "ts-node scripts/generate-daily-video.ts"
+  },
+  "dependencies": {
+    "@google/genai": "^1.8.0",
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.1",
+    "fluent-ffmpeg": "^2.1.2",
+    "googleapis": "^133.0.0",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
