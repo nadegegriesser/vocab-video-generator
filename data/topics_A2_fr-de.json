@@ -1,0 +1,127 @@
+{
+  "sourceLang": "fr",
+  "targetLang": "de",
+  "level": "A2",
+  "topics": [
+    {
+      "source": "Se présenter",
+      "target": "Sich vorstellen"
+    },
+    {
+      "source": "La famille",
+      "target": "Die Familie"
+    },
+    {
+      "source": "Les amis et les relations",
+      "target": "Die Freunde und Beziehungen"
+    },
+    {
+      "source": "La description physique",
+      "target": "Die körperliche Beschreibung"
+    },
+    {
+      "source": "Les émotions et les sentiments",
+      "target": "Die Emotionen und Gefühle"
+    },
+    {
+      "source": "Le corps humain",
+      "target": "Der menschliche Körper"
+    },
+    {
+      "source": "Les vêtements",
+      "target": "Die Kleidung"
+    },
+    {
+      "source": "La maison et ses pièces",
+      "target": "Das Haus und seine Zimmer"
+    },
+    {
+      "source": "Les meubles et les objets quotidiens",
+      "target": "Die Möbel und Alltagsgegenstände"
+    },
+    {
+      "source": "La routine quotidienne",
+      "target": "Der Tagesablauf"
+    },
+    {
+      "source": "Les repas et la nourriture",
+      "target": "Die Mahlzeiten und das Essen"
+    },
+    {
+      "source": "Faire les courses",
+      "target": "Einkäufe erledigen"
+    },
+    {
+      "source": "Au restaurant",
+      "target": "Im Restaurant"
+    },
+    {
+      "source": "Les sports et les loisirs",
+      "target": "Die Sportarten und Freizeitaktivitäten"
+    },
+    {
+      "source": "Les vacances et les voyages",
+      "target": "Der Urlaub und die Reisen"
+    },
+    {
+      "source": "Les moyens de transport",
+      "target": "Die Verkehrsmittel"
+    },
+    {
+      "source": "La ville et les lieux publics",
+      "target": "Die Stadt und öffentliche Orte"
+    },
+    {
+      "source": "Demander et donner des directions",
+      "target": "Nach dem Weg fragen und Wegbeschreibungen geben"
+    },
+    {
+      "source": "Les métiers et les professions",
+      "target": "Die Berufe und Tätigkeiten"
+    },
+    {
+      "source": "L'école et l'apprentissage",
+      "target": "Die Schule und das Lernen"
+    },
+    {
+      "source": "Les pays, les nationalités et les langues",
+      "target": "Die Länder, Nationalitäten und Sprachen"
+    },
+    {
+      "source": "Le temps qu'il fait",
+      "target": "Das Wetter"
+    },
+    {
+      "source": "Les saisons, les mois et les jours",
+      "target": "Die Jahreszeiten, Monate und Tage"
+    },
+    {
+      "source": "Les couleurs",
+      "target": "Die Farben"
+    },
+    {
+      "source": "Les nombres et les quantités",
+      "target": "Die Zahlen und Mengen"
+    },
+    {
+      "source": "L'argent et le shopping",
+      "target": "Das Geld und Einkaufen"
+    },
+    {
+      "source": "La santé et le bien-être",
+      "target": "Die Gesundheit und das Wohlbefinden"
+    },
+    {
+      "source": "Les animaux domestiques et sauvages",
+      "target": "Die Haus- und Wildtiere"
+    },
+    {
+      "source": "Les fêtes et les célébrations",
+      "target": "Die Feste und Feiern"
+    },
+    {
+      "source": "Le téléphone et internet",
+      "target": "Das Telefon und das Internet"
+    }
+  ]
+}
