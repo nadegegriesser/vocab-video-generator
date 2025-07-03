@@ -41,6 +41,7 @@ jobs:
 
       - name: 💾 Commit generated topic file
         run: |
+          git pull
           git config user.name "github-actions"
           git config user.email "actions@github.com"
           FILE=data/topics_${{ matrix.count }}_${{ matrix.level }}_${{ matrix.sourceLang }}-${{ matrix.targetLang }}.json
