@@ -50,7 +50,7 @@ jobs:
           git config user.email "actions@github.com"
           FILE=data/topics_${{ matrix.level }}_${{ matrix.sourceLang }}-${{ matrix.targetLang }}.json
           git add "$FILE"
-          git commit -m "📚 Add $FILE on push"
+          git commit -m "📚 Add $FILE"
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -42,3 +42,15 @@ jobs:
             ${{ matrix.targetLang }}
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+            
+      - name: 💾 Commit updated topic file
+        run: |
+          git pull
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          FILE=data/topics_${{ matrix.level }}_${{ matrix.sourceLang }}-${{ matrix.targetLang }}.json
+          git add "$FILE"
+          git commit -m "📚 Update $FILE"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

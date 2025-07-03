@@ -11,7 +11,9 @@ const targetLang = args[3] || 'de';
 const topicsPath = `data/topics_${level}_${sourceLang}-${targetLang}.json`;
 
 function loadTopics(): TopicEntry[] {
-    if (!fs.existsSync(topicsPath)) throw new Error(`❌ File not found: ${topicsPath}`);
+    if (!fs.existsSync(topicsPath)) {
+        throw new Error(`❌ File not found: ${topicsPath}`);
+    }
     const raw = fs.readFileSync(topicsPath, 'utf-8');
     return <TopicEntry[]>JSON.parse(raw);
 }
@@ -26,14 +28,13 @@ function saveTopics(topics: TopicEntry[]) {
 
         const topic = topics.shift();
         if (!topic) {
-            console.error('❌ No topic left.');
+            console.log('✅ No topic left.');
             return;
         }
-        console.log(topic, topics);
 
         const vocab = await generateVocabForTopic(topic.source, level, count, sourceLang, targetLang);
 
-        console.log(vocab);
+        console.log(topic, vocab);
 
         saveTopics(topics);
     } catch (err) {
