@@ -19,11 +19,13 @@ function saveTopics(topics: TopicEntry[]) {
 (async () => {
     try {
         for (const topic of loadFile<TopicEntry>(topicsPath)) {
-            for (const v of await glob(`${dir}/*/`)) {
-                console.log(v);
-                const vocabPath = ``;
+            let dirs = await glob(`${dir}/*/`);
+            dirs.sort();
+            for (const d of dirs) {
+                console.log(d);
+                const vocabPath = `${d}/vocab.json`;
                 for (const vocab of loadFile<VocabEntry>(vocabPath)) {
-
+                    console.log(vocab);
                     /*fs.mkdirSync(wavsPath, { recursive: true });
 
                     let i = 0;
