@@ -56,7 +56,7 @@ async function saveWaveFile(
             const audioDir = `${topicDir}/audio`;
             fs.mkdirSync(audioDir, { recursive: true });
 
-            if (await saveAudio(`${audioDir}/topic2.wav`, {
+            if (await saveAudio(`${audioDir}/topic.wav`, {
                 source: "Prêt à débloquer de nouveaux mots ? Allez, on booste ton vocabulaire comme un pro!",
                 target: "Bereit, neue Wörter freizuschalten? Los geht's - wir boosten deinen Wortschatz wie ein Profi!",
                 exampleSource: topic.source,

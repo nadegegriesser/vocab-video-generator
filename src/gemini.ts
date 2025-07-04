@@ -105,7 +105,7 @@ export async function synthesizeSpeech(sourceLang: string,
     targetLang: string,
     vocab: VocabEntry) {
     const config = {
-        temperature: 1,
+        temperature: 0,
         responseModalities: [
             'AUDIO',
         ],

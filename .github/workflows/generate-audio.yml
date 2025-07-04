@@ -7,8 +7,8 @@ on:
       scripts/generate-audio.ts,
       src/**
     ]
-  #schedule:
-  #  - cron: '0 6 * * *' # Jeden Tag um 6 Uhr UTC
+  schedule:
+    - cron: '0 * * * *'
 
 jobs:
   generate-audio:
