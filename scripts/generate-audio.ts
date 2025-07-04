@@ -19,7 +19,7 @@ function saveTopics(topics: TopicEntry[]) {
 (async () => {
     try {
         for (const topic of loadFile<TopicEntry>(topicsPath)) {
-            for (const v of await glob("dir/*/")) {
+            for (const v of await glob(`${dir}/*/`)) {
                 console.log(v);
                 const vocabPath = ``;
                 for (const vocab of loadFile<VocabEntry>(vocabPath)) {
