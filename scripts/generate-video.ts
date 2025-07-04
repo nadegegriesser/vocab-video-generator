@@ -8,7 +8,9 @@ const count = parseInt(args[0] || '30', 10);
 const level = args[1] || 'A1';
 const sourceLang = args[2] || 'fr';
 const targetLang = args[3] || 'de';
-const topicsPath = `data/topics_${level}_${sourceLang}-${targetLang}.json`;
+const dirPath = `data/${sourceLang}-${targetLang}/${level}`;
+const topicsFile = 'topics.json';
+const topicsPath = `${dirPath}/${topicsFile}`;
 
 function loadTopics(): TopicEntry[] {
     if (!fs.existsSync(topicsPath)) {
@@ -32,13 +34,13 @@ function saveTopics(topics: TopicEntry[]) {
             return;
         }
 
-        const vocabs = await generateVocabForTopic(topic.source, level, count, sourceLang, targetLang);
+        const vocabs = await generateVocabForTopic(level, count, sourceLang, targetLang, topic.source, );
 
         console.log(topic, vocabs);
 
         let i = 0;
         for (const vocab of vocabs) {
-            await synthesizeSpeech(vocab.source, `${level}_${sourceLang}-${targetLang}_${i}.wav`);
+            await synthesizeSpeech(level, sourceLang, targetLang, vocab);
             i++;
         }
 

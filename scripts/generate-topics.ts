@@ -7,7 +7,9 @@ const count = parseInt(args[0] || '30', 10);
 const level = args[1] || 'A1';
 const sourceLang = args[2] || 'fr';
 const targetLang = args[3] || 'de';
-const topicsPath = `data/topics_${level}_${sourceLang}-${targetLang}.json`;
+const dirPath = `data/${sourceLang}-${targetLang}/${level}`;
+const topicsFile = 'topics.json';
+const topicsPath = `${dirPath}/${topicsFile}`;
 
 (async () => {
     try {
@@ -18,7 +20,7 @@ const topicsPath = `data/topics_${level}_${sourceLang}-${targetLang}.json`;
 
         const topics = await generateTopics(level, count, sourceLang, targetLang);
 
-        fs.mkdirSync('data', { recursive: true });
+        fs.mkdirSync(dirPath, { recursive: true });
 
         fs.writeFileSync(topicsPath, JSON.stringify(topics, null, 2));
         
