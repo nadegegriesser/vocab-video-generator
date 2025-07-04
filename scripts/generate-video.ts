@@ -8,9 +8,10 @@ const count = parseInt(args[0] || '30', 10);
 const level = args[1] || 'A1';
 const sourceLang = args[2] || 'fr';
 const targetLang = args[3] || 'de';
-const dirPath = `data/${sourceLang}-${targetLang}/${level}`;
+const dir = args[4] || `data/${sourceLang}-${targetLang}/${level}`;
+const wavsPath = `${dir}/wavs`;
 const topicsFile = 'topics.json';
-const topicsPath = `${dirPath}/${topicsFile}`;
+const topicsPath = `${dir}/${topicsFile}`;
 
 function loadTopics(): TopicEntry[] {
     if (!fs.existsSync(topicsPath)) {
@@ -34,12 +35,17 @@ function saveTopics(topics: TopicEntry[]) {
             return;
         }
 
-        const vocabs = await generateVocabForTopic(level, count, sourceLang, targetLang, topic.source, );
+        const vocabs = await generateVocabForTopic(level, count, sourceLang, targetLang, topic.source);
 
         console.log(topic, vocabs);
 
+        fs.mkdirSync(wavsPath, { recursive: true });
+
+        let i = 1;
         for (const vocab of vocabs) {
-            await synthesizeSpeech(level, sourceLang, targetLang, vocab);
+            const filePath = `${wavsPath}/${String(i).padStart(2, '0')}.wav`;
+            await synthesizeSpeech(sourceLang, targetLang, vocab, filePath);
+            i++;
             break;
         }
 

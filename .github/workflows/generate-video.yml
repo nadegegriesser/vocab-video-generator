@@ -39,7 +39,8 @@ jobs:
             ${{ matrix.count }} \
             ${{ matrix.level }} \
             ${{ matrix.sourceLang }} \
-            ${{ matrix.targetLang }}
+            ${{ matrix.targetLang }} \
+            data/${{ matrix.sourceLang }}-${{ matrix.targetLang }}/${{ matrix.level }}
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
             

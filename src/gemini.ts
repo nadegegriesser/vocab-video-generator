@@ -58,10 +58,10 @@ Return as JSON array of objects with keys: source, target, exampleSource, exampl
     return <VocabEntry[]>JSON.parse(response.text!.replace('```json', '').replace('```', ''));
 }
 
-export async function synthesizeSpeech(level: string,
-    sourceLang: string,
+export async function synthesizeSpeech(sourceLang: string,
     targetLang: string,
-    vocab: VocabEntry) {
+    vocab: VocabEntry,
+    filePath: string) {
     const config = {
         temperature: 2,
         responseModalities: [
@@ -93,34 +93,30 @@ export async function synthesizeSpeech(level: string,
     const text = `Make Speaker1 speak ${sourceLang} and Speaker2 speak ${targetLang}, wait 1 second before and after each sentence:
 Speaker1: ${vocab.source}
 Speaker2: ${vocab.target}
-Speaker1: ${vocab.exampleSource}`;
+Speaker1: ${vocab.exampleSource}
+Speaker2: ${vocab.exampleTarget}`;
     console.log(text);
     const response = await ai.models.generateContentStream({
         model: "gemini-2.5-flash-preview-tts",
         contents: [{ parts: [{ text: text }] }],
         config: config
     });
-    let fileIndex = 0;
     for await (const chunk of response) {
         if (!chunk.candidates || !chunk.candidates[0].content || !chunk.candidates[0].content.parts) {
             continue;
         }
         console.log(chunk);
         if (chunk.candidates?.[0]?.content?.parts?.[0]?.inlineData) {
-            const fileName = `${fileIndex++}`;
             const inlineData = chunk.candidates[0].content.parts[0].inlineData;
-            let fileExtension = mime.getExtension(inlineData.mimeType || '');
+            console.log(inlineData.mimeType);
+            //let buffer = convertToWav(inlineData.data || '', inlineData.mimeType || '');
             let buffer = Buffer.from(inlineData.data || '', 'base64');
-            if (!fileExtension) {
-                fileExtension = 'wav';
-                buffer = convertToWav(inlineData.data || '', inlineData.mimeType || '');
-            }
-            const filePath = `data/${sourceLang}-${targetLang}/${level}/${fileName}.${fileExtension}`;
             saveBinaryFile(filePath, buffer);
         }
         else {
             console.log(chunk.text);
         }
+        break;
     }
 }
 
