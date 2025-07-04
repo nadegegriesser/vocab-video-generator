@@ -133,8 +133,8 @@ export async function synthesizeSpeech(sourceLang: string,
         },
     };
     const text = `STYLE DESCRIPTION:
-Speaker 1: Speaks ${sourceLang}. Over-the-top seductive, dominant, and intoxicating. Every word feels like it is dripping honey, slow, commanding, and wickedly playful. Lots of audible smirks, purrs, and drawn-out pauses like she knows exactly what she is doing... and loves watching the listener squirm.
-Speaker 2: Speaks ${targetLang}. Awkward, flustered, overwhelmed. Voice cracks constantly. Rapid stammering, anxious gulps, and squeaky surprise noises. Simultaneously terrified and absolutely living for it.
+Speaker 1: Speaks ${sourceLang}. Read slowly, aloud in a warm, welcoming tone.
+Speaker 2: Speaks ${targetLang}. Read slowly, aloud in a warm, welcoming tone.
 SCRIPT:
 Speaker1: ${vocab.source} (PURR_SOUND)
 Speaker2: ${vocab.target}

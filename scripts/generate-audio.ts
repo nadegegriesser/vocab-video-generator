@@ -43,15 +43,15 @@ async function saveWaveFile(
             const audioDir = `${topicDir}/audio`;
             fs.mkdirSync(audioDir, { recursive: true });
 
-            const topicAudioPath = `${audioDir}/topic1.wav`;
+            const topicAudioPath = `${audioDir}/topic3.wav`;
             if (fs.existsSync(topicAudioPath)) {
                 console.log(`✅ ${topicAudioPath} already exists, skipping...`);
             } else {
                 let buffer = await synthesizeSpeech(sourceLang, targetLang, {
-                    source: "En manque de l'attention de maman… n'est-ce pas?",
-                    target: "Du sehnst dich nach Mamas Aufmerksamkeit… nicht wahr?",
-                    exampleSource: "Mmm… si obéissant… tu as cliqué si vite.",
-                    exampleTarget: "Mmm… so gehorsam… du hast so schnell geklickt."
+                    source: "Prêt à débloquer de nouveaux mots ? Allez, on booste ton vocabulaire comme un pro!",
+                    target: "Bereit, neue Wörter freizuschalten? Los geht's - wir boosten deinen Wortschatz wie ein Profi!",
+                    exampleSource: topic.source,
+                    exampleTarget: topic.target
                 });
                 if (buffer) {
                     await saveWaveFile(topicAudioPath, buffer);
