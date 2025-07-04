@@ -46,7 +46,7 @@ jobs:
       - name: Clean up
         run: |
           cd data/${{ matrix.sourceLang }}-${{ matrix.targetLang }}/${{ matrix.level }}/01/audio
-          rm combined.wav combined-aac.m4a output.mp4 audio-list.txt
+          rm combined.wav output.mp4 audio-list.txt
 
       - name: Generate video
         run: |    
@@ -55,7 +55,7 @@ jobs:
           cd data/${{ matrix.sourceLang }}-${{ matrix.targetLang }}/${{ matrix.level }}/01/audio
           ffmpeg -f concat -safe 0 -i audio-list.txt -c copy combined.wav
           ffmpeg -loop 1 -i ../../../../image.jpg -i combined.wav \
-            -vf "drawtext=text='Dein Text':fontcolor=white:fontsize=48:x=(w-text_w)/2:y=h-text_h/2" \
+            -vf "drawtext=text='Dein Text':fontcolor=white:fontsize=48:x=(w-text_w)/2:y=h-text_h-100" \
             -c:v libx264 -tune stillimage -c:a aac -b:a 192k -shortest -pix_fmt yuv420p output.mp4
 
       - name: 💾 Commit generated audio file
