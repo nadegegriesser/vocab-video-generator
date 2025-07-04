@@ -10,7 +10,7 @@ export function loadFile<Type>(filePath: string): Type[] {
 
 export function generateAudioList(dirPath: string) {
   const files = fs.readdirSync(dirPath)
-    .filter(file => file.endsWith('.wav'))
+    .filter(file => file.endsWith('.wav') && file != 'combined.wav')
     .sort(); 
 
   if (files.length === 0) {
