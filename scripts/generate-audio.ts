@@ -11,6 +11,19 @@ const dir = args[2];
 const topicsFile = 'topics.json';
 const topicsPath = `${dir}/${topicsFile}`;
 
+async function saveAudio(filePath: string, vocab: VocabEntry) {
+    if (fs.existsSync(filePath)) {
+        console.log(`✅ ${filePath} already exists, skipping...`);
+    } else {
+        let buffer = await synthesizeSpeech(sourceLang, targetLang, vocab);
+        if (buffer) {
+            await saveWaveFile(filePath, buffer);
+        }
+        return true;
+    }
+    return false;
+}
+
 async function saveWaveFile(
     filePath: string,
     pcmData: any,
@@ -43,37 +56,24 @@ async function saveWaveFile(
             const audioDir = `${topicDir}/audio`;
             fs.mkdirSync(audioDir, { recursive: true });
 
-            const topicAudioPath = `${audioDir}/topic2.wav`;
-            if (fs.existsSync(topicAudioPath)) {
-                console.log(`✅ ${topicAudioPath} already exists, skipping...`);
-            } else {
-                let buffer = await synthesizeSpeech(sourceLang, targetLang, {
-                    source: "Prêt à débloquer de nouveaux mots ? Allez, on booste ton vocabulaire comme un pro!",
-                    target: "Bereit, neue Wörter freizuschalten? Los geht's - wir boosten deinen Wortschatz wie ein Profi!",
-                    exampleSource: topic.source,
-                    exampleTarget: topic.target
-                });
-                if (buffer) {
-                    await saveWaveFile(topicAudioPath, buffer);
-                }
+            if (await saveAudio(`${audioDir}/topic2.wav`, {
+                source: "Prêt à débloquer de nouveaux mots ? Allez, on booste ton vocabulaire comme un pro!",
+                target: "Bereit, neue Wörter freizuschalten? Los geht's - wir boosten deinen Wortschatz wie ein Profi!",
+                exampleSource: topic.source,
+                exampleTarget: topic.target
+            })) {
                 return;
             }
+
             const vocabPath = `${topicDir}/vocab.json`;
             let v = 0;
             for (const vocab of loadFile<VocabEntry>(vocabPath)) {
                 console.log(vocab);
                 v++;
                 const index = String(v).padStart(2, '0');
-                const audioPath = `${audioDir}/${index}.wav`;
-                if (fs.existsSync(audioPath)) {
-                    console.log(`✅ ${audioPath} already exists, skipping...`);
-                    continue;
+                if (await saveAudio(`${audioDir}/${index}.wav`, vocab)) {
+                    return;
                 }
-                let buffer = await synthesizeSpeech(sourceLang, targetLang, vocab);
-                if (buffer) {
-                    await saveWaveFile(audioPath, buffer);
-                }
-                return;
             }
         }
     } catch (err) {
