@@ -1,0 +1,182 @@
+[
+  {
+    "source": "le rouge",
+    "target": "rot",
+    "exampleSource": "J'aime le rouge.",
+    "exampleTarget": "Ich mag Rot."
+  },
+  {
+    "source": "le bleu",
+    "target": "blau",
+    "exampleSource": "Le ciel est bleu.",
+    "exampleTarget": "Der Himmel ist blau."
+  },
+  {
+    "source": "le vert",
+    "target": "grün",
+    "exampleSource": "L'herbe est verte.",
+    "exampleTarget": "Das Gras ist grün."
+  },
+  {
+    "source": "le jaune",
+    "target": "gelb",
+    "exampleSource": "Les citrons sont jaunes.",
+    "exampleTarget": "Zitronen sind gelb."
+  },
+  {
+    "source": "le noir",
+    "target": "schwarz",
+    "exampleSource": "Mon chat est noir.",
+    "exampleTarget": "Meine Katze ist schwarz."
+  },
+  {
+    "source": "le blanc",
+    "target": "weiß",
+    "exampleSource": "La neige est blanche.",
+    "exampleTarget": "Der Schnee ist weiß."
+  },
+  {
+    "source": "le gris",
+    "target": "grau",
+    "exampleSource": "Les nuages sont gris aujourd'hui.",
+    "exampleTarget": "Die Wolken sind heute grau."
+  },
+  {
+    "source": "le marron",
+    "target": "braun",
+    "exampleSource": "J'ai un sac marron.",
+    "exampleTarget": "Ich habe eine braune Tasche."
+  },
+  {
+    "source": "le rose",
+    "target": "rosa",
+    "exampleSource": "Elle porte une robe rose.",
+    "exampleTarget": "Sie trägt ein rosa Kleid."
+  },
+  {
+    "source": "le violet",
+    "target": "violett",
+    "exampleSource": "Ces fleurs sont violettes.",
+    "exampleTarget": "Diese Blumen sind violett."
+  },
+  {
+    "source": "l'orange",
+    "target": "orange",
+    "exampleSource": "La couleur orange est très vive.",
+    "exampleTarget": "Die Farbe Orange ist sehr lebhaft."
+  },
+  {
+    "source": "l'argent",
+    "target": "silber",
+    "exampleSource": "J'ai acheté une bague en argent.",
+    "exampleTarget": "Ich habe einen Silberring gekauft."
+  },
+  {
+    "source": "l'or",
+    "target": "gold",
+    "exampleSource": "Sa montre est en or.",
+    "exampleTarget": "Seine Uhr ist aus Gold."
+  },
+  {
+    "source": "le turquoise",
+    "target": "türkis",
+    "exampleSource": "L'eau de la mer est turquoise.",
+    "exampleTarget": "Das Meerwasser ist türkis."
+  },
+  {
+    "source": "le beige",
+    "target": "beige",
+    "exampleSource": "Le mur est peint en beige.",
+    "exampleTarget": "Die Wand ist beige gestrichen."
+  },
+  {
+    "source": "le pourpre",
+    "target": "purpur",
+    "exampleSource": "Le drapeau est pourpre et or.",
+    "exampleTarget": "Die Flagge ist purpur und gold."
+  },
+  {
+    "source": "le cyan",
+    "target": "zyan",
+    "exampleSource": "C'est un bleu tirant sur le cyan.",
+    "exampleTarget": "Es ist ein Blau, das ins Zyan geht."
+  },
+  {
+    "source": "le magenta",
+    "target": "magenta",
+    "exampleSource": "Ce rose est presque magenta.",
+    "exampleTarget": "Dieses Rosa ist fast Magenta."
+  },
+  {
+    "source": "la couleur",
+    "target": "die Farbe",
+    "exampleSource": "Quelle est ta couleur préférée ?",
+    "exampleTarget": "Was ist deine Lieblingsfarbe?"
+  },
+  {
+    "source": "clair",
+    "target": "hell",
+    "exampleSource": "Elle a les cheveux clairs.",
+    "exampleTarget": "Sie hat helle Haare."
+  },
+  {
+    "source": "foncé",
+    "target": "dunkel",
+    "exampleSource": "Il préfère les couleurs foncées.",
+    "exampleTarget": "Er bevorzugt dunkle Farben."
+  },
+  {
+    "source": "vif",
+    "target": "leuchtend",
+    "exampleSource": "J'aime cette couleur vive.",
+    "exampleTarget": "Ich mag diese leuchtende Farbe."
+  },
+  {
+    "source": "pastel",
+    "target": "Pastell",
+    "exampleSource": "Ces tons pastel sont doux.",
+    "exampleTarget": "Diese Pastelltöne sind sanft."
+  },
+  {
+    "source": "l'arc-en-ciel",
+    "target": "der Regenbogen",
+    "exampleSource": "Après la pluie, il y a un arc-en-ciel.",
+    "exampleTarget": "Nach dem Regen gibt es einen Regenbogen."
+  },
+  {
+    "source": "coloré",
+    "target": "bunt",
+    "exampleSource": "Le jardin est très coloré en été.",
+    "exampleTarget": "Der Garten ist im Sommer sehr bunt."
+  },
+  {
+    "source": "décoloré",
+    "target": "entfärbt",
+    "exampleSource": "Le vieux tapis est décoloré par le soleil.",
+    "exampleTarget": "Der alte Teppich ist von der Sonne entfärbt."
+  },
+  {
+    "source": "teindre",
+    "target": "färben",
+    "exampleSource": "Je veux teindre mes cheveux en rouge.",
+    "exampleTarget": "Ich möchte meine Haare rot färben."
+  },
+  {
+    "source": "le ton",
+    "target": "der Farbton",
+    "exampleSource": "Ce ton de bleu est très apaisant.",
+    "exampleTarget": "Dieser Blauton ist sehr beruhigend."
+  },
+  {
+    "source": "la nuance",
+    "target": "die Nuance",
+    "exampleSource": "Il y a de nombreuses nuances de vert dans la forêt.",
+    "exampleTarget": "Es gibt viele Grüntöne im Wald."
+  },
+  {
+    "source": "la palette",
+    "target": "die Palette",
+    "exampleSource": "L'artiste utilise une large palette de couleurs.",
+    "exampleTarget": "Der Künstler verwendet eine breite Farbpalette."
+  }
+]

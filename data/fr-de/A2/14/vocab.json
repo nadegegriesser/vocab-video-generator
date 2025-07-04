@@ -1,0 +1,182 @@
+[
+  {
+    "source": "le médecin",
+    "target": "der Arzt",
+    "exampleSource": "Mon père est médecin.",
+    "exampleTarget": "Mein Vater ist Arzt."
+  },
+  {
+    "source": "la docteure",
+    "target": "die Ärztin",
+    "exampleSource": "La docteure travaille à l'hôpital.",
+    "exampleTarget": "Die Ärztin arbeitet im Krankenhaus."
+  },
+  {
+    "source": "l'ingénieur",
+    "target": "der Ingenieur",
+    "exampleSource": "Il est ingénieur en informatique.",
+    "exampleTarget": "Er ist Computeringenieur."
+  },
+  {
+    "source": "l'ingénieure",
+    "target": "die Ingenieurin",
+    "exampleSource": "Mon amie est ingénieure.",
+    "exampleTarget": "Meine Freundin ist Ingenieurin."
+  },
+  {
+    "source": "le professeur",
+    "target": "der Lehrer",
+    "exampleSource": "Le professeur explique la leçon.",
+    "exampleTarget": "Der Lehrer erklärt die Lektion."
+  },
+  {
+    "source": "la professeure",
+    "target": "die Lehrerin",
+    "exampleSource": "Ma mère est professeure de français.",
+    "exampleTarget": "Meine Mutter ist Französischlehrerin."
+  },
+  {
+    "source": "l'étudiant",
+    "target": "der Student",
+    "exampleSource": "L'étudiant prépare son examen.",
+    "exampleTarget": "Der Student bereitet seine Prüfung vor."
+  },
+  {
+    "source": "l'étudiante",
+    "target": "die Studentin",
+    "exampleSource": "L'étudiante va à l'université.",
+    "exampleTarget": "Die Studentin geht zur Universität."
+  },
+  {
+    "source": "le boulanger",
+    "target": "der Bäcker",
+    "exampleSource": "Le boulanger fait du pain frais.",
+    "exampleTarget": "Der Bäcker backt frisches Brot."
+  },
+  {
+    "source": "la boulangère",
+    "target": "die Bäckerin",
+    "exampleSource": "La boulangère ouvre tôt le matin.",
+    "exampleTarget": "Die Bäckerin öffnet früh am Morgen."
+  },
+  {
+    "source": "le cuisinier",
+    "target": "der Koch",
+    "exampleSource": "Le cuisinier prépare un bon repas.",
+    "exampleTarget": "Der Koch bereitet ein gutes Essen zu."
+  },
+  {
+    "source": "la cuisinière",
+    "target": "die Köchin",
+    "exampleSource": "La cuisinière travaille dans un grand restaurant.",
+    "exampleTarget": "Die Köchin arbeitet in einem großen Restaurant."
+  },
+  {
+    "source": "le vendeur",
+    "target": "der Verkäufer",
+    "exampleSource": "Le vendeur aide les clients.",
+    "exampleTarget": "Der Verkäufer hilft den Kunden."
+  },
+  {
+    "source": "la vendeuse",
+    "target": "die Verkäuferin",
+    "exampleSource": "La vendeuse travaille dans un magasin de vêtements.",
+    "exampleTarget": "Die Verkäuferin arbeitet in einem Bekleidungsgeschäft."
+  },
+  {
+    "source": "le journaliste",
+    "target": "der Journalist",
+    "exampleSource": "Le journaliste écrit des articles pour le journal.",
+    "exampleTarget": "Der Journalist schreibt Artikel für die Zeitung."
+  },
+  {
+    "source": "la journaliste",
+    "target": "die Journalistin",
+    "exampleSource": "La journaliste interviewe des personnes célèbres.",
+    "exampleTarget": "Die Journalistin interviewt berühmte Persönlichkeiten."
+  },
+  {
+    "source": "le policier",
+    "target": "der Polizist",
+    "exampleSource": "Le policier assure la sécurité.",
+    "exampleTarget": "Der Polizist sorgt für Sicherheit."
+  },
+  {
+    "source": "la policière",
+    "target": "die Polizistin",
+    "exampleSource": "La policière aide les citoyens.",
+    "exampleTarget": "Die Polizistin hilft den Bürgern."
+  },
+  {
+    "source": "le pompier",
+    "target": "der Feuerwehrmann",
+    "exampleSource": "Le pompier éteint les incendies.",
+    "exampleTarget": "Der Feuerwehrmann löscht Brände."
+  },
+  {
+    "source": "la pompière",
+    "target": "die Feuerwehrfrau",
+    "exampleSource": "La pompière sauve des vies.",
+    "exampleTarget": "Die Feuerwehrfrau rettet Leben."
+  },
+  {
+    "source": "l'infirmier",
+    "target": "der Krankenpfleger",
+    "exampleSource": "L'infirmier prend soin des patients.",
+    "exampleTarget": "Der Krankenpfleger kümmert sich um die Patienten."
+  },
+  {
+    "source": "l'infirmière",
+    "target": "die Krankenschwester",
+    "exampleSource": "L'infirmière donne des médicaments.",
+    "exampleTarget": "Die Krankenschwester gibt Medikamente."
+  },
+  {
+    "source": "le serveur",
+    "target": "der Kellner",
+    "exampleSource": "Le serveur apporte les boissons.",
+    "exampleTarget": "Der Kellner bringt die Getränke."
+  },
+  {
+    "source": "la serveuse",
+    "target": "die Kellnerin",
+    "exampleSource": "La serveuse prend la commande.",
+    "exampleTarget": "Die Kellnerin nimmt die Bestellung auf."
+  },
+  {
+    "source": "le coiffeur",
+    "target": "der Friseur",
+    "exampleSource": "Le coiffeur coupe les cheveux.",
+    "exampleTarget": "Der Friseur schneidet die Haare."
+  },
+  {
+    "source": "la coiffeuse",
+    "target": "die Friseurin",
+    "exampleSource": "La coiffeuse travaille dans un salon.",
+    "exampleTarget": "Die Friseurin arbeitet in einem Salon."
+  },
+  {
+    "source": "le pilote",
+    "target": "der Pilot",
+    "exampleSource": "Le pilote conduit l'avion.",
+    "exampleTarget": "Der Pilot fliegt das Flugzeug."
+  },
+  {
+    "source": "le peintre",
+    "target": "der Maler",
+    "exampleSource": "Le peintre décore les murs.",
+    "exampleTarget": "Der Maler dekoriert die Wände."
+  },
+  {
+    "source": "la peintre",
+    "target": "die Malerin",
+    "exampleSource": "La peintre crée de belles œuvres d'art.",
+    "exampleTarget": "Die Malerin schafft schöne Kunstwerke."
+  },
+  {
+    "source": "le facteur",
+    "target": "der Postbote",
+    "exampleSource": "Le facteur livre le courrier.",
+    "exampleTarget": "Der Postbote liefert die Post."
+  }
+]

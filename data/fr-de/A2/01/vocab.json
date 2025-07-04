@@ -1,0 +1,182 @@
+[
+  {
+    "source": "le père",
+    "target": "der Vater",
+    "exampleSource": "Mon père aime lire des livres.",
+    "exampleTarget": "Mein Vater liest gerne Bücher."
+  },
+  {
+    "source": "la mère",
+    "target": "die Mutter",
+    "exampleSource": "Ma mère cuisine très bien.",
+    "exampleTarget": "Meine Mutter kocht sehr gut."
+  },
+  {
+    "source": "le fils",
+    "target": "der Sohn",
+    "exampleSource": "Le fils joue au football.",
+    "exampleTarget": "Der Sohn spielt Fußball."
+  },
+  {
+    "source": "la fille",
+    "target": "die Tochter",
+    "exampleSource": "La fille dessine un cheval.",
+    "exampleTarget": "Die Tochter zeichnet ein Pferd."
+  },
+  {
+    "source": "le frère",
+    "target": "der Bruder",
+    "exampleSource": "Mon frère est plus jeune que moi.",
+    "exampleTarget": "Mein Bruder ist jünger als ich."
+  },
+  {
+    "source": "la sœur",
+    "target": "die Schwester",
+    "exampleSource": "Ma sœur habite à Berlin.",
+    "exampleTarget": "Meine Schwester wohnt in Berlin."
+  },
+  {
+    "source": "les parents",
+    "target": "die Eltern",
+    "exampleSource": "Mes parents voyagent beaucoup.",
+    "exampleTarget": "Meine Eltern reisen viel."
+  },
+  {
+    "source": "les enfants",
+    "target": "die Kinder",
+    "exampleSource": "Les enfants aiment jouer dehors.",
+    "exampleTarget": "Die Kinder spielen gerne draußen."
+  },
+  {
+    "source": "le grand-père",
+    "target": "der Großvater",
+    "exampleSource": "Mon grand-père raconte des histoires.",
+    "exampleTarget": "Mein Großvater erzählt Geschichten."
+  },
+  {
+    "source": "la grand-mère",
+    "target": "die Großmutter",
+    "exampleSource": "Ma grand-mère prépare des gâteaux.",
+    "exampleTarget": "Meine Großmutter backt Kuchen."
+  },
+  {
+    "source": "les grands-parents",
+    "target": "die Großeltern",
+    "exampleSource": "Mes grands-parents vivent à la campagne.",
+    "exampleTarget": "Meine Großeltern leben auf dem Land."
+  },
+  {
+    "source": "l'oncle",
+    "target": "der Onkel",
+    "exampleSource": "Mon oncle habite en France.",
+    "exampleTarget": "Mein Onkel wohnt in Frankreich."
+  },
+  {
+    "source": "la tante",
+    "target": "die Tante",
+    "exampleSource": "Ma tante a deux chats.",
+    "exampleTarget": "Meine Tante hat zwei Katzen."
+  },
+  {
+    "source": "le cousin",
+    "target": "der Cousin",
+    "exampleSource": "Mon cousin étudie l'histoire.",
+    "exampleTarget": "Mein Cousin studiert Geschichte."
+  },
+  {
+    "source": "la cousine",
+    "target": "die Cousine",
+    "exampleSource": "Ma cousine travaille dans un hôpital.",
+    "exampleTarget": "Meine Cousine arbeitet in einem Krankenhaus."
+  },
+  {
+    "source": "le neveu",
+    "target": "der Neffe",
+    "exampleSource": "Mon neveu est très drôle.",
+    "exampleTarget": "Mein Neffe ist sehr lustig."
+  },
+  {
+    "source": "la nièce",
+    "target": "die Nichte",
+    "exampleSource": "Ma nièce adore les animaux.",
+    "exampleTarget": "Meine Nichte liebt Tiere."
+  },
+  {
+    "source": "le mari",
+    "target": "der Ehemann",
+    "exampleSource": "Mon mari rentre tard ce soir.",
+    "exampleTarget": "Mein Ehemann kommt heute Abend spät nach Hause."
+  },
+  {
+    "source": "la femme",
+    "target": "die Ehefrau",
+    "exampleSource": "Ma femme est professeur.",
+    "exampleTarget": "Meine Frau ist Lehrerin."
+  },
+  {
+    "source": "le couple",
+    "target": "das Paar",
+    "exampleSource": "Le jeune couple se promène au parc.",
+    "exampleTarget": "Das junge Paar spaziert im Park."
+  },
+  {
+    "source": "la famille",
+    "target": "die Familie",
+    "exampleSource": "J'ai une grande famille.",
+    "exampleTarget": "Ich habe eine große Familie."
+  },
+  {
+    "source": "le bébé",
+    "target": "das Baby",
+    "exampleSource": "Le bébé dort dans son berceau.",
+    "exampleTarget": "Das Baby schläft in seinem Kinderbett."
+  },
+  {
+    "source": "le beau-frère",
+    "target": "der Schwager",
+    "exampleSource": "Mon beau-frère est ingénieur.",
+    "exampleTarget": "Mein Schwager ist Ingenieur."
+  },
+  {
+    "source": "la belle-sœur",
+    "target": "die Schwägerin",
+    "exampleSource": "Ma belle-sœur parle plusieurs langues.",
+    "exampleTarget": "Meine Schwägerin spricht mehrere Sprachen."
+  },
+  {
+    "source": "le beau-père",
+    "target": "der Stiefvater",
+    "exampleSource": "Mon beau-père est très gentil.",
+    "exampleTarget": "Mein Stiefvater ist sehr nett."
+  },
+  {
+    "source": "la belle-mère",
+    "target": "die Stiefmutter",
+    "exampleSource": "Ma belle-mère adore jardiner.",
+    "exampleTarget": "Meine Stiefmutter liebt Gartenarbeit."
+  },
+  {
+    "source": "le petit-fils",
+    "target": "der Enkel",
+    "exampleSource": "Mon petit-fils a six ans.",
+    "exampleTarget": "Mein Enkel ist sechs Jahre alt."
+  },
+  {
+    "source": "la petite-fille",
+    "target": "die Enkelin",
+    "exampleSource": "Ma petite-fille aime jouer avec ses poupées.",
+    "exampleTarget": "Meine Enkelin spielt gerne mit ihren Puppen."
+  },
+  {
+    "source": "la personne",
+    "target": "die Person",
+    "exampleSource": "Il y a cinq personnes dans ma famille.",
+    "exampleTarget": "Es gibt fünf Personen in meiner Familie."
+  },
+  {
+    "source": "l'anniversaire",
+    "target": "der Geburtstag",
+    "exampleSource": "C'est l'anniversaire de ma sœur aujourd'hui.",
+    "exampleTarget": "Heute ist der Geburtstag meiner Schwester."
+  }
+]

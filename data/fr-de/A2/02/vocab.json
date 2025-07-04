@@ -1,0 +1,182 @@
+[
+  {
+    "source": "le T-shirt",
+    "target": "das T-Shirt",
+    "exampleSource": "Je porte un T-shirt bleu.",
+    "exampleTarget": "Ich trage ein blaues T-Shirt."
+  },
+  {
+    "source": "la chemise",
+    "target": "das Hemd",
+    "exampleSource": "Il met sa chemise blanche.",
+    "exampleTarget": "Er zieht sein weißes Hemd an."
+  },
+  {
+    "source": "le pantalon",
+    "target": "die Hose",
+    "exampleSource": "Ce pantalon est trop grand.",
+    "exampleTarget": "Diese Hose ist zu groß."
+  },
+  {
+    "source": "la robe",
+    "target": "das Kleid",
+    "exampleSource": "Elle achète une nouvelle robe.",
+    "exampleTarget": "Sie kauft ein neues Kleid."
+  },
+  {
+    "source": "la jupe",
+    "target": "der Rock",
+    "exampleSource": "Ma sœur aime les jupes longues.",
+    "exampleTarget": "Meine Schwester mag lange Röcke."
+  },
+  {
+    "source": "le pull",
+    "target": "der Pullover",
+    "exampleSource": "J'ai besoin d'un pull chaud.",
+    "exampleTarget": "Ich brauche einen warmen Pullover."
+  },
+  {
+    "source": "le manteau",
+    "target": "der Mantel",
+    "exampleSource": "Prends ton manteau, il fait froid.",
+    "exampleTarget": "Nimm deinen Mantel, es ist kalt."
+  },
+  {
+    "source": "la veste",
+    "target": "die Jacke",
+    "exampleSource": "Sa veste est imperméable.",
+    "exampleTarget": "Seine Jacke ist wasserdicht."
+  },
+  {
+    "source": "les chaussures",
+    "target": "die Schuhe",
+    "exampleSource": "Où sont mes chaussures de sport?",
+    "exampleTarget": "Wo sind meine Sportschuhe?"
+  },
+  {
+    "source": "les chaussettes",
+    "target": "die Socken",
+    "exampleSource": "J'ai des chaussettes rouges.",
+    "exampleTarget": "Ich habe rote Socken."
+  },
+  {
+    "source": "le chapeau",
+    "target": "der Hut",
+    "exampleSource": "Elle porte un joli chapeau.",
+    "exampleTarget": "Sie trägt einen hübschen Hut."
+  },
+  {
+    "source": "l'écharpe",
+    "target": "der Schal",
+    "exampleSource": "Il a mis son écharpe pour l'hiver.",
+    "exampleTarget": "Er hat seinen Schal für den Winter angezogen."
+  },
+  {
+    "source": "les gants",
+    "target": "die Handschuhe",
+    "exampleSource": "N'oublie pas tes gants!",
+    "exampleTarget": "Vergiss deine Handschuhe nicht!"
+  },
+  {
+    "source": "le jean",
+    "target": "die Jeans",
+    "exampleSource": "J'aime porter des jeans.",
+    "exampleTarget": "Ich trage gerne Jeans."
+  },
+  {
+    "source": "la ceinture",
+    "target": "der Gürtel",
+    "exampleSource": "Cette ceinture est trop serrée.",
+    "exampleTarget": "Dieser Gürtel ist zu eng."
+  },
+  {
+    "source": "le pyjama",
+    "target": "der Schlafanzug",
+    "exampleSource": "Mon enfant dort en pyjama.",
+    "exampleTarget": "Mein Kind schläft im Schlafanzug."
+  },
+  {
+    "source": "le short",
+    "target": "die kurze Hose",
+    "exampleSource": "Il fait chaud, je porte un short.",
+    "exampleTarget": "Es ist warm, ich trage eine kurze Hose."
+  },
+  {
+    "source": "porter",
+    "target": "tragen",
+    "exampleSource": "Tu portes souvent cette chemise?",
+    "exampleTarget": "Trägst du oft dieses Hemd?"
+  },
+  {
+    "source": "mettre",
+    "target": "anziehen",
+    "exampleSource": "Je vais mettre ma nouvelle robe.",
+    "exampleTarget": "Ich werde mein neues Kleid anziehen."
+  },
+  {
+    "source": "enlever",
+    "target": "ausziehen",
+    "exampleSource": "Peux-tu enlever tes chaussures?",
+    "exampleTarget": "Kannst du deine Schuhe ausziehen?"
+  },
+  {
+    "source": "s'habiller",
+    "target": "sich anziehen",
+    "exampleSource": "Elle s'habille toujours vite.",
+    "exampleTarget": "Sie zieht sich immer schnell an."
+  },
+  {
+    "source": "essayer",
+    "target": "anprobieren",
+    "exampleSource": "Je voudrais essayer ce pantalon.",
+    "exampleTarget": "Ich möchte diese Hose anprobieren."
+  },
+  {
+    "source": "acheter",
+    "target": "kaufen",
+    "exampleSource": "J'ai acheté de nouvelles chaussettes.",
+    "exampleTarget": "Ich habe neue Socken gekauft."
+  },
+  {
+    "source": "la taille",
+    "target": "die Größe",
+    "exampleSource": "Quelle est votre taille?",
+    "exampleTarget": "Welche Größe haben Sie?"
+  },
+  {
+    "source": "la couleur",
+    "target": "die Farbe",
+    "exampleSource": "J'aime la couleur de ce pull.",
+    "exampleTarget": "Ich mag die Farbe dieses Pullovers."
+  },
+  {
+    "source": "petit",
+    "target": "klein",
+    "exampleSource": "Ces chaussures sont trop petites.",
+    "exampleTarget": "Diese Schuhe sind zu klein."
+  },
+  {
+    "source": "grand",
+    "target": "groß",
+    "exampleSource": "La veste est trop grande pour moi.",
+    "exampleTarget": "Die Jacke ist zu groß für mich."
+  },
+  {
+    "source": "nouveau",
+    "target": "neu",
+    "exampleSource": "J'ai un nouveau maillot de bain.",
+    "exampleTarget": "Ich habe einen neuen Badeanzug."
+  },
+  {
+    "source": "confortable",
+    "target": "bequem",
+    "exampleSource": "Ces chaussures sont très confortables.",
+    "exampleTarget": "Diese Schuhe sind sehr bequem."
+  },
+  {
+    "source": "la mode",
+    "target": "die Mode",
+    "exampleSource": "La mode change vite.",
+    "exampleTarget": "Die Mode ändert sich schnell."
+  }
+]

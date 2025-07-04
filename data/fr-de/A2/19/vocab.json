@@ -1,0 +1,182 @@
+[
+  {
+    "source": "la santé",
+    "target": "die Gesundheit",
+    "exampleSource": "La santé est très importante.",
+    "exampleTarget": "Die Gesundheit ist sehr wichtig."
+  },
+  {
+    "source": "le médecin",
+    "target": "der Arzt",
+    "exampleSource": "Je dois voir le médecin.",
+    "exampleTarget": "Ich muss zum Arzt gehen."
+  },
+  {
+    "source": "l'hôpital",
+    "target": "das Krankenhaus",
+    "exampleSource": "Il est à l'hôpital.",
+    "exampleTarget": "Er ist im Krankenhaus."
+  },
+  {
+    "source": "la maladie",
+    "target": "die Krankheit",
+    "exampleSource": "C'est une maladie grave.",
+    "exampleTarget": "Das ist eine ernste Krankheit."
+  },
+  {
+    "source": "avoir mal à",
+    "target": "Schmerzen haben an",
+    "exampleSource": "J'ai mal à la gorge.",
+    "exampleTarget": "Ich habe Halsschmerzen."
+  },
+  {
+    "source": "la tête",
+    "target": "der Kopf",
+    "exampleSource": "J'ai mal à la tête.",
+    "exampleTarget": "Ich habe Kopfschmerzen."
+  },
+  {
+    "source": "le ventre",
+    "target": "der Bauch",
+    "exampleSource": "Mon enfant a mal au ventre.",
+    "exampleTarget": "Mein Kind hat Bauchschmerzen."
+  },
+  {
+    "source": "le bras",
+    "target": "der Arm",
+    "exampleSource": "Elle s'est cassé le bras.",
+    "exampleTarget": "Sie hat sich den Arm gebrochen."
+  },
+  {
+    "source": "la jambe",
+    "target": "das Bein",
+    "exampleSource": "Il ne peut pas marcher à cause de sa jambe.",
+    "exampleTarget": "Er kann wegen seines Beins nicht laufen."
+  },
+  {
+    "source": "le rhume",
+    "target": "die Erkältung",
+    "exampleSource": "J'ai un mauvais rhume.",
+    "exampleTarget": "Ich habe eine starke Erkältung."
+  },
+  {
+    "source": "la fièvre",
+    "target": "das Fieber",
+    "exampleSource": "Il a de la fièvre.",
+    "exampleTarget": "Er hat Fieber."
+  },
+  {
+    "source": "la toux",
+    "target": "der Husten",
+    "exampleSource": "Sa toux est forte.",
+    "exampleTarget": "Sein Husten ist stark."
+  },
+  {
+    "source": "fatigué/fatiguée",
+    "target": "müde",
+    "exampleSource": "Je suis très fatigué après le travail.",
+    "exampleTarget": "Ich bin nach der Arbeit sehr müde."
+  },
+  {
+    "source": "se sentir",
+    "target": "sich fühlen",
+    "exampleSource": "Comment vous sentez-vous aujourd'hui?",
+    "exampleTarget": "Wie fühlen Sie sich heute?"
+  },
+  {
+    "source": "bien",
+    "target": "gut",
+    "exampleSource": "Je me sens bien aujourd'hui.",
+    "exampleTarget": "Ich fühle mich heute gut."
+  },
+  {
+    "source": "mal",
+    "target": "schlecht",
+    "exampleSource": "Je me sens mal.",
+    "exampleTarget": "Mir ist schlecht."
+  },
+  {
+    "source": "le médicament",
+    "target": "das Medikament",
+    "exampleSource": "Prenez ce médicament trois fois par jour.",
+    "exampleTarget": "Nehmen Sie dieses Medikament dreimal täglich."
+  },
+  {
+    "source": "la pharmacie",
+    "target": "die Apotheke",
+    "exampleSource": "Je vais à la pharmacie pour acheter un médicament.",
+    "exampleTarget": "Ich gehe in die Apotheke, um ein Medikament zu kaufen."
+  },
+  {
+    "source": "prendre",
+    "target": "nehmen",
+    "exampleSource": "Il faut prendre ce sirop.",
+    "exampleTarget": "Man muss diesen Sirup nehmen."
+  },
+  {
+    "source": "le rendez-vous",
+    "target": "der Termin",
+    "exampleSource": "J'ai un rendez-vous chez le dentiste.",
+    "exampleTarget": "Ich habe einen Zahnarzttermin."
+  },
+  {
+    "source": "la douleur",
+    "target": "der Schmerz",
+    "exampleSource": "La douleur est insupportable.",
+    "exampleTarget": "Der Schmerz ist unerträglich."
+  },
+  {
+    "source": "l'ordonnance",
+    "target": "das Rezept",
+    "exampleSource": "Le médecin m'a donné une ordonnance.",
+    "exampleTarget": "Der Arzt hat mir ein Rezept gegeben."
+  },
+  {
+    "source": "le patient/la patiente",
+    "target": "der Patient/die Patientin",
+    "exampleSource": "Le patient attend son tour.",
+    "exampleTarget": "Der Patient wartet auf seine Reihe."
+  },
+  {
+    "source": "la consultation",
+    "target": "die Sprechstunde/die Konsultation",
+    "exampleSource": "J'ai une consultation avec le spécialiste.",
+    "exampleTarget": "Ich habe eine Sprechstunde beim Spezialisten."
+  },
+  {
+    "source": "se reposer",
+    "target": "sich ausruhen",
+    "exampleSource": "Reposez-vous bien !",
+    "exampleTarget": "Ruhen Sie sich gut aus!"
+  },
+  {
+    "source": "sain/saine",
+    "target": "gesund",
+    "exampleSource": "Manger sain est important.",
+    "exampleTarget": "Gesund essen ist wichtig."
+  },
+  {
+    "source": "le symptôme",
+    "target": "das Symptom",
+    "exampleSource": "Quels sont vos symptômes?",
+    "exampleTarget": "Was sind Ihre Symptome?"
+  },
+  {
+    "source": "l'allergie",
+    "target": "die Allergie",
+    "exampleSource": "J'ai une allergie aux arachides.",
+    "exampleTarget": "Ich habe eine Erdnussallergie."
+  },
+  {
+    "source": "le corps",
+    "target": "der Körper",
+    "exampleSource": "Prenez soin de votre corps.",
+    "exampleTarget": "Kümmern Sie sich um Ihren Körper."
+  },
+  {
+    "source": "l'alimentation",
+    "target": "die Ernährung",
+    "exampleSource": "Une bonne alimentation est essentielle.",
+    "exampleTarget": "Eine gute Ernährung ist unerlässlich."
+  }
+]

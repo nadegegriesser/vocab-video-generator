@@ -1,0 +1,182 @@
+[
+  {
+    "source": "la joie",
+    "target": "die Freude",
+    "exampleSource": "Elle ressent beaucoup de joie aujourd'hui.",
+    "exampleTarget": "Sie empfindet heute viel Freude."
+  },
+  {
+    "source": "la tristesse",
+    "target": "die Traurigkeit",
+    "exampleSource": "La pluie me donne de la tristesse.",
+    "exampleTarget": "Der Regen macht mich traurig."
+  },
+  {
+    "source": "la colère",
+    "target": "die Wut",
+    "exampleSource": "Sa colère était visible sur son visage.",
+    "exampleTarget": "Seine Wut war in seinem Gesicht sichtbar."
+  },
+  {
+    "source": "la peur",
+    "target": "die Angst",
+    "exampleSource": "J'ai peur des araignées.",
+    "exampleTarget": "Ich habe Angst vor Spinnen."
+  },
+  {
+    "source": "l'amour",
+    "target": "die Liebe",
+    "exampleSource": "Leur amour est très fort.",
+    "exampleTarget": "Ihre Liebe ist sehr stark."
+  },
+  {
+    "source": "l'espoir",
+    "target": "die Hoffnung",
+    "exampleSource": "Il y a de l'espoir pour l'avenir.",
+    "exampleTarget": "Es gibt Hoffnung für die Zukunft."
+  },
+  {
+    "source": "la surprise",
+    "target": "die Überraschung",
+    "exampleSource": "Sa visite fut une grande surprise.",
+    "exampleTarget": "Sein Besuch war eine große Überraschung."
+  },
+  {
+    "source": "la honte",
+    "target": "die Scham",
+    "exampleSource": "Il avait honte de son erreur.",
+    "exampleTarget": "Er schämte sich für seinen Fehler."
+  },
+  {
+    "source": "la jalousie",
+    "target": "die Eifersucht",
+    "exampleSource": "La jalousie peut détruire les relations.",
+    "exampleTarget": "Eifersucht kann Beziehungen zerstören."
+  },
+  {
+    "source": "le bonheur",
+    "target": "das Glück",
+    "exampleSource": "Je te souhaite beaucoup de bonheur.",
+    "exampleTarget": "Ich wünsche dir viel Glück."
+  },
+  {
+    "source": "le stress",
+    "target": "der Stress",
+    "exampleSource": "Le stress est mauvais pour la santé.",
+    "exampleTarget": "Stress ist schlecht für die Gesundheit."
+  },
+  {
+    "source": "la déception",
+    "target": "die Enttäuschung",
+    "exampleSource": "Sa déception était palpable.",
+    "exampleTarget": "Seine Enttäuschung war greifbar."
+  },
+  {
+    "source": "la solitude",
+    "target": "die Einsamkeit",
+    "exampleSource": "La solitude est parfois difficile à supporter.",
+    "exampleTarget": "Einsamkeit ist manchmal schwer zu ertragen."
+  },
+  {
+    "source": "la fierté",
+    "target": "der Stolz",
+    "exampleSource": "Il ressentait une grande fierté pour son fils.",
+    "exampleTarget": "Er empfand großen Stolz für seinen Sohn."
+  },
+  {
+    "source": "être heureux/heureuse",
+    "target": "glücklich sein",
+    "exampleSource": "Elle est toujours très heureuse de te voir.",
+    "exampleTarget": "Sie ist immer sehr glücklich, dich zu sehen."
+  },
+  {
+    "source": "être triste",
+    "target": "traurig sein",
+    "exampleSource": "Je suis triste parce que tu pars.",
+    "exampleTarget": "Ich bin traurig, weil du gehst."
+  },
+  {
+    "source": "être en colère",
+    "target": "wütend sein",
+    "exampleSource": "Il est en colère contre moi.",
+    "exampleTarget": "Er ist wütend auf mich."
+  },
+  {
+    "source": "avoir peur",
+    "target": "Angst haben",
+    "exampleSource": "N'aie pas peur du noir.",
+    "exampleTarget": "Habe keine Angst vor der Dunkelheit."
+  },
+  {
+    "source": "aimer",
+    "target": "lieben/mögen",
+    "exampleSource": "J'aime lire des livres.",
+    "exampleTarget": "Ich lese gerne Bücher."
+  },
+  {
+    "source": "détester",
+    "target": "hassen",
+    "exampleSource": "Je déteste les injustices.",
+    "exampleTarget": "Ich hasse Ungerechtigkeiten."
+  },
+  {
+    "source": "espérer",
+    "target": "hoffen",
+    "exampleSource": "J'espère que tu vas bien.",
+    "exampleTarget": "Ich hoffe, dass es dir gut geht."
+  },
+  {
+    "source": "pleurer",
+    "target": "weinen",
+    "exampleSource": "L'enfant a commencé à pleurer.",
+    "exampleTarget": "Das Kind fing an zu weinen."
+  },
+  {
+    "source": "rire",
+    "target": "lachen",
+    "exampleSource": "Ils rient beaucoup ensemble.",
+    "exampleTarget": "Sie lachen viel zusammen."
+  },
+  {
+    "source": "sourire",
+    "target": "lächeln",
+    "exampleSource": "Elle a un beau sourire.",
+    "exampleTarget": "Sie hat ein schönes Lächeln."
+  },
+  {
+    "source": "se sentir",
+    "target": "sich fühlen",
+    "exampleSource": "Comment te sens-tu aujourd'hui ?",
+    "exampleTarget": "Wie fühlst du dich heute?"
+  },
+  {
+    "source": "fatigué/fatiguée",
+    "target": "müde",
+    "exampleSource": "Je suis très fatiguée après le travail.",
+    "exampleTarget": "Ich bin nach der Arbeit sehr müde."
+  },
+  {
+    "source": "stressé/stressée",
+    "target": "gestresst",
+    "exampleSource": "Il est stressé par ses examens.",
+    "exampleTarget": "Er ist wegen seiner Prüfungen gestresst."
+  },
+  {
+    "source": "calme",
+    "target": "ruhig",
+    "exampleSource": "Restez calme, tout va bien.",
+    "exampleTarget": "Bleiben Sie ruhig, alles ist gut."
+  },
+  {
+    "source": "inquiet/inquiète",
+    "target": "besorgt",
+    "exampleSource": "Elle est inquiète pour son ami.",
+    "exampleTarget": "Sie ist besorgt um ihren Freund."
+  },
+  {
+    "source": "soulagé/soulagée",
+    "target": "erleichtert",
+    "exampleSource": "J'étais soulagé quand j'ai eu les résultats.",
+    "exampleTarget": "Ich war erleichtert, als ich die Ergebnisse hatte."
+  }
+]

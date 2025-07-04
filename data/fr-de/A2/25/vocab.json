@@ -1,0 +1,182 @@
+[
+  {
+    "source": "la langue",
+    "target": "die Sprache",
+    "exampleSource": "Quelle langue parles-tu ?",
+    "exampleTarget": "Welche Sprache sprichst du?"
+  },
+  {
+    "source": "parler",
+    "target": "sprechen",
+    "exampleSource": "Je parle français couramment.",
+    "exampleTarget": "Ich spreche fließend Französisch."
+  },
+  {
+    "source": "apprendre",
+    "target": "lernen",
+    "exampleSource": "Elle apprend l'allemand à l'école.",
+    "exampleTarget": "Sie lernt Deutsch in der Schule."
+  },
+  {
+    "source": "étudier",
+    "target": "studieren",
+    "exampleSource": "Il étudie les langues à l'université.",
+    "exampleTarget": "Er studiert Sprachen an der Universität."
+  },
+  {
+    "source": "comprendre",
+    "target": "verstehen",
+    "exampleSource": "Je comprends un peu l'espagnol.",
+    "exampleTarget": "Ich verstehe ein bisschen Spanisch."
+  },
+  {
+    "source": "lire",
+    "target": "lesen",
+    "exampleSource": "Tu peux lire ce livre en anglais ?",
+    "exampleTarget": "Kannst du dieses Buch auf Englisch lesen?"
+  },
+  {
+    "source": "écrire",
+    "target": "schreiben",
+    "exampleSource": "J'écris un email en français.",
+    "exampleTarget": "Ich schreibe eine E-Mail auf Französisch."
+  },
+  {
+    "source": "le mot",
+    "target": "das Wort",
+    "exampleSource": "Je ne connais pas ce mot.",
+    "exampleTarget": "Ich kenne dieses Wort nicht."
+  },
+  {
+    "source": "la phrase",
+    "target": "der Satz",
+    "exampleSource": "Fais une phrase simple.",
+    "exampleTarget": "Bilde einen einfachen Satz."
+  },
+  {
+    "source": "la conversation",
+    "target": "die Unterhaltung",
+    "exampleSource": "Nous avons eu une longue conversation.",
+    "exampleTarget": "Wir hatten eine lange Unterhaltung."
+  },
+  {
+    "source": "le vocabulaire",
+    "target": "der Wortschatz",
+    "exampleSource": "J'apprends du nouveau vocabulaire chaque jour.",
+    "exampleTarget": "Ich lerne jeden Tag neuen Wortschatz."
+  },
+  {
+    "source": "la grammaire",
+    "target": "die Grammatik",
+    "exampleSource": "La grammaire française est difficile.",
+    "exampleTarget": "Die französische Grammatik ist schwierig."
+  },
+  {
+    "source": "l'accent",
+    "target": "der Akzent",
+    "exampleSource": "Elle a un bel accent français.",
+    "exampleTarget": "Sie hat einen schönen französischen Akzent."
+  },
+  {
+    "source": "traduire",
+    "target": "übersetzen",
+    "exampleSource": "Peux-tu traduire ce texte pour moi ?",
+    "exampleTarget": "Kannst du diesen Text für mich übersetzen?"
+  },
+  {
+    "source": "la traduction",
+    "target": "die Übersetzung",
+    "exampleSource": "La traduction est très bonne.",
+    "exampleTarget": "Die Übersetzung ist sehr gut."
+  },
+  {
+    "source": "le dictionnaire",
+    "target": "das Wörterbuch",
+    "exampleSource": "Utilise un dictionnaire pour trouver le mot.",
+    "exampleTarget": "Benutze ein Wörterbuch, um das Wort zu finden."
+  },
+  {
+    "source": "l'expression",
+    "target": "der Ausdruck",
+    "exampleSource": "C'est une expression courante en français.",
+    "exampleTarget": "Das ist ein gebräuchlicher Ausdruck im Französischen."
+  },
+  {
+    "source": "bilingue",
+    "target": "zweisprachig",
+    "exampleSource": "Mon ami est bilingue anglais-français.",
+    "exampleTarget": "Mein Freund ist englisch-französisch zweisprachig."
+  },
+  {
+    "source": "la prononciation",
+    "target": "die Aussprache",
+    "exampleSource": "Sa prononciation est très claire.",
+    "exampleTarget": "Ihre Aussprache ist sehr klar."
+  },
+  {
+    "source": "facile",
+    "target": "einfach",
+    "exampleSource": "L'anglais est une langue facile pour lui.",
+    "exampleTarget": "Englisch ist eine einfache Sprache für ihn."
+  },
+  {
+    "source": "difficile",
+    "target": "schwierig",
+    "exampleSource": "Le chinois est une langue très difficile.",
+    "exampleTarget": "Chinesisch ist eine sehr schwierige Sprache."
+  },
+  {
+    "source": "le cours de langue",
+    "target": "der Sprachkurs",
+    "exampleSource": "Je prends un cours de langue allemande.",
+    "exampleTarget": "Ich mache einen Deutsch-Sprachkurs."
+  },
+  {
+    "source": "le pays",
+    "target": "das Land",
+    "exampleSource": "Quelle langue parle-t-on dans ce pays ?",
+    "exampleTarget": "Welche Sprache spricht man in diesem Land?"
+  },
+  {
+    "source": "étranger",
+    "target": "fremd",
+    "exampleSource": "C'est une langue étrangère pour moi.",
+    "exampleTarget": "Das ist eine fremde Sprache für mich."
+  },
+  {
+    "source": "la communication",
+    "target": "die Kommunikation",
+    "exampleSource": "La communication est importante pour voyager.",
+    "exampleTarget": "Die Kommunikation ist wichtig für das Reisen."
+  },
+  {
+    "source": "dire",
+    "target": "sagen",
+    "exampleSource": "Que voulez-vous dire par là ?",
+    "exampleTarget": "Was möchten Sie damit sagen?"
+  },
+  {
+    "source": "répondre",
+    "target": "antworten",
+    "exampleSource": "Je n'ai pas pu répondre à sa question.",
+    "exampleTarget": "Ich konnte seine Frage nicht beantworten."
+  },
+  {
+    "source": "demander",
+    "target": "fragen",
+    "exampleSource": "Il va demander en anglais.",
+    "exampleTarget": "Er wird auf Englisch fragen."
+  },
+  {
+    "source": "la voix",
+    "target": "die Stimme",
+    "exampleSource": "J'entends ta voix clairement.",
+    "exampleTarget": "Ich höre deine Stimme klar."
+  },
+  {
+    "source": "la langue des signes",
+    "target": "die Gebärdensprache",
+    "exampleSource": "Elle apprend la langue des signes pour communiquer.",
+    "exampleTarget": "Sie lernt die Gebärdensprache, um zu kommunizieren."
+  }
+]

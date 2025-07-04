@@ -1,0 +1,182 @@
+[
+  {
+    "source": "le voyage",
+    "target": "die Reise",
+    "exampleSource": "Le voyage en train est long.",
+    "exampleTarget": "Die Zugreise ist lang."
+  },
+  {
+    "source": "voyager",
+    "target": "reisen",
+    "exampleSource": "J'aime voyager dans de nouveaux pays.",
+    "exampleTarget": "Ich reise gern in neue Länder."
+  },
+  {
+    "source": "le billet",
+    "target": "die Fahrkarte",
+    "exampleSource": "Avez-vous votre billet?",
+    "exampleTarget": "Haben Sie Ihre Fahrkarte?"
+  },
+  {
+    "source": "la gare",
+    "target": "der Bahnhof",
+    "exampleSource": "Nous allons à la gare.",
+    "exampleTarget": "Wir gehen zum Bahnhof."
+  },
+  {
+    "source": "l'aéroport",
+    "target": "der Flughafen",
+    "exampleSource": "L'avion décolle de l'aéroport.",
+    "exampleTarget": "Das Flugzeug startet vom Flughafen."
+  },
+  {
+    "source": "l'hôtel",
+    "target": "das Hotel",
+    "exampleSource": "Nous restons dans un bel hôtel.",
+    "exampleTarget": "Wir bleiben in einem schönen Hotel."
+  },
+  {
+    "source": "la valise",
+    "target": "der Koffer",
+    "exampleSource": "Ma valise est lourde.",
+    "exampleTarget": "Mein Koffer ist schwer."
+  },
+  {
+    "source": "partir",
+    "target": "abfahren / abreisen",
+    "exampleSource": "Nous partons demain matin.",
+    "exampleTarget": "Wir fahren morgen früh ab."
+  },
+  {
+    "source": "arriver",
+    "target": "ankommen",
+    "exampleSource": "Quand arrivez-vous?",
+    "exampleTarget": "Wann kommen Sie an?"
+  },
+  {
+    "source": "visiter",
+    "target": "besuchen",
+    "exampleSource": "Nous voulons visiter le château.",
+    "exampleTarget": "Wir wollen das Schloss besuchen."
+  },
+  {
+    "source": "la carte",
+    "target": "die Landkarte",
+    "exampleSource": "J'ai besoin d'une carte de la ville.",
+    "exampleTarget": "Ich brauche eine Stadtkarte."
+  },
+  {
+    "source": "l'avion",
+    "target": "das Flugzeug",
+    "exampleSource": "Il prend l'avion pour Paris.",
+    "exampleTarget": "Er nimmt das Flugzeug nach Paris."
+  },
+  {
+    "source": "le train",
+    "target": "der Zug",
+    "exampleSource": "Le train est en retard.",
+    "exampleTarget": "Der Zug ist verspätet."
+  },
+  {
+    "source": "la voiture",
+    "target": "das Auto",
+    "exampleSource": "Nous louons une voiture.",
+    "exampleTarget": "Wir mieten ein Auto."
+  },
+  {
+    "source": "le passeport",
+    "target": "der Reisepass",
+    "exampleSource": "N'oubliez pas votre passeport!",
+    "exampleTarget": "Vergessen Sie Ihren Reisepass nicht!"
+  },
+  {
+    "source": "la chambre",
+    "target": "das Zimmer",
+    "exampleSource": "La chambre est spacieuse.",
+    "exampleTarget": "Das Zimmer ist geräumig."
+  },
+  {
+    "source": "réservir",
+    "target": "buchen / reservieren",
+    "exampleSource": "Je voudrais réserver une table.",
+    "exampleTarget": "Ich möchte einen Tisch reservieren."
+  },
+  {
+    "source": "les vacances",
+    "target": "die Ferien",
+    "exampleSource": "Nous passons nos vacances à la mer.",
+    "exampleTarget": "Wir verbringen unsere Ferien am Meer."
+  },
+  {
+    "source": "la plage",
+    "target": "der Strand",
+    "exampleSource": "J'adore la plage en été.",
+    "exampleTarget": "Ich liebe den Strand im Sommer."
+  },
+  {
+    "source": "la montagne",
+    "target": "der Berg",
+    "exampleSource": "Il y a de belles montagnes ici.",
+    "exampleTarget": "Hier gibt es schöne Berge."
+  },
+  {
+    "source": "la ville",
+    "target": "die Stadt",
+    "exampleSource": "Paris est une grande ville.",
+    "exampleTarget": "Paris ist eine große Stadt."
+  },
+  {
+    "source": "la campagne",
+    "target": "das Land",
+    "exampleSource": "J'aime me promener à la campagne.",
+    "exampleTarget": "Ich gehe gern auf dem Land spazieren."
+  },
+  {
+    "source": "le musée",
+    "target": "das Museum",
+    "exampleSource": "Le musée est ouvert jusqu'à 18h.",
+    "exampleTarget": "Das Museum ist bis 18 Uhr geöffnet."
+  },
+  {
+    "source": "le restaurant",
+    "target": "das Restaurant",
+    "exampleSource": "Dînons au restaurant ce soir.",
+    "exampleTarget": "Lasst uns heute Abend im Restaurant essen."
+  },
+  {
+    "source": "manger",
+    "target": "essen",
+    "exampleSource": "Qu'est-ce que vous voulez manger?",
+    "exampleTarget": "Was möchten Sie essen?"
+  },
+  {
+    "source": "boire",
+    "target": "trinken",
+    "exampleSource": "Je voudrais quelque chose à boire.",
+    "exampleTarget": "Ich hätte gern etwas zu trinken."
+  },
+  {
+    "source": "acheter",
+    "target": "kaufen",
+    "exampleSource": "Je veux acheter des souvenirs.",
+    "exampleTarget": "Ich möchte Souvenirs kaufen."
+  },
+  {
+    "source": "le souvenir",
+    "target": "das Souvenir",
+    "exampleSource": "C'est un beau souvenir de Paris.",
+    "exampleTarget": "Das ist ein schönes Souvenir aus Paris."
+  },
+  {
+    "source": "l'argent",
+    "target": "das Geld",
+    "exampleSource": "J'ai assez d'argent pour le voyage.",
+    "exampleTarget": "Ich habe genug Geld für die Reise."
+  },
+  {
+    "source": "demander",
+    "target": "fragen / bitten",
+    "exampleSource": "Je dois demander le chemin.",
+    "exampleTarget": "Ich muss nach dem Weg fragen."
+  }
+]

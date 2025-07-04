@@ -1,0 +1,182 @@
+[
+  {
+    "source": "le restaurant",
+    "target": "das Restaurant",
+    "exampleSource": "Nous allons dîner au restaurant ce soir.",
+    "exampleTarget": "Wir gehen heute Abend im Restaurant zu Abend essen."
+  },
+  {
+    "source": "la table",
+    "target": "der Tisch",
+    "exampleSource": "Avez-vous une table pour deux personnes?",
+    "exampleTarget": "Haben Sie einen Tisch für zwei Personen?"
+  },
+  {
+    "source": "le serveur",
+    "target": "der Kellner",
+    "exampleSource": "Le serveur apporte nos boissons.",
+    "exampleTarget": "Der Kellner bringt unsere Getränke."
+  },
+  {
+    "source": "la serveuse",
+    "target": "die Kellnerin",
+    "exampleSource": "La serveuse est très aimable.",
+    "exampleTarget": "Die Kellnerin ist sehr freundlich."
+  },
+  {
+    "source": "le client",
+    "target": "der Gast",
+    "exampleSource": "Le client attend sa commande.",
+    "exampleTarget": "Der Gast wartet auf seine Bestellung."
+  },
+  {
+    "source": "la cliente",
+    "target": "die Gästin",
+    "exampleSource": "La cliente demande l'addition.",
+    "exampleTarget": "Die Gästin fragt nach der Rechnung."
+  },
+  {
+    "source": "le menu",
+    "target": "das Menü",
+    "exampleSource": "Je vais prendre le menu du jour.",
+    "exampleTarget": "Ich nehme das Tagesmenü."
+  },
+  {
+    "source": "la carte",
+    "target": "die Speisekarte",
+    "exampleSource": "Pourriez-vous nous apporter la carte, s'il vous plaît?",
+    "exampleTarget": "Könnten Sie uns bitte die Speisekarte bringen?"
+  },
+  {
+    "source": "le plat",
+    "target": "das Gericht",
+    "exampleSource": "Ce plat est délicieux.",
+    "exampleTarget": "Dieses Gericht ist köstlich."
+  },
+  {
+    "source": "l'entrée",
+    "target": "die Vorspeise",
+    "exampleSource": "Comme entrée, je prendrai une salade.",
+    "exampleTarget": "Als Vorspeise nehme ich einen Salat."
+  },
+  {
+    "source": "le plat principal",
+    "target": "die Hauptspeise",
+    "exampleSource": "Quel est votre plat principal préféré?",
+    "exampleTarget": "Was ist Ihr Lieblingshauptgericht?"
+  },
+  {
+    "source": "le dessert",
+    "target": "der Nachtisch",
+    "exampleSource": "Je voudrais un dessert, s'il vous plaît.",
+    "exampleTarget": "Ich hätte gerne einen Nachtisch, bitte."
+  },
+  {
+    "source": "la boisson",
+    "target": "das Getränk",
+    "exampleSource": "Quelle boisson voulez-vous?",
+    "exampleTarget": "Welches Getränk möchten Sie?"
+  },
+  {
+    "source": "l'eau",
+    "target": "das Wasser",
+    "exampleSource": "Je voudrais une bouteille d'eau, s'il vous plaît.",
+    "exampleTarget": "Ich hätte gerne eine Flasche Wasser, bitte."
+  },
+  {
+    "source": "le pain",
+    "target": "das Brot",
+    "exampleSource": "Pouvez-vous nous apporter plus de pain?",
+    "exampleTarget": "Können Sie uns mehr Brot bringen?"
+  },
+  {
+    "source": "le sel",
+    "target": "das Salz",
+    "exampleSource": "Le plat manque de sel.",
+    "exampleTarget": "Dem Gericht fehlt Salz."
+  },
+  {
+    "source": "le poivre",
+    "target": "der Pfeffer",
+    "exampleSource": "Je peux avoir le poivre, s'il vous plaît?",
+    "exampleTarget": "Kann ich bitte den Pfeffer haben?"
+  },
+  {
+    "source": "l'addition",
+    "target": "die Rechnung",
+    "exampleSource": "L'addition, s'il vous plaît!",
+    "exampleTarget": "Die Rechnung, bitte!"
+  },
+  {
+    "source": "réserver",
+    "target": "reservieren",
+    "exampleSource": "Nous devons réserver une table.",
+    "exampleTarget": "Wir müssen einen Tisch reservieren."
+  },
+  {
+    "source": "commander",
+    "target": "bestellen",
+    "exampleSource": "Qu'est-ce que vous allez commander?",
+    "exampleTarget": "Was werden Sie bestellen?"
+  },
+  {
+    "source": "payer",
+    "target": "bezahlen",
+    "exampleSource": "Je voudrais payer maintenant.",
+    "exampleTarget": "Ich möchte jetzt bezahlen."
+  },
+  {
+    "source": "manger",
+    "target": "essen",
+    "exampleSource": "Nous allons manger au restaurant.",
+    "exampleTarget": "Wir werden im Restaurant essen."
+  },
+  {
+    "source": "boire",
+    "target": "trinken",
+    "exampleSource": "Qu'est-ce que vous voulez boire?",
+    "exampleTarget": "Was möchten Sie trinken?"
+  },
+  {
+    "source": "bon appétit",
+    "target": "Guten Appetit",
+    "exampleSource": "Le serveur a dit \"bon appétit\".",
+    "exampleTarget": "Der Kellner sagte \"Guten Appetit\"."
+  },
+  {
+    "source": "délicieux",
+    "target": "köstlich",
+    "exampleSource": "Ce gâteau est vraiment délicieux!",
+    "exampleTarget": "Dieser Kuchen ist wirklich köstlich!"
+  },
+  {
+    "source": "complet",
+    "target": "ausgebucht",
+    "exampleSource": "Le restaurant est complet ce soir.",
+    "exampleTarget": "Das Restaurant ist heute Abend ausgebucht."
+  },
+  {
+    "source": "vide",
+    "target": "leer",
+    "exampleSource": "La table est vide.",
+    "exampleTarget": "Der Tisch ist leer."
+  },
+  {
+    "source": "le pourboire",
+    "target": "das Trinkgeld",
+    "exampleSource": "Il a laissé un bon pourboire au serveur.",
+    "exampleTarget": "Er hat dem Kellner ein gutes Trinkgeld gegeben."
+  },
+  {
+    "source": "la fourchette",
+    "target": "die Gabel",
+    "exampleSource": "J'ai besoin d'une fourchette.",
+    "exampleTarget": "Ich brauche eine Gabel."
+  },
+  {
+    "source": "le couteau",
+    "target": "das Messer",
+    "exampleSource": "Le couteau est sur la table.",
+    "exampleTarget": "Das Messer ist auf dem Tisch."
+  }
+]

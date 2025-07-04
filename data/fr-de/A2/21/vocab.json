@@ -1,0 +1,182 @@
+[
+  {
+    "source": "Faire les courses",
+    "target": "einkaufen gehen",
+    "exampleSource": "Je vais faire les courses au supermarché chaque samedi.",
+    "exampleTarget": "Ich gehe jeden Samstag im Supermarkt einkaufen."
+  },
+  {
+    "source": "le supermarché",
+    "target": "der Supermarkt",
+    "exampleSource": "Le supermarché est ouvert jusqu'à 20 heures.",
+    "exampleTarget": "Der Supermarkt ist bis 20 Uhr geöffnet."
+  },
+  {
+    "source": "le panier",
+    "target": "der Einkaufskorb",
+    "exampleSource": "Prends un panier si tu as peu d'articles.",
+    "exampleTarget": "Nimm einen Einkaufskorb, wenn du wenige Artikel hast."
+  },
+  {
+    "source": "le caddie",
+    "target": "der Einkaufswagen",
+    "exampleSource": "Pour les grosses courses, j'utilise un caddie.",
+    "exampleTarget": "Für den Großeinkauf benutze ich einen Einkaufswagen."
+  },
+  {
+    "source": "le rayon",
+    "target": "das Regal / die Abteilung",
+    "exampleSource": "Tu trouveras le lait dans le rayon des produits laitiers.",
+    "exampleTarget": "Du findest die Milch in der Milchprodukteabteilung."
+  },
+  {
+    "source": "la caisse",
+    "target": "die Kasse",
+    "exampleSource": "Il y a une longue file d'attente à la caisse.",
+    "exampleTarget": "Es gibt eine lange Warteschlange an der Kasse."
+  },
+  {
+    "source": "le caissier",
+    "target": "der Kassierer",
+    "exampleSource": "Le caissier a scanné tous mes articles rapidement.",
+    "exampleTarget": "Der Kassierer hat alle meine Artikel schnell gescannt."
+  },
+  {
+    "source": "le prix",
+    "target": "der Preis",
+    "exampleSource": "Le prix de ce fromage est de 5 euros.",
+    "exampleTarget": "Der Preis dieses Käses beträgt 5 Euro."
+  },
+  {
+    "source": "cher",
+    "target": "teuer",
+    "exampleSource": "Ce pull est trop cher pour mon budget.",
+    "exampleTarget": "Dieser Pullover ist zu teuer für mein Budget."
+  },
+  {
+    "source": "bon marché",
+    "target": "günstig / billig",
+    "exampleSource": "J'ai trouvé des fruits très bon marché au marché.",
+    "exampleTarget": "Ich habe sehr günstige Früchte auf dem Markt gefunden."
+  },
+  {
+    "source": "la promotion",
+    "target": "das Angebot / die Aktion",
+    "exampleSource": "Il y a une promotion intéressante sur le café ce matin.",
+    "exampleTarget": "Heute Morgen gibt es ein interessantes Angebot für Kaffee."
+  },
+  {
+    "source": "acheter",
+    "target": "kaufen",
+    "exampleSource": "Je dois acheter du pain et du lait.",
+    "exampleTarget": "Ich muss Brot und Milch kaufen."
+  },
+  {
+    "source": "la liste de courses",
+    "target": "der Einkaufszettel",
+    "exampleSource": "N'oublie pas ta liste de courses!",
+    "exampleTarget": "Vergiss deinen Einkaufszettel nicht!"
+  },
+  {
+    "source": "un produit",
+    "target": "ein Produkt",
+    "exampleSource": "Ce produit est bio et local.",
+    "exampleTarget": "Dieses Produkt ist bio und lokal."
+  },
+  {
+    "source": "le pain",
+    "target": "das Brot",
+    "exampleSource": "Je voudrais une baguette de pain, s'il vous plaît.",
+    "exampleTarget": "Ich hätte gerne ein Baguette Brot, bitte."
+  },
+  {
+    "source": "le lait",
+    "target": "die Milch",
+    "exampleSource": "Nous avons besoin d'un litre de lait frais.",
+    "exampleTarget": "Wir brauchen einen Liter frische Milch."
+  },
+  {
+    "source": "les fruits",
+    "target": "das Obst",
+    "exampleSource": "Les fruits sont bons pour la santé.",
+    "exampleTarget": "Obst ist gut für die Gesundheit."
+  },
+  {
+    "source": "les légumes",
+    "target": "das Gemüse",
+    "exampleSource": "Achète des légumes pour la soupe de ce soir.",
+    "exampleTarget": "Kaufe Gemüse für die heutige Abendsuppe."
+  },
+  {
+    "source": "la viande",
+    "target": "das Fleisch",
+    "exampleSource": "Je mange de la viande une fois par semaine.",
+    "exampleTarget": "Ich esse einmal pro Woche Fleisch."
+  },
+  {
+    "source": "le poisson",
+    "target": "der Fisch",
+    "exampleSource": "Le poisson frais est délicieux avec du riz.",
+    "exampleTarget": "Frischer Fisch ist köstlich mit Reis."
+  },
+  {
+    "source": "le fromage",
+    "target": "der Käse",
+    "exampleSource": "Quel est votre fromage préféré?",
+    "exampleTarget": "Was ist Ihr Lieblingskäse?"
+  },
+  {
+    "source": "les œufs",
+    "target": "die Eier",
+    "exampleSource": "J'ai besoin de douze œufs pour faire un gâteau.",
+    "exampleTarget": "Ich brauche zwölf Eier, um einen Kuchen zu backen."
+  },
+  {
+    "source": "l'eau",
+    "target": "das Wasser",
+    "exampleSource": "N'oublie pas d'acheter une bouteille d'eau.",
+    "exampleTarget": "Vergiss nicht, eine Flasche Wasser zu kaufen."
+  },
+  {
+    "source": "le jus",
+    "target": "der Saft",
+    "exampleSource": "J'aime boire du jus d'orange le matin.",
+    "exampleTarget": "Ich trinke morgens gerne Orangensaft."
+  },
+  {
+    "source": "la boulangerie",
+    "target": "die Bäckerei",
+    "exampleSource": "La boulangerie est juste au coin de la rue.",
+    "exampleTarget": "Die Bäckerei ist gleich um die Ecke."
+  },
+  {
+    "source": "le marché",
+    "target": "der Markt",
+    "exampleSource": "J'aime acheter des produits locaux au marché.",
+    "exampleTarget": "Ich kaufe gerne lokale Produkte auf dem Markt."
+  },
+  {
+    "source": "le sac",
+    "target": "die Tüte / der Beutel",
+    "exampleSource": "Avez-vous besoin d'un sac pour vos courses?",
+    "exampleTarget": "Brauchen Sie eine Tüte für Ihre Einkäufe?"
+  },
+  {
+    "source": "payer",
+    "target": "bezahlen",
+    "exampleSource": "Comment voulez-vous payer, en espèces ou par carte?",
+    "exampleTarget": "Wie möchten Sie bezahlen, bar oder mit Karte?"
+  },
+  {
+    "source": "la carte bancaire",
+    "target": "die Bankkarte / EC-Karte",
+    "exampleSource": "Je préfère payer avec ma carte bancaire.",
+    "exampleTarget": "Ich bezahle lieber mit meiner Bankkarte."
+  },
+  {
+    "source": "le ticket de caisse",
+    "target": "der Kassenbon / der Kassenzettel",
+    "exampleSource": "N'oubliez pas de prendre votre ticket de caisse.",
+    "exampleTarget": "Vergessen Sie nicht, Ihren Kassenbon mitzunehmen."
+  }
+]

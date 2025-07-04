@@ -1,0 +1,182 @@
+[
+  {
+    "source": "la maison",
+    "target": "das Haus",
+    "exampleSource": "J'habite dans une grande maison avec jardin.",
+    "exampleTarget": "Ich wohne in einem großen Haus mit Garten."
+  },
+  {
+    "source": "l'appartement",
+    "target": "die Wohnung",
+    "exampleSource": "Mon appartement est au deuxième étage.",
+    "exampleTarget": "Meine Wohnung ist im zweiten Stock."
+  },
+  {
+    "source": "la pièce",
+    "target": "das Zimmer",
+    "exampleSource": "Il y a cinq pièces dans cette maison.",
+    "exampleTarget": "Es gibt fünf Zimmer in diesem Haus."
+  },
+  {
+    "source": "le salon",
+    "target": "das Wohnzimmer",
+    "exampleSource": "Nous regardons la télévision dans le salon.",
+    "exampleTarget": "Wir sehen im Wohnzimmer fern."
+  },
+  {
+    "source": "la cuisine",
+    "target": "die Küche",
+    "exampleSource": "La cuisine est petite mais moderne.",
+    "exampleTarget": "Die Küche ist klein, aber modern."
+  },
+  {
+    "source": "la chambre",
+    "target": "das Schlafzimmer",
+    "exampleSource": "Ma chambre est très confortable.",
+    "exampleTarget": "Mein Schlafzimmer ist sehr gemütlich."
+  },
+  {
+    "source": "la salle de bain",
+    "target": "das Badezimmer",
+    "exampleSource": "La salle de bain a une grande douche.",
+    "exampleTarget": "Das Badezimmer hat eine große Dusche."
+  },
+  {
+    "source": "les toilettes",
+    "target": "die Toilette",
+    "exampleSource": "Les toilettes sont au rez-de-chaussée.",
+    "exampleTarget": "Die Toilette ist im Erdgeschoss."
+  },
+  {
+    "source": "la salle à manger",
+    "target": "das Esszimmer",
+    "exampleSource": "Nous mangeons tous ensemble dans la salle à manger.",
+    "exampleTarget": "Wir essen alle zusammen im Esszimmer."
+  },
+  {
+    "source": "le couloir",
+    "target": "der Flur",
+    "exampleSource": "Le couloir mène à toutes les pièces.",
+    "exampleTarget": "Der Flur führt zu allen Zimmern."
+  },
+  {
+    "source": "l'entrée",
+    "target": "der Eingang",
+    "exampleSource": "L'entrée est très lumineuse.",
+    "exampleTarget": "Der Eingang ist sehr hell."
+  },
+  {
+    "source": "le jardin",
+    "target": "der Garten",
+    "exampleSource": "Le jardin est idéal pour se détendre.",
+    "exampleTarget": "Der Garten ist ideal zum Entspannen."
+  },
+  {
+    "source": "le balcon",
+    "target": "der Balkon",
+    "exampleSource": "Mon appartement a un petit balcon.",
+    "exampleTarget": "Meine Wohnung hat einen kleinen Balkon."
+  },
+  {
+    "source": "la fenêtre",
+    "target": "das Fenster",
+    "exampleSource": "Ouvre la fenêtre, s'il te plaît.",
+    "exampleTarget": "Öffne bitte das Fenster."
+  },
+  {
+    "source": "la porte",
+    "target": "die Tür",
+    "exampleSource": "La porte d'entrée est rouge.",
+    "exampleTarget": "Die Eingangstür ist rot."
+  },
+  {
+    "source": "le toit",
+    "target": "das Dach",
+    "exampleSource": "Le toit de la maison est neuf.",
+    "exampleTarget": "Das Dach des Hauses ist neu."
+  },
+  {
+    "source": "le mur",
+    "target": "die Wand",
+    "exampleSource": "Le mur de la cuisine est blanc.",
+    "exampleTarget": "Die Wand der Küche ist weiß."
+  },
+  {
+    "source": "le sol",
+    "target": "der Boden",
+    "exampleSource": "Le sol du salon est en bois.",
+    "exampleTarget": "Der Boden des Wohnzimmers ist aus Holz."
+  },
+  {
+    "source": "le plafond",
+    "target": "die Decke",
+    "exampleSource": "Le plafond est très haut.",
+    "exampleTarget": "Die Decke ist sehr hoch."
+  },
+  {
+    "source": "l'escalier",
+    "target": "die Treppe",
+    "exampleSource": "L'escalier monte au premier étage.",
+    "exampleTarget": "Die Treppe führt in den ersten Stock."
+  },
+  {
+    "source": "le rez-de-chaussée",
+    "target": "das Erdgeschoss",
+    "exampleSource": "La cuisine est au rez-de-chaussée.",
+    "exampleTarget": "Die Küche ist im Erdgeschoss."
+  },
+  {
+    "source": "l'étage",
+    "target": "das Stockwerk",
+    "exampleSource": "Il y a trois étages dans cet immeuble.",
+    "exampleTarget": "Es gibt drei Stockwerke in diesem Gebäude."
+  },
+  {
+    "source": "le garage",
+    "target": "die Garage",
+    "exampleSource": "La voiture est garée dans le garage.",
+    "exampleTarget": "Das Auto ist in der Garage geparkt."
+  },
+  {
+    "source": "la cave",
+    "target": "der Keller",
+    "exampleSource": "Je range mes vieilles affaires à la cave.",
+    "exampleTarget": "Ich lagere meine alten Sachen im Keller."
+  },
+  {
+    "source": "le grenier",
+    "target": "der Dachboden",
+    "exampleSource": "Le grenier est plein de poussière.",
+    "exampleTarget": "Der Dachboden ist voller Staub."
+  },
+  {
+    "source": "le canapé",
+    "target": "das Sofa",
+    "exampleSource": "Le canapé est très confortable.",
+    "exampleTarget": "Das Sofa ist sehr bequem."
+  },
+  {
+    "source": "la table",
+    "target": "der Tisch",
+    "exampleSource": "Mets les assiettes sur la table.",
+    "exampleTarget": "Stell die Teller auf den Tisch."
+  },
+  {
+    "source": "la chaise",
+    "target": "der Stuhl",
+    "exampleSource": "Il y a quatre chaises autour de la table.",
+    "exampleTarget": "Es stehen vier Stühle um den Tisch."
+  },
+  {
+    "source": "le lit",
+    "target": "das Bett",
+    "exampleSource": "J'aime mon lit douillet.",
+    "exampleTarget": "Ich mag mein gemütliches Bett."
+  },
+  {
+    "source": "l'armoire",
+    "target": "der Schrank",
+    "exampleSource": "Range tes vêtements dans l'armoire.",
+    "exampleTarget": "Räume deine Kleidung in den Schrank."
+  }
+]

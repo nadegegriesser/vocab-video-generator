@@ -1,0 +1,182 @@
+[
+  {
+    "source": "le loisir",
+    "target": "das Hobby",
+    "exampleSource": "Mon loisir préféré est la lecture.",
+    "exampleTarget": "Mein Lieblingshobby ist Lesen."
+  },
+  {
+    "source": "le sport",
+    "target": "der Sport",
+    "exampleSource": "Je fais du sport tous les week-ends.",
+    "exampleTarget": "Ich mache jedes Wochenende Sport."
+  },
+  {
+    "source": "la lecture",
+    "target": "das Lesen",
+    "exampleSource": "La lecture est une activité relaxante.",
+    "exampleTarget": "Lesen ist eine entspannende Aktivität."
+  },
+  {
+    "source": "lire",
+    "target": "lesen",
+    "exampleSource": "J'aime lire des romans d'aventure.",
+    "exampleTarget": "Ich lese gerne Abenteuerromane."
+  },
+  {
+    "source": "le cinéma",
+    "target": "das Kino",
+    "exampleSource": "On va au cinéma ce soir?",
+    "exampleTarget": "Gehen wir heute Abend ins Kino?"
+  },
+  {
+    "source": "regarder un film",
+    "target": "einen Film sehen",
+    "exampleSource": "Nous aimons regarder des films à la maison.",
+    "exampleTarget": "Wir sehen uns gerne Filme zu Hause an."
+  },
+  {
+    "source": "la musique",
+    "target": "die Musik",
+    "exampleSource": "J'écoute de la musique classique.",
+    "exampleTarget": "Ich höre klassische Musik."
+  },
+  {
+    "source": "écouter de la musique",
+    "target": "Musik hören",
+    "exampleSource": "Elle aime écouter de la musique en travaillant.",
+    "exampleTarget": "Sie hört gerne Musik beim Arbeiten."
+  },
+  {
+    "source": "les jeux vidéo",
+    "target": "die Videospiele",
+    "exampleSource": "Mes enfants jouent souvent aux jeux vidéo.",
+    "exampleTarget": "Meine Kinder spielen oft Videospiele."
+  },
+  {
+    "source": "jouer à des jeux",
+    "target": "Spiele spielen",
+    "exampleSource": "Le soir, on joue souvent à des jeux de société.",
+    "exampleTarget": "Abends spielen wir oft Brettspiele."
+  },
+  {
+    "source": "la cuisine",
+    "target": "das Kochen",
+    "exampleSource": "La cuisine est ma passion.",
+    "exampleTarget": "Kochen ist meine Leidenschaft."
+  },
+  {
+    "source": "cuisiner",
+    "target": "kochen",
+    "exampleSource": "J'aime cuisiner de nouveaux plats.",
+    "exampleTarget": "Ich koche gerne neue Gerichte."
+  },
+  {
+    "source": "le jardinage",
+    "target": "die Gartenarbeit",
+    "exampleSource": "Mon grand-père aime le jardinage.",
+    "exampleTarget": "Mein Großvater mag Gartenarbeit."
+  },
+  {
+    "source": "jardiner",
+    "target": "gärtnern",
+    "exampleSource": "Nous jardinons ensemble le week-end.",
+    "exampleTarget": "Wir gärtnern am Wochenende zusammen."
+  },
+  {
+    "source": "la promenade",
+    "target": "der Spaziergang",
+    "exampleSource": "On fait une promenade dans le parc.",
+    "exampleTarget": "Wir machen einen Spaziergang im Park."
+  },
+  {
+    "source": "se promener",
+    "target": "spazieren gehen",
+    "exampleSource": "J'aime me promener au bord de la mer.",
+    "exampleTarget": "Ich gehe gerne am Meer spazieren."
+  },
+  {
+    "source": "le dessin",
+    "target": "das Zeichnen",
+    "exampleSource": "Elle a un talent pour le dessin.",
+    "exampleTarget": "Sie hat Talent zum Zeichnen."
+  },
+  {
+    "source": "dessiner",
+    "target": "zeichnen",
+    "exampleSource": "Il dessine des paysages magnifiques.",
+    "exampleTarget": "Er zeichnet wunderschöne Landschaften."
+  },
+  {
+    "source": "la danse",
+    "target": "das Tanzen",
+    "exampleSource": "La danse est une bonne façon de faire de l'exercice.",
+    "exampleTarget": "Tanzen ist eine gute Möglichkeit, Sport zu treiben."
+  },
+  {
+    "source": "danser",
+    "target": "tanzen",
+    "exampleSource": "Tu aimes danser le tango?",
+    "exampleTarget": "Tanzt du gerne Tango?"
+  },
+  {
+    "source": "le théâtre",
+    "target": "das Theater",
+    "exampleSource": "Nous allons souvent au théâtre.",
+    "exampleTarget": "Wir gehen oft ins Theater."
+  },
+  {
+    "source": "le concert",
+    "target": "das Konzert",
+    "exampleSource": "J'ai acheté des billets pour le concert.",
+    "exampleTarget": "Ich habe Konzertkarten gekauft."
+  },
+  {
+    "source": "le musée",
+    "target": "das Museum",
+    "exampleSource": "Le musée est ouvert tous les jours sauf le lundi.",
+    "exampleTarget": "Das Museum ist außer montags täglich geöffnet."
+  },
+  {
+    "source": "la piscine",
+    "target": "das Schwimmbad",
+    "exampleSource": "Il fait chaud, allons à la piscine!",
+    "exampleTarget": "Es ist heiß, gehen wir ins Schwimmbad!"
+  },
+  {
+    "source": "nager",
+    "target": "schwimmen",
+    "exampleSource": "J'apprends à nager cet été.",
+    "exampleTarget": "Ich lerne diesen Sommer schwimmen."
+  },
+  {
+    "source": "faire du vélo",
+    "target": "Fahrrad fahren",
+    "exampleSource": "On fait du vélo tous les dimanches.",
+    "exampleTarget": "Wir fahren jeden Sonntag Fahrrad."
+  },
+  {
+    "source": "voyager",
+    "target": "reisen",
+    "exampleSource": "J'adore voyager et découvrir de nouveaux pays.",
+    "exampleTarget": "Ich liebe es zu reisen und neue Länder zu entdecken."
+  },
+  {
+    "source": "prendre des photos",
+    "target": "Fotos machen",
+    "exampleSource": "Elle aime prendre des photos de la nature.",
+    "exampleTarget": "Sie macht gerne Fotos von der Natur."
+  },
+  {
+    "source": "se détendre",
+    "target": "sich entspannen",
+    "exampleSource": "Après le travail, j'aime me détendre avec un livre.",
+    "exampleTarget": "Nach der Arbeit entspanne ich mich gerne mit einem Buch."
+  },
+  {
+    "source": "le week-end",
+    "target": "das Wochenende",
+    "exampleSource": "Qu'est-ce que tu fais ce week-end?",
+    "exampleTarget": "Was machst du dieses Wochenende?"
+  }
+]

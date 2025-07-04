@@ -1,0 +1,182 @@
+[
+  {
+    "source": "le football",
+    "target": "der Fußball",
+    "exampleSource": "J'aime regarder le football à la télévision.",
+    "exampleTarget": "Ich schaue gerne Fußball im Fernsehen."
+  },
+  {
+    "source": "le basketball",
+    "target": "der Basketball",
+    "exampleSource": "Mon frère joue au basketball tous les jours.",
+    "exampleTarget": "Mein Bruder spielt jeden Tag Basketball."
+  },
+  {
+    "source": "le tennis",
+    "target": "das Tennis",
+    "exampleSource": "Elle fait du tennis deux fois par semaine.",
+    "exampleTarget": "Sie spielt zweimal pro Woche Tennis."
+  },
+  {
+    "source": "la natation",
+    "target": "das Schwimmen",
+    "exampleSource": "La natation est bonne pour la santé.",
+    "exampleTarget": "Schwimmen ist gut für die Gesundheit."
+  },
+  {
+    "source": "le cyclisme",
+    "target": "das Radfahren",
+    "exampleSource": "Ils aiment faire du cyclisme le week-end.",
+    "exampleTarget": "Sie fahren gerne am Wochenende Fahrrad."
+  },
+  {
+    "source": "la course à pied",
+    "target": "das Laufen",
+    "exampleSource": "Je fais de la course à pied le matin.",
+    "exampleTarget": "Ich gehe morgens laufen."
+  },
+  {
+    "source": "le ski",
+    "target": "das Skifahren",
+    "exampleSource": "Nous allons au ski en hiver.",
+    "exampleTarget": "Wir gehen im Winter Skifahren."
+  },
+  {
+    "source": "le volleyball",
+    "target": "der Volleyball",
+    "exampleSource": "L'équipe de volleyball s'entraîne beaucoup.",
+    "exampleTarget": "Die Volleyballmannschaft trainiert viel."
+  },
+  {
+    "source": "le handball",
+    "target": "der Handball",
+    "exampleSource": "Il est un bon joueur de handball.",
+    "exampleTarget": "Er ist ein guter Handballspieler."
+  },
+  {
+    "source": "le judo",
+    "target": "das Judo",
+    "exampleSource": "Mon enfant apprend le judo.",
+    "exampleTarget": "Mein Kind lernt Judo."
+  },
+  {
+    "source": "la gymnastique",
+    "target": "die Gymnastik",
+    "exampleSource": "Elle fait de la gymnastique.",
+    "exampleTarget": "Sie macht Gymnastik."
+  },
+  {
+    "source": "la randonnée",
+    "target": "das Wandern",
+    "exampleSource": "Nous aimons faire de la randonnée en montagne.",
+    "exampleTarget": "Wir wandern gerne in den Bergen."
+  },
+  {
+    "source": "la danse",
+    "target": "der Tanz",
+    "exampleSource": "La danse est un art et un sport.",
+    "exampleTarget": "Tanzen ist eine Kunst und ein Sport."
+  },
+  {
+    "source": "le golf",
+    "target": "das Golf",
+    "exampleSource": "Mon père joue au golf chaque dimanche.",
+    "exampleTarget": "Mein Vater spielt jeden Sonntag Golf."
+  },
+  {
+    "source": "l'équitation",
+    "target": "das Reiten",
+    "exampleSource": "L'équitation est mon passe-temps préféré.",
+    "exampleTarget": "Reiten ist mein Lieblingshobby."
+  },
+  {
+    "source": "le rugby",
+    "target": "das Rugby",
+    "exampleSource": "Le rugby est un sport d'équipe populaire.",
+    "exampleTarget": "Rugby ist eine beliebte Mannschaftssportart."
+  },
+  {
+    "source": "la boxe",
+    "target": "das Boxen",
+    "exampleSource": "Il s'entraîne à la boxe trois fois par semaine.",
+    "exampleTarget": "Er trainiert dreimal pro Woche Boxen."
+  },
+  {
+    "source": "le ballon",
+    "target": "der Ball",
+    "exampleSource": "Le ballon est rond pour jouer au football.",
+    "exampleTarget": "Der Ball ist rund, um Fußball zu spielen."
+  },
+  {
+    "source": "la raquette",
+    "target": "der Schläger",
+    "exampleSource": "J'ai besoin d'une nouvelle raquette de tennis.",
+    "exampleTarget": "Ich brauche einen neuen Tennisschläger."
+  },
+  {
+    "source": "la piscine",
+    "target": "das Schwimmbad",
+    "exampleSource": "Nous allons à la piscine tous les étés.",
+    "exampleTarget": "Wir gehen jeden Sommer ins Schwimmbad."
+  },
+  {
+    "source": "le stade",
+    "target": "das Stadion",
+    "exampleSource": "Le match aura lieu dans un grand stade.",
+    "exampleTarget": "Das Spiel findet in einem großen Stadion statt."
+  },
+  {
+    "source": "le gymnase",
+    "target": "die Turnhalle",
+    "exampleSource": "L'école a un nouveau gymnase.",
+    "exampleTarget": "Die Schule hat eine neue Turnhalle."
+  },
+  {
+    "source": "le terrain",
+    "target": "der Platz (Spielfeld)",
+    "exampleSource": "Les joueurs sont sur le terrain de football.",
+    "exampleTarget": "Die Spieler sind auf dem Fußballplatz."
+  },
+  {
+    "source": "jouer",
+    "target": "spielen",
+    "exampleSource": "Tu aimes jouer au football?",
+    "exampleTarget": "Spielst du gerne Fußball?"
+  },
+  {
+    "source": "faire du sport",
+    "target": "Sport treiben",
+    "exampleSource": "Il est important de faire du sport régulièrement.",
+    "exampleTarget": "Es ist wichtig, regelmäßig Sport zu treiben."
+  },
+  {
+    "source": "s'entraîner",
+    "target": "trainieren",
+    "exampleSource": "Les athlètes s'entraînent dur pour la compétition.",
+    "exampleTarget": "Die Athleten trainieren hart für den Wettkampf."
+  },
+  {
+    "source": "une équipe",
+    "target": "eine Mannschaft",
+    "exampleSource": "Notre équipe de football a gagné.",
+    "exampleTarget": "Unsere Fußballmannschaft hat gewonnen."
+  },
+  {
+    "source": "un match",
+    "target": "ein Spiel (Wettkampf)",
+    "exampleSource": "Nous regardons un match de tennis ce soir.",
+    "exampleTarget": "Wir schauen heute Abend ein Tennisspiel."
+  },
+  {
+    "source": "gagner",
+    "target": "gewinnen",
+    "exampleSource": "Ils veulent gagner le championnat.",
+    "exampleTarget": "Sie wollen die Meisterschaft gewinnen."
+  },
+  {
+    "source": "perdre",
+    "target": "verlieren",
+    "exampleSource": "Nous n'aimons pas perdre un match.",
+    "exampleTarget": "Wir verlieren ungern ein Spiel."
+  }
+]
