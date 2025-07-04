@@ -4,7 +4,6 @@ import { TopicEntry, VocabEntry } from '../src/types.js';
 import { loadFile } from '../src/file.js';
 import { glob } from 'glob';
 
-// 🧾 Eingabeparameter: Anzahl, Level, Quell- und Zielsprache
 const args = process.argv.slice(2);
 const sourceLang = args[0] || 'fr';
 const targetLang = args[1] || 'de';

@@ -1,7 +1,6 @@
 import fs from 'fs';
 import { generateTopics } from '../src/gemini.js';
 
-// 🧾 Eingabeparameter: Anzahl, Level, Quell- und Zielsprache
 const args = process.argv.slice(2);
 const count = parseInt(args[0] || '30', 10);
 const level = args[1] || 'A1';

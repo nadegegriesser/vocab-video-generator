@@ -1,0 +1,122 @@
+[
+  {
+    "source": "La famille",
+    "target": "Die Familie"
+  },
+  {
+    "source": "Les vêtements",
+    "target": "Die Kleidung"
+  },
+  {
+    "source": "La nourriture et les boissons",
+    "target": "Essen und Trinken"
+  },
+  {
+    "source": "La maison et les pièces",
+    "target": "Das Haus und die Räume"
+  },
+  {
+    "source": "Les activités quotidiennes",
+    "target": "Tägliche Aktivitäten"
+  },
+  {
+    "source": "Les transports",
+    "target": "Die Verkehrsmittel"
+  },
+  {
+    "source": "Les loisirs",
+    "target": "Die Freizeit"
+  },
+  {
+    "source": "Les couleurs",
+    "target": "Die Farben"
+  },
+  {
+    "source": "Les nombres",
+    "target": "Die Zahlen"
+  },
+  {
+    "source": "Les jours de la semaine",
+    "target": "Die Wochentage"
+  },
+  {
+    "source": "Les mois de l'année",
+    "target": "Die Monate des Jahres"
+  },
+  {
+    "source": "Les saisons",
+    "target": "Die Jahreszeiten"
+  },
+  {
+    "source": "La météo",
+    "target": "Das Wetter"
+  },
+  {
+    "source": "Les professions",
+    "target": "Die Berufe"
+  },
+  {
+    "source": "La ville",
+    "target": "Die Stadt"
+  },
+  {
+    "source": "La campagne",
+    "target": "Das Land"
+  },
+  {
+    "source": "Les animaux",
+    "target": "Die Tiere"
+  },
+  {
+    "source": "Le corps humain",
+    "target": "Der menschliche Körper"
+  },
+  {
+    "source": "La santé",
+    "target": "Die Gesundheit"
+  },
+  {
+    "source": "Les sentiments et émotions",
+    "target": "Gefühle und Emotionen"
+  },
+  {
+    "source": "Faire les courses",
+    "target": "Einkaufen gehen"
+  },
+  {
+    "source": "Au restaurant",
+    "target": "Im Restaurant"
+  },
+  {
+    "source": "Voyager",
+    "target": "Reisen"
+  },
+  {
+    "source": "Les pays et les nationalités",
+    "target": "Länder und Nationalitäten"
+  },
+  {
+    "source": "Les langues",
+    "target": "Die Sprachen"
+  },
+  {
+    "source": "Les études et l'école",
+    "target": "Das Studium und die Schule"
+  },
+  {
+    "source": "Les sports",
+    "target": "Die Sportarten"
+  },
+  {
+    "source": "La description physique",
+    "target": "Die körperliche Beschreibung"
+  },
+  {
+    "source": "Les objets du quotidien",
+    "target": "Alltagsgegenstände"
+  },
+  {
+    "source": "Les fêtes et célébrations",
+    "target": "Feste und Feiern"
+  }
+]
