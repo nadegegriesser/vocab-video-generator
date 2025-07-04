@@ -144,10 +144,9 @@ Speaker2: ${vocab.exampleTarget}`;
         config: config
     });
     console.log(response);
-    const inlineData = response.candidates?.[0]?.content?.parts?.[0]?.inlineData;
-    if (inlineData) {
-        console.log(inlineData.mimeType);
-        return Buffer.from(inlineData.data || '', 'base64');
+    const data = response.candidates?.[0]?.content?.parts?.[0]?.inlineData?.data;
+    if (data) {
+        return Buffer.from(data, 'base64');
     }
     return;
 }
