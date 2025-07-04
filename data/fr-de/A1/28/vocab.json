@@ -1,0 +1,182 @@
+[
+  {
+    "source": "l'école",
+    "target": "die Schule",
+    "exampleSource": "J'aime mon école.",
+    "exampleTarget": "Ich mag meine Schule."
+  },
+  {
+    "source": "le professeur",
+    "target": "der Lehrer",
+    "exampleSource": "Le professeur explique la leçon.",
+    "exampleTarget": "Der Lehrer erklärt die Lektion."
+  },
+  {
+    "source": "la professeure",
+    "target": "die Lehrerin",
+    "exampleSource": "La professeure est gentille.",
+    "exampleTarget": "Die Lehrerin ist nett."
+  },
+  {
+    "source": "l'élève",
+    "target": "der Schüler / die Schülerin",
+    "exampleSource": "L'élève lit un livre.",
+    "exampleTarget": "Der Schüler liest ein Buch."
+  },
+  {
+    "source": "la classe",
+    "target": "die Klasse",
+    "exampleSource": "Nous sommes dans la même classe.",
+    "exampleTarget": "Wir sind in derselben Klasse."
+  },
+  {
+    "source": "le livre",
+    "target": "das Buch",
+    "exampleSource": "Ouvre ton livre à la page dix.",
+    "exampleTarget": "Öffne dein Buch auf Seite zehn."
+  },
+  {
+    "source": "le cahier",
+    "target": "das Heft",
+    "exampleSource": "J'écris dans mon cahier.",
+    "exampleTarget": "Ich schreibe in mein Heft."
+  },
+  {
+    "source": "le stylo",
+    "target": "der Stift",
+    "exampleSource": "J'ai un nouveau stylo bleu.",
+    "exampleTarget": "Ich habe einen neuen blauen Stift."
+  },
+  {
+    "source": "la gomme",
+    "target": "der Radiergummi",
+    "exampleSource": "J'utilise la gomme pour effacer.",
+    "exampleTarget": "Ich benutze den Radiergummi zum Radieren."
+  },
+  {
+    "source": "le crayon",
+    "target": "der Bleistift",
+    "exampleSource": "Dessine avec ton crayon.",
+    "exampleTarget": "Zeichne mit deinem Bleistift."
+  },
+  {
+    "source": "la règle",
+    "target": "das Lineal",
+    "exampleSource": "J'ai besoin d'une règle.",
+    "exampleTarget": "Ich brauche ein Lineal."
+  },
+  {
+    "source": "le cartable",
+    "target": "der Schulranzen",
+    "exampleSource": "Mon cartable est lourd.",
+    "exampleTarget": "Mein Schulranzen ist schwer."
+  },
+  {
+    "source": "apprendre",
+    "target": "lernen",
+    "exampleSource": "J'apprends le français.",
+    "exampleTarget": "Ich lerne Französisch."
+  },
+  {
+    "source": "étudier",
+    "target": "studieren / lernen",
+    "exampleSource": "Il étudie pour l'examen.",
+    "exampleTarget": "Er lernt für die Prüfung."
+  },
+  {
+    "source": "lire",
+    "target": "lesen",
+    "exampleSource": "Elle aime lire des histoires.",
+    "exampleTarget": "Sie liest gerne Geschichten."
+  },
+  {
+    "source": "écrire",
+    "target": "schreiben",
+    "exampleSource": "Nous écrivons une lettre.",
+    "exampleTarget": "Wir schreiben einen Brief."
+  },
+  {
+    "source": "parler",
+    "target": "sprechen",
+    "exampleSource": "Je peux parler anglais.",
+    "exampleTarget": "Ich kann Englisch sprechen."
+  },
+  {
+    "source": "comprendre",
+    "target": "verstehen",
+    "exampleSource": "Je ne comprends pas.",
+    "exampleTarget": "Ich verstehe nicht."
+  },
+  {
+    "source": "l'examen",
+    "target": "die Prüfung",
+    "exampleSource": "L'examen est difficile.",
+    "exampleTarget": "Die Prüfung ist schwierig."
+  },
+  {
+    "source": "la leçon",
+    "target": "die Lektion / der Unterricht",
+    "exampleSource": "La leçon de maths est intéressante.",
+    "exampleTarget": "Die Mathelektion ist interessant."
+  },
+  {
+    "source": "la matière",
+    "target": "das Schulfach",
+    "exampleSource": "Quelle est ta matière préférée?",
+    "exampleTarget": "Was ist dein Lieblingsfach?"
+  },
+  {
+    "source": "les mathématiques",
+    "target": "die Mathematik",
+    "exampleSource": "J'aime les mathématiques.",
+    "exampleTarget": "Ich mag Mathematik."
+  },
+  {
+    "source": "le français",
+    "target": "Französisch",
+    "exampleSource": "Je parle un peu le français.",
+    "exampleTarget": "Ich spreche ein wenig Französisch."
+  },
+  {
+    "source": "l'allemand",
+    "target": "Deutsch",
+    "exampleSource": "Ils apprennent l'allemand à l'école.",
+    "exampleTarget": "Sie lernen Deutsch in der Schule."
+  },
+  {
+    "source": "l'anglais",
+    "target": "Englisch",
+    "exampleSource": "L'anglais est une langue importante.",
+    "exampleTarget": "Englisch ist eine wichtige Sprache."
+  },
+  {
+    "source": "l'histoire",
+    "target": "die Geschichte",
+    "exampleSource": "J'étudie l'histoire de France.",
+    "exampleTarget": "Ich studiere die Geschichte Frankreichs."
+  },
+  {
+    "source": "la géographie",
+    "target": "die Geografie",
+    "exampleSource": "La géographie est ma matière préférée.",
+    "exampleTarget": "Geografie ist mein Lieblingsfach."
+  },
+  {
+    "source": "la pause",
+    "target": "die Pause",
+    "exampleSource": "On a une pause à dix heures.",
+    "exampleTarget": "Wir haben um zehn Uhr Pause."
+  },
+  {
+    "source": "la bibliothèque",
+    "target": "die Bibliothek",
+    "exampleSource": "Je vais à la bibliothèque pour lire.",
+    "exampleTarget": "Ich gehe in die Bibliothek, um zu lesen."
+  },
+  {
+    "source": "l'université",
+    "target": "die Universität",
+    "exampleSource": "Mon frère va à l'université.",
+    "exampleTarget": "Mein Bruder geht zur Universität."
+  }
+]

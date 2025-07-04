@@ -1,0 +1,182 @@
+[
+  {
+    "source": "le sport",
+    "target": "der Sport",
+    "exampleSource": "J'aime faire du sport.",
+    "exampleTarget": "Ich mache gerne Sport."
+  },
+  {
+    "source": "la lecture",
+    "target": "das Lesen",
+    "exampleSource": "La lecture est relaxante.",
+    "exampleTarget": "Lesen ist entspannend."
+  },
+  {
+    "source": "la musique",
+    "target": "die Musik",
+    "exampleSource": "Elle écoute de la musique.",
+    "exampleTarget": "Sie hört Musik."
+  },
+  {
+    "source": "le cinéma",
+    "target": "das Kino",
+    "exampleSource": "Nous allons au cinéma.",
+    "exampleTarget": "Wir gehen ins Kino."
+  },
+  {
+    "source": "la télévision",
+    "target": "das Fernsehen",
+    "exampleSource": "Je regarde la télévision le soir.",
+    "exampleTarget": "Ich schaue abends fern."
+  },
+  {
+    "source": "le jeu",
+    "target": "das Spiel",
+    "exampleSource": "Les enfants jouent à un jeu.",
+    "exampleTarget": "Die Kinder spielen ein Spiel."
+  },
+  {
+    "source": "les amis",
+    "target": "die Freunde",
+    "exampleSource": "Je passe du temps avec mes amis.",
+    "exampleTarget": "Ich verbringe Zeit mit meinen Freunden."
+  },
+  {
+    "source": "la famille",
+    "target": "die Familie",
+    "exampleSource": "Je visite ma famille.",
+    "exampleTarget": "Ich besuche meine Familie."
+  },
+  {
+    "source": "le passe-temps",
+    "target": "das Hobby",
+    "exampleSource": "Mon passe-temps est la lecture.",
+    "exampleTarget": "Mein Hobby ist Lesen."
+  },
+  {
+    "source": "la promenade",
+    "target": "der Spaziergang",
+    "exampleSource": "Nous faisons une promenade.",
+    "exampleTarget": "Wir machen einen Spaziergang."
+  },
+  {
+    "source": "le voyage",
+    "target": "die Reise",
+    "exampleSource": "J'aime les voyages.",
+    "exampleTarget": "Ich mag Reisen."
+  },
+  {
+    "source": "le week-end",
+    "target": "das Wochenende",
+    "exampleSource": "J'attends le week-end.",
+    "exampleTarget": "Ich freue mich auf das Wochenende."
+  },
+  {
+    "source": "la danse",
+    "target": "der Tanz",
+    "exampleSource": "La danse est amusante.",
+    "exampleTarget": "Tanzen ist lustig."
+  },
+  {
+    "source": "la cuisine",
+    "target": "das Kochen",
+    "exampleSource": "J'aime faire la cuisine.",
+    "exampleTarget": "Ich koche gerne."
+  },
+  {
+    "source": "le jardinage",
+    "target": "die Gartenarbeit",
+    "exampleSource": "Le jardinage est un travail relaxant.",
+    "exampleTarget": "Gartenarbeit ist eine entspannende Arbeit."
+  },
+  {
+    "source": "le dessin",
+    "target": "das Zeichnen",
+    "exampleSource": "Il fait du dessin.",
+    "exampleTarget": "Er zeichnet."
+  },
+  {
+    "source": "la peinture",
+    "target": "die Malerei",
+    "exampleSource": "La peinture est ma passion.",
+    "exampleTarget": "Malerei ist meine Leidenschaft."
+  },
+  {
+    "source": "l'ordinateur",
+    "target": "der Computer",
+    "exampleSource": "Il utilise l'ordinateur.",
+    "exampleTarget": "Er benutzt den Computer."
+  },
+  {
+    "source": "l'internet",
+    "target": "das Internet",
+    "exampleSource": "Je surfe sur l'internet.",
+    "exampleTarget": "Ich surfe im Internet."
+  },
+  {
+    "source": "le parc",
+    "target": "der Park",
+    "exampleSource": "Nous allons au parc.",
+    "exampleTarget": "Wir gehen in den Park."
+  },
+  {
+    "source": "le musée",
+    "target": "das Museum",
+    "exampleSource": "Le musée est intéressant.",
+    "exampleTarget": "Das Museum ist interessant."
+  },
+  {
+    "source": "la plage",
+    "target": "der Strand",
+    "exampleSource": "La plage est belle.",
+    "exampleTarget": "Der Strand ist schön."
+  },
+  {
+    "source": "le restaurant",
+    "target": "das Restaurant",
+    "exampleSource": "On dîne au restaurant.",
+    "exampleTarget": "Wir essen im Restaurant zu Abend."
+  },
+  {
+    "source": "le café",
+    "target": "das Café",
+    "exampleSource": "Nous allons au café.",
+    "exampleTarget": "Wir gehen ins Café."
+  },
+  {
+    "source": "la fête",
+    "target": "die Party",
+    "exampleSource": "J'organise une fête.",
+    "exampleTarget": "Ich organisiere eine Party."
+  },
+  {
+    "source": "le concert",
+    "target": "das Konzert",
+    "exampleSource": "Le concert commence à 20h.",
+    "exampleTarget": "Das Konzert beginnt um 20 Uhr."
+  },
+  {
+    "source": "le livre",
+    "target": "das Buch",
+    "exampleSource": "J'ai un nouveau livre.",
+    "exampleTarget": "Ich habe ein neues Buch."
+  },
+  {
+    "source": "le journal",
+    "target": "die Zeitung",
+    "exampleSource": "Il lit le journal tous les matins.",
+    "exampleTarget": "Er liest jeden Morgen die Zeitung."
+  },
+  {
+    "source": "le film",
+    "target": "der Film",
+    "exampleSource": "Le film est drôle.",
+    "exampleTarget": "Der Film ist lustig."
+  },
+  {
+    "source": "la piscine",
+    "target": "das Schwimmbad",
+    "exampleSource": "J'aime nager à la piscine.",
+    "exampleTarget": "Ich schwimme gerne im Schwimmbad."
+  }
+]

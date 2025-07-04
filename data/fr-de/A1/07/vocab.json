@@ -1,0 +1,182 @@
+[
+  {
+    "source": "le médecin",
+    "target": "der Arzt",
+    "exampleSource": "Je vais voir le médecin.",
+    "exampleTarget": "Ich gehe zum Arzt."
+  },
+  {
+    "source": "l'infirmière",
+    "target": "die Krankenschwester",
+    "exampleSource": "Elle est infirmière à l'hôpital.",
+    "exampleTarget": "Sie ist Krankenschwester im Krankenhaus."
+  },
+  {
+    "source": "le professeur",
+    "target": "der Lehrer",
+    "exampleSource": "Mon professeur est très gentil.",
+    "exampleTarget": "Mein Lehrer ist sehr nett."
+  },
+  {
+    "source": "l'étudiant",
+    "target": "der Student",
+    "exampleSource": "Il est étudiant à Paris.",
+    "exampleTarget": "Er ist Student in Paris."
+  },
+  {
+    "source": "la vendeuse",
+    "target": "die Verkäuferin",
+    "exampleSource": "La vendeuse m'aide.",
+    "exampleTarget": "Die Verkäuferin hilft mir."
+  },
+  {
+    "source": "le boulanger",
+    "target": "der Bäcker",
+    "exampleSource": "Le boulanger fait du bon pain.",
+    "exampleTarget": "Der Bäcker macht gutes Brot."
+  },
+  {
+    "source": "la cuisinière",
+    "target": "die Köchin",
+    "exampleSource": "Elle travaille comme cuisinière.",
+    "exampleTarget": "Sie arbeitet als Köchin."
+  },
+  {
+    "source": "le policier",
+    "target": "der Polizist",
+    "exampleSource": "Le policier est dans la rue.",
+    "exampleTarget": "Der Polizist ist auf der Straße."
+  },
+  {
+    "source": "le pompier",
+    "target": "der Feuerwehrmann",
+    "exampleSource": "Le pompier est courageux.",
+    "exampleTarget": "Der Feuerwehrmann ist mutig."
+  },
+  {
+    "source": "le journaliste",
+    "target": "der Journalist",
+    "exampleSource": "Il est journaliste pour un journal.",
+    "exampleTarget": "Er ist Journalist für eine Zeitung."
+  },
+  {
+    "source": "l'artiste",
+    "target": "der Künstler",
+    "exampleSource": "Mon ami est artiste.",
+    "exampleTarget": "Mein Freund ist Künstler."
+  },
+  {
+    "source": "le chauffeur",
+    "target": "der Fahrer",
+    "exampleSource": "Le chauffeur conduit le bus.",
+    "exampleTarget": "Der Fahrer fährt den Bus."
+  },
+  {
+    "source": "la secrétaire",
+    "target": "die Sekretärin",
+    "exampleSource": "Elle est la secrétaire de mon patron.",
+    "exampleTarget": "Sie ist die Sekretärin meines Chefs."
+  },
+  {
+    "source": "l'ingénieur",
+    "target": "der Ingenieur",
+    "exampleSource": "Mon père est ingénieur.",
+    "exampleTarget": "Mein Vater ist Ingenieur."
+  },
+  {
+    "source": "l'avocat",
+    "target": "der Anwalt",
+    "exampleSource": "L'avocat parle au tribunal.",
+    "exampleTarget": "Der Anwalt spricht vor Gericht."
+  },
+  {
+    "source": "le serveur",
+    "target": "der Kellner",
+    "exampleSource": "Le serveur apporte la nourriture.",
+    "exampleTarget": "Der Kellner bringt das Essen."
+  },
+  {
+    "source": "la coiffeuse",
+    "target": "die Friseurin",
+    "exampleSource": "Je vais chez la coiffeuse.",
+    "exampleTarget": "Ich gehe zur Friseurin."
+  },
+  {
+    "source": "le mécanicien",
+    "target": "der Mechaniker",
+    "exampleSource": "Le mécanicien répare ma voiture.",
+    "exampleTarget": "Der Mechaniker repariert mein Auto."
+  },
+  {
+    "source": "le peintre",
+    "target": "der Maler",
+    "exampleSource": "Le peintre met de la couleur.",
+    "exampleTarget": "Der Maler trägt Farbe auf."
+  },
+  {
+    "source": "le fermier",
+    "target": "der Bauer",
+    "exampleSource": "Le fermier travaille à la ferme.",
+    "exampleTarget": "Der Bauer arbeitet auf dem Bauernhof."
+  },
+  {
+    "source": "le programmeur",
+    "target": "der Programmierer",
+    "exampleSource": "Il est programmeur informatique.",
+    "exampleTarget": "Er ist Computerprogrammierer."
+  },
+  {
+    "source": "la dentiste",
+    "target": "die Zahnärztin",
+    "exampleSource": "Ma dentiste est très gentille.",
+    "exampleTarget": "Meine Zahnärztin ist sehr nett."
+  },
+  {
+    "source": "le caissier",
+    "target": "der Kassierer",
+    "exampleSource": "Le caissier travaille au supermarché.",
+    "exampleTarget": "Der Kassierer arbeitet im Supermarkt."
+  },
+  {
+    "source": "l'écrivain",
+    "target": "der Schriftsteller",
+    "exampleSource": "Il est un écrivain célèbre.",
+    "exampleTarget": "Er ist ein berühmter Schriftsteller."
+  },
+  {
+    "source": "le chanteur",
+    "target": "der Sänger",
+    "exampleSource": "Mon frère est chanteur.",
+    "exampleTarget": "Mein Bruder ist Sänger."
+  },
+  {
+    "source": "l'acteur",
+    "target": "der Schauspieler",
+    "exampleSource": "Il est un bon acteur.",
+    "exampleTarget": "Er ist ein guter Schauspieler."
+  },
+  {
+    "source": "le pharmacien",
+    "target": "der Apotheker",
+    "exampleSource": "Le pharmacien vend des médicaments.",
+    "exampleTarget": "Der Apotheker verkauft Medikamente."
+  },
+  {
+    "source": "le boucher",
+    "target": "der Metzger",
+    "exampleSource": "Le boucher vend de la viande.",
+    "exampleTarget": "Der Metzger verkauft Fleisch."
+  },
+  {
+    "source": "l'architecte",
+    "target": "der Architekt",
+    "exampleSource": "L'architecte dessine des maisons.",
+    "exampleTarget": "Der Architekt zeichnet Häuser."
+  },
+  {
+    "source": "la femme de ménage",
+    "target": "die Putzfrau",
+    "exampleSource": "La femme de ménage nettoie la maison.",
+    "exampleTarget": "Die Putzfrau putzt das Haus."
+  }
+]

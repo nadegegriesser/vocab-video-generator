@@ -1,0 +1,182 @@
+[
+  {
+    "source": "la pomme",
+    "target": "der Apfel",
+    "exampleSource": "J'aime la pomme rouge.",
+    "exampleTarget": "Ich mag den roten Apfel."
+  },
+  {
+    "source": "l'eau",
+    "target": "das Wasser",
+    "exampleSource": "Je bois de l'eau.",
+    "exampleTarget": "Ich trinke Wasser."
+  },
+  {
+    "source": "le pain",
+    "target": "das Brot",
+    "exampleSource": "Je mange du pain chaque matin.",
+    "exampleTarget": "Ich esse jeden Morgen Brot."
+  },
+  {
+    "source": "le fromage",
+    "target": "der Käse",
+    "exampleSource": "Il y a du fromage dans mon sandwich.",
+    "exampleTarget": "Es ist Käse in meinem Sandwich."
+  },
+  {
+    "source": "le lait",
+    "target": "die Milch",
+    "exampleSource": "Je bois du lait au petit déjeuner.",
+    "exampleTarget": "Ich trinke Milch zum Frühstück."
+  },
+  {
+    "source": "la viande",
+    "target": "das Fleisch",
+    "exampleSource": "Elle ne mange pas de viande.",
+    "exampleTarget": "Sie isst kein Fleisch."
+  },
+  {
+    "source": "le poisson",
+    "target": "der Fisch",
+    "exampleSource": "J'aime manger du poisson.",
+    "exampleTarget": "Ich esse gerne Fisch."
+  },
+  {
+    "source": "le riz",
+    "target": "der Reis",
+    "exampleSource": "Le riz est un plat principal.",
+    "exampleTarget": "Reis ist ein Hauptgericht."
+  },
+  {
+    "source": "les pâtes",
+    "target": "die Nudeln",
+    "exampleSource": "Nous mangeons des pâtes avec de la sauce tomate.",
+    "exampleTarget": "Wir essen Nudeln mit Tomatensoße."
+  },
+  {
+    "source": "la salade",
+    "target": "der Salat",
+    "exampleSource": "Je prépare une salade verte.",
+    "exampleTarget": "Ich bereite einen grünen Salat zu."
+  },
+  {
+    "source": "la soupe",
+    "target": "die Suppe",
+    "exampleSource": "La soupe est chaude.",
+    "exampleTarget": "Die Suppe ist heiß."
+  },
+  {
+    "source": "le sucre",
+    "target": "der Zucker",
+    "exampleSource": "Je mets du sucre dans mon café.",
+    "exampleTarget": "Ich gebe Zucker in meinen Kaffee."
+  },
+  {
+    "source": "le sel",
+    "target": "das Salz",
+    "exampleSource": "N'oubliez pas le sel.",
+    "exampleTarget": "Vergessen Sie das Salz nicht."
+  },
+  {
+    "source": "le café",
+    "target": "der Kaffee",
+    "exampleSource": "Je bois un café le matin.",
+    "exampleTarget": "Ich trinke morgens einen Kaffee."
+  },
+  {
+    "source": "le thé",
+    "target": "der Tee",
+    "exampleSource": "Elle préfère le thé vert.",
+    "exampleTarget": "Sie bevorzugt grünen Tee."
+  },
+  {
+    "source": "le jus",
+    "target": "der Saft",
+    "exampleSource": "J'aimerais un jus d'orange.",
+    "exampleTarget": "Ich hätte gerne einen Orangensaft."
+  },
+  {
+    "source": "le vin",
+    "target": "der Wein",
+    "exampleSource": "Ce vin est bon.",
+    "exampleTarget": "Dieser Wein ist gut."
+  },
+  {
+    "source": "la bière",
+    "target": "das Bier",
+    "exampleSource": "Une bière, s'il vous plaît.",
+    "exampleTarget": "Ein Bier, bitte."
+  },
+  {
+    "source": "le dessert",
+    "target": "der Nachtisch",
+    "exampleSource": "Quel est le dessert du jour ?",
+    "exampleTarget": "Was ist der Nachtisch des Tages?"
+  },
+  {
+    "source": "le fruit",
+    "target": "die Frucht",
+    "exampleSource": "Les fruits sont bons pour la santé.",
+    "exampleTarget": "Früchte sind gut für die Gesundheit."
+  },
+  {
+    "source": "le légume",
+    "target": "das Gemüse",
+    "exampleSource": "J'achète des légumes au marché.",
+    "exampleTarget": "Ich kaufe Gemüse auf dem Markt."
+  },
+  {
+    "source": "le petit déjeuner",
+    "target": "das Frühstück",
+    "exampleSource": "Je prends mon petit déjeuner à 7h.",
+    "exampleTarget": "Ich frühstücke um 7 Uhr."
+  },
+  {
+    "source": "le déjeuner",
+    "target": "das Mittagessen",
+    "exampleSource": "Nous mangeons le déjeuner à midi.",
+    "exampleTarget": "Wir essen das Mittagessen um zwölf Uhr mittags."
+  },
+  {
+    "source": "le dîner",
+    "target": "das Abendessen",
+    "exampleSource": "Qu'est-ce que nous mangeons pour le dîner ?",
+    "exampleTarget": "Was essen wir zum Abendessen?"
+  },
+  {
+    "source": "le restaurant",
+    "target": "das Restaurant",
+    "exampleSource": "Nous allons au restaurant ce soir.",
+    "exampleTarget": "Wir gehen heute Abend ins Restaurant."
+  },
+  {
+    "source": "la fourchette",
+    "target": "die Gabel",
+    "exampleSource": "Où est ma fourchette ?",
+    "exampleTarget": "Wo ist meine Gabel?"
+  },
+  {
+    "source": "le couteau",
+    "target": "das Messer",
+    "exampleSource": "J'ai besoin d'un couteau.",
+    "exampleTarget": "Ich brauche ein Messer."
+  },
+  {
+    "source": "la cuillère",
+    "target": "der Löffel",
+    "exampleSource": "Je mange ma soupe avec une cuillère.",
+    "exampleTarget": "Ich esse meine Suppe mit einem Löffel."
+  },
+  {
+    "source": "le verre",
+    "target": "das Glas",
+    "exampleSource": "Donnez-moi un verre d'eau.",
+    "exampleTarget": "Geben Sie mir ein Glas Wasser."
+  },
+  {
+    "source": "l'assiette",
+    "target": "der Teller",
+    "exampleSource": "Mon assiette est vide.",
+    "exampleTarget": "Mein Teller ist leer."
+  }
+]

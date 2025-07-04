@@ -1,0 +1,182 @@
+[
+  {
+    "source": "le soleil",
+    "target": "die Sonne",
+    "exampleSource": "Le soleil brille aujourd'hui.",
+    "exampleTarget": "Die Sonne scheint heute."
+  },
+  {
+    "source": "la pluie",
+    "target": "der Regen",
+    "exampleSource": "La pluie tombe doucement.",
+    "exampleTarget": "Der Regen fällt sanft."
+  },
+  {
+    "source": "le vent",
+    "target": "der Wind",
+    "exampleSource": "Le vent est fort.",
+    "exampleTarget": "Der Wind ist stark."
+  },
+  {
+    "source": "la neige",
+    "target": "der Schnee",
+    "exampleSource": "La neige recouvre les toits.",
+    "exampleTarget": "Der Schnee bedeckt die Dächer."
+  },
+  {
+    "source": "le ciel",
+    "target": "der Himmel",
+    "exampleSource": "Le ciel est bleu.",
+    "exampleTarget": "Der Himmel ist blau."
+  },
+  {
+    "source": "les nuages",
+    "target": "die Wolken",
+    "exampleSource": "Il y a beaucoup de nuages.",
+    "exampleTarget": "Es gibt viele Wolken."
+  },
+  {
+    "source": "l'orage",
+    "target": "das Gewitter",
+    "exampleSource": "Un orage arrive.",
+    "exampleTarget": "Ein Gewitter kommt."
+  },
+  {
+    "source": "le brouillard",
+    "target": "der Nebel",
+    "exampleSource": "Le brouillard est épais.",
+    "exampleTarget": "Der Nebel ist dicht."
+  },
+  {
+    "source": "le froid",
+    "target": "die Kälte",
+    "exampleSource": "Je n'aime pas le froid.",
+    "exampleTarget": "Ich mag die Kälte nicht."
+  },
+  {
+    "source": "la chaleur",
+    "target": "die Hitze",
+    "exampleSource": "La chaleur est intense en été.",
+    "exampleTarget": "Die Hitze ist im Sommer intensiv."
+  },
+  {
+    "source": "le temps",
+    "target": "das Wetter",
+    "exampleSource": "Quel temps fait-il ?",
+    "exampleTarget": "Wie ist das Wetter?"
+  },
+  {
+    "source": "il fait beau",
+    "target": "es ist schön (Wetter)",
+    "exampleSource": "Aujourd'hui, il fait beau.",
+    "exampleTarget": "Heute ist es schön (Wetter)."
+  },
+  {
+    "source": "il fait mauvais",
+    "target": "es ist schlecht (Wetter)",
+    "exampleSource": "Demain, il fera mauvais.",
+    "exampleTarget": "Morgen wird es schlecht (Wetter) sein."
+  },
+  {
+    "source": "il fait chaud",
+    "target": "es ist heiß",
+    "exampleSource": "Il fait chaud en juillet.",
+    "exampleTarget": "Im Juli ist es heiß."
+  },
+  {
+    "source": "il fait froid",
+    "target": "es ist kalt",
+    "exampleSource": "Il fait froid en hiver.",
+    "exampleTarget": "Im Winter ist es kalt."
+  },
+  {
+    "source": "il fait soleil",
+    "target": "es ist sonnig",
+    "exampleSource": "En Provence, il fait souvent soleil.",
+    "exampleTarget": "In der Provence ist es oft sonnig."
+  },
+  {
+    "source": "il pleut",
+    "target": "es regnet",
+    "exampleSource": "Attention, il pleut dehors.",
+    "exampleTarget": "Achtung, es regnet draußen."
+  },
+  {
+    "source": "il neige",
+    "target": "es schneit",
+    "exampleSource": "Il neige beaucoup à la montagne.",
+    "exampleTarget": "In den Bergen schneit es viel."
+  },
+  {
+    "source": "il y a du vent",
+    "target": "es ist windig",
+    "exampleSource": "Il y a du vent sur la côte.",
+    "exampleTarget": "An der Küste ist es windig."
+  },
+  {
+    "source": "il y a des nuages",
+    "target": "es ist bewölkt",
+    "exampleSource": "Il y a des nuages mais pas de pluie.",
+    "exampleTarget": "Es ist bewölkt, aber es regnet nicht."
+  },
+  {
+    "source": "il fait gris",
+    "target": "es ist grau/bedeckt",
+    "exampleSource": "Le ciel est gris aujourd'hui.",
+    "exampleTarget": "Der Himmel ist heute grau."
+  },
+  {
+    "source": "la température",
+    "target": "die Temperatur",
+    "exampleSource": "La température est agréable.",
+    "exampleTarget": "Die Temperatur ist angenehm."
+  },
+  {
+    "source": "les prévisions",
+    "target": "die Vorhersage",
+    "exampleSource": "Regardons les prévisions météo.",
+    "exampleTarget": "Schauen wir uns die Wettervorhersage an."
+  },
+  {
+    "source": "il gèle",
+    "target": "es friert",
+    "exampleSource": "Fais attention, il gèle sur la route.",
+    "exampleTarget": "Sei vorsichtig, es friert auf der Straße."
+  },
+  {
+    "source": "il fait frais",
+    "target": "es ist kühl",
+    "exampleSource": "Le matin, il fait frais.",
+    "exampleTarget": "Am Morgen ist es kühl."
+  },
+  {
+    "source": "l'éclaircie",
+    "target": "die Aufhellung",
+    "exampleSource": "Après la pluie, il y a une éclaircie.",
+    "exampleTarget": "Nach dem Regen gibt es eine Aufhellung."
+  },
+  {
+    "source": "le gel",
+    "target": "der Frost",
+    "exampleSource": "Le gel est arrivé cette nuit.",
+    "exampleTarget": "Der Frost ist diese Nacht gekommen."
+  },
+  {
+    "source": "la grêle",
+    "target": "der Hagel",
+    "exampleSource": "La grêle est tombée soudainement.",
+    "exampleTarget": "Der Hagel fiel plötzlich."
+  },
+  {
+    "source": "l'arc-en-ciel",
+    "target": "der Regenbogen",
+    "exampleSource": "Un bel arc-en-ciel après la pluie.",
+    "exampleTarget": "Ein schöner Regenbogen nach dem Regen."
+  },
+  {
+    "source": "la saison",
+    "target": "die Jahreszeit",
+    "exampleSource": "Quelle est votre saison préférée ?",
+    "exampleTarget": "Was ist Ihre Lieblingsjahreszeit?"
+  }
+]

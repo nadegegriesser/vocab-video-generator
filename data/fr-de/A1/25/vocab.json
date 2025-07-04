@@ -1,0 +1,182 @@
+[
+  {
+    "source": "la tête",
+    "target": "der Kopf",
+    "exampleSource": "J'ai mal à la tête.",
+    "exampleTarget": "Ich habe Kopfschmerzen."
+  },
+  {
+    "source": "le corps",
+    "target": "der Körper",
+    "exampleSource": "Mon corps est fatigué.",
+    "exampleTarget": "Mein Körper ist müde."
+  },
+  {
+    "source": "le bras",
+    "target": "der Arm",
+    "exampleSource": "Il lève son bras.",
+    "exampleTarget": "Er hebt seinen Arm."
+  },
+  {
+    "source": "la main",
+    "target": "die Hand",
+    "exampleSource": "Lave tes mains.",
+    "exampleTarget": "Wasch deine Hände."
+  },
+  {
+    "source": "le doigt",
+    "target": "der Finger",
+    "exampleSource": "Il a un anneau au doigt.",
+    "exampleTarget": "Er hat einen Ring am Finger."
+  },
+  {
+    "source": "la jambe",
+    "target": "das Bein",
+    "exampleSource": "Elle a de longues jambes.",
+    "exampleTarget": "Sie hat lange Beine."
+  },
+  {
+    "source": "le pied",
+    "target": "der Fuß",
+    "exampleSource": "J'ai froid aux pieds.",
+    "exampleTarget": "Mir ist kalt an den Füßen."
+  },
+  {
+    "source": "l'œil",
+    "target": "das Auge",
+    "exampleSource": "Son œil est bleu.",
+    "exampleTarget": "Sein Auge ist blau."
+  },
+  {
+    "source": "les yeux",
+    "target": "die Augen",
+    "exampleSource": "Ses yeux sont verts.",
+    "exampleTarget": "Ihre Augen sind grün."
+  },
+  {
+    "source": "le nez",
+    "target": "die Nase",
+    "exampleSource": "Il a un petit nez.",
+    "exampleTarget": "Er hat eine kleine Nase."
+  },
+  {
+    "source": "la bouche",
+    "target": "der Mund",
+    "exampleSource": "Ouvre la bouche.",
+    "exampleTarget": "Öffne den Mund."
+  },
+  {
+    "source": "l'oreille",
+    "target": "das Ohr",
+    "exampleSource": "Mon oreille me fait mal.",
+    "exampleTarget": "Mein Ohr tut weh."
+  },
+  {
+    "source": "les oreilles",
+    "target": "die Ohren",
+    "exampleSource": "Elle a de grandes oreilles.",
+    "exampleTarget": "Sie hat große Ohren."
+  },
+  {
+    "source": "les cheveux",
+    "target": "die Haare",
+    "exampleSource": "Ses cheveux sont blonds.",
+    "exampleTarget": "Ihre Haare sind blond."
+  },
+  {
+    "source": "le cou",
+    "target": "der Hals",
+    "exampleSource": "Il a mal au cou.",
+    "exampleTarget": "Er hat Halsschmerzen."
+  },
+  {
+    "source": "le dos",
+    "target": "der Rücken",
+    "exampleSource": "Il porte le sac sur le dos.",
+    "exampleTarget": "Er trägt die Tasche auf dem Rücken."
+  },
+  {
+    "source": "le ventre",
+    "target": "der Bauch",
+    "exampleSource": "J'ai faim au ventre.",
+    "exampleTarget": "Ich habe Hunger im Bauch."
+  },
+  {
+    "source": "la poitrine",
+    "target": "die Brust",
+    "exampleSource": "La chemise couvre sa poitrine.",
+    "exampleTarget": "Das Hemd bedeckt seine Brust."
+  },
+  {
+    "source": "l'épaule",
+    "target": "die Schulter",
+    "exampleSource": "Mets ta main sur mon épaule.",
+    "exampleTarget": "Leg deine Hand auf meine Schulter."
+  },
+  {
+    "source": "le genou",
+    "target": "das Knie",
+    "exampleSource": "Il tombe sur ses genoux.",
+    "exampleTarget": "Er fällt auf seine Knie."
+  },
+  {
+    "source": "la cheville",
+    "target": "der Knöchel",
+    "exampleSource": "Elle s'est tordu la cheville.",
+    "exampleTarget": "Sie hat sich den Knöchel verstaucht."
+  },
+  {
+    "source": "le coude",
+    "target": "der Ellbogen",
+    "exampleSource": "Frappe du coude.",
+    "exampleTarget": "Stoße mit dem Ellbogen an."
+  },
+  {
+    "source": "le visage",
+    "target": "das Gesicht",
+    "exampleSource": "Son visage est pâle.",
+    "exampleTarget": "Sein Gesicht ist blass."
+  },
+  {
+    "source": "la dent",
+    "target": "der Zahn",
+    "exampleSource": "Une dent me fait mal.",
+    "exampleTarget": "Ein Zahn tut mir weh."
+  },
+  {
+    "source": "la langue",
+    "target": "die Zunge",
+    "exampleSource": "La langue est dans la bouche.",
+    "exampleTarget": "Die Zunge ist im Mund."
+  },
+  {
+    "source": "le front",
+    "target": "die Stirn",
+    "exampleSource": "Il a une ride sur le front.",
+    "exampleTarget": "Er hat eine Falte auf der Stirn."
+  },
+  {
+    "source": "le menton",
+    "target": "das Kinn",
+    "exampleSource": "Il a une barbe sur le menton.",
+    "exampleTarget": "Er hat einen Bart am Kinn."
+  },
+  {
+    "source": "la joue",
+    "target": "die Wange",
+    "exampleSource": "Elle a des roses sur les joues.",
+    "exampleTarget": "Sie hat rote Wangen."
+  },
+  {
+    "source": "le cœur",
+    "target": "das Herz",
+    "exampleSource": "Mon cœur bat vite.",
+    "exampleTarget": "Mein Herz schlägt schnell."
+  },
+  {
+    "source": "la gorge",
+    "target": "der Hals",
+    "exampleSource": "J'ai mal à la gorge.",
+    "exampleTarget": "Ich habe Halsschmerzen."
+  }
+]

@@ -1,0 +1,182 @@
+[
+  {
+    "source": "pardon",
+    "target": "Entschuldigung",
+    "exampleSource": "Pardon, où est la gare?",
+    "exampleTarget": "Entschuldigung, wo ist der Bahnhof?"
+  },
+  {
+    "source": "s'il vous plaît",
+    "target": "bitte",
+    "exampleSource": "Indiquez-moi le chemin, s'il vous plaît.",
+    "exampleTarget": "Zeigen Sie mir den Weg, bitte."
+  },
+  {
+    "source": "où est...?",
+    "target": "wo ist...?",
+    "exampleSource": "Où est la boulangerie?",
+    "exampleTarget": "Wo ist die Bäckerei?"
+  },
+  {
+    "source": "comment aller à...?",
+    "target": "wie komme ich zu...?",
+    "exampleSource": "Comment aller à la poste?",
+    "exampleTarget": "Wie komme ich zur Post?"
+  },
+  {
+    "source": "tout droit",
+    "target": "geradeaus",
+    "exampleSource": "Allez tout droit.",
+    "exampleTarget": "Gehen Sie geradeaus."
+  },
+  {
+    "source": "à gauche",
+    "target": "links",
+    "exampleSource": "Tournez à gauche après le feu.",
+    "exampleTarget": "Biegen Sie nach der Ampel links ab."
+  },
+  {
+    "source": "à droite",
+    "target": "rechts",
+    "exampleSource": "La pharmacie est à droite.",
+    "exampleTarget": "Die Apotheke ist rechts."
+  },
+  {
+    "source": "le coin",
+    "target": "die Ecke",
+    "exampleSource": "Le café est au coin de la rue.",
+    "exampleTarget": "Das Café ist an der Straßenecke."
+  },
+  {
+    "source": "la rue",
+    "target": "die Straße",
+    "exampleSource": "C'est la rue principale.",
+    "exampleTarget": "Das ist die Hauptstraße."
+  },
+  {
+    "source": "la place",
+    "target": "der Platz",
+    "exampleSource": "Nous sommes sur la place du marché.",
+    "exampleTarget": "Wir sind auf dem Marktplatz."
+  },
+  {
+    "source": "le carrefour",
+    "target": "die Kreuzung",
+    "exampleSource": "Au prochain carrefour, tournez à droite.",
+    "exampleTarget": "An der nächsten Kreuzung biegen Sie rechts ab."
+  },
+  {
+    "source": "le feu rouge",
+    "target": "die Ampel",
+    "exampleSource": "Arrêtez-vous au feu rouge.",
+    "exampleTarget": "Halten Sie an der Ampel an."
+  },
+  {
+    "source": "tourner",
+    "target": "abbiegen",
+    "exampleSource": "Vous devez tourner ici.",
+    "exampleTarget": "Sie müssen hier abbiegen."
+  },
+  {
+    "source": "traverser",
+    "target": "überqueren",
+    "exampleSource": "Traversez la rue.",
+    "exampleTarget": "Überqueren Sie die Straße."
+  },
+  {
+    "source": "continuer",
+    "target": "weitergehen",
+    "exampleSource": "Continuez tout droit sur 200 mètres.",
+    "exampleTarget": "Gehen Sie 200 Meter geradeaus weiter."
+  },
+  {
+    "source": "passer devant",
+    "target": "vorbeigehen an",
+    "exampleSource": "Passez devant l'église.",
+    "exampleTarget": "Gehen Sie an der Kirche vorbei."
+  },
+  {
+    "source": "après",
+    "target": "nach",
+    "exampleSource": "Après le pont, tournez à gauche.",
+    "exampleTarget": "Nach der Brücke biegen Sie links ab."
+  },
+  {
+    "source": "avant",
+    "target": "vor",
+    "exampleSource": "Avant la poste, c'est sur votre droite.",
+    "exampleTarget": "Vor der Post ist es auf Ihrer rechten Seite."
+  },
+  {
+    "source": "jusqu'à",
+    "target": "bis zu",
+    "exampleSource": "Allez jusqu'à la place.",
+    "exampleTarget": "Gehen Sie bis zum Platz."
+  },
+  {
+    "source": "c'est loin",
+    "target": "es ist weit",
+    "exampleSource": "C'est loin d'ici?",
+    "exampleTarget": "Ist es weit von hier?"
+  },
+  {
+    "source": "c'est près",
+    "target": "es ist nah",
+    "exampleSource": "Non, c'est très près.",
+    "exampleTarget": "Nein, es ist sehr nah."
+  },
+  {
+    "source": "l'arrêt de bus",
+    "target": "die Bushaltestelle",
+    "exampleSource": "Où est l'arrêt de bus s'il vous plaît?",
+    "exampleTarget": "Wo ist die Bushaltestelle, bitte?"
+  },
+  {
+    "source": "la station de métro",
+    "target": "die U-Bahn-Station",
+    "exampleSource": "La station de métro est à deux minutes.",
+    "exampleTarget": "Die U-Bahn-Station ist zwei Minuten entfernt."
+  },
+  {
+    "source": "l'hôpital",
+    "target": "das Krankenhaus",
+    "exampleSource": "L'hôpital est au bout de la rue.",
+    "exampleTarget": "Das Krankenhaus ist am Ende der Straße."
+  },
+  {
+    "source": "la poste",
+    "target": "die Post",
+    "exampleSource": "Vous trouverez la poste en face.",
+    "exampleTarget": "Sie finden die Post gegenüber."
+  },
+  {
+    "source": "la gare",
+    "target": "der Bahnhof",
+    "exampleSource": "La gare est à cinq minutes à pied.",
+    "exampleTarget": "Der Bahnhof ist fünf Minuten zu Fuß entfernt."
+  },
+  {
+    "source": "le supermarché",
+    "target": "der Supermarkt",
+    "exampleSource": "Le supermarché est derrière l'école.",
+    "exampleTarget": "Der Supermarkt ist hinter der Schule."
+  },
+  {
+    "source": "en face de",
+    "target": "gegenüber von",
+    "exampleSource": "La banque est en face du parc.",
+    "exampleTarget": "Die Bank ist gegenüber dem Park."
+  },
+  {
+    "source": "à côté de",
+    "target": "neben",
+    "exampleSource": "Le restaurant est à côté de l'hôtel.",
+    "exampleTarget": "Das Restaurant ist neben dem Hotel."
+  },
+  {
+    "source": "derrière",
+    "target": "hinter",
+    "exampleSource": "Mon bureau est derrière la réception.",
+    "exampleTarget": "Mein Büro ist hinter der Rezeption."
+  }
+]

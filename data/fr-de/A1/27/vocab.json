@@ -1,0 +1,182 @@
+[
+  {
+    "source": "le chat",
+    "target": "die Katze",
+    "exampleSource": "Le chat dort sur le canapé.",
+    "exampleTarget": "Die Katze schläft auf dem Sofa."
+  },
+  {
+    "source": "le chien",
+    "target": "der Hund",
+    "exampleSource": "J'ai un petit chien.",
+    "exampleTarget": "Ich habe einen kleinen Hund."
+  },
+  {
+    "source": "le poisson",
+    "target": "der Fisch",
+    "exampleSource": "Le poisson nage dans l'eau.",
+    "exampleTarget": "Der Fisch schwimmt im Wasser."
+  },
+  {
+    "source": "l'oiseau",
+    "target": "der Vogel",
+    "exampleSource": "L'oiseau chante dans l'arbre.",
+    "exampleTarget": "Der Vogel singt im Baum."
+  },
+  {
+    "source": "le cheval",
+    "target": "das Pferd",
+    "exampleSource": "Le cheval mange de l'herbe.",
+    "exampleTarget": "Das Pferd frisst Gras."
+  },
+  {
+    "source": "la vache",
+    "target": "die Kuh",
+    "exampleSource": "La vache donne du lait.",
+    "exampleTarget": "Die Kuh gibt Milch."
+  },
+  {
+    "source": "le cochon",
+    "target": "das Schwein",
+    "exampleSource": "Le cochon est dans la ferme.",
+    "exampleTarget": "Das Schwein ist auf dem Bauernhof."
+  },
+  {
+    "source": "la poule",
+    "target": "das Huhn",
+    "exampleSource": "La poule pond des œufs.",
+    "exampleTarget": "Das Huhn legt Eier."
+  },
+  {
+    "source": "le lapin",
+    "target": "das Kaninchen",
+    "exampleSource": "Le lapin aime les carottes.",
+    "exampleTarget": "Das Kaninchen mag Karotten."
+  },
+  {
+    "source": "le serpent",
+    "target": "die Schlange",
+    "exampleSource": "Le serpent rampe dans l'herbe.",
+    "exampleTarget": "Die Schlange kriecht im Gras."
+  },
+  {
+    "source": "l'araignée",
+    "target": "die Spinne",
+    "exampleSource": "L'araignée fait une toile.",
+    "exampleTarget": "Die Spinne macht ein Netz."
+  },
+  {
+    "source": "la souris",
+    "target": "die Maus",
+    "exampleSource": "La souris est petite et grise.",
+    "exampleTarget": "Die Maus ist klein und grau."
+  },
+  {
+    "source": "le lion",
+    "target": "der Löwe",
+    "exampleSource": "Le lion vit en Afrique.",
+    "exampleTarget": "Der Löwe lebt in Afrika."
+  },
+  {
+    "source": "le tigre",
+    "target": "der Tiger",
+    "exampleSource": "Le tigre a des rayures noires.",
+    "exampleTarget": "Der Tiger hat schwarze Streifen."
+  },
+  {
+    "source": "l'éléphant",
+    "target": "der Elefant",
+    "exampleSource": "L'éléphant est un grand animal.",
+    "exampleTarget": "Der Elefant ist ein großes Tier."
+  },
+  {
+    "source": "la girafe",
+    "target": "die Giraffe",
+    "exampleSource": "La girafe a un long cou.",
+    "exampleTarget": "Die Giraffe hat einen langen Hals."
+  },
+  {
+    "source": "le zèbre",
+    "target": "das Zebra",
+    "exampleSource": "Le zèbre est noir et blanc.",
+    "exampleTarget": "Das Zebra ist schwarz und weiß."
+  },
+  {
+    "source": "le singe",
+    "target": "der Affe",
+    "exampleSource": "Le singe mange une banane.",
+    "exampleTarget": "Der Affe isst eine Banane."
+  },
+  {
+    "source": "le mouton",
+    "target": "das Schaf",
+    "exampleSource": "Le mouton a de la laine.",
+    "exampleTarget": "Das Schaf hat Wolle."
+  },
+  {
+    "source": "la chèvre",
+    "target": "die Ziege",
+    "exampleSource": "La chèvre aime grimper.",
+    "exampleTarget": "Die Ziege klettert gerne."
+  },
+  {
+    "source": "le canard",
+    "target": "die Ente",
+    "exampleSource": "Le canard nage dans l'étang.",
+    "exampleTarget": "Die Ente schwimmt im Teich."
+  },
+  {
+    "source": "la fourmi",
+    "target": "die Ameise",
+    "exampleSource": "La fourmi est très petite.",
+    "exampleTarget": "Die Ameise ist sehr klein."
+  },
+  {
+    "source": "l'abeille",
+    "target": "die Biene",
+    "exampleSource": "L'abeille fait du miel.",
+    "exampleTarget": "Die Biene macht Honig."
+  },
+  {
+    "source": "le loup",
+    "target": "der Wolf",
+    "exampleSource": "Le loup hurle la nuit.",
+    "exampleTarget": "Der Wolf heult in der Nacht."
+  },
+  {
+    "source": "l'ours",
+    "target": "der Bär",
+    "exampleSource": "L'ours dort en hiver.",
+    "exampleTarget": "Der Bär schläft im Winter."
+  },
+  {
+    "source": "le renard",
+    "target": "der Fuchs",
+    "exampleSource": "Le renard est rusé.",
+    "exampleTarget": "Der Fuchs ist schlau."
+  },
+  {
+    "source": "le crocodile",
+    "target": "das Krokodil",
+    "exampleSource": "Le crocodile vit dans l'eau.",
+    "exampleTarget": "Das Krokodil lebt im Wasser."
+  },
+  {
+    "source": "le hibou",
+    "target": "die Eule",
+    "exampleSource": "Le hibou chasse la nuit.",
+    "exampleTarget": "Die Eule jagt in der Nacht."
+  },
+  {
+    "source": "le dauphin",
+    "target": "der Delfin",
+    "exampleSource": "Le dauphin est intelligent.",
+    "exampleTarget": "Der Delfin ist intelligent."
+  },
+  {
+    "source": "le requin",
+    "target": "der Hai",
+    "exampleSource": "Le requin vit dans la mer.",
+    "exampleTarget": "Der Hai lebt im Meer."
+  }
+]

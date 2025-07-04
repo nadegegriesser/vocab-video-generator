@@ -1,0 +1,182 @@
+[
+  {
+    "source": "l'alphabet",
+    "target": "das Alphabet",
+    "exampleSource": "L'alphabet français a 26 lettres.",
+    "exampleTarget": "Das französische Alphabet hat 26 Buchstaben."
+  },
+  {
+    "source": "la lettre",
+    "target": "der Buchstabe",
+    "exampleSource": "Quelle est votre lettre préférée?",
+    "exampleTarget": "Welcher ist Ihr Lieblingsbuchstabe?"
+  },
+  {
+    "source": "la voyelle",
+    "target": "der Vokal",
+    "exampleSource": "A, E, I, O, U, Y sont des voyelles.",
+    "exampleTarget": "A, E, I, O, U, Y sind Vokale."
+  },
+  {
+    "source": "la consonne",
+    "target": "der Konsonant",
+    "exampleSource": "B, C, D sont des consonnes.",
+    "exampleTarget": "B, C, D sind Konsonanten."
+  },
+  {
+    "source": "épeler",
+    "target": "buchstabieren",
+    "exampleSource": "Pouvez-vous épeler votre nom?",
+    "exampleTarget": "Können Sie Ihren Namen buchstabieren?"
+  },
+  {
+    "source": "écrire",
+    "target": "schreiben",
+    "exampleSource": "J'aime écrire des lettres.",
+    "exampleTarget": "Ich schreibe gerne Briefe."
+  },
+  {
+    "source": "lire",
+    "target": "lesen",
+    "exampleSource": "Elle apprend à lire.",
+    "exampleTarget": "Sie lernt lesen."
+  },
+  {
+    "source": "le mot",
+    "target": "das Wort",
+    "exampleSource": "Quel est ce mot?",
+    "exampleTarget": "Was ist dieses Wort?"
+  },
+  {
+    "source": "la phrase",
+    "target": "der Satz",
+    "exampleSource": "Faites une phrase avec ce mot.",
+    "exampleTarget": "Bilden Sie einen Satz mit diesem Wort."
+  },
+  {
+    "source": "le son",
+    "target": "der Laut",
+    "exampleSource": "Le son de cette lettre est difficile.",
+    "exampleTarget": "Der Laut dieses Buchstabens ist schwierig."
+  },
+  {
+    "source": "la majuscule",
+    "target": "der Großbuchstabe",
+    "exampleSource": "Écrivez la première lettre en majuscule.",
+    "exampleTarget": "Schreiben Sie den ersten Buchstaben groß."
+  },
+  {
+    "source": "la minuscule",
+    "target": "der Kleinbuchstabe",
+    "exampleSource": "Les autres lettres sont en minuscule.",
+    "exampleTarget": "Die anderen Buchstaben sind klein geschrieben."
+  },
+  {
+    "source": "la prononciation",
+    "target": "die Aussprache",
+    "exampleSource": "Sa prononciation est très bonne.",
+    "exampleTarget": "Ihre Aussprache ist sehr gut."
+  },
+  {
+    "source": "la syllabe",
+    "target": "die Silbe",
+    "exampleSource": "Le mot 'bonjour' a deux syllabes.",
+    "exampleTarget": "Das Wort 'bonjour' hat zwei Silben."
+  },
+  {
+    "source": "l'accent",
+    "target": "der Akzent",
+    "exampleSource": "Il y a un accent sur cette lettre.",
+    "exampleTarget": "Auf diesem Buchstaben ist ein Akzent."
+  },
+  {
+    "source": "l'écriture",
+    "target": "die Schrift",
+    "exampleSource": "J'aime ton écriture.",
+    "exampleTarget": "Ich mag deine Handschrift."
+  },
+  {
+    "source": "le texte",
+    "target": "der Text",
+    "exampleSource": "Lisez le texte attentivement.",
+    "exampleTarget": "Lesen Sie den Text aufmerksam."
+  },
+  {
+    "source": "la page",
+    "target": "die Seite",
+    "exampleSource": "Tournez la page, s'il vous plaît.",
+    "exampleTarget": "Blättern Sie bitte um."
+  },
+  {
+    "source": "la ligne",
+    "target": "die Zeile",
+    "exampleSource": "Écrivez sur la ligne.",
+    "exampleTarget": "Schreiben Sie auf die Zeile."
+  },
+  {
+    "source": "l'ordre alphabétique",
+    "target": "die alphabetische Reihenfolge",
+    "exampleSource": "Rangez les mots dans l'ordre alphabétique.",
+    "exampleTarget": "Ordnen Sie die Wörter in alphabetischer Reihenfolge."
+  },
+  {
+    "source": "la ponctuation",
+    "target": "die Interpunktion",
+    "exampleSource": "La ponctuation est importante.",
+    "exampleTarget": "Die Interpunktion ist wichtig."
+  },
+  {
+    "source": "le point",
+    "target": "der Punkt",
+    "exampleSource": "Chaque phrase se termine par un point.",
+    "exampleTarget": "Jeder Satz endet mit einem Punkt."
+  },
+  {
+    "source": "la virgule",
+    "target": "das Komma",
+    "exampleSource": "Il faut mettre une virgule ici.",
+    "exampleTarget": "Man muss hier ein Komma setzen."
+  },
+  {
+    "source": "le point d'interrogation",
+    "target": "das Fragezeichen",
+    "exampleSource": "Où est le point d'interrogation?",
+    "exampleTarget": "Wo ist das Fragezeichen?"
+  },
+  {
+    "source": "le point d'exclamation",
+    "target": "das Ausrufezeichen",
+    "exampleSource": "N'oubliez pas le point d'exclamation!",
+    "exampleTarget": "Vergessen Sie das Ausrufezeichen nicht!"
+  },
+  {
+    "source": "le tiret",
+    "target": "der Bindestrich",
+    "exampleSource": "Utilisez un tiret pour séparer les mots.",
+    "exampleTarget": "Verwenden Sie einen Bindestrich, um die Wörter zu trennen."
+  },
+  {
+    "source": "les guillemets",
+    "target": "die Anführungszeichen",
+    "exampleSource": "Mettez la citation entre guillemets.",
+    "exampleTarget": "Setzen Sie das Zitat in Anführungszeichen."
+  },
+  {
+    "source": "l'espace",
+    "target": "der Zwischenraum",
+    "exampleSource": "Laissez un espace entre les mots.",
+    "exampleTarget": "Lassen Sie einen Zwischenraum zwischen den Wörtern."
+  },
+  {
+    "source": "le caractère",
+    "target": "das Zeichen",
+    "exampleSource": "Ce caractère est spécial.",
+    "exampleTarget": "Dieses Zeichen ist besonders."
+  },
+  {
+    "source": "l'orthographe",
+    "target": "die Rechtschreibung",
+    "exampleSource": "Son orthographe est excellente.",
+    "exampleTarget": "Ihre Rechtschreibung ist ausgezeichnet."
+  }
+]

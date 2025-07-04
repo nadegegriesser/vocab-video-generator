@@ -1,0 +1,182 @@
+[
+  {
+    "source": "zéro",
+    "target": "null",
+    "exampleSource": "Il a zéro point.",
+    "exampleTarget": "Er hat null Punkte."
+  },
+  {
+    "source": "un",
+    "target": "eins",
+    "exampleSource": "J'ai un livre.",
+    "exampleTarget": "Ich habe ein Buch."
+  },
+  {
+    "source": "deux",
+    "target": "zwei",
+    "exampleSource": "Nous avons deux chats.",
+    "exampleTarget": "Wir haben zwei Katzen."
+  },
+  {
+    "source": "trois",
+    "target": "drei",
+    "exampleSource": "Elle a trois pommes.",
+    "exampleTarget": "Sie hat drei Äpfel."
+  },
+  {
+    "source": "quatre",
+    "target": "vier",
+    "exampleSource": "Il y a quatre chaises.",
+    "exampleTarget": "Es gibt vier Stühle."
+  },
+  {
+    "source": "cinq",
+    "target": "fünf",
+    "exampleSource": "J'ai cinq euros.",
+    "exampleTarget": "Ich habe fünf Euro."
+  },
+  {
+    "source": "six",
+    "target": "sechs",
+    "exampleSource": "Mon frère a six ans.",
+    "exampleTarget": "Mein Bruder ist sechs Jahre alt."
+  },
+  {
+    "source": "sept",
+    "target": "sieben",
+    "exampleSource": "Il est sept heures.",
+    "exampleTarget": "Es ist sieben Uhr."
+  },
+  {
+    "source": "huit",
+    "target": "acht",
+    "exampleSource": "Nous mangeons à huit heures.",
+    "exampleTarget": "Wir essen um acht Uhr."
+  },
+  {
+    "source": "neuf",
+    "target": "neun",
+    "exampleSource": "Elle a neuf crayons.",
+    "exampleTarget": "Sie hat neun Bleistifte."
+  },
+  {
+    "source": "dix",
+    "target": "zehn",
+    "exampleSource": "J'ai dix doigts.",
+    "exampleTarget": "Ich habe zehn Finger."
+  },
+  {
+    "source": "onze",
+    "target": "elf",
+    "exampleSource": "Le bus arrive à onze heures.",
+    "exampleTarget": "Der Bus kommt um elf Uhr an."
+  },
+  {
+    "source": "douze",
+    "target": "zwölf",
+    "exampleSource": "Il y a douze mois dans une année.",
+    "exampleTarget": "Es gibt zwölf Monate in einem Jahr."
+  },
+  {
+    "source": "treize",
+    "target": "dreizehn",
+    "exampleSource": "J'ai treize ans.",
+    "exampleTarget": "Ich bin dreizehn Jahre alt."
+  },
+  {
+    "source": "quatorze",
+    "target": "vierzehn",
+    "exampleSource": "Le train part à quatorze heures.",
+    "exampleTarget": "Der Zug fährt um vierzehn Uhr ab."
+  },
+  {
+    "source": "quinze",
+    "target": "fünfzehn",
+    "exampleSource": "Nous sommes quinze personnes.",
+    "exampleTarget": "Wir sind fünfzehn Personen."
+  },
+  {
+    "source": "seize",
+    "target": "sechzehn",
+    "exampleSource": "Elle a seize bonbons.",
+    "exampleTarget": "Sie hat sechzehn Bonbons."
+  },
+  {
+    "source": "dix-sept",
+    "target": "siebzehn",
+    "exampleSource": "Il est dix-sept heures.",
+    "exampleTarget": "Es ist siebzehn Uhr."
+  },
+  {
+    "source": "dix-huit",
+    "target": "achtzehn",
+    "exampleSource": "J'ai dix-huit livres.",
+    "exampleTarget": "Ich habe achtzehn Bücher."
+  },
+  {
+    "source": "dix-neuf",
+    "target": "neunzehn",
+    "exampleSource": "Il y a dix-neuf élèves dans la classe.",
+    "exampleTarget": "Es gibt neunzehn Schüler in der Klasse."
+  },
+  {
+    "source": "vingt",
+    "target": "zwanzig",
+    "exampleSource": "J'ai vingt euros.",
+    "exampleTarget": "Ich habe zwanzig Euro."
+  },
+  {
+    "source": "combien?",
+    "target": "wie viele?",
+    "exampleSource": "Combien de pommes?",
+    "exampleTarget": "Wie viele Äpfel?"
+  },
+  {
+    "source": "quel âge as-tu?",
+    "target": "wie alt bist du?",
+    "exampleSource": "Quel âge as-tu? J'ai dix ans.",
+    "exampleTarget": "Wie alt bist du? Ich bin zehn Jahre alt."
+  },
+  {
+    "source": "compter",
+    "target": "zählen",
+    "exampleSource": "Je peux compter jusqu'à vingt.",
+    "exampleTarget": "Ich kann bis zwanzig zählen."
+  },
+  {
+    "source": "le numéro",
+    "target": "die Nummer",
+    "exampleSource": "Quel est votre numéro de téléphone?",
+    "exampleTarget": "Was ist Ihre Telefonnummer?"
+  },
+  {
+    "source": "les nombres",
+    "target": "die Zahlen",
+    "exampleSource": "Nous apprenons les nombres.",
+    "exampleTarget": "Wir lernen die Zahlen."
+  },
+  {
+    "source": "et",
+    "target": "und",
+    "exampleSource": "Dix et un font onze.",
+    "exampleTarget": "Zehn und eins macht elf."
+  },
+  {
+    "source": "plus",
+    "target": "plus",
+    "exampleSource": "Deux plus deux font quatre.",
+    "exampleTarget": "Zwei plus zwei macht vier."
+  },
+  {
+    "source": "moins",
+    "target": "minus",
+    "exampleSource": "Cinq moins un font quatre.",
+    "exampleTarget": "Fünf minus eins macht vier."
+  },
+  {
+    "source": "le total",
+    "target": "die Summe",
+    "exampleSource": "Le total est vingt.",
+    "exampleTarget": "Die Summe ist zwanzig."
+  }
+]

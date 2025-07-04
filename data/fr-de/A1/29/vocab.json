@@ -1,0 +1,182 @@
+[
+  {
+    "source": "l'heure",
+    "target": "die Uhrzeit",
+    "exampleSource": "Quelle heure est-il ?",
+    "exampleTarget": "Wie spät ist es?"
+  },
+  {
+    "source": "la minute",
+    "target": "die Minute",
+    "exampleSource": "Attendez une minute, s'il vous plaît.",
+    "exampleTarget": "Warten Sie eine Minute, bitte."
+  },
+  {
+    "source": "la seconde",
+    "target": "die Sekunde",
+    "exampleSource": "Le compte à rebours est en secondes.",
+    "exampleTarget": "Der Countdown ist in Sekunden."
+  },
+  {
+    "source": "midi",
+    "target": "Mittag",
+    "exampleSource": "Nous mangeons à midi.",
+    "exampleTarget": "Wir essen zu Mittag."
+  },
+  {
+    "source": "minuit",
+    "target": "Mitternacht",
+    "exampleSource": "Il est minuit, je vais dormir.",
+    "exampleTarget": "Es ist Mitternacht, ich gehe schlafen."
+  },
+  {
+    "source": "et quart",
+    "target": "Viertel nach",
+    "exampleSource": "Il est sept heures et quart.",
+    "exampleTarget": "Es ist Viertel nach sieben."
+  },
+  {
+    "source": "et demie",
+    "target": "halb",
+    "exampleSource": "Le film commence à huit heures et demie.",
+    "exampleTarget": "Der Film beginnt um halb neun."
+  },
+  {
+    "source": "moins le quart",
+    "target": "Viertel vor",
+    "exampleSource": "Il est neuf heures moins le quart.",
+    "exampleTarget": "Es ist Viertel vor neun."
+  },
+  {
+    "source": "du matin",
+    "target": "morgens",
+    "exampleSource": "Je me lève à six heures du matin.",
+    "exampleTarget": "Ich stehe um sechs Uhr morgens auf."
+  },
+  {
+    "source": "de l'après-midi",
+    "target": "nachmittags",
+    "exampleSource": "Elle travaille jusqu'à cinq heures de l'après-midi.",
+    "exampleTarget": "Sie arbeitet bis fünf Uhr nachmittags."
+  },
+  {
+    "source": "du soir",
+    "target": "abends",
+    "exampleSource": "Nous dînons à sept heures du soir.",
+    "exampleTarget": "Wir essen um sieben Uhr abends zu Abend."
+  },
+  {
+    "source": "il est une heure",
+    "target": "es ist ein Uhr",
+    "exampleSource": "Il est une heure, l'école est finie.",
+    "exampleTarget": "Es ist ein Uhr, die Schule ist aus."
+  },
+  {
+    "source": "il est deux heures",
+    "target": "es ist zwei Uhr",
+    "exampleSource": "Le rendez-vous est à deux heures.",
+    "exampleTarget": "Der Termin ist um zwei Uhr."
+  },
+  {
+    "source": "une montre",
+    "target": "eine Armbanduhr",
+    "exampleSource": "J'ai une nouvelle montre.",
+    "exampleTarget": "Ich habe eine neue Armbanduhr."
+  },
+  {
+    "source": "une horloge",
+    "target": "eine Wanduhr",
+    "exampleSource": "L'horloge murale est grande.",
+    "exampleTarget": "Die Wanduhr ist groß."
+  },
+  {
+    "source": "tôt",
+    "target": "früh",
+    "exampleSource": "Tu es arrivé très tôt aujourd'hui.",
+    "exampleTarget": "Du bist heute sehr früh angekommen."
+  },
+  {
+    "source": "tard",
+    "target": "spät",
+    "exampleSource": "Ne rentre pas trop tard.",
+    "exampleTarget": "Komm nicht zu spät nach Hause."
+  },
+  {
+    "source": "maintenant",
+    "target": "jetzt",
+    "exampleSource": "Je pars maintenant.",
+    "exampleTarget": "Ich gehe jetzt."
+  },
+  {
+    "source": "après",
+    "target": "nach",
+    "exampleSource": "Je te vois après le travail.",
+    "exampleTarget": "Ich sehe dich nach der Arbeit."
+  },
+  {
+    "source": "avant",
+    "target": "vor",
+    "exampleSource": "Finis tes devoirs avant de jouer.",
+    "exampleTarget": "Mache deine Hausaufgaben, bevor du spielst."
+  },
+  {
+    "source": "le matin",
+    "target": "der Morgen",
+    "exampleSource": "J'aime me promener le matin.",
+    "exampleTarget": "Ich mag es, am Morgen spazieren zu gehen."
+  },
+  {
+    "source": "l'après-midi",
+    "target": "der Nachmittag",
+    "exampleSource": "Nous avons une réunion l'après-midi.",
+    "exampleTarget": "Wir haben am Nachmittag eine Besprechung."
+  },
+  {
+    "source": "le soir",
+    "target": "der Abend",
+    "exampleSource": "Que fais-tu ce soir ?",
+    "exampleTarget": "Was machst du heute Abend?"
+  },
+  {
+    "source": "la nuit",
+    "target": "die Nacht",
+    "exampleSource": "Il fait noir la nuit.",
+    "exampleTarget": "Es ist dunkel in der Nacht."
+  },
+  {
+    "source": "chaque jour",
+    "target": "jeden Tag",
+    "exampleSource": "Je bois du café chaque jour.",
+    "exampleTarget": "Ich trinke jeden Tag Kaffee."
+  },
+  {
+    "source": "aujourd'hui",
+    "target": "heute",
+    "exampleSource": "Qu'est-ce que tu fais aujourd'hui ?",
+    "exampleTarget": "Was machst du heute?"
+  },
+  {
+    "source": "demain",
+    "target": "morgen",
+    "exampleSource": "Je voyagerai demain.",
+    "exampleTarget": "Ich werde morgen reisen."
+  },
+  {
+    "source": "hier",
+    "target": "gestern",
+    "exampleSource": "J'ai vu un bon film hier.",
+    "exampleTarget": "Ich habe gestern einen guten Film gesehen."
+  },
+  {
+    "source": "à quelle heure ?",
+    "target": "um wie viel Uhr?",
+    "exampleSource": "À quelle heure ouvre le magasin ?",
+    "exampleTarget": "Um wie viel Uhr öffnet das Geschäft?"
+  },
+  {
+    "source": "ponctuel",
+    "target": "pünktlich",
+    "exampleSource": "Il est toujours ponctuel pour les réunions.",
+    "exampleTarget": "Er ist immer pünktlich zu den Besprechungen."
+  }
+]

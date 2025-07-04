@@ -1,0 +1,182 @@
+[
+  {
+    "source": "le restaurant",
+    "target": "das Restaurant",
+    "exampleSource": "Je vais au restaurant.",
+    "exampleTarget": "Ich gehe ins Restaurant."
+  },
+  {
+    "source": "la table",
+    "target": "der Tisch",
+    "exampleSource": "Nous avons la table pour deux.",
+    "exampleTarget": "Wir haben den Tisch für zwei."
+  },
+  {
+    "source": "le menu",
+    "target": "das Menü",
+    "exampleSource": "Je prends le menu du jour.",
+    "exampleTarget": "Ich nehme das Tagesmenü."
+  },
+  {
+    "source": "la carte",
+    "target": "die Speisekarte",
+    "exampleSource": "Puis-je voir la carte, s'il vous plaît?",
+    "exampleTarget": "Kann ich bitte die Speisekarte sehen?"
+  },
+  {
+    "source": "l'entrée",
+    "target": "die Vorspeise",
+    "exampleSource": "L'entrée est une salade.",
+    "exampleTarget": "Die Vorspeise ist ein Salat."
+  },
+  {
+    "source": "le plat principal",
+    "target": "das Hauptgericht",
+    "exampleSource": "Le plat principal est du poisson.",
+    "exampleTarget": "Das Hauptgericht ist Fisch."
+  },
+  {
+    "source": "le dessert",
+    "target": "der Nachtisch",
+    "exampleSource": "Le dessert est une glace.",
+    "exampleTarget": "Der Nachtisch ist ein Eis."
+  },
+  {
+    "source": "boire",
+    "target": "trinken",
+    "exampleSource": "Qu'est-ce que vous voulez boire?",
+    "exampleTarget": "Was möchten Sie trinken?"
+  },
+  {
+    "source": "manger",
+    "target": "essen",
+    "exampleSource": "J'aime manger au restaurant.",
+    "exampleTarget": "Ich esse gerne im Restaurant."
+  },
+  {
+    "source": "l'eau",
+    "target": "das Wasser",
+    "exampleSource": "L'eau est sur la table.",
+    "exampleTarget": "Das Wasser ist auf dem Tisch."
+  },
+  {
+    "source": "le pain",
+    "target": "das Brot",
+    "exampleSource": "Le pain est frais.",
+    "exampleTarget": "Das Brot ist frisch."
+  },
+  {
+    "source": "l'addition",
+    "target": "die Rechnung",
+    "exampleSource": "L'addition, s'il vous plaît!",
+    "exampleTarget": "Die Rechnung, bitte!"
+  },
+  {
+    "source": "réserver",
+    "target": "reservieren",
+    "exampleSource": "Je voudrais réserver une table.",
+    "exampleTarget": "Ich möchte einen Tisch reservieren."
+  },
+  {
+    "source": "le serveur",
+    "target": "der Kellner",
+    "exampleSource": "Le serveur est très gentil.",
+    "exampleTarget": "Der Kellner ist sehr nett."
+  },
+  {
+    "source": "la serveuse",
+    "target": "die Kellnerin",
+    "exampleSource": "La serveuse apporte la carte.",
+    "exampleTarget": "Die Kellnerin bringt die Speisekarte."
+  },
+  {
+    "source": "commander",
+    "target": "bestellen",
+    "exampleSource": "Je voudrais commander, s'il vous plaît.",
+    "exampleTarget": "Ich möchte bestellen, bitte."
+  },
+  {
+    "source": "le couteau",
+    "target": "das Messer",
+    "exampleSource": "Où est le couteau?",
+    "exampleTarget": "Wo ist das Messer?"
+  },
+  {
+    "source": "la fourchette",
+    "target": "die Gabel",
+    "exampleSource": "La fourchette est propre.",
+    "exampleTarget": "Die Gabel ist sauber."
+  },
+  {
+    "source": "la cuillère",
+    "target": "der Löffel",
+    "exampleSource": "J'ai besoin de la cuillère.",
+    "exampleTarget": "Ich brauche den Löffel."
+  },
+  {
+    "source": "l'assiette",
+    "target": "der Teller",
+    "exampleSource": "L'assiette est pleine.",
+    "exampleTarget": "Der Teller ist voll."
+  },
+  {
+    "source": "le verre",
+    "target": "das Glas",
+    "exampleSource": "Le verre est vide.",
+    "exampleTarget": "Das Glas ist leer."
+  },
+  {
+    "source": "bon appétit",
+    "target": "guten Appetit",
+    "exampleSource": "Bon appétit à tous!",
+    "exampleTarget": "Guten Appetit euch allen!"
+  },
+  {
+    "source": "délicieux",
+    "target": "lecker",
+    "exampleSource": "Le plat est délicieux!",
+    "exampleTarget": "Das Gericht ist lecker!"
+  },
+  {
+    "source": "le café",
+    "target": "der Kaffee",
+    "exampleSource": "Le café est chaud.",
+    "exampleTarget": "Der Kaffee ist heiß."
+  },
+  {
+    "source": "le thé",
+    "target": "der Tee",
+    "exampleSource": "Le thé est à la menthe.",
+    "exampleTarget": "Der Tee ist Minze."
+  },
+  {
+    "source": "le jus de fruit",
+    "target": "der Fruchtsaft",
+    "exampleSource": "Le jus de fruit est frais.",
+    "exampleTarget": "Der Fruchtsaft ist frisch."
+  },
+  {
+    "source": "le vin",
+    "target": "der Wein",
+    "exampleSource": "Le vin rouge est bon.",
+    "exampleTarget": "Der Rotwein ist gut."
+  },
+  {
+    "source": "la bière",
+    "target": "das Bier",
+    "exampleSource": "La bière est froide.",
+    "exampleTarget": "Das Bier ist kalt."
+  },
+  {
+    "source": "le pourboire",
+    "target": "das Trinkgeld",
+    "exampleSource": "Le pourboire est optionnel.",
+    "exampleTarget": "Das Trinkgeld ist optional."
+  },
+  {
+    "source": "Je voudrais...",
+    "target": "Ich möchte...",
+    "exampleSource": "Je voudrais payer, s'il vous plaît.",
+    "exampleTarget": "Ich möchte bezahlen, bitte."
+  }
+]

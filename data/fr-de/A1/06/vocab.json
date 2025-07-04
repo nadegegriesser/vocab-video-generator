@@ -1,0 +1,182 @@
+[
+  {
+    "source": "la famille",
+    "target": "die Familie",
+    "exampleSource": "J'ai une grande famille.",
+    "exampleTarget": "Ich habe eine große Familie."
+  },
+  {
+    "source": "le père",
+    "target": "der Vater",
+    "exampleSource": "Mon père est gentil.",
+    "exampleTarget": "Mein Vater ist nett."
+  },
+  {
+    "source": "la mère",
+    "target": "die Mutter",
+    "exampleSource": "Sa mère travaille.",
+    "exampleTarget": "Seine/Ihre Mutter arbeitet."
+  },
+  {
+    "source": "le frère",
+    "target": "der Bruder",
+    "exampleSource": "Tu as un frère?",
+    "exampleTarget": "Hast du einen Bruder?"
+  },
+  {
+    "source": "la sœur",
+    "target": "die Schwester",
+    "exampleSource": "Ma sœur est petite.",
+    "exampleTarget": "Meine Schwester ist klein."
+  },
+  {
+    "source": "le fils",
+    "target": "der Sohn",
+    "exampleSource": "Il est mon fils.",
+    "exampleTarget": "Er ist mein Sohn."
+  },
+  {
+    "source": "la fille",
+    "target": "die Tochter",
+    "exampleSource": "Elle est ma fille.",
+    "exampleTarget": "Sie ist meine Tochter."
+  },
+  {
+    "source": "les parents",
+    "target": "die Eltern",
+    "exampleSource": "Mes parents sont là.",
+    "exampleTarget": "Meine Eltern sind hier."
+  },
+  {
+    "source": "les enfants",
+    "target": "die Kinder",
+    "exampleSource": "Nous avons deux enfants.",
+    "exampleTarget": "Wir haben zwei Kinder."
+  },
+  {
+    "source": "le grand-père",
+    "target": "der Großvater",
+    "exampleSource": "Mon grand-père est âgé.",
+    "exampleTarget": "Mein Großvater ist alt."
+  },
+  {
+    "source": "la grand-mère",
+    "target": "die Großmutter",
+    "exampleSource": "J'aime ma grand-mère.",
+    "exampleTarget": "Ich liebe meine Großmutter."
+  },
+  {
+    "source": "les grands-parents",
+    "target": "die Großeltern",
+    "exampleSource": "Ils visitent leurs grands-parents.",
+    "exampleTarget": "Sie besuchen ihre Großeltern."
+  },
+  {
+    "source": "l'oncle",
+    "target": "der Onkel",
+    "exampleSource": "C'est mon oncle.",
+    "exampleTarget": "Er ist mein Onkel."
+  },
+  {
+    "source": "la tante",
+    "target": "die Tante",
+    "exampleSource": "Ma tante est drôle.",
+    "exampleTarget": "Meine Tante ist lustig."
+  },
+  {
+    "source": "le cousin",
+    "target": "der Cousin",
+    "exampleSource": "Il est mon cousin.",
+    "exampleTarget": "Er ist mein Cousin."
+  },
+  {
+    "source": "la cousine",
+    "target": "die Cousine",
+    "exampleSource": "Elle est ma cousine.",
+    "exampleTarget": "Sie ist meine Cousine."
+  },
+  {
+    "source": "le mari",
+    "target": "der Ehemann",
+    "exampleSource": "Mon mari est grand.",
+    "exampleTarget": "Mein Ehemann ist groß."
+  },
+  {
+    "source": "la femme",
+    "target": "die Ehefrau",
+    "exampleSource": "Sa femme est médecin.",
+    "exampleTarget": "Seine/Ihre Ehefrau ist Ärztin."
+  },
+  {
+    "source": "le neveu",
+    "target": "der Neffe",
+    "exampleSource": "J'ai un neveu.",
+    "exampleTarget": "Ich habe einen Neffen."
+  },
+  {
+    "source": "la nièce",
+    "target": "die Nichte",
+    "exampleSource": "Ma nièce est jeune.",
+    "exampleTarget": "Meine Nichte ist jung."
+  },
+  {
+    "source": "le bébé",
+    "target": "das Baby",
+    "exampleSource": "Le bébé dort.",
+    "exampleTarget": "Das Baby schläft."
+  },
+  {
+    "source": "l'aîné",
+    "target": "der Älteste (m)",
+    "exampleSource": "Mon frère aîné est étudiant.",
+    "exampleTarget": "Mein ältester Bruder ist Student."
+  },
+  {
+    "source": "l'aînée",
+    "target": "die Älteste (f)",
+    "exampleSource": "Sa sœur aînée habite à Paris.",
+    "exampleTarget": "Seine/Ihre ältere Schwester wohnt in Paris."
+  },
+  {
+    "source": "le cadet",
+    "target": "der Jüngste (m)",
+    "exampleSource": "Mon fils cadet aime jouer.",
+    "exampleTarget": "Mein jüngster Sohn spielt gerne."
+  },
+  {
+    "source": "la cadette",
+    "target": "die Jüngste (f)",
+    "exampleSource": "Ma fille cadette est très petite.",
+    "exampleTarget": "Meine jüngste Tochter ist sehr klein."
+  },
+  {
+    "source": "le jumeau",
+    "target": "der Zwilling (m)",
+    "exampleSource": "Il a un jumeau.",
+    "exampleTarget": "Er hat einen Zwillingsbruder."
+  },
+  {
+    "source": "la jumelle",
+    "target": "die Zwillingin (f)",
+    "exampleSource": "Elle a une jumelle.",
+    "exampleTarget": "Sie hat eine Zwillingsschwester."
+  },
+  {
+    "source": "le beau-père",
+    "target": "der Stiefvater/Schwiegervater",
+    "exampleSource": "Mon beau-père est sympa.",
+    "exampleTarget": "Mein Stiefvater/Schwiegervater ist nett."
+  },
+  {
+    "source": "la belle-mère",
+    "target": "die Stiefmutter/Schwiegermutter",
+    "exampleSource": "Sa belle-mère vient demain.",
+    "exampleTarget": "Seine/Ihre Stiefmutter/Schwiegermutter kommt morgen."
+  },
+  {
+    "source": "la belle-sœur",
+    "target": "die Stiefschwester/Schwägerin",
+    "exampleSource": "Ma belle-sœur est professeure.",
+    "exampleTarget": "Meine Stiefschwester/Schwägerin ist Lehrerin."
+  }
+]
