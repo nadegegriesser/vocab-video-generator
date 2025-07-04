@@ -2,7 +2,6 @@ import fs from 'fs';
 import { synthesizeSpeech } from '../src/gemini.js';
 import { TopicEntry, VocabEntry } from '../src/types.js';
 import { loadFile } from '../src/file.js';
-import { glob } from 'glob';
 import wav from 'wav';
 
 const args = process.argv.slice(2);
@@ -13,54 +12,68 @@ const topicsFile = 'topics.json';
 const topicsPath = `${dir}/${topicsFile}`;
 
 async function saveWaveFile(
-   filePath: string,
-   pcmData: any,
-   channels = 1,
-   rate = 24000,
-   sampleWidth = 2,
+    filePath: string,
+    pcmData: any,
+    channels = 1,
+    rate = 24000,
+    sampleWidth = 2,
 ) {
-   return new Promise((resolve, reject) => {
-      const writer = new wav.FileWriter(filePath, {
+    return new Promise((resolve, reject) => {
+        const writer = new wav.FileWriter(filePath, {
             channels,
             sampleRate: rate,
             bitDepth: sampleWidth * 8,
-      });
+        });
 
-      writer.on('finish', resolve);
-      writer.on('error', reject);
+        writer.on('finish', resolve);
+        writer.on('error', reject);
 
-      writer.write(pcmData);
-      writer.end();
-   });
+        writer.write(pcmData);
+        writer.end();
+    });
 }
 
 (async () => {
     try {
+        let t = 0;
         for (const topic of loadFile<TopicEntry>(topicsPath)) {
-            let dirs = await glob(`${dir}/*/`);
-            dirs.sort();
-            for (const d of dirs) {
-                console.log(d);
-                const vocabPath = `${d}/vocab.json`;
-                const audioDir = `${d}/audio`;
-                fs.mkdirSync(audioDir, { recursive: true });
+            t++;
+            const index = String(t).padStart(2, '0');
+            const topicDir = `${dir}/${index}`;
+            const audioDir = `${topicDir}/audio`;
+            fs.mkdirSync(audioDir, { recursive: true });
 
-                let i = 0;
-                for (const vocab of loadFile<VocabEntry>(vocabPath)) {
-                    console.log(vocab);
-                     i++;
-                    const index = String(i).padStart(2, '0');
-                    const audioPath = `${audioDir}/${index}.wav`;
-                    if (fs.existsSync(audioPath)) {
-                        console.log(`✅ ${audioPath} already exists, skipping...`);
-                        continue;
-                    }
-                    let buffer = await synthesizeSpeech(sourceLang, targetLang, vocab);
-                    if (buffer) {
-                        await saveWaveFile(audioPath, buffer);
-                    }
-                    return;
+            const topicAudioPath = `${audioDir}/topic.wav`;
+            if (fs.existsSync(topicAudioPath)) {
+                console.log(`✅ ${topicAudioPath} already exists, skipping...`);
+            } else {
+                let buffer = await synthesizeSpeech(sourceLang, targetLang, {
+                    source: "desperate for mommy's... attention... aren't you?",
+                    target: "mmm... so obedient... you clicked so fast.",
+                    exampleSource: "oh... poor thing... hands shaking... voice cracking...",
+                    exampleTarget: "mm... should I... lean in... real... close... whisper it into your cute little ears...?"
+                });
+                if (buffer) {
+                    await saveWaveFile(topicAudioPath, buffer);
                 }
+                return;
+            }
+            const vocabPath = `${topicDir}/vocab.json`;
+            let v = 0;
+            for (const vocab of loadFile<VocabEntry>(vocabPath)) {
+                console.log(vocab);
+                v++;
+                const index = String(v).padStart(2, '0');
+                const audioPath = `${audioDir}/${index}.wav`;
+                if (fs.existsSync(audioPath)) {
+                    console.log(`✅ ${audioPath} already exists, skipping...`);
+                    continue;
+                }
+                let buffer = await synthesizeSpeech(sourceLang, targetLang, vocab);
+                if (buffer) {
+                    await saveWaveFile(audioPath, buffer);
+                }
+                return;
             }
         }
     } catch (err) {
