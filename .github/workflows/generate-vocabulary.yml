@@ -1,16 +1,15 @@
-name: Generate Topics
+name: Generate Vocabulary
 
 on:
   push:
     paths: [
-      .github/workflows/generate-topics.yml,
-      scripts/generate-topics.ts,
-      src/gemini.ts,
-      src/types.ts
+      .github/workflows/generate-vocabulary.yml,
+      scripts/generate-vocabulary.ts,
+      src/**
     ]
 
 jobs:
-  generate-topics:
+  generate-video:
     runs-on: ubuntu-latest
     strategy:
       max-parallel: 1
@@ -19,12 +18,10 @@ jobs:
         count: [30]
         sourceLang: [fr]
         targetLang: [de]
-
     steps:
-      - name: 📥 Checkout repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: 🧰 Set up Node.js
+      - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
@@ -33,9 +30,9 @@ jobs:
 
       - run: npm run build
 
-      - name: 🚀 Generate topics
+      - name: Generate video
         run: |
-          node dist/scripts/generate-topics.js \
+          node dist/scripts/generate-video.js \
             ${{ matrix.count }} \
             ${{ matrix.level }} \
             ${{ matrix.sourceLang }} \
@@ -43,15 +40,15 @@ jobs:
             data/${{ matrix.sourceLang }}-${{ matrix.targetLang }}/${{ matrix.level }}
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-
-      - name: 💾 Commit generated topic file
+            
+      - name: 💾 Commit generated vocabulary file
         if: success()
         run: |
           git pull
           git config user.name "github-actions"
           git config user.email "actions@github.com"
           git add data/${{ matrix.sourceLang }}-${{ matrix.targetLang }}/${{ matrix.level }}/*
-          git diff --quiet && git diff --staged --quiet || git commit -m "📚 Add topics"
+          git diff --quiet && git diff --staged --quiet || git commit -m "📚 Add vocabulary"
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
