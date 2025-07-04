@@ -1,4 +1,3 @@
-file 'combined.wav'
 file 'topic1.wav'
 file 'topic2.wav'
 file 'topic3.wav'
