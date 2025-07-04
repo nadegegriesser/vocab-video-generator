@@ -1,0 +1,32 @@
+[
+  {
+    "source": "faire les courses",
+    "target": "einkaufen gehen",
+    "exampleSource": "Je dois faire les courses cet après-midi.",
+    "exampleTarget": "Ich muss heute Nachmittag einkaufen gehen."
+  },
+  {
+    "source": "un supermarché",
+    "target": "ein Supermarkt",
+    "exampleSource": "Il y a un grand supermarché près de chez moi.",
+    "exampleTarget": "Es gibt einen großen Supermarkt in meiner Nähe."
+  },
+  {
+    "source": "une liste de courses",
+    "target": "eine Einkaufsliste",
+    "exampleSource": "N'oublie pas ta liste de courses !",
+    "exampleTarget": "Vergiss deine Einkaufsliste nicht!"
+  },
+  {
+    "source": "acheter",
+    "target": "kaufen",
+    "exampleSource": "J'aimerais acheter du pain frais.",
+    "exampleTarget": "Ich möchte frisches Brot kaufen."
+  },
+  {
+    "source": "la caisse",
+    "target": "die Kasse",
+    "exampleSource": "Il y a beaucoup de monde à la caisse.",
+    "exampleTarget": "Es sind viele Leute an der Kasse."
+  }
+]

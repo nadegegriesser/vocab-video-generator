@@ -1,0 +1,32 @@
+[
+  {
+    "source": "un fruit",
+    "target": "das Obst",
+    "exampleSource": "Mangez des fruits tous les jours pour votre santé.",
+    "exampleTarget": "Essen Sie jeden Tag Obst für Ihre Gesundheit."
+  },
+  {
+    "source": "un légume",
+    "target": "das Gemüse",
+    "exampleSource": "Les enfants devraient manger plus de légumes.",
+    "exampleTarget": "Kinder sollten mehr Gemüse essen."
+  },
+  {
+    "source": "une pomme",
+    "target": "der Apfel",
+    "exampleSource": "J'achète une pomme rouge au marché.",
+    "exampleTarget": "Ich kaufe einen roten Apfel auf dem Markt."
+  },
+  {
+    "source": "une carotte",
+    "target": "die Karotte / die Möhre",
+    "exampleSource": "Les lapins aiment manger des carottes.",
+    "exampleTarget": "Hasen essen gern Karotten."
+  },
+  {
+    "source": "frais / fraîche",
+    "target": "frisch",
+    "exampleSource": "Ces légumes sont très frais.",
+    "exampleTarget": "Dieses Gemüse ist sehr frisch."
+  }
+]

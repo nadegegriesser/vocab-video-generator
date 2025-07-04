@@ -1,0 +1,32 @@
+[
+  {
+    "source": "la mère",
+    "target": "die Mutter",
+    "exampleSource": "Ma mère prépare un délicieux gâteau.",
+    "exampleTarget": "Meine Mutter backt einen leckeren Kuchen."
+  },
+  {
+    "source": "le père",
+    "target": "der Vater",
+    "exampleSource": "Mon père travaille beaucoup cette semaine.",
+    "exampleTarget": "Mein Vater arbeitet diese Woche viel."
+  },
+  {
+    "source": "les parents",
+    "target": "die Eltern",
+    "exampleSource": "Mes parents aiment voyager en été.",
+    "exampleTarget": "Meine Eltern reisen gerne im Sommer."
+  },
+  {
+    "source": "la sœur",
+    "target": "die Schwester",
+    "exampleSource": "Ma sœur habite à Paris.",
+    "exampleTarget": "Meine Schwester wohnt in Paris."
+  },
+  {
+    "source": "l'enfant",
+    "target": "das Kind",
+    "exampleSource": "L'enfant joue avec ses amis dans le parc.",
+    "exampleTarget": "Das Kind spielt mit seinen Freunden im Park."
+  }
+]
