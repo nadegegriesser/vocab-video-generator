@@ -49,7 +49,9 @@ jobs:
             data/${{ matrix.sourceLang }}-${{ matrix.targetLang }}/${{ matrix.level }}/01/audio
           cd data/${{ matrix.sourceLang }}-${{ matrix.targetLang }}/${{ matrix.level }}/01/audio
           ls
-          rm -Rf combined.wav combined-aac.m4a output.mp4
+          rm combined.wav combined-aac.m4a output.mp4
+          echo "after delet"
+          ls
           ls audio-list.txt
           ffmpeg -f concat -safe 0 -i audio-list.txt -c copy combined.wav
           ls combined.wav
