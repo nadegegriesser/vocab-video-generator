@@ -1,0 +1,32 @@
+[
+  {
+    "source": "Le lundi",
+    "target": "Montag",
+    "exampleSource": "Le lundi, je vais à l'école.",
+    "exampleTarget": "Montags gehe ich zur Schule."
+  },
+  {
+    "source": "Le mardi",
+    "target": "Dienstag",
+    "exampleSource": "Nous avons un cours de français le mardi.",
+    "exampleTarget": "Wir haben dienstags einen Französischkurs."
+  },
+  {
+    "source": "Le mercredi",
+    "target": "Mittwoch",
+    "exampleSource": "Le mercredi, les enfants n'ont pas école.",
+    "exampleTarget": "Mittwochs haben die Kinder keine Schule."
+  },
+  {
+    "source": "Le jeudi",
+    "target": "Donnerstag",
+    "exampleSource": "Elle travaille au bureau le jeudi.",
+    "exampleTarget": "Sie arbeitet donnerstags im Büro."
+  },
+  {
+    "source": "Le vendredi",
+    "target": "Freitag",
+    "exampleSource": "J'aime le vendredi car c'est presque le week-end.",
+    "exampleTarget": "Ich mag den Freitag, weil es fast Wochenende ist."
+  }
+]

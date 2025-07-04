@@ -1,0 +1,32 @@
+[
+  {
+    "source": "Le salon",
+    "target": "Das Wohnzimmer",
+    "exampleSource": "Le salon est grand et lumineux.",
+    "exampleTarget": "Das Wohnzimmer ist groß und hell."
+  },
+  {
+    "source": "La chambre",
+    "target": "Das Schlafzimmer",
+    "exampleSource": "J'ai un lit dans ma chambre.",
+    "exampleTarget": "Ich habe ein Bett in meinem Schlafzimmer."
+  },
+  {
+    "source": "La cuisine",
+    "target": "Die Küche",
+    "exampleSource": "Nous préparons le dîner dans la cuisine.",
+    "exampleTarget": "Wir bereiten das Abendessen in der Küche zu."
+  },
+  {
+    "source": "La salle de bain",
+    "target": "Das Badezimmer",
+    "exampleSource": "La salle de bain est propre.",
+    "exampleTarget": "Das Badezimmer ist sauber."
+  },
+  {
+    "source": "Le jardin",
+    "target": "Der Garten",
+    "exampleSource": "Il y a de belles fleurs dans le jardin.",
+    "exampleTarget": "Es gibt schöne Blumen im Garten."
+  }
+]

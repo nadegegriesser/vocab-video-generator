@@ -1,0 +1,32 @@
+[
+  {
+    "source": "La maison",
+    "target": "Das Haus",
+    "exampleSource": "J'habite dans une petite maison.",
+    "exampleTarget": "Ich wohne in einem kleinen Haus."
+  },
+  {
+    "source": "L'appartement",
+    "target": "Die Wohnung",
+    "exampleSource": "Mon appartement est au troisième étage.",
+    "exampleTarget": "Meine Wohnung ist im dritten Stock."
+  },
+  {
+    "source": "La chambre",
+    "target": "Das Schlafzimmer",
+    "exampleSource": "Ma chambre est grande et lumineuse.",
+    "exampleTarget": "Mein Schlafzimmer ist groß und hell."
+  },
+  {
+    "source": "La cuisine",
+    "target": "Die Küche",
+    "exampleSource": "Nous mangeons dans la cuisine.",
+    "exampleTarget": "Wir essen in der Küche."
+  },
+  {
+    "source": "Le salon",
+    "target": "Das Wohnzimmer",
+    "exampleSource": "Le salon a un grand canapé.",
+    "exampleTarget": "Das Wohnzimmer hat ein großes Sofa."
+  }
+]

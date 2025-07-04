@@ -1,0 +1,32 @@
+[
+  {
+    "source": "L'eau",
+    "target": "Das Wasser",
+    "exampleSource": "Je voudrais de l'eau, s'il vous plaît.",
+    "exampleTarget": "Ich möchte Wasser, bitte."
+  },
+  {
+    "source": "Le café",
+    "target": "Der Kaffee",
+    "exampleSource": "Il boit un café le matin.",
+    "exampleTarget": "Er trinkt morgens einen Kaffee."
+  },
+  {
+    "source": "Le thé",
+    "target": "Der Tee",
+    "exampleSource": "Tu prends un thé ?",
+    "exampleTarget": "Nimmst du einen Tee?"
+  },
+  {
+    "source": "Le jus de fruits",
+    "target": "Der Fruchtsaft",
+    "exampleSource": "Elle aime le jus de fruits.",
+    "exampleTarget": "Sie mag Fruchtsaft."
+  },
+  {
+    "source": "Le lait",
+    "target": "Die Milch",
+    "exampleSource": "Je bois du lait avec mes céréales.",
+    "exampleTarget": "Ich trinke Milch mit meinen Cornflakes."
+  }
+]

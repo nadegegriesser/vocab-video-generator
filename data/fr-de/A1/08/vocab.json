@@ -1,0 +1,32 @@
+[
+  {
+    "source": "l'hiver",
+    "target": "der Winter",
+    "exampleSource": "J'aime l'hiver parce qu'il neige.",
+    "exampleTarget": "Ich mag den Winter, weil es schneit."
+  },
+  {
+    "source": "l'été",
+    "target": "der Sommer",
+    "exampleSource": "En été, nous allons à la plage.",
+    "exampleTarget": "Im Sommer gehen wir zum Strand."
+  },
+  {
+    "source": "le printemps",
+    "target": "der Frühling",
+    "exampleSource": "Au printemps, les fleurs poussent.",
+    "exampleTarget": "Im Frühling wachsen die Blumen."
+  },
+  {
+    "source": "l'automne",
+    "target": "der Herbst",
+    "exampleSource": "Les feuilles tombent en automne.",
+    "exampleTarget": "Die Blätter fallen im Herbst."
+  },
+  {
+    "source": "la saison",
+    "target": "die Jahreszeit",
+    "exampleSource": "Quelle est ta saison préférée ?",
+    "exampleTarget": "Was ist deine Lieblingsjahreszeit?"
+  }
+]

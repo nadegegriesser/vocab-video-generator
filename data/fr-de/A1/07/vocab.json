@@ -1,0 +1,32 @@
+[
+  {
+    "source": "le mois",
+    "target": "der Monat",
+    "exampleSource": "Janvier est le premier mois de l'année.",
+    "exampleTarget": "Januar ist der erste Monat des Jahres."
+  },
+  {
+    "source": "l'année",
+    "target": "das Jahr",
+    "exampleSource": "L'année 2024 a douze mois.",
+    "exampleTarget": "Das Jahr 2024 hat zwölf Monate."
+  },
+  {
+    "source": "le printemps",
+    "target": "der Frühling",
+    "exampleSource": "Le printemps est en mars, avril et mai.",
+    "exampleTarget": "Der Frühling ist im März, April und Mai."
+  },
+  {
+    "source": "l'été",
+    "target": "der Sommer",
+    "exampleSource": "J'aime nager en été.",
+    "exampleTarget": "Ich schwimme gerne im Sommer."
+  },
+  {
+    "source": "le calendrier",
+    "target": "der Kalender",
+    "exampleSource": "Regarde les mois sur le calendrier.",
+    "exampleTarget": "Schau dir die Monate auf dem Kalender an."
+  }
+]

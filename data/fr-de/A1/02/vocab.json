@@ -1,0 +1,32 @@
+[
+  {
+    "source": "zéro",
+    "target": "null",
+    "exampleSource": "J'ai zéro question.",
+    "exampleTarget": "Ich habe null Fragen."
+  },
+  {
+    "source": "dix",
+    "target": "zehn",
+    "exampleSource": "Il y a dix pommes sur la table.",
+    "exampleTarget": "Es sind zehn Äpfel auf dem Tisch."
+  },
+  {
+    "source": "quinze",
+    "target": "fünfzehn",
+    "exampleSource": "Mon frère a quinze ans.",
+    "exampleTarget": "Mein Bruder ist fünfzehn Jahre alt."
+  },
+  {
+    "source": "vingt",
+    "target": "zwanzig",
+    "exampleSource": "La classe compte vingt élèves.",
+    "exampleTarget": "Die Klasse hat zwanzig Schüler."
+  },
+  {
+    "source": "le nombre",
+    "target": "die Zahl",
+    "exampleSource": "Quel est ton nombre favori ?",
+    "exampleTarget": "Was ist deine Lieblingszahl?"
+  }
+]

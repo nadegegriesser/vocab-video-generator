@@ -1,0 +1,32 @@
+[
+  {
+    "source": "le père",
+    "target": "der Vater",
+    "exampleSource": "C'est mon père.",
+    "exampleTarget": "Das ist mein Vater."
+  },
+  {
+    "source": "la mère",
+    "target": "die Mutter",
+    "exampleSource": "Ma mère est gentille.",
+    "exampleTarget": "Meine Mutter ist nett."
+  },
+  {
+    "source": "le frère",
+    "target": "der Bruder",
+    "exampleSource": "J'ai un frère.",
+    "exampleTarget": "Ich habe einen Bruder."
+  },
+  {
+    "source": "la sœur",
+    "target": "die Schwester",
+    "exampleSource": "Elle est ma sœur.",
+    "exampleTarget": "Sie ist meine Schwester."
+  },
+  {
+    "source": "la grand-mère",
+    "target": "die Großmutter",
+    "exampleSource": "Ma grand-mère habite à Lyon.",
+    "exampleTarget": "Meine Großmutter wohnt in Lyon."
+  }
+]

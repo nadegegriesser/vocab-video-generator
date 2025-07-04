@@ -1,0 +1,32 @@
+[
+  {
+    "source": "Bonjour.",
+    "target": "Guten Tag.",
+    "exampleSource": "Bonjour, une table pour deux personnes.",
+    "exampleTarget": "Guten Tag, einen Tisch für zwei Personen."
+  },
+  {
+    "source": "La carte",
+    "target": "Die Speisekarte",
+    "exampleSource": "S'il vous plaît, la carte.",
+    "exampleTarget": "Bitte, die Speisekarte."
+  },
+  {
+    "source": "Je voudrais...",
+    "target": "Ich möchte...",
+    "exampleSource": "Je voudrais un café, s'il vous plaît.",
+    "exampleTarget": "Ich möchte einen Kaffee, bitte."
+  },
+  {
+    "source": "L'addition, s'il vous plaît.",
+    "target": "Die Rechnung, bitte.",
+    "exampleSource": "L'addition, s'il vous plaît.",
+    "exampleTarget": "Die Rechnung, bitte."
+  },
+  {
+    "source": "Merci.",
+    "target": "Danke.",
+    "exampleSource": "Merci pour le bon repas.",
+    "exampleTarget": "Danke für das gute Essen."
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "source": "Le petit-déjeuner",
+    "target": "Das Frühstück",
+    "exampleSource": "Je prends le petit-déjeuner à 7h00.",
+    "exampleTarget": "Ich frühstücke um 7:00 Uhr."
+  },
+  {
+    "source": "Se lever",
+    "target": "Aufstehen",
+    "exampleSource": "Je me lève tôt tous les jours.",
+    "exampleTarget": "Ich stehe jeden Tag früh auf."
+  },
+  {
+    "source": "Dormir",
+    "target": "Schlafen",
+    "exampleSource": "Tu dors bien la nuit ?",
+    "exampleTarget": "Schläfst du nachts gut?"
+  },
+  {
+    "source": "Manger",
+    "target": "Essen",
+    "exampleSource": "Nous mangeons une pizza le vendredi soir.",
+    "exampleTarget": "Wir essen Freitagabend Pizza."
+  },
+  {
+    "source": "La douche",
+    "target": "Die Dusche",
+    "exampleSource": "Il prend une douche après le sport.",
+    "exampleTarget": "Er nimmt nach dem Sport eine Dusche."
+  }
+]

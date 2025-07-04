@@ -1,0 +1,32 @@
+[
+  {
+    "source": "rouge",
+    "target": "rot",
+    "exampleSource": "La voiture est rouge.",
+    "exampleTarget": "Das Auto ist rot."
+  },
+  {
+    "source": "bleu",
+    "target": "blau",
+    "exampleSource": "Le ciel est bleu.",
+    "exampleTarget": "Der Himmel ist blau."
+  },
+  {
+    "source": "vert",
+    "target": "grün",
+    "exampleSource": "L'herbe est verte.",
+    "exampleTarget": "Das Gras ist grün."
+  },
+  {
+    "source": "jaune",
+    "target": "gelb",
+    "exampleSource": "Le soleil est jaune.",
+    "exampleTarget": "Die Sonne ist gelb."
+  },
+  {
+    "source": "noir",
+    "target": "schwarz",
+    "exampleSource": "Mon chat est noir.",
+    "exampleTarget": "Meine Katze ist schwarz."
+  }
+]
