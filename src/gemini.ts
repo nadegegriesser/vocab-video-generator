@@ -132,11 +132,14 @@ export async function synthesizeSpeech(sourceLang: string,
             },
         },
     };
-    const text = `Read aloud in a warm, welcoming tone. Make Speaker1 speak ${sourceLang} and Speaker2 speak ${targetLang}:
-Speaker1: ... ${vocab.source} ...
-Speaker2: ... ${vocab.target} ...
-Speaker1: ... ${vocab.exampleSource} ...
-Speaker2: ... ${vocab.exampleTarget} ...`;
+    const text = `STYLE DESCRIPTION:
+Speaker 1: Speaks ${sourceLang}. Over-the-top seductive, dominant, and intoxicating. Every word feels like it is dripping honey, slow, commanding, and wickedly playful. Lots of audible smirks, purrs, and drawn-out pauses like she knows exactly what she is doing... and loves watching the listener squirm.
+Speaker 2: Speaks ${targetLang}. Awkward, flustered, overwhelmed. Voice cracks constantly. Rapid stammering, anxious gulps, and squeaky surprise noises. Simultaneously terrified and absolutely living for it.
+SCRIPT:
+Speaker1: ${vocab.source} (PURR_SOUND)
+Speaker2: ${vocab.target}
+Speaker1: ${vocab.exampleSource} (PURR_SOUND)
+Speaker2: ${vocab.exampleTarget}`;
     console.log(text);
     const response = await ai.models.generateContent({
         model: "gemini-2.5-flash-preview-tts",
