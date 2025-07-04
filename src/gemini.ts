@@ -105,6 +105,7 @@ Speaker1: ${vocab.exampleSource}`;
         if (!chunk.candidates || !chunk.candidates[0].content || !chunk.candidates[0].content.parts) {
             continue;
         }
+        console.log(chunk);
         if (chunk.candidates?.[0]?.content?.parts?.[0]?.inlineData) {
             const fileName = `${fileIndex++}`;
             const inlineData = chunk.candidates[0].content.parts[0].inlineData;
