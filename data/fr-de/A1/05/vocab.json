@@ -1,0 +1,32 @@
+[
+  {
+    "source": "Le pain",
+    "target": "Das Brot",
+    "exampleSource": "J'achète du pain à la boulangerie.",
+    "exampleTarget": "Ich kaufe Brot in der Bäckerei."
+  },
+  {
+    "source": "L'eau",
+    "target": "Das Wasser",
+    "exampleSource": "Je bois de l'eau tous les jours.",
+    "exampleTarget": "Ich trinke jeden Tag Wasser."
+  },
+  {
+    "source": "Le lait",
+    "target": "Die Milch",
+    "exampleSource": "Il met du lait dans son café.",
+    "exampleTarget": "Er gibt Milch in seinen Kaffee."
+  },
+  {
+    "source": "Le riz",
+    "target": "Der Reis",
+    "exampleSource": "Nous mangeons du riz avec le poulet.",
+    "exampleTarget": "Wir essen Reis mit dem Hähnchen."
+  },
+  {
+    "source": "Les pâtes",
+    "target": "Die Nudeln",
+    "exampleSource": "Ils aiment cuisiner des pâtes.",
+    "exampleTarget": "Sie kochen gerne Nudeln."
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "source": "le mois",
+    "target": "der Monat",
+    "exampleSource": "Quel mois sommes-nous ?",
+    "exampleTarget": "Welcher Monat ist es?"
+  },
+  {
+    "source": "l'année",
+    "target": "das Jahr",
+    "exampleSource": "Bonne année !",
+    "exampleTarget": "Frohes neues Jahr!"
+  },
+  {
+    "source": "Janvier",
+    "target": "Januar",
+    "exampleSource": "Janvier est un mois froid.",
+    "exampleTarget": "Januar ist ein kalter Monat."
+  },
+  {
+    "source": "Juillet",
+    "target": "Juli",
+    "exampleSource": "Mon anniversaire est en juillet.",
+    "exampleTarget": "Mein Geburtstag ist im Juli."
+  },
+  {
+    "source": "Décembre",
+    "target": "Dezember",
+    "exampleSource": "Nous fêtons Noël en décembre.",
+    "exampleTarget": "Wir feiern Weihnachten im Dezember."
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "source": "le chien",
+    "target": "der Hund",
+    "exampleSource": "J'ai un chien appelé Max.",
+    "exampleTarget": "Ich habe einen Hund namens Max."
+  },
+  {
+    "source": "le chat",
+    "target": "die Katze",
+    "exampleSource": "Mon chat aime dormir sur le canapé.",
+    "exampleTarget": "Meine Katze schläft gerne auf dem Sofa."
+  },
+  {
+    "source": "le poisson",
+    "target": "der Fisch",
+    "exampleSource": "Nous avons trois poissons dans l'aquarium.",
+    "exampleTarget": "Wir haben drei Fische im Aquarium."
+  },
+  {
+    "source": "le lapin",
+    "target": "das Kaninchen",
+    "exampleSource": "Le lapin mange des carottes et de l'herbe.",
+    "exampleTarget": "Das Kaninchen frisst Karotten und Gras."
+  },
+  {
+    "source": "l'oiseau",
+    "target": "der Vogel",
+    "exampleSource": "Elle a un petit oiseau jaune.",
+    "exampleTarget": "Sie hat einen kleinen gelben Vogel."
+  }
+]

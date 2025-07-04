@@ -1,0 +1,32 @@
+[
+  {
+    "source": "la mère",
+    "target": "die Mutter",
+    "exampleSource": "Ma mère est très gentille.",
+    "exampleTarget": "Meine Mutter ist sehr nett."
+  },
+  {
+    "source": "le père",
+    "target": "der Vater",
+    "exampleSource": "Mon père travaille à Berlin.",
+    "exampleTarget": "Mein Vater arbeitet in Berlin."
+  },
+  {
+    "source": "le frère",
+    "target": "der Bruder",
+    "exampleSource": "J'ai un frère et une sœur.",
+    "exampleTarget": "Ich habe einen Bruder und eine Schwester."
+  },
+  {
+    "source": "la sœur",
+    "target": "die Schwester",
+    "exampleSource": "Ma sœur aime chanter.",
+    "exampleTarget": "Meine Schwester singt gern."
+  },
+  {
+    "source": "la famille",
+    "target": "die Familie",
+    "exampleSource": "Ma famille est grande.",
+    "exampleTarget": "Meine Familie ist groß."
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "source": "un livre",
+    "target": "ein Buch",
+    "exampleSource": "J'ai un livre de français.",
+    "exampleTarget": "Ich habe ein Französischbuch."
+  },
+  {
+    "source": "une table",
+    "target": "ein Tisch",
+    "exampleSource": "La table est grande.",
+    "exampleTarget": "Der Tisch ist groß."
+  },
+  {
+    "source": "une chaise",
+    "target": "ein Stuhl",
+    "exampleSource": "Il y a une chaise ici.",
+    "exampleTarget": "Hier ist ein Stuhl."
+  },
+  {
+    "source": "un crayon",
+    "target": "ein Bleistift",
+    "exampleSource": "Donne-moi un crayon, s'il te plaît.",
+    "exampleTarget": "Gib mir bitte einen Bleistift."
+  },
+  {
+    "source": "une gomme",
+    "target": "ein Radiergummi",
+    "exampleSource": "J'ai une gomme rouge.",
+    "exampleTarget": "Ich habe einen roten Radiergummi."
+  }
+]

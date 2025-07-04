@@ -1,0 +1,32 @@
+[
+  {
+    "source": "Le médecin / La docteure",
+    "target": "der Arzt / die Ärztin",
+    "exampleSource": "Il est médecin à l'hôpital.",
+    "exampleTarget": "Er ist Arzt im Krankenhaus."
+  },
+  {
+    "source": "L'enseignant / L'enseignante",
+    "target": "der Lehrer / die Lehrerin",
+    "exampleSource": "Elle est enseignante dans une école primaire.",
+    "exampleTarget": "Sie ist Lehrerin in einer Grundschule."
+  },
+  {
+    "source": "Le cuisinier / La cuisinière",
+    "target": "der Koch / die Köchin",
+    "exampleSource": "Mon père est cuisinier dans un restaurant.",
+    "exampleTarget": "Mein Vater ist Koch in einem Restaurant."
+  },
+  {
+    "source": "Le vendeur / La vendeuse",
+    "target": "der Verkäufer / die Verkäuferin",
+    "exampleSource": "Je suis vendeuse dans un magasin de vêtements.",
+    "exampleTarget": "Ich bin Verkäuferin in einem Bekleidungsgeschäft."
+  },
+  {
+    "source": "L'infirmier / L'infirmière",
+    "target": "der Krankenpfleger / die Krankenschwester",
+    "exampleSource": "Ma sœur est infirmière à temps partiel.",
+    "exampleTarget": "Meine Schwester ist Teilzeitkrankenschwester."
+  }
+]

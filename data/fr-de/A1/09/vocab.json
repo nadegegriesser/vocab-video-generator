@@ -1,0 +1,32 @@
+[
+  {
+    "source": "un pays",
+    "target": "ein Land",
+    "exampleSource": "La France est un beau pays.",
+    "exampleTarget": "Frankreich ist ein schönes Land."
+  },
+  {
+    "source": "français / française",
+    "target": "französisch (m/f)",
+    "exampleSource": "Je suis français.",
+    "exampleTarget": "Ich bin Franzose."
+  },
+  {
+    "source": "l'Allemagne (f.)",
+    "target": "Deutschland (n.)",
+    "exampleSource": "J'habite en Allemagne.",
+    "exampleTarget": "Ich wohne in Deutschland."
+  },
+  {
+    "source": "allemand / allemande",
+    "target": "deutsch (m/f)",
+    "exampleSource": "Mon ami est allemand.",
+    "exampleTarget": "Mein Freund ist Deutscher."
+  },
+  {
+    "source": "la nationalité",
+    "target": "die Nationalität",
+    "exampleSource": "Quelle est ta nationalité ?",
+    "exampleTarget": "Was ist deine Nationalität?"
+  }
+]
