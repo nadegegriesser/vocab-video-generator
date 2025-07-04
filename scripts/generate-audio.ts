@@ -24,27 +24,24 @@ function saveTopics(topics: TopicEntry[]) {
             for (const d of dirs) {
                 console.log(d);
                 const vocabPath = `${d}/vocab.json`;
+                const audioDir = `${d}/audio`;
+                fs.mkdirSync(audioDir, { recursive: true });
+
+                let i = 0;
                 for (const vocab of loadFile<VocabEntry>(vocabPath)) {
                     console.log(vocab);
-                    /*fs.mkdirSync(wavsPath, { recursive: true });
-
-                    let i = 0;
-                    for (const vocab of vocabs) {
-                        i++;
-                        const filePath = `${wavsPath}/${String(i).padStart(2, '0')}.wav`;
-                        if (fs.existsSync(filePath)) {
-                            console.log(`✅ ${filePath} already exists, skipping...`);
-                            continue;
-                        }
-
-                        let buffer = await synthesizeSpeech(sourceLang, targetLang, vocab);
-                        if (buffer) {
-                            fs.writeFileSync(filePath, buffer);
-                        }
+                     i++;
+                    const index = String(i).padStart(2, '0');
+                    const audioPath = `${audioDir}/${index}.wav`;
+                    if (fs.existsSync(audioPath)) {
+                        console.log(`✅ ${audioPath} already exists, skipping...`);
+                        continue;
                     }
-                    if (i == count) {
-                        saveTopics(topics);
-                    }*/
+                    let buffer = await synthesizeSpeech(sourceLang, targetLang, vocab);
+                    if (buffer) {
+                        fs.writeFileSync(audioPath, buffer);
+                    }
+                    return;
                 }
             }
         }
