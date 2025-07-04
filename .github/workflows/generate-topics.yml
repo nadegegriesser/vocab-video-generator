@@ -5,8 +5,7 @@ on:
     paths: [
       .github/workflows/generate-topics.yml,
       scripts/generate-topics.ts,
-      src/gemini.ts,
-      src/types.ts
+      src/**
     ]
 
 jobs:
@@ -45,7 +44,6 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
 
       - name: 💾 Commit generated topic file
-        if: success()
         run: |
           git pull
           git config user.name "github-actions"

@@ -1,24 +1,24 @@
-name: Generate Video
+name: Generate Audio
 
 on:
-  push:
-    paths: [
-      .github/workflows/generate-video.yml,
-      scripts/generate-video.ts,
-      src/**
-    ]
+  #push:
+  #  paths: [
+  #    .github/workflows/generate-audio.yml,
+  #    scripts/generate-audio.ts,
+  #    src/**
+  #  ]
   #schedule:
   #  - cron: '0 6 * * *' # Jeden Tag um 6 Uhr UTC
   workflow_dispatch:
 
 jobs:
-  generate-video:
+  generate-audio:
     runs-on: ubuntu-latest
     strategy:
       max-parallel: 1
       matrix:
         level: [A1]
-        count: [30]
+        count: [2]
         sourceLang: [fr]
         targetLang: [de]
     steps:
@@ -33,25 +33,23 @@ jobs:
 
       - run: npm run build
 
-      - name: Generate video
+      - name: Generate audio
         run: |
-          node dist/scripts/generate-video.js \
-            ${{ matrix.count }} \
-            ${{ matrix.level }} \
+          node dist/scripts/generate-audio.js \
             ${{ matrix.sourceLang }} \
             ${{ matrix.targetLang }} \
             data/${{ matrix.sourceLang }}-${{ matrix.targetLang }}/${{ matrix.level }}
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
             
-      - name: 💾 Commit updated topic file
+      - name: 💾 Commit generated audio file
         if: success()
         run: |
           git pull
           git config user.name "github-actions"
           git config user.email "actions@github.com"
           git add data/${{ matrix.sourceLang }}-${{ matrix.targetLang }}/${{ matrix.level }}/*
-          git diff --quiet && git diff --staged --quiet || git commit -m "📚 Update"
+          git diff --quiet && git diff --staged --quiet || git commit -m "📚 Add audio"
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -1,8 +1,6 @@
 import { GoogleGenAI } from '@google/genai';
 import { TopicEntry, VocabEntry } from './types';
-import mime from 'mime';
 import dotenv from 'dotenv';
-import { writeFile } from 'fs';
 
 dotenv.config();
 

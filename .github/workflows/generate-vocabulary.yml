@@ -9,7 +9,7 @@ on:
     ]
 
 jobs:
-  generate-video:
+  generate-vocab:
     runs-on: ubuntu-latest
     strategy:
       max-parallel: 1
@@ -32,7 +32,7 @@ jobs:
 
       - name: Generate video
         run: |
-          node dist/scripts/generate-video.js \
+          node dist/scripts/generate-vocabulary.js \
             ${{ matrix.count }} \
             ${{ matrix.level }} \
             ${{ matrix.sourceLang }} \
@@ -42,7 +42,6 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
             
       - name: 💾 Commit generated vocabulary file
-        if: success()
         run: |
           git pull
           git config user.name "github-actions"
