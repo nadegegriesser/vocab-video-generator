@@ -1,0 +1,122 @@
+[
+  {
+    "source": "La famille",
+    "target": "Die Familie"
+  },
+  {
+    "source": "La maison et l'appartement",
+    "target": "Das Haus und die Wohnung"
+  },
+  {
+    "source": "Les meubles",
+    "target": "Die Möbel"
+  },
+  {
+    "source": "La nourriture et les boissons",
+    "target": "Essen und Getränke"
+  },
+  {
+    "source": "Les fruits et légumes",
+    "target": "Obst und Gemüse"
+  },
+  {
+    "source": "Les repas",
+    "target": "Die Mahlzeiten"
+  },
+  {
+    "source": "Faire les courses",
+    "target": "Einkaufen"
+  },
+  {
+    "source": "Les vêtements",
+    "target": "Die Kleidung"
+  },
+  {
+    "source": "Les couleurs",
+    "target": "Die Farben"
+  },
+  {
+    "source": "Les chiffres",
+    "target": "Zahlen"
+  },
+  {
+    "source": "Les jours de la semaine et les mois",
+    "target": "Wochentage und Monate"
+  },
+  {
+    "source": "Les saisons et le temps qu'il fait",
+    "target": "Jahreszeiten und Wetter"
+  },
+  {
+    "source": "Les activités quotidiennes",
+    "target": "Der Tagesablauf"
+  },
+  {
+    "source": "Les loisirs et les passe-temps",
+    "target": "Hobbys und Freizeitaktivitäten"
+  },
+  {
+    "source": "Le sport",
+    "target": "Sport"
+  },
+  {
+    "source": "Les vacances et les voyages",
+    "target": "Urlaub und Reisen"
+  },
+  {
+    "source": "Les moyens de transport",
+    "target": "Verkehrsmittel"
+  },
+  {
+    "source": "La ville et la campagne",
+    "target": "Stadt und Land"
+  },
+  {
+    "source": "Les lieux publics",
+    "target": "Öffentliche Orte"
+  },
+  {
+    "source": "Demander son chemin",
+    "target": "Nach dem Weg fragen"
+  },
+  {
+    "source": "Au restaurant / Au café",
+    "target": "Im Restaurant / Im Café"
+  },
+  {
+    "source": "À l'hôtel",
+    "target": "Im Hotel"
+  },
+  {
+    "source": "La santé et le corps humain",
+    "target": "Gesundheit und der menschliche Körper"
+  },
+  {
+    "source": "Chez le médecin",
+    "target": "Beim Arzt"
+  },
+  {
+    "source": "Les professions et le travail",
+    "target": "Berufe und Arbeit"
+  },
+  {
+    "source": "L'école et les études",
+    "target": "Schule und Studium"
+  },
+  {
+    "source": "Les animaux",
+    "target": "Die Tiere"
+  },
+  {
+    "source": "Les descriptions physiques",
+    "target": "Das Aussehen"
+  },
+  {
+    "source": "Les sentiments et les émotions",
+    "target": "Gefühle und Emotionen"
+  },
+  {
+    "source": "Les salutations et les formules de politesse",
+    "target": "Begrüßungen und Höflichkeitsformeln"
+  }
+]

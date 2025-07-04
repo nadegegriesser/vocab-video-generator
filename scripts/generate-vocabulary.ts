@@ -15,8 +15,10 @@ const topicsPath = `${dir}/${topicsFile}`;
 
 (async () => {
     try {
-        let i = 1;
+        let i = 0;
         for (const topic of loadFile<TopicEntry>(topicsPath)) {
+            console.log(topic);
+            i++;
             const index = String(i).padStart(2, '0');
             const vocabDir = `${dir}/${index}`;
             const vocabPath = `${vocabDir}/vocab.json`;
@@ -27,13 +29,13 @@ const topicsPath = `${dir}/${topicsFile}`;
             }
 
             const vocabs = await generateVocabForTopic(level, count, sourceLang, targetLang, topic.source);
+            console.log(vocabs);
 
             fs.mkdirSync(vocabDir, { recursive: true });
 
             fs.writeFileSync(vocabPath, JSON.stringify(vocabs, null, 2));
-            i++;
         }
     } catch (err) {
-        console.error('❌ Failed to generate video:', err);
+        console.error('❌ Failed to generate vocab:', err);
     }
 })();

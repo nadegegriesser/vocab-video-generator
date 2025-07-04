@@ -15,7 +15,7 @@ jobs:
       max-parallel: 1
       matrix:
         level: [A1, A2]
-        count: [30]
+        count: [5]
         sourceLang: [fr]
         targetLang: [de]
     steps:
@@ -30,7 +30,7 @@ jobs:
 
       - run: npm run build
 
-      - name: Generate video
+      - name: Generate vocabulary
         run: |
           node dist/scripts/generate-vocabulary.js \
             ${{ matrix.count }} \
