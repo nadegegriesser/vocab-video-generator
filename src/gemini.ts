@@ -136,10 +136,10 @@ export async function synthesizeSpeech(sourceLang: string,
 Speaker 1: Speaks in ${sourceLang} language. Read aloud in a warm, welcoming tone.
 Speaker 2: Speaks in ${targetLang} language. Read aloud in a warm, welcoming tone.
 SCRIPT:
-Speaker1: ${vocab.source} (PURR_SOUND)
+Speaker1: (waits 2s) ${vocab.source}
 Speaker2: ${vocab.target}
-Speaker1: ${vocab.exampleSource} (PURR_SOUND)
-Speaker2: ${vocab.exampleTarget}`;
+Speaker1: (waits 2s) ${vocab.exampleSource}
+Speaker2: ${vocab.exampleTarget} (waits 2s)`;
     console.log(text);
     const response = await ai.models.generateContent({
         model: "gemini-2.5-flash-preview-tts",
