@@ -46,7 +46,7 @@ Return as JSON array with keys: source, target.
     });
 
     console.log(response.text);
-    return <TopicEntry[]>JSON.parse(response.text!.replace('```json', '').replace('```', ''));
+    return <TopicEntry[]>JSON.parse(response.text!);
 }
 
 export async function generateVocabForTopic(
@@ -98,7 +98,7 @@ Return as JSON array of objects with keys: source, target, exampleSource, exampl
     });
 
     console.log(response.text);
-    return <VocabEntry[]>JSON.parse(response.text!.replace('```json', '').replace('```', ''));
+    return <VocabEntry[]>JSON.parse(response.text!);
 }
 
 export async function synthesizeSpeech(sourceLang: string,

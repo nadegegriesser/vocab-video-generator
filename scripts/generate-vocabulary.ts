@@ -28,7 +28,6 @@ const topicsPath = `${dir}/${topicsFile}`;
             }
 
             const vocabs = await generateVocabForTopic(level, count, sourceLang, targetLang, topic.source);
-            console.log(vocabs);
 
             fs.mkdirSync(vocabDir, { recursive: true });
 

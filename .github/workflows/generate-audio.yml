@@ -1,15 +1,14 @@
 name: Generate Audio
 
 on:
-  #push:
-  #  paths: [
-  #    .github/workflows/generate-audio.yml,
-  #    scripts/generate-audio.ts,
-  #    src/**
-  #  ]
+  push:
+    paths: [
+      .github/workflows/generate-audio.yml,
+      scripts/generate-audio.ts,
+      src/**
+    ]
   #schedule:
   #  - cron: '0 6 * * *' # Jeden Tag um 6 Uhr UTC
-  workflow_dispatch:
 
 jobs:
   generate-audio:
