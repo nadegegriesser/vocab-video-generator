@@ -133,8 +133,8 @@ export async function synthesizeSpeech(sourceLang: string,
         },
     };
     const text = `STYLE DESCRIPTION:
-Speaker 1: Speaks ${sourceLang}. Read slowly, aloud in a warm, welcoming tone.
-Speaker 2: Speaks ${targetLang}. Read slowly, aloud in a warm, welcoming tone.
+Speaker 1: Speaks in ${sourceLang} language. Read aloud in a warm, welcoming tone.
+Speaker 2: Speaks in ${targetLang} language. Read aloud in a warm, welcoming tone.
 SCRIPT:
 Speaker1: ${vocab.source} (PURR_SOUND)
 Speaker2: ${vocab.target}

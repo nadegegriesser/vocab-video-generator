@@ -43,7 +43,7 @@ async function saveWaveFile(
             const audioDir = `${topicDir}/audio`;
             fs.mkdirSync(audioDir, { recursive: true });
 
-            const topicAudioPath = `${audioDir}/topic3.wav`;
+            const topicAudioPath = `${audioDir}/topic2.wav`;
             if (fs.existsSync(topicAudioPath)) {
                 console.log(`✅ ${topicAudioPath} already exists, skipping...`);
             } else {
