@@ -48,6 +48,7 @@ jobs:
           node dist/scripts/generate-video.js \
             data/${{ matrix.sourceLang }}-${{ matrix.targetLang }}/${{ matrix.level }}/01/audio
           cd data/${{ matrix.sourceLang }}-${{ matrix.targetLang }}/${{ matrix.level }}/01/audio
+          rm -Rf combined.wav combined-aac.m4a output.mp4
           ffmpeg -f concat -safe 0 -i audio-list.txt -c copy combined.wav
           ffmpeg -i combined.wav -c:a aac -b:a 192k combined-aac.m4a
           ffmpeg -loop 1 -i ../../../../image.jpg -i combined-aac.m4a \
