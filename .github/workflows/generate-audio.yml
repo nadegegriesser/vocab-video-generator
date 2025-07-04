@@ -40,6 +40,16 @@ jobs:
             data/${{ matrix.sourceLang }}-${{ matrix.targetLang }}/${{ matrix.level }}
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+
+      - run: sudo apt install ffmpeg
+
+      - name: Generate video
+        run: |
+          node dist/scripts/generate-video.js \
+            data/${{ matrix.sourceLang }}-${{ matrix.targetLang }}/${{ matrix.level }}/01/audio
+          cd data/${{ matrix.sourceLang }}-${{ matrix.targetLang }}/${{ matrix.level }}/01/audio
+          ffmpeg -f concat -safe 0 -i audio-list.txt -c copy combined.wav
+          ffmpeg -loop 1 -i ../../../../image.jpg -i combined.wav -c:v libx264 -tune stillimage -c:a aac -b:a 192k -shortest -pix_fmt yuv420p output.mp4
             
       - name: 💾 Commit generated audio file
         if: success()
