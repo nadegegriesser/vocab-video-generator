@@ -1,0 +1,32 @@
+[
+  {
+    "source": "grand/grande",
+    "target": "groß",
+    "exampleSource": "Mon ami est grand et sportif.",
+    "exampleTarget": "Mein Freund ist groß und sportlich."
+  },
+  {
+    "source": "jeune",
+    "target": "jung",
+    "exampleSource": "Elle est une jeune fille très gentille.",
+    "exampleTarget": "Sie ist ein sehr nettes junges Mädchen."
+  },
+  {
+    "source": "sympathique",
+    "target": "nett",
+    "exampleSource": "Notre professeur est très sympathique.",
+    "exampleTarget": "Unser Lehrer ist sehr nett."
+  },
+  {
+    "source": "blond/blonde",
+    "target": "blond",
+    "exampleSource": "Ma sœur a les cheveux blonds et les yeux bleus.",
+    "exampleTarget": "Meine Schwester hat blonde Haare und blaue Augen."
+  },
+  {
+    "source": "mince",
+    "target": "schlank",
+    "exampleSource": "Il est assez mince pour son âge.",
+    "exampleTarget": "Er ist für sein Alter ziemlich schlank."
+  }
+]
