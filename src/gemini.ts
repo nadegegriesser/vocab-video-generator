@@ -116,7 +116,7 @@ export async function synthesizeSpeech(sourceLang: string,
                         speaker: 'Speaker1',
                         voiceConfig: {
                             prebuiltVoiceConfig: {
-                                voiceName: 'Despina'
+                                voiceName: 'Erinome'
                             }
                         }
                     },
@@ -124,7 +124,7 @@ export async function synthesizeSpeech(sourceLang: string,
                         speaker: 'Speaker2',
                         voiceConfig: {
                             prebuiltVoiceConfig: {
-                                voiceName: 'Sulafat'
+                                voiceName: 'Leda'
                             }
                         }
                     },
@@ -132,11 +132,11 @@ export async function synthesizeSpeech(sourceLang: string,
             },
         },
     };
-    const text = `Make Speaker1 speak ${sourceLang} and Speaker2 speak ${targetLang}:
-Speaker1: [pause] ${vocab.source}
-Speaker2: ${vocab.target} [pause]
+    const text = `Read aloud in a warm, welcoming tone. Make Speaker1 speak ${sourceLang} and Speaker2 speak ${targetLang}:
+Speaker1: ... ${vocab.source}
+Speaker2: ${vocab.target} ...
 Speaker1: ${vocab.exampleSource}
-Speaker2: ${vocab.exampleTarget} [pause]`;
+Speaker2: ${vocab.exampleTarget} ...`;
     console.log(text);
     const response = await ai.models.generateContent({
         model: "gemini-2.5-flash-preview-tts",
