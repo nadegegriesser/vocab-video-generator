@@ -15,6 +15,7 @@ export async function generateTopics(
     const prompt = `
 Generate ${count} vocabulary topics for ${sourceLang} language learners at ${level} level.
 The topics should be relevant for learners of ${sourceLang} translating into ${targetLang}.
+The topics must be formulated as titles and follow capitalization rules in the specific language.
 For each topic, provide:
 - Topic name in ${sourceLang}
 - Its translation in ${targetLang}
@@ -26,6 +27,7 @@ Return as JSON array with keys: source, target.
         contents: prompt
     });
 
+    console.log(response.text);
     return <TopicEntry[]>JSON.parse(response.text!.replace('```json', '').replace('```', ''));
 }
 
@@ -38,7 +40,7 @@ export async function generateVocabForTopic(
 ): Promise<VocabEntry[]> {
     const prompt = `
 Generate ${count} vocabulary entries for the topic "${topic}" in ${sourceLang} for language learners at ${level} level.
-For nouns add an article.
+For nouns add a defined article.
 The topics should be relevant for learners of ${sourceLang} translating into ${targetLang}.
 For each word, provide:
 - The word in ${sourceLang}
@@ -53,6 +55,7 @@ Return as JSON array of objects with keys: source, target, exampleSource, exampl
         contents: prompt
     });
 
+    console.log(response.text);
     return <VocabEntry[]>JSON.parse(response.text!.replace('```json', '').replace('```', ''));
 }
 
