@@ -51,6 +51,10 @@ Return as JSON array with keys: source, target.
 }
 
 export async function generateTextForTopic(
+    name1: string,
+    style1: string,
+    name2: string,
+    style2: string,
     level: string,
     count: number,
     sourceLang: string,
@@ -58,27 +62,31 @@ export async function generateTextForTopic(
     topic: TopicEntry
 ): Promise<VocabEntry[]> {
     let res: VocabEntry[] = [];
-    const intro = await generateIntroForTopic(level, sourceLang, targetLang, topic);
+    const intro = await generateIntroForTopic(name1, style1, name2, style2, level, sourceLang, targetLang, topic);
     res.push({source: intro.source, target: intro.target, exampleSource: '', exampleTarget: ''});
     for (const vocab of await generateVocabForTopic(level, count, sourceLang, targetLang, topic)) {
         res.push(vocab);
     }
-    var outro = await generateIntroForTopic(level, sourceLang, targetLang, topic);
+    var outro = await generateOutroForTopic(name1, style1, name2, style2, level, sourceLang, targetLang, topic);
     res.push({source: outro.source, target: outro.target, exampleSource: '', exampleTarget: ''});
     return res;
 }
 
 async function generateIntroForTopic(
+    name1: string,
+    style1: string,
+    name2: string,
+    style2: string,
     level: string,
     sourceLang: string,
     targetLang: string,
     topic: TopicEntry
 ): Promise<TopicEntry> {
     const prompt = `
-${process.env.NAME1} is a female teacher for ${sourceLang} language. She is ${process.env.STYLE1}.
-${process.env.NAME2} is her male assistant for translating into ${targetLang} language. He is ${process.env.STYLE2}.
-Generate an introductory sentence for the topic "${topic.source}" in ${sourceLang} for language learners at ${level} level for ${process.env.NAME1}.
-Generate an introductory sentence for the topic "${topic.target}" in ${targetLang} for language learners at ${level} level for ${process.env.NAME2}.
+${name1} is a female teacher for ${sourceLang} language. She is ${style1}.
+${name2} is her male assistant for translating into ${targetLang} language. He is ${style2}.
+Generate an introductory sentence for the topic "${topic.source}" in ${sourceLang} for language learners at ${level} level for ${name1}.
+Generate an introductory sentence for the topic "${topic.target}" in ${targetLang} for language learners at ${level} level for ${name2}.
 Return as JSON object with keys: source, target.
   `;
     console.log(prompt);
@@ -161,16 +169,20 @@ Return as JSON array of objects with keys: source, target, exampleSource, exampl
 }
 
 export async function generateOutroForTopic(
+    name1: string,
+    style1: string,
+    name2: string,
+    style2: string,
     level: string,
     sourceLang: string,
     targetLang: string,
     topic: TopicEntry
 ): Promise<TopicEntry> {
     const prompt = `
-${process.env.NAME1} is a female teacher for ${sourceLang} language. She is ${process.env.STYLE1}.
-${process.env.NAME2} is her male assistant for translating into ${targetLang} language. He is ${process.env.STYLE2}.
-Generate an conclusion sentence for the topic "${topic.source}" in ${sourceLang} for language learners at ${level} level for ${process.env.NAME1}.
-Generate an conclusion sentence for the topic "${topic.target}" in ${targetLang} for language learners at ${level} level for ${process.env.NAME2}.
+${name1} is a female teacher for ${sourceLang} language. She is ${style1}.
+${name2} is her male assistant for translating into ${targetLang} language. He is ${style2}.
+Generate an conclusion sentence for the topic "${topic.source}" in ${sourceLang} for language learners at ${level} level for ${name1}.
+Generate an conclusion sentence for the topic "${topic.target}" in ${targetLang} for language learners at ${level} level for ${name2}.
 Return as JSON object with keys: source, target.
   `;
     console.log(prompt);

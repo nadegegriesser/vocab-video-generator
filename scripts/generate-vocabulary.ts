@@ -4,11 +4,15 @@ import { TopicEntry } from '../src/types.js';
 import { loadFile } from '../src/file.js';
 
 const args = process.argv.slice(2);
-const count = parseInt(args[0] || '30', 10);
-const level = args[1] || 'A1';
-const sourceLang = args[2] || 'fr';
-const targetLang = args[3] || 'de';
-const dir = args[4] || `data/${sourceLang}-${targetLang}/${level}`;
+const name1 = args[0];
+const style1 = args[1];
+const name2 = args[2];
+const style2 = args[3];
+const count = parseInt(args[4] || '30', 10);
+const level = args[5] || 'A1';
+const sourceLang = args[6] || 'fr';
+const targetLang = args[7] || 'de';
+const dir = args[8] || `data/${sourceLang}-${targetLang}/${level}`;
 const topicsFile = 'topics.json';
 const topicsPath = `${dir}/${topicsFile}`;
 
@@ -18,7 +22,7 @@ async function generateText(filePath: string, topic: TopicEntry) {
         return;
     }
 
-    const vocabs = await generateTextForTopic(level, count, sourceLang, targetLang, topic);
+    const vocabs = await generateTextForTopic(name1, style1, name2, style2, level, count, sourceLang, targetLang, topic);
 
     fs.writeFileSync(filePath, JSON.stringify(vocabs, null, 2));
 }

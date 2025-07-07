@@ -34,6 +34,10 @@ jobs:
       - name: Generate vocabulary
         run: |
           node dist/scripts/generate-vocabulary.js \
+            "${{ vars.NAME1 }}" \
+            "${{ vars.STYLE1 }}" \
+            "${{ vars.NAME2 }}" \
+            "${{ vars.STYLE2 }}" \
             ${{ matrix.count }} \
             ${{ matrix.level }} \
             ${{ matrix.sourceLang }} \
