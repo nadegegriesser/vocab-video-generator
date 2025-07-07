@@ -21,6 +21,7 @@ For each topic, provide:
 - Its translation in ${targetLang}
 Return as JSON array with keys: source, target.
   `;
+    console.log(prompt);
 
     const response = await ai.models.generateContent({
         model: 'gemini-2.5-flash',
@@ -80,6 +81,7 @@ Generate an introductory sentence for the topic "${topic.source}" in ${sourceLan
 Generate an introductory sentence for the topic "${topic.target}" in ${targetLang} for language learners at ${level} level for ${process.env.NAME2}.
 Return as JSON object with keys: source, target.
   `;
+    console.log(prompt);
 
     const response = await ai.models.generateContent({
         model: 'gemini-2.5-flash',
@@ -123,6 +125,7 @@ For each word, provide:
 - Its translation in ${targetLang}
 Return as JSON array of objects with keys: source, target, exampleSource, exampleTarget.
   `;
+    console.log(prompt);
 
     const response = await ai.models.generateContent({
         model: 'gemini-2.5-flash',
@@ -170,6 +173,7 @@ Generate an conclusion sentence for the topic "${topic.source}" in ${sourceLang}
 Generate an conclusion sentence for the topic "${topic.target}" in ${targetLang} for language learners at ${level} level for ${process.env.NAME2}.
 Return as JSON object with keys: source, target.
   `;
+    console.log(prompt);
 
     const response = await ai.models.generateContent({
         model: 'gemini-2.5-flash',
