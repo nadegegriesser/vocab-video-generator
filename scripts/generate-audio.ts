@@ -48,7 +48,7 @@ async function saveWaveFile(
 
 (async () => {
     try {
-        let t = 0;
+        let t = -1;
         for (const topic of loadFile<TopicEntry>(topicsPath)) {
             t++;
             const index = String(t).padStart(2, '0');
