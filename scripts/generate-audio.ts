@@ -56,12 +56,9 @@ async function saveWaveFile(
             const audioDir = `${topicDir}/audio`;
             fs.mkdirSync(audioDir, { recursive: true });
 
-            if (await saveAudio(`${audioDir}/topic.wav`, {
-                source: "Prêt à débloquer de nouveaux mots ? Allez, on booste ton vocabulaire comme un pro!",
-                target: "Bereit, neue Wörter freizuschalten? Los geht's - wir boosten deinen Wortschatz wie ein Profi!",
-                exampleSource: topic.source,
-                exampleTarget: topic.target
-            })) {
+            const introPath = `${topicDir}/intro.json`;
+            const intro = loadFile<VocabEntry>(introPath);
+            if (await saveAudio(introPath, intro[0])) {
                 return;
             }
 
@@ -74,6 +71,15 @@ async function saveWaveFile(
                 if (await saveAudio(`${audioDir}/${index}.wav`, vocab)) {
                     return;
                 }
+            }
+
+             if (await saveAudio(`${audioDir}/outro.wav`, {
+                source: "Prêt à débloquer de nouveaux mots ? Allez, on booste ton vocabulaire comme un pro!",
+                target: "Bereit, neue Wörter freizuschalten? Los geht's - wir boosten deinen Wortschatz wie ein Profi!",
+                exampleSource: topic.source,
+                exampleTarget: topic.target
+            })) {
+                return;
             }
         }
     } catch (err) {

@@ -49,6 +49,44 @@ Return as JSON array with keys: source, target.
     return <TopicEntry[]>JSON.parse(response.text!);
 }
 
+export async function generateIntroForTopic(
+    level: string,
+    sourceLang: string,
+    targetLang: string,
+    topic: TopicEntry
+): Promise<TopicEntry> {
+    const prompt = `
+${process.env.NAME1} is a female teacher for ${sourceLang} language. She is ${process.env.STYLE1}.
+${process.env.NAME2} is her male assistant for translating into ${targetLang} language. He is ${process.env.STYLE2}.
+Generate an introductory sentence for the topic "${topic.source}" in ${sourceLang} for language learners at ${level} level for ${process.env.NAME1}.
+Generate an introductory sentence for the topic "${topic.target}" in ${targetLang} for language learners at ${level} level for ${process.env.NAME2}.
+Return as JSON object with keys: source, target.
+  `;
+
+    const response = await ai.models.generateContent({
+        model: 'gemini-2.5-flash',
+        contents: prompt,
+        config: {
+            responseMimeType: "application/json",
+            responseSchema: {
+                type: Type.OBJECT,
+                properties: {
+                    source: {
+                        type: Type.STRING
+                    },
+                    target: {
+                        type: Type.STRING
+                    }
+                },
+                propertyOrdering: ["source", "target"]
+            }
+        }
+    });
+
+    console.log(response.text);
+    return <VocabEntry>JSON.parse(response.text!);
+}
+
 export async function generateVocabForTopic(
     level: string,
     count: number,
@@ -91,7 +129,7 @@ Return as JSON array of objects with keys: source, target, exampleSource, exampl
                             type: Type.STRING
                         }
                     },
-                    propertyOrdering: ["source", "target"]
+                    propertyOrdering: ["source", "target", "exampleSource", "exampleTarget"]
                 }
             }
         }
@@ -99,6 +137,47 @@ Return as JSON array of objects with keys: source, target, exampleSource, exampl
 
     console.log(response.text);
     return <VocabEntry[]>JSON.parse(response.text!);
+}
+
+export async function generateOutroForTopic(
+    level: string,
+    sourceLang: string,
+    targetLang: string,
+    topic: TopicEntry
+): Promise<VocabEntry> {
+    const prompt = `
+${process.env.NAME1} is a female teacher for ${sourceLang} language. She is ${process.env.STYLE1}.
+${process.env.NAME2} is her male assistant for translating into ${targetLang} language. He is ${process.env.STYLE2}.
+Generate an conclusion sentence for the topic "${topic.source}" in ${sourceLang} for language learners at ${level} level for ${process.env.NAME1}.
+Generate an conclusion sentence for the topic "${topic.target}" in ${targetLang} for language learners at ${level} level for ${process.env.NAME2}.
+Return as JSON object with keys: source, target.
+  `;
+
+    const response = await ai.models.generateContent({
+        model: 'gemini-2.5-flash',
+        contents: prompt,
+        config: {
+            responseMimeType: "application/json",
+            responseSchema: {
+                type: Type.ARRAY,
+                items: {
+                    type: Type.OBJECT,
+                    properties: {
+                        source: {
+                            type: Type.STRING
+                        },
+                        target: {
+                            type: Type.STRING
+                        }
+                    },
+                    propertyOrdering: ["source", "target"]
+                }
+            }
+        }
+    });
+
+    console.log(response.text);
+    return <VocabEntry>JSON.parse(response.text!);
 }
 
 export async function synthesizeSpeech(sourceLang: string,
@@ -116,7 +195,7 @@ export async function synthesizeSpeech(sourceLang: string,
                         speaker: 'Speaker1',
                         voiceConfig: {
                             prebuiltVoiceConfig: {
-                                voiceName: 'Erinome'
+                                voiceName: process.env.VOICE1
                             }
                         }
                     },
@@ -124,7 +203,7 @@ export async function synthesizeSpeech(sourceLang: string,
                         speaker: 'Speaker2',
                         voiceConfig: {
                             prebuiltVoiceConfig: {
-                                voiceName: 'Leda'
+                                voiceName: process.env.VOICE2
                             }
                         }
                     },
