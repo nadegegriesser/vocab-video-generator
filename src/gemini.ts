@@ -63,12 +63,12 @@ export async function generateTextForTopic(
 ): Promise<VocabEntry[]> {
     let res: VocabEntry[] = [];
     const intro = await generateIntroForTopic(name1, style1, name2, style2, level, sourceLang, targetLang, topic);
-    res.push({source: intro.source, target: intro.target, exampleSource: '', exampleTarget: ''});
+    res.push({ source: intro.source, target: intro.target, exampleSource: '', exampleTarget: '' });
     for (const vocab of await generateVocabForTopic(level, count, sourceLang, targetLang, topic)) {
         res.push(vocab);
     }
     var outro = await generateOutroForTopic(name1, style1, name2, style2, level, sourceLang, targetLang, topic);
-    res.push({source: outro.source, target: outro.target, exampleSource: '', exampleTarget: ''});
+    res.push({ source: outro.source, target: outro.target, exampleSource: '', exampleTarget: '' });
     return res;
 }
 
@@ -123,7 +123,7 @@ export async function generateVocabForTopic(
     topic: TopicEntry
 ): Promise<VocabEntry[]> {
     const prompt = `
-Generate ${count} vocabulary entries for the topic "${topic}" in ${sourceLang} for language learners at ${level} level.
+Generate ${count} vocabulary entries for the topic "${topic.source}" in ${sourceLang} for language learners at ${level} level.
 For nouns add a defined article writter in lowercase. Do not add anything in parenthesis after the word.
 The topics should be relevant for learners of ${sourceLang} translating into ${targetLang}.
 For each word, provide:
@@ -179,8 +179,8 @@ export async function generateOutroForTopic(
     topic: TopicEntry
 ): Promise<TopicEntry> {
     const prompt = `
-${name1} is a female teacher for ${sourceLang} language. She is ${style1}.
-${name2} is her male assistant for translating into ${targetLang} language. He is ${style2}.
+"${name1}" is a female teacher for ${sourceLang} language. She is ${style1}.
+"${name2}" is her male assistant for translating into ${targetLang} language. He is ${style2}.
 Generate an conclusion sentence for the topic "${topic.source}" in ${sourceLang} for language learners at ${level} level for ${name1}.
 Generate an conclusion sentence for the topic "${topic.target}" in ${targetLang} for language learners at ${level} level for ${name2}.
 Return as JSON object with keys: source, target.
@@ -193,19 +193,16 @@ Return as JSON object with keys: source, target.
         config: {
             responseMimeType: "application/json",
             responseSchema: {
-                type: Type.ARRAY,
-                items: {
-                    type: Type.OBJECT,
-                    properties: {
-                        source: {
-                            type: Type.STRING
-                        },
-                        target: {
-                            type: Type.STRING
-                        }
+                type: Type.OBJECT,
+                properties: {
+                    source: {
+                        type: Type.STRING
                     },
-                    propertyOrdering: ["source", "target"]
-                }
+                    target: {
+                        type: Type.STRING
+                    }
+                },
+                propertyOrdering: ["source", "target"]
             }
         }
     });

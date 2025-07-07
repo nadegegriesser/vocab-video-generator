@@ -34,10 +34,14 @@ jobs:
 
       - name: Generate audio
         run: |
-          #node dist/scripts/generate-audio.js \
-          #  ${{ matrix.sourceLang }} \
-          #  ${{ matrix.targetLang }} \
-          #  data/${{ matrix.sourceLang }}-${{ matrix.targetLang }}/${{ matrix.level }}
+          node dist/scripts/generate-audio.js \
+            "${{ vars.NAME1 }}" \
+            "${{ vars.STYLE1 }}" \
+            "${{ vars.NAME2 }}" \
+            "${{ vars.STYLE2 }}" \
+            ${{ matrix.sourceLang }} \
+            ${{ matrix.targetLang }} \
+            data/${{ matrix.sourceLang }}-${{ matrix.targetLang }}/${{ matrix.level }}
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
 

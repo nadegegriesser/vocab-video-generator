@@ -5,9 +5,13 @@ import { loadFile } from '../src/file.js';
 import wav from 'wav';
 
 const args = process.argv.slice(2);
-const sourceLang = args[0] || 'fr';
-const targetLang = args[1] || 'de';
-const dir = args[2];
+const name1 = args[0];
+const style1 = args[1];
+const name2 = args[2];
+const style2 = args[3];
+const sourceLang = args[4] || 'fr';
+const targetLang = args[5] || 'de';
+const dir = args[6];
 const topicsFile = 'topics.json';
 const topicsPath = `${dir}/${topicsFile}`;
 
@@ -56,14 +60,8 @@ async function saveWaveFile(
             const audioDir = `${topicDir}/audio`;
             fs.mkdirSync(audioDir, { recursive: true });
 
-            const introPath = `${topicDir}/intro.json`;
-            const intro = loadFile<VocabEntry>(introPath);
-            if (await saveAudio(introPath, intro[0])) {
-                return;
-            }
-
             const vocabPath = `${topicDir}/vocab.json`;
-            let v = 0;
+            let v = -1;
             for (const vocab of loadFile<VocabEntry>(vocabPath)) {
                 console.log(vocab);
                 v++;
@@ -71,15 +69,6 @@ async function saveWaveFile(
                 if (await saveAudio(`${audioDir}/${index}.wav`, vocab)) {
                     return;
                 }
-            }
-
-             if (await saveAudio(`${audioDir}/outro.wav`, {
-                source: "Prêt à débloquer de nouveaux mots ? Allez, on booste ton vocabulaire comme un pro!",
-                target: "Bereit, neue Wörter freizuschalten? Los geht's - wir boosten deinen Wortschatz wie ein Profi!",
-                exampleSource: topic.source,
-                exampleTarget: topic.target
-            })) {
-                return;
             }
         }
     } catch (err) {
