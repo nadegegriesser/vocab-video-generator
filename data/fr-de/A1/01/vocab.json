@@ -1,0 +1,74 @@
+[
+  {
+    "source": "Aujourd'hui, nous allons apprendre les salutations de base en français.",
+    "target": "Heute lernen wir die grundlegenden Begrüßungen auf Deutsch.",
+    "exampleSource": "",
+    "exampleTarget": ""
+  },
+  {
+    "source": "un livre",
+    "target": "das Buch",
+    "exampleSource": "J'ai un livre rouge.",
+    "exampleTarget": "Ich habe ein rotes Buch."
+  },
+  {
+    "source": "une table",
+    "target": "der Tisch",
+    "exampleSource": "La table est grande.",
+    "exampleTarget": "Der Tisch ist groß."
+  },
+  {
+    "source": "une chaise",
+    "target": "der Stuhl",
+    "exampleSource": "Il y a une chaise ici.",
+    "exampleTarget": "Hier ist ein Stuhl."
+  },
+  {
+    "source": "un stylo",
+    "target": "der Stift",
+    "exampleSource": "J'écris avec un stylo.",
+    "exampleTarget": "Ich schreibe mit einem Stift."
+  },
+  {
+    "source": "un téléphone",
+    "target": "das Telefon",
+    "exampleSource": "Mon téléphone est noir.",
+    "exampleTarget": "Mein Telefon ist schwarz."
+  },
+  {
+    "source": "une clé",
+    "target": "der Schlüssel",
+    "exampleSource": "Où est ma clé ?",
+    "exampleTarget": "Wo ist mein Schlüssel?"
+  },
+  {
+    "source": "un sac",
+    "target": "die Tasche",
+    "exampleSource": "Elle a un nouveau sac.",
+    "exampleTarget": "Sie hat eine neue Tasche."
+  },
+  {
+    "source": "une porte",
+    "target": "die Tür",
+    "exampleSource": "La porte est fermée.",
+    "exampleTarget": "Die Tür ist geschlossen."
+  },
+  {
+    "source": "une fenêtre",
+    "target": "das Fenster",
+    "exampleSource": "La fenêtre est ouverte.",
+    "exampleTarget": "Das Fenster ist offen."
+  },
+  {
+    "source": "un verre",
+    "target": "das Glas",
+    "exampleSource": "Je bois de l'eau dans un verre.",
+    "exampleTarget": "Ich trinke Wasser aus einem Glas."
+  },
+  {
+    "source": "Aujourd'hui, nous allons découvrir les salutations essentielles en français.",
+    "target": "Heute lernen wir die wichtigsten Begrüßungen auf Deutsch.",
+    "exampleSource": "",
+    "exampleTarget": ""
+  }
+]
