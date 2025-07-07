@@ -36,7 +36,9 @@ jobs:
         run: |
           node dist/scripts/generate-audio.js \
             "${{ vars.NAME1 }}" \
+            "${{ vars.VOICE1 }}" \
             "${{ vars.STYLE1 }}" \
+            "${{ vars.VOICE2 }}" \
             "${{ vars.NAME2 }}" \
             "${{ vars.STYLE2 }}" \
             ${{ matrix.sourceLang }} \

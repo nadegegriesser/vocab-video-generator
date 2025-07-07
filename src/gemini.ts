@@ -179,8 +179,8 @@ export async function generateOutroForTopic(
     topic: TopicEntry
 ): Promise<TopicEntry> {
     const prompt = `
-"${name1}" is a female teacher for ${sourceLang} language. She is ${style1}.
-"${name2}" is her male assistant for translating into ${targetLang} language. He is ${style2}.
+${name1} is a female teacher for ${sourceLang} language. She is ${style1}.
+${name2} is her male assistant for translating into ${targetLang} language. He is ${style2}.
 Generate an conclusion sentence for the topic "${topic.source}" in ${sourceLang} for language learners at ${level} level for ${name1}.
 Generate an conclusion sentence for the topic "${topic.target}" in ${targetLang} for language learners at ${level} level for ${name2}.
 Return as JSON object with keys: source, target.
@@ -211,7 +211,14 @@ Return as JSON object with keys: source, target.
     return <VocabEntry>JSON.parse(response.text!);
 }
 
-export async function synthesizeSpeech(sourceLang: string,
+export async function synthesizeSpeech(
+    name1: string,
+    voice1: string,
+    style1: string,
+    name2: string,
+    voice2: string,
+    style2: string,
+    sourceLang: string,
     targetLang: string,
     vocab: VocabEntry) {
     const config = {
@@ -226,7 +233,7 @@ export async function synthesizeSpeech(sourceLang: string,
                         speaker: 'Speaker1',
                         voiceConfig: {
                             prebuiltVoiceConfig: {
-                                voiceName: process.env.VOICE1
+                                voiceName: voice1
                             }
                         }
                     },
@@ -234,7 +241,7 @@ export async function synthesizeSpeech(sourceLang: string,
                         speaker: 'Speaker2',
                         voiceConfig: {
                             prebuiltVoiceConfig: {
-                                voiceName: process.env.VOICE2
+                                voiceName: voice2
                             }
                         }
                     },
@@ -243,13 +250,13 @@ export async function synthesizeSpeech(sourceLang: string,
         },
     };
     const text = `STYLE DESCRIPTION:
-Speaker 1: Speaks in ${sourceLang} language. Read aloud in a warm, welcoming tone.
-Speaker 2: Speaks in ${targetLang} language. Read aloud in a warm, welcoming tone.
+${name1}: speaks ${sourceLang} language. She is ${style1}.
+${name2}: speaks ${targetLang} language. He is ${style2}.
 SCRIPT:
-Speaker1: -- ${vocab.source}
-Speaker2: ${vocab.target} 
-Speaker1: -- ${vocab.exampleSource}
-Speaker2: ${vocab.exampleTarget} -- `;
+${name1}: -- ${vocab.source}
+${name2}: ${vocab.target} 
+${name1}: -- ${vocab.exampleSource}
+${name2}: ${vocab.exampleTarget} -- `;
     console.log(text);
     const response = await ai.models.generateContent({
         model: "gemini-2.5-flash-preview-tts",
