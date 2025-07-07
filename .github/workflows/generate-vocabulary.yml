@@ -5,7 +5,8 @@ on:
     paths: [
       .github/workflows/generate-vocabulary.yml,
       scripts/generate-vocabulary.ts,
-      src/**
+      src/**,
+      data/**/vocab.json
     ]
 
 jobs:
