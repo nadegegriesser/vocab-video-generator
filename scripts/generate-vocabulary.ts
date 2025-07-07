@@ -1,5 +1,5 @@
 import fs from 'fs';
-import { generateVocabForTopic } from '../src/gemini.js';
+import { generateTextForTopic } from '../src/gemini.js';
 import { TopicEntry } from '../src/types.js';
 import { loadFile } from '../src/file.js';
 
@@ -12,6 +12,17 @@ const dir = args[4] || `data/${sourceLang}-${targetLang}/${level}`;
 const topicsFile = 'topics.json';
 const topicsPath = `${dir}/${topicsFile}`;
 
+async function generateText(filePath: string, topic: TopicEntry) {
+    if (fs.existsSync(filePath)) {
+        console.log(`✅ ${filePath} already exists, skipping...`);
+        return;
+    }
+
+    const vocabs = await generateTextForTopic(level, count, sourceLang, targetLang, topic);
+
+    fs.writeFileSync(filePath, JSON.stringify(vocabs, null, 2));
+}
+
 (async () => {
     try {
         let i = 0;
@@ -20,18 +31,10 @@ const topicsPath = `${dir}/${topicsFile}`;
             i++;
             const index = String(i).padStart(2, '0');
             const vocabDir = `${dir}/${index}`;
-            const vocabPath = `${vocabDir}/vocab.json`;
-
-            if (fs.existsSync(vocabPath)) {
-                console.log(`✅ ${vocabPath} already exists, skipping...`);
-                continue;
-            }
-
-            const vocabs = await generateVocabForTopic(level, count, sourceLang, targetLang, topic.source);
 
             fs.mkdirSync(vocabDir, { recursive: true });
 
-            fs.writeFileSync(vocabPath, JSON.stringify(vocabs, null, 2));
+            await generateText(`${vocabDir}/vocab.json`, topic);
         }
     } catch (err) {
         console.error('❌ Failed to generate vocab:', err);

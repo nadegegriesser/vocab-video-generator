@@ -49,7 +49,25 @@ Return as JSON array with keys: source, target.
     return <TopicEntry[]>JSON.parse(response.text!);
 }
 
-export async function generateIntroForTopic(
+export async function generateTextForTopic(
+    level: string,
+    count: number,
+    sourceLang: string,
+    targetLang: string,
+    topic: TopicEntry
+): Promise<VocabEntry[]> {
+    let res: VocabEntry[] = [];
+    const intro = await generateIntroForTopic(level, sourceLang, targetLang, topic);
+    res.push({source: intro.source, target: intro.target, exampleSource: '', exampleTarget: ''});
+    for (const vocab of await generateVocabForTopic(level, count, sourceLang, targetLang, topic)) {
+        res.push(vocab);
+    }
+    var outro = await generateIntroForTopic(level, sourceLang, targetLang, topic);
+    res.push({source: outro.source, target: outro.target, exampleSource: '', exampleTarget: ''});
+    return res;
+}
+
+async function generateIntroForTopic(
     level: string,
     sourceLang: string,
     targetLang: string,
@@ -92,7 +110,7 @@ export async function generateVocabForTopic(
     count: number,
     sourceLang: string,
     targetLang: string,
-    topic: string
+    topic: TopicEntry
 ): Promise<VocabEntry[]> {
     const prompt = `
 Generate ${count} vocabulary entries for the topic "${topic}" in ${sourceLang} for language learners at ${level} level.
@@ -144,7 +162,7 @@ export async function generateOutroForTopic(
     sourceLang: string,
     targetLang: string,
     topic: TopicEntry
-): Promise<VocabEntry> {
+): Promise<TopicEntry> {
     const prompt = `
 ${process.env.NAME1} is a female teacher for ${sourceLang} language. She is ${process.env.STYLE1}.
 ${process.env.NAME2} is her male assistant for translating into ${targetLang} language. He is ${process.env.STYLE2}.
