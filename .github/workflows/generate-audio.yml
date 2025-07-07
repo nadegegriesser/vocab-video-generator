@@ -38,8 +38,8 @@ jobs:
             "${{ vars.NAME1 }}" \
             "${{ vars.VOICE1 }}" \
             "${{ vars.STYLE1 }}" \
-            "${{ vars.VOICE2 }}" \
             "${{ vars.NAME2 }}" \
+            "${{ vars.VOICE2 }}" \
             "${{ vars.STYLE2 }}" \
             ${{ matrix.sourceLang }} \
             ${{ matrix.targetLang }} \
