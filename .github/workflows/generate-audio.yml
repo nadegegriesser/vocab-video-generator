@@ -52,7 +52,7 @@ jobs:
       - name: Generate video
         run: |    
           node dist/scripts/generate-video.js \
-            data/${{ matrix.sourceLang }}-${{ matrix.targetLang }}/${{ matrix.level }}/01/audio
+            data/${{ matrix.sourceLang }}-${{ matrix.targetLang }}/${{ matrix.level }}/01
           #cd data/${{ matrix.sourceLang }}-${{ matrix.targetLang }}/${{ matrix.level }}/01/audio
           #ffmpeg -f concat -safe 0 -i audio-list.txt -c copy combined.wav
           #ffmpeg -y -loop 1 -i ../../../../image.jpg -i combined.wav \
