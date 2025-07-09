@@ -48,7 +48,9 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
 
-      - run: sudo apt install ffmpeg libfreetype6-dev
+      - run: |
+          sudo apt install ffmpeg libfreetype6 libfreetype6-dev
+          ffmpeg -filters | grep drawtext
 
       - name: Generate video
         run: |    
