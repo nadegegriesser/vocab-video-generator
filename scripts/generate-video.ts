@@ -20,12 +20,12 @@ const vocabPath = `${dir}/vocab.json`;
                 .videoFilters([{
   filter: 'drawtext',
   options: {
-    fontfile: 'Lucida Grande.ttf',
     text: vocab.source,
     fontcolor: 'red',
     fontsize: 32,
-    x: 10,
-    y: 10
+    x: '(w-text_w)/2',
+    y: '(h-text_h)/2',
+    box: 0
   }
 }])
                 //x=(w-text_w)/2:y=(h-text_h)/2"`)
