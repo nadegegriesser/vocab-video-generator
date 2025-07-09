@@ -16,7 +16,7 @@ const vocabPath = `${dir}/vocab.json`;
             const index = String(i).padStart(2, '0');
             FfmpegCommand()
                 .input('data/image.jpg')
-                .input(`audio/${index}.wav`)
+                .input(`${dir}/audio/${index}.wav`)
                 .videoFilters(`drawtext=text='${vocab.source}':fontcolor=white:fontsize=48:x=(w-text_w)/2:y=(h-text_h)/2`)
                 .output('output.mp4')
                 .run();
