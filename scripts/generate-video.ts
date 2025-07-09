@@ -1,5 +1,5 @@
 import { loadFile } from '../src/file.js';
-import * as ffmpeg from 'fluent-ffmpeg';
+import FfmpegCommand from 'fluent-ffmpeg';
 import { VocabEntry } from '../src/types.js';
 
 const args = process.argv.slice(2);
@@ -14,7 +14,7 @@ const vocabPath = `${dir}/vocab.json`;
             console.log(vocab);
             //generateAudioList(dir);
             const index = String(i).padStart(2, '0');
-            ffmpeg()
+            FfmpegCommand()
                 .input('data/image.jpg')
                 .input(`audio/${index}.wav`)
                 .videoFilters(`drawtext=text='${vocab.source}':fontcolor=white:fontsize=48:x=(w-text_w)/2:y=(h-text_h)/2`)
