@@ -22,7 +22,7 @@ const vocabPath = `${dir}/vocab.json`;
   options: {
     fontfile: 'Lucida Grande.ttf',
     text: vocab.source,
-    fontcolor: red,
+    fontcolor: 'red',
     fontsize: 32,
     x: 10,
     y: 10
