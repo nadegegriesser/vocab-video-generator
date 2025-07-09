@@ -17,7 +17,18 @@ const vocabPath = `${dir}/vocab.json`;
             FfmpegCommand()
                 .input('data/image.jpg')
                 .input(`${dir}/audio/${index}.wav`)
-                //.videoFilters(`drawtext="text='${vocab.source}':fontcolor=white:fontsize=48:x=(w-text_w)/2:y=(h-text_h)/2"`)
+                .videoFilters({
+  filter: 'drawtext',
+  options: {
+    fontfile: 'Lucida Grande.ttf',
+    text: vocab.source,
+    fontcolor: red,
+    fontsize: 32,
+    x: 10,
+    y: 10
+  }
+})
+                //x=(w-text_w)/2:y=(h-text_h)/2"`)
                 .output(`${dir}/audio/output.mp4`)
                 .run();
                 return;
