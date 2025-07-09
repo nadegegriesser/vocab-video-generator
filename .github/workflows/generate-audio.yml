@@ -5,6 +5,7 @@ on:
     paths: [
       .github/workflows/generate-audio.yml,
       scripts/generate-audio.ts,
+      scripts/generate-video.ts,
       src/**
     ]
   schedule:
