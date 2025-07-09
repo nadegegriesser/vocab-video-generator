@@ -17,7 +17,7 @@ const vocabPath = `${dir}/vocab.json`;
             FfmpegCommand()
                 .input('data/image.jpg')
                 .input(`${dir}/audio/${index}.wav`)
-                .videoFilters({
+                .videoFilters([{
   filter: 'drawtext',
   options: {
     fontfile: 'Lucida Grande.ttf',
@@ -27,7 +27,7 @@ const vocabPath = `${dir}/vocab.json`;
     x: 10,
     y: 10
   }
-})
+}])
                 //x=(w-text_w)/2:y=(h-text_h)/2"`)
                 .output(`${dir}/audio/output.mp4`)
                 .run();
