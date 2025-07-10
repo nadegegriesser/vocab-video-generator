@@ -15,9 +15,8 @@ const vocabPath = `${dir}/vocab.json`;
             //generateAudioList(dir);
             const index = String(i).padStart(2, '0');
             console.log(`${dir}/audio/${index}.wav`);
-            FfmpegCommand()
+            FfmpegCommand(`${dir}/audio/${index}.wav`)
                 .input('data/image.jpg')
-                .input(`${dir}/audio/${index}.wav`)
                 .loop(1)
                 .videoFilters([{
                     filter: 'drawtext',
