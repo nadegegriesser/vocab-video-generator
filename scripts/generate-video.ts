@@ -14,10 +14,11 @@ const vocabPath = `${dir}/vocab.json`;
             console.log(vocab);
             //generateAudioList(dir);
             const index = String(i).padStart(2, '0');
-            const commands = [`echo "a" > ${dir}/textfile.txt`,
+            const commands = [//`echo "a" > ${dir}/textfile.txt`,
                 `ls ${dir}`,
                 `ffmpeg -y -loop 1 -i data/image.jpg -i ${dir}/audio/${index}.wav -vf "drawtext=textfile=${dir}/textfile.txt:fontcolor=white:fontsize=32:x=(w-text_w)/2:y=(h-text_h)/2" -c:v libx264 -tune stillimage -c:a aac -b:a 192k -shortest -pix_fmt yuv420p ${dir}/audio/${index}.mp4`,
-                `rm ${dir}/textfile.txt`];
+                //`rm ${dir}/textfile.txt`
+            ];
             for (const command of commands) {
                 exec(command, (error, stdout, stderr) => {
                     if (error) {
