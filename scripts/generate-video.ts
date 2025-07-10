@@ -14,10 +14,11 @@ const vocabPath = `${dir}/vocab.json`;
             console.log(vocab);
             //generateAudioList(dir);
             const index = String(i).padStart(2, '0');
+            console.log(`${dir}/audio/${index}.wav`);
             FfmpegCommand()
-                .loop(1)
                 .input('data/image.jpg')
                 .input(`${dir}/audio/${index}.wav`)
+                .loop(1)
                 .videoFilters([{
                     filter: 'drawtext',
                     options: {
@@ -29,12 +30,13 @@ const vocabPath = `${dir}/vocab.json`;
                         box: 0
                     }
                 }])
-                .withVideoCodec('libx264')
+                .videoCodec('libx264')
                 .audioCodec('aac')
                 .audioBitrate('192k')
                 .outputOption('-pix_fmt yuv420p')
-                .output(`${dir}/audio/output.mp4`)
-                .run();
+                .on('start', (cmdline) => console.log('>>>> CMD', cmdline))
+                .on('error', (cmdline) => console.log('>>>> CMD', cmdline))
+                .save(`${dir}/audio/output.mp4`);
             return;
 
             /*ffmpeg -y -loop 1 -i ../../../../image.jpg -i combined.wav \
