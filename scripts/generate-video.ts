@@ -15,23 +15,31 @@ const vocabPath = `${dir}/vocab.json`;
             //generateAudioList(dir);
             const index = String(i).padStart(2, '0');
             FfmpegCommand()
+                .loop(1)
                 .input('data/image.jpg')
                 .input(`${dir}/audio/${index}.wav`)
                 .videoFilters([{
-  filter: 'drawtext',
-  options: {
-    text: vocab.source,
-    fontcolor: 'red',
-    fontsize: 32,
-    x: '(w-text_w)/2',
-    y: '(h-text_h)/2',
-    box: 0
-  }
-}])
-                //x=(w-text_w)/2:y=(h-text_h)/2"`)
+                    filter: 'drawtext',
+                    options: {
+                        text: vocab.source,
+                        fontcolor: 'red',
+                        fontsize: 32,
+                        x: '(w-text_w)/2',
+                        y: '(h-text_h)/2',
+                        box: 0
+                    }
+                }])
+                .withVideoCodec('libx264')
+                .audioCodec('aac')
+                .audioBitrate('192k')
+                .outputOption('-pix_fmt yuv420p')
                 .output(`${dir}/audio/output.mp4`)
                 .run();
-                return;
+            return;
+
+            /*ffmpeg -y -loop 1 -i ../../../../image.jpg -i combined.wav \
+                      #  -vf "drawtext=text='Dein Text':fontcolor=white:fontsize=48:x=(w-text_w)/2:y=(h-text_h)/2" \
+                      #  -c:v libx264 -tune stillimage -c:a aac -b:a 192k -shortest -pix_fmt yuv420p output.mp4 */
         }
         /* new FfmpegCommand()
             .input('data/image.jpg')
