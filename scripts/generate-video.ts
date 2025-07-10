@@ -15,9 +15,11 @@ const vocabPath = `${dir}/vocab.json`;
             console.log(vocab);
             //generateAudioList(dir);
             const index = String(i).padStart(2, '0');
-            FfmpegCommand('data/image.jpg')
+            FfmpegCommand()
+                .loop(1)
+                .input('data/image.jpg')
                 .input(`${dir}/audio/${index}.wav`)
-                .videoFilters([{
+                /*.videoFilters([{
                     filter: 'drawtext',
                     options: {
                         text: vocab.source,
@@ -26,7 +28,7 @@ const vocabPath = `${dir}/vocab.json`;
                         x: '(w-text_w)/2',
                         y: '(h-text_h)/2'
                     }
-                }])
+                }])*/
                 .videoCodec('libx264')
                 .audioCodec('aac')
                 .audioBitrate('192k')
