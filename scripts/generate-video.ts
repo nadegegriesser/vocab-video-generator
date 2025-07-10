@@ -14,7 +14,7 @@ const vocabPath = `${dir}/vocab.json`;
             console.log(vocab);
             //generateAudioList(dir);
             const index = String(i).padStart(2, '0');
-            const command = `ffmpeg -y -loop 1 -i data/image.jpg -i ${dir}/audio/${index}.wav -vf \"drawtext=text=\'${vocab.source}\':fontcolor=white:fontsize=32:x=(w-text_w)/2:y=(h-text_h)/2\" -c:v libx264 -tune stillimage -c:a aac -b:a 192k -shortest -pix_fmt yuv420p ${dir}/audio/${index}.mp4`
+            const command = `ffmpeg -y -loop 1 -i data/image.jpg -i ${dir}/audio/${index}.wav -vf "drawtext=text='${vocab.source.replaceAll("'", "'\''")}':fontcolor=white:fontsize=32:x=(w-text_w)/2:y=(h-text_h)/2" -c:v libx264 -tune stillimage -c:a aac -b:a 192k -shortest -pix_fmt yuv420p ${dir}/audio/${index}.mp4`
             exec(command, (error, stdout, stderr) => {
                 if (error) {
                     console.error(`exec error: ${error}`);
