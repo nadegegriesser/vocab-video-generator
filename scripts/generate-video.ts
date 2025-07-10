@@ -1,3 +1,4 @@
+import fs from 'fs';
 import { loadFile } from '../src/file.js';
 import FfmpegCommand from 'fluent-ffmpeg';
 import { VocabEntry } from '../src/types.js';
@@ -15,18 +16,20 @@ const vocabPath = `${dir}/vocab.json`;
             //generateAudioList(dir);
             const index = String(i).padStart(2, '0');
             console.log(`${dir}/audio/${index}.wav`);
+            if (fs.existsSync(`${dir}/audio/${index}.mp4`)) {
+                fs.unlinkSync(`${dir}/audio/${index}.mp4`);
+            }
             FfmpegCommand(`${dir}/audio/${index}.wav`)
                 .input('data/image.jpg')
                 .loop(1)
-                .videoFilters([{
+                .videoFilter([{
                     filter: 'drawtext',
                     options: {
                         text: vocab.source,
                         fontcolor: 'red',
                         fontsize: 32,
                         x: '(w-text_w)/2',
-                        y: '(h-text_h)/2',
-                        box: 0
+                        y: '(h-text_h)/2'
                     }
                 }])
                 .videoCodec('libx264')
@@ -35,7 +38,7 @@ const vocabPath = `${dir}/vocab.json`;
                 .outputOption('-pix_fmt yuv420p')
                 .on('start', (cmdline) => console.log('>>>> CMD', cmdline))
                 .on('error', (cmdline) => console.log('>>>> CMD', cmdline))
-                .save(`${dir}/audio/output.mp4`);
+                .save(`${dir}/audio/${index}.mp4`);
             return;
 
             /*ffmpeg -y -loop 1 -i ../../../../image.jpg -i combined.wav \
