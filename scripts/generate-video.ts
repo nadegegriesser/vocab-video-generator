@@ -15,14 +15,9 @@ const vocabPath = `${dir}/vocab.json`;
             console.log(vocab);
             //generateAudioList(dir);
             const index = String(i).padStart(2, '0');
-            console.log(`${dir}/audio/${index}.wav`);
-            if (fs.existsSync(`${dir}/audio/${index}.mp4`)) {
-                fs.unlinkSync(`${dir}/audio/${index}.mp4`);
-            }
-            FfmpegCommand(`${dir}/audio/${index}.wav`)
-                .input('data/image.jpg')
-                .loop(1)
-                .videoFilter([{
+            FfmpegCommand('data/image.jpg')
+                .input(`${dir}/audio/${index}.wav`)
+                .videoFilters([{
                     filter: 'drawtext',
                     options: {
                         text: vocab.source,
