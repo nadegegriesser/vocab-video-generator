@@ -50,29 +50,7 @@ Return as JSON array with keys: source, target.
     return <TopicEntry[]>JSON.parse(response.text!);
 }
 
-export async function generateTextForTopic(
-    name1: string,
-    style1: string,
-    name2: string,
-    style2: string,
-    level: string,
-    count: number,
-    sourceLang: string,
-    targetLang: string,
-    topic: TopicEntry
-): Promise<VocabEntry[]> {
-    let res: VocabEntry[] = [];
-    const intro = await generateIntroForTopic(name1, style1, name2, style2, level, sourceLang, targetLang, topic);
-    res.push({ source: intro.source, target: intro.target, exampleSource: '', exampleTarget: '' });
-    for (const vocab of await generateVocabForTopic(level, count, sourceLang, targetLang, topic)) {
-        res.push(vocab);
-    }
-    var outro = await generateOutroForTopic(name1, style1, name2, style2, level, sourceLang, targetLang, topic);
-    res.push({ source: outro.source, target: outro.target, exampleSource: '', exampleTarget: '' });
-    return res;
-}
-
-async function generateIntroForTopic(
+export async function generateIntroForTopic(
     name1: string,
     style1: string,
     name2: string,
@@ -81,7 +59,7 @@ async function generateIntroForTopic(
     sourceLang: string,
     targetLang: string,
     topic: TopicEntry
-): Promise<TopicEntry> {
+): Promise<string[]> {
     const prompt = `
 ${name1} is a female teacher for ${sourceLang} language. She is ${style1}.
 ${name2} is her male assistant for translating into ${targetLang} language. He is ${style2}.
@@ -112,7 +90,8 @@ Return as JSON object with keys: source, target.
     });
 
     console.log(response.text);
-    return <VocabEntry>JSON.parse(response.text!);
+    const entry = <VocabEntry>JSON.parse(response.text!);
+    return [entry.source, entry.target];
 }
 
 export async function generateVocabForTopic(
@@ -121,7 +100,7 @@ export async function generateVocabForTopic(
     sourceLang: string,
     targetLang: string,
     topic: TopicEntry
-): Promise<VocabEntry[]> {
+): Promise<string[][]> {
     const prompt = `
 Generate ${count} vocabulary entries for the topic "${topic.source}" in ${sourceLang} for language learners at ${level} level.
 For nouns add a defined article writter in lowercase. Do not add anything in parenthesis after the word.
@@ -165,7 +144,8 @@ Return as JSON array of objects with keys: source, target, exampleSource, exampl
     });
 
     console.log(response.text);
-    return <VocabEntry[]>JSON.parse(response.text!);
+    const entries = <VocabEntry[]>JSON.parse(response.text!);
+    return entries.map(entry => [entry.source, entry.target, entry.exampleSource, entry.exampleTarget]);
 }
 
 export async function generateOutroForTopic(
@@ -177,7 +157,7 @@ export async function generateOutroForTopic(
     sourceLang: string,
     targetLang: string,
     topic: TopicEntry
-): Promise<TopicEntry> {
+): Promise<string[]> {
     const prompt = `
 ${name1} is a female teacher for ${sourceLang} language. She is ${style1}.
 ${name2} is her male assistant for translating into ${targetLang} language. He is ${style2}.
@@ -208,7 +188,8 @@ Return as JSON object with keys: source, target.
     });
 
     console.log(response.text);
-    return <VocabEntry>JSON.parse(response.text!);
+    const entry = <VocabEntry>JSON.parse(response.text!);
+    return [entry.source, entry.target];
 }
 
 export async function synthesizeSpeech(
