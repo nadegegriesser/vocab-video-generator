@@ -1,6 +1,6 @@
 import fs from 'fs';
 import { loadFile } from '../src/file.js';
-import { TopicEntry, VocabEntry } from '../src/types.js';
+import { TopicEntry } from '../src/types.js';
 import { exec } from 'child_process';
 
 const args = process.argv.slice(2);
@@ -12,6 +12,7 @@ const topicsPath = `${dir}/${topicsFile}`;
 (async () => {
     try {
         let t = 0;
+        console.log(topicsPath);
         for (const topic of loadFile<TopicEntry>(topicsPath)) {
             console.log(topic);
             t++;
