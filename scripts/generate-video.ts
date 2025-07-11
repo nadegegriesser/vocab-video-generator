@@ -26,14 +26,27 @@ const topicsPath = `${dir}/${topicsFile}`;
             }
 
             const audioDir = `${vocabDir}/audio`;
-            const textDir = `${vocabDir}/text`;
+            if (!fs.existsSync(audioDir)) {
+                console.log(`✅ ${audioDir} does not exist, skipping...`);
+                continue;
+            }
             const audioFiles = fs.readdirSync(audioDir)
                 .filter(file => file.endsWith('.wav'))
                 .sort();
+            const textDir = `${vocabDir}/text`;
+            if (!fs.existsSync(textDir)) {
+                console.log(`✅ ${textDir} does not exist, skipping...`);
+                continue;
+            }
             for (const audioFile of audioFiles) {
                 console.log(audioFile);
                 const vIndex = audioFile.slice(0, audioFile.lastIndexOf('.'));
-                let command = `ffmpeg -y -loop 1 -i data/image.jpg -i ${audioDir}/${vIndex}.wav `;
+                const subTextDir = `${textDir}/${vIndex}`;
+                if (!fs.existsSync(subTextDir)) {
+                    console.log(`✅ ${subTextDir} does not exist, skipping...`);
+                    continue;
+                }
+                let command = `ffmpeg -y -loop 1 -i data/image.jpg -i ${audioDir}/${audioFile} `;
                 const textFiles = fs.readdirSync(`${textDir}/${vIndex}`)
                     .sort();
                 let lineHeight = 32;
