@@ -260,7 +260,7 @@ export async function generateImage(
 ) {
     const prompt = `
 Create a 1280×720 pixel background image for a YouTube video about topic ${topic}. 
-The outer edges should include tasteful illustrations of topic-related elements. 
+The outer edges should include tasteful abstract of topic-related elements, no text, no speech bubbles, no person. 
 The center area should be a smooth, uniform ${color} color, left clean for placing readable text. 
 The style should be modern, inviting, and educational.
   `;
