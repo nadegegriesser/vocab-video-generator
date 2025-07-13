@@ -50,7 +50,7 @@ const topicsPath = `${dir}/${topicsFile}`;
                 const textFiles = fs.readdirSync(`${textDir}/${vIndex}`)
                     .sort();
                 let lineHeight = 32;
-                let offset = (textFiles.length - 1) * lineHeight / 2;
+                let offset = -(textFiles.length - 1) * lineHeight / 2;
                 let c = [];
                 for (const textFile of textFiles) {
                     c.push(`drawtext=textfile=${textDir}/${vIndex}/${textFile}:fontcolor=white:fontsize=${lineHeight - 2}:x=(w-text_w)/2:y=(h-text_h)/2-${offset}`);
