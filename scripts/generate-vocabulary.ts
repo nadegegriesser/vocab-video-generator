@@ -76,6 +76,7 @@ async function handleData(subTextDir: string, datas: string[]) {
 
             const outros = await generateOutroForTopic(name1, style1, name2, style2, level, sourceLang, targetLang, topic);
             await handleData(subTextDir, outros);
+            return;
         }
     } catch (err) {
         console.error('❌ Failed to generate vocab:', err);
