@@ -1,8 +1,7 @@
 import fs from 'fs';
-import { generateImage, generateIntroForTopic, generateOutroForTopic, generateVocabForTopic } from '../src/gemini.js';
+import { generateIntroForTopic, generateOutroForTopic, generateVocabForTopic } from '../src/gemini.js';
 import { TopicEntry } from '../src/types.js';
 import { loadFile } from '../src/file.js';
-import sharp from 'sharp';
 
 const args = process.argv.slice(2);
 const name1 = args[0];
@@ -47,19 +46,6 @@ async function handleData(subTextDir: string, datas: string[]) {
             t++;
             const tIndex = String(t).padStart(2, '0');
             const vocabDir = `${dir}/${tIndex}`;
-
-            const pngFile = `${vocabDir}/image.png`;
-            const jpgFile = `${vocabDir}/image.jpg`;
-            if (!fs.existsSync(jpgFile)) {
-                const image = await generateImage(topic.source, 'dark');
-                if (image) {
-                    fs.writeFileSync(pngFile, image);
-                    await sharp(pngFile)
-                        .jpeg({ quality: 90 }) 
-                        .toFile(jpgFile);
-                }
-            }
-
             const textDir = `${vocabDir}/text`;
 
             let v = 0;

@@ -1,16 +1,16 @@
-name: Generate Vocabulary
+name: Generate Images
 
 on:
   push:
     paths: [
-      .github/workflows/generate-vocabulary.yml,
-      scripts/generate-vocabulary.ts,
+      .github/workflows/generate-images.yml,
+      scripts/generate-images.ts,
       src/**,
       data/**/topics.json
     ]
   schedule:
     - cron: '0 * * * *'
-    
+
 jobs:
   generate-vocab:
     runs-on: ubuntu-latest
@@ -33,17 +33,10 @@ jobs:
 
       - run: npm run build
 
-      - name: Generate vocabulary
+      - name: Generate images
         run: |
-          node dist/scripts/generate-vocabulary.js \
-            "${{ vars.NAME1 }}" \
-            "${{ vars.STYLE1 }}" \
-            "${{ vars.NAME2 }}" \
-            "${{ vars.STYLE2 }}" \
-            ${{ matrix.count }} \
-            ${{ matrix.level }} \
-            ${{ matrix.sourceLang }} \
-            ${{ matrix.targetLang }} \
+          node dist/scripts/generate-images.js \
+            "dark" \
             data/${{ matrix.sourceLang }}-${{ matrix.targetLang }}/${{ matrix.level }}
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
