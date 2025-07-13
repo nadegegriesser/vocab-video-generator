@@ -34,8 +34,6 @@ const topicsPath = `${dir}/${topicsFile}`;
                     .toFile(jpgFile);
                 fs.unlinkSync(pngFile);
             }
-
-            return;
         }
     } catch (err) {
         console.error('❌ Failed to generate vocab:', err);
