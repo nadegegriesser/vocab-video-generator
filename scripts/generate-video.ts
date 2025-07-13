@@ -54,7 +54,7 @@ const topicsPath = `${dir}/${topicsFile}`;
                     console.log(`✅ ${subTextDir} does not exist, skipping...`);
                     continue;
                 }
-                let command = `ffmpeg -y -loop 1 -i data/image.jpg -i ${audioDir}/${audioFile} -vf "[in]`;
+                let command = `ffmpeg -y -loop 1 -i ${vocabDir}/image.jpg -i ${audioDir}/${audioFile} -vf "[in]`;
                 const textFiles = fs.readdirSync(`${textDir}/${vIndex}`)
                     .sort();
                 let lineHeight = 32;

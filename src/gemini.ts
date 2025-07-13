@@ -1,4 +1,4 @@
-import { GoogleGenAI, Type } from '@google/genai';
+import { GoogleGenAI, Modality, Type } from '@google/genai';
 import { TopicEntry, VocabEntry } from './types';
 import dotenv from 'dotenv';
 
@@ -247,6 +247,32 @@ ${i % 2 == 0 ? name1 : name2}: ${v}`;
         config: config
     });
     console.log(response);
+    const data = response.candidates?.[0]?.content?.parts?.[0]?.inlineData?.data;
+    if (data) {
+        return Buffer.from(data, 'base64');
+    }
+    return;
+}
+
+export async function generateImage(
+    topic: string,
+    color: string
+) {
+    const prompt = `
+Create a 1280×720 pixel background image for a YouTube video about topic ${topic}. 
+The outer edges should include tasteful illustrations of topic-related elements. 
+The center area should be a smooth, uniform ${color} color, left clean for placing readable text. 
+The style should be modern, inviting, and educational.
+  `;
+    console.log(prompt);
+
+    const response = await ai.models.generateContent({
+        model: "gemini-2.0-flash-preview-image-generation",
+        contents: prompt,
+        config: {
+            responseModalities: [Modality.IMAGE],
+        },
+    });
     const data = response.candidates?.[0]?.content?.parts?.[0]?.inlineData?.data;
     if (data) {
         return Buffer.from(data, 'base64');
