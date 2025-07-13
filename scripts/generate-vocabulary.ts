@@ -47,16 +47,23 @@ async function handleData(subTextDir: string, datas: string[]) {
             const tIndex = String(t).padStart(2, '0');
             const vocabDir = `${dir}/${tIndex}`;
             const textDir = `${vocabDir}/text`;
+            const scriptDir = `${vocabDir}/script`;
 
             let v = 0;
-            let subTextDir = await createSubTextDir(textDir, v);
 
+            let subTextDir = await createSubTextDir(textDir, v);
             if (!subTextDir) {
                 continue;
             }
 
+            let subScriptDir = await createSubTextDir(scriptDir, v);
+            if (!subScriptDir) {
+                continue;
+            }
+
             const intros = await generateIntroForTopic(name1, style1, name2, style2, level, sourceLang, targetLang, topic);
-            await handleData(subTextDir, intros);
+            await handleData(subTextDir, [topic.source, topic.target]);
+            await handleData(subScriptDir, intros);
 
             for (const vocabs of await generateVocabForTopic(level, count, sourceLang, targetLang, topic)) {
                 v++;
@@ -64,18 +71,30 @@ async function handleData(subTextDir: string, datas: string[]) {
                 if (!subTextDir) {
                     continue;
                 }
+                subScriptDir = await createSubTextDir(scriptDir, v);
+                if (!subScriptDir) {
+                    continue;
+                }
 
                 await handleData(subTextDir, vocabs);
+                await handleData(subScriptDir, vocabs);
             }
 
             v++;
+
             subTextDir = await createSubTextDir(textDir, v);
             if (!subTextDir) {
                 continue;
             }
 
+            subScriptDir = await createSubTextDir(scriptDir, v);
+            if (!subScriptDir) {
+                continue;
+            }
+
             const outros = await generateOutroForTopic(name1, style1, name2, style2, level, sourceLang, targetLang, topic);
-            await handleData(subTextDir, outros);
+            await handleData(subTextDir, [topic.source, topic.target]);
+            await handleData(subScriptDir, outros);
             return;
         }
     } catch (err) {

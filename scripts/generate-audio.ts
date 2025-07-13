@@ -61,15 +61,15 @@ async function saveWaveFile(
             const index = String(t).padStart(2, '0');
             const topicDir = `${dir}/${index}`;
             const audioDir = `${topicDir}/audio`;
-            const textDir = `${topicDir}/text`;
+            const scriptDir = `${topicDir}/script`;
             fs.mkdirSync(audioDir, { recursive: true });
 
-            const subTextDirs = fs.readdirSync(`${textDir}`).sort();
-            for (const subTextDir of subTextDirs) {
-                console.log(subTextDir);
-                const textFiles = fs.readdirSync(`${textDir}/${subTextDir}`).sort();
+            const subScriptDirs = fs.readdirSync(`${scriptDir}`).sort();
+            for (const subScriptDir of subScriptDirs) {
+                console.log(subScriptDir);
+                const textFiles = fs.readdirSync(`${scriptDir}/${subScriptDir}`).sort();
                 console.log(textFiles);
-                if (await saveAudio(`${audioDir}/${subTextDir}.wav`, textFiles.map(file => fs.readFileSync(`${textDir}/${subTextDir}/${file}`).toString()))) {
+                if (await saveAudio(`${audioDir}/${subScriptDir}.wav`, textFiles.map(file => fs.readFileSync(`${scriptDir}/${subScriptDir}/${file}`).toString()))) {
                     return;
                 }
             }
