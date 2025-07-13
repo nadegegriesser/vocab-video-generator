@@ -16,51 +16,68 @@ const dir = args[8] || `data/${sourceLang}-${targetLang}/${level}`;
 const topicsFile = 'topics.json';
 const topicsPath = `${dir}/${topicsFile}`;
 
-async function generateText(filePath: string, topic: TopicEntry) {
-    if (fs.existsSync(filePath)) {
-        console.log(`✅ ${filePath} already exists, skipping...`);
-        return;
+async function createSubTextDir(textDir: string, v: number) {
+    const vIndex = String(v).padStart(2, '0');
+    const subTextDir = `${textDir}/${vIndex}`;
+
+    if (fs.existsSync(subTextDir)) {
+        console.log(`✅ ${subTextDir} already exists, skipping...`);
+        return undefined;
     }
 
-    const vocabs = await generateTextForTopic(name1, style1, name2, style2, level, count, sourceLang, targetLang, topic);
+    fs.mkdirSync(subTextDir, { recursive: true });
+    return subTextDir;
+}
 
-    fs.writeFileSync(filePath, JSON.stringify(vocabs, null, 2));
+async function handleData(subTextDir: string, datas: string[]) {
+    let vt = 0;
+    for (const data of datas) {
+        const vtIndex = String(vt).padStart(2, '0');
+        fs.writeFileSync(`${subTextDir}/${vtIndex}.txt`, data);
+        vt++;
+    }
 }
 
 (async () => {
     try {
-        let i = 0;
+        let t = 0;
         for (const topic of loadFile<TopicEntry>(topicsPath)) {
             console.log(topic);
-            i++;
-            const index = String(i).padStart(2, '0');
-            const vocabDir = `${dir}/${index}`;
+            t++;
+            const tIndex = String(t).padStart(2, '0');
+            const vocabDir = `${dir}/${tIndex}`;
             const textDir = `${vocabDir}/text`;
 
-            fs.mkdirSync(textDir, { recursive: true });
-            
+            let v = 0;
+            let subTextDir = await createSubTextDir(textDir, v);
 
-            const vIndex = audioFile.slice(0, audioFile.lastIndexOf('.'));
-            const subTextDir = `${textDir}/${vIndex}`;
-
-            const intros = await generateIntroForTopic(name1, style1, name2, style2, level, sourceLang, targetLang, topic);
-            for (const data of intros) {
-                fs.writeFileSync(filePath, data);
+            if (!subTextDir) {
+                continue;
             }
 
+            const intros = await generateIntroForTopic(name1, style1, name2, style2, level, sourceLang, targetLang, topic);
+            await handleData(subTextDir, intros);
+
             for (const vocabs of await generateVocabForTopic(level, count, sourceLang, targetLang, topic)) {
-                for (const data of vocabs) {
-                    fs.writeFileSync(filePath, data);
+                v++;
+                subTextDir = await createSubTextDir(textDir, v);
+                if (!subTextDir) {
+                    continue;
                 }
+
+                await handleData(subTextDir, vocabs);
+            }
+
+            v++;
+            subTextDir = await createSubTextDir(textDir, v);
+            if (!subTextDir) {
+                continue;
             }
 
             const outros = await generateOutroForTopic(name1, style1, name2, style2, level, sourceLang, targetLang, topic);
-            for (const data of outros) {
-                fs.writeFileSync(filePath, data);
-            }
+            await handleData(subTextDir, outros);
         }
-    }
     } catch (err) {
-    console.error('❌ Failed to generate vocab:', err);
-}
-}) ();
+        console.error('❌ Failed to generate vocab:', err);
+    }
+})();
