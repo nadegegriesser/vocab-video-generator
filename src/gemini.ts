@@ -270,12 +270,18 @@ The style should be modern, inviting, and educational.
         model: "gemini-2.0-flash-preview-image-generation",
         contents: prompt,
         config: {
-            responseModalities: [Modality.IMAGE],
-        },
+            responseModalities: [Modality.TEXT, Modality.IMAGE]
+        }
     });
-    const data = response.candidates?.[0]?.content?.parts?.[0]?.inlineData?.data;
-    if (data) {
-        return Buffer.from(data, 'base64');
+    for (const part of response.candidates?.[0]?.content?.parts || []) {
+        if (part.text) {
+            console.log(part.text);
+        } else if (part.inlineData) {
+            const imageData = part.inlineData.data;
+            if (imageData) {
+                return Buffer.from(imageData, "base64");
+            }
+        }
     }
     return;
 }
