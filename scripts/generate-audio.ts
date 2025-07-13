@@ -69,7 +69,7 @@ async function saveWaveFile(
                 console.log(subTextDir);
                 const textFiles = fs.readdirSync(`${textDir}/${subTextDir}`).sort();
                 console.log(textFiles);
-                if (await saveAudio(`${audioDir}/${subTextDir}.wav`, textFiles.map(file => fs.readFileSync(file).toString()))) {
+                if (await saveAudio(`${audioDir}/${subTextDir}.wav`, textFiles.map(file => fs.readFileSync(`${textDir}/${subTextDir}/${file}`).toString()))) {
                     return;
                 }
             }
