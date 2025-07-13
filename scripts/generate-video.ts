@@ -61,7 +61,7 @@ const topicsPath = `${dir}/${topicsFile}`;
                 let filters = [];
                 for (const textFile of textFiles) {
                     console.log(offset);
-                    filters.push(`drawtext=textfile=${textDir}/${vIndex}/${textFile}:fontcolor=white:fontsize=${lineHeight - 2}:x=(w-text_w)/2:y=(h-text_h)/2-${offset}`);
+                    filters.push(`drawtext=textfile=${textDir}/${vIndex}/${textFile}:fontcolor=white:fontsize=${lineHeight - 2}:x=(w-text_w)/2:y=(h-text_h)/2${(offset < 0? '+' : '-') + offset}`);
                     offset += lineHeight;
                 }
                 command += filters.join(',');
