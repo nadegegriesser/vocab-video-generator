@@ -7,7 +7,7 @@ on:
       scripts/generate-audio.ts,
       scripts/generate-video.ts,
       src/**,
-      data/fr-de/A1/01/*.txt
+      data/fr-de/A1/01/text/**
     ]
   schedule:
     - cron: '0 * * * *'
