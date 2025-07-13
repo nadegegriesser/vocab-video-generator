@@ -233,12 +233,11 @@ export async function synthesizeSpeech(
     let text = `STYLE DESCRIPTION:
 ${name1}: speaks ${sourceLang} language. She is ${style1}.
 ${name2}: speaks ${targetLang} language. He is ${style2}.
-SCRIPT:
-**(Intro music fades slightly)**`;
+SCRIPT:`;
     let i = 0;
     for (const v of vocab) {
         text += `
-**${i % 2 == 0 ? name1 : name2}:** ${v} .`;
+${i % 2 == 0 ? name1 : name2}: ${v} .`;
         i++;
     }
     console.log(text);
