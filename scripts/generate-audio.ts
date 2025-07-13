@@ -17,7 +17,8 @@ const dir = args[8];
 const topicsFile = 'topics.json';
 const topicsPath = `${dir}/${topicsFile}`;
 
-async function saveAudio(filePath: string, vocab: VocabEntry) {
+async function saveAudio(filePath: string, vocab: string[]) {
+    console.log(vocab);
     if (fs.existsSync(filePath)) {
         console.log(`✅ ${filePath} already exists, skipping...`);
     } else {
@@ -60,15 +61,15 @@ async function saveWaveFile(
             const index = String(t).padStart(2, '0');
             const topicDir = `${dir}/${index}`;
             const audioDir = `${topicDir}/audio`;
+            const textDir = `${topicDir}/text`;
             fs.mkdirSync(audioDir, { recursive: true });
 
-            const vocabPath = `${topicDir}/vocab.json`;
-            let v = -1;
-            for (const vocab of loadFile<VocabEntry>(vocabPath)) {
-                console.log(vocab);
-                v++;
-                const index = String(v).padStart(2, '0');
-                if (await saveAudio(`${audioDir}/${index}.wav`, vocab)) {
+            const subTextDirs = fs.readdirSync(`${textDir}`).sort();
+            for (const subTextDir of subTextDirs) {
+                console.log(subTextDir);
+                const textFiles = fs.readdirSync(`${textDir}/${subTextDir}`).sort();
+                console.log(textFiles);
+                if (await saveAudio(`${audioDir}/${subTextDir}.wav`, textFiles.map(file => fs.readFileSync(file).toString()))) {
                     return;
                 }
             }

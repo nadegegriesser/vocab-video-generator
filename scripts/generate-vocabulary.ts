@@ -1,5 +1,5 @@
 import fs from 'fs';
-import { generateIntroForTopic, generateOutroForTopic, generateTextForTopic, generateVocabForTopic } from '../src/gemini.js';
+import { generateIntroForTopic, generateOutroForTopic, generateVocabForTopic } from '../src/gemini.js';
 import { TopicEntry } from '../src/types.js';
 import { loadFile } from '../src/file.js';
 

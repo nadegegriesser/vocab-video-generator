@@ -201,7 +201,7 @@ export async function synthesizeSpeech(
     style2: string,
     sourceLang: string,
     targetLang: string,
-    vocab: VocabEntry) {
+    vocab: string[]) {
     const config = {
         temperature: 1,
         responseModalities: [
@@ -230,14 +230,16 @@ export async function synthesizeSpeech(
             },
         },
     };
-    const text = `STYLE DESCRIPTION:
+    let text = `STYLE DESCRIPTION:
 ${name1}: speaks ${sourceLang} language. She is ${style1}.
 ${name2}: speaks ${targetLang} language. He is ${style2}.
-SCRIPT:
-${name1}: -- ${vocab.source}
-${name2}: ${vocab.target} 
-${name1}: -- ${vocab.exampleSource}
-${name2}: ${vocab.exampleTarget} -- `;
+SCRIPT:`;
+    let i = 0;
+    for (const v of vocab) {
+        text += `
+${i % 2 == 0 ? name1 : name2}: ${v}`;
+        i++;
+    }
     console.log(text);
     const response = await ai.models.generateContent({
         model: "gemini-2.5-flash-preview-tts",
