@@ -31,6 +31,13 @@ const topicsPath = `${dir}/${topicsFile}`;
                 console.log(`✅ ${audioDir} does not exist, skipping...`);
                 continue;
             }
+
+            const videoFile = `${audioDir}/output.mp4`;
+            if (fs.existsSync(videoFile)) {
+                console.log(`✅ ${videoFile} already exists, skipping...`);
+                continue;
+            }
+
             const audioFiles = fs.readdirSync(audioDir)
                 .filter(file => file.endsWith('.wav'))
                 .sort();
@@ -62,7 +69,7 @@ const topicsPath = `${dir}/${topicsFile}`;
                 let filters = [];
                 for (const textFile of textFiles) {
                     console.log(offset);
-                    filters.push(`drawtext=textfile=${textDir}/${vIndex}/${textFile}:fontcolor=white:fontsize=${lineHeight - 4}:x=(w-text_w)/2:y=(h-text_h)/2${(offset < 0? '+' + (-offset) : '-' + offset)}`);
+                    filters.push(`drawtext=textfile=${textDir}/${vIndex}/${textFile}:fontcolor=white:fontsize=${lineHeight - 4}:x=(w-text_w)/2:y=(h-text_h)/2${(offset < 0 ? '+' + (-offset) : '-' + offset)}`);
                     offset -= lineHeight;
                 }
                 command += filters.join(',');
@@ -77,8 +84,22 @@ const topicsPath = `${dir}/${topicsFile}`;
                     console.log(`stdout: ${stdout}`);
                     console.error(`stderr: ${stderr}`);
                 });
-                return;
+
+                break;
             }
+            
+            if (fs.readdirSync(`${textDir}`).length == fs.readdirSync(audioDir).filter(file => file.endsWith('.mp4')).length) {
+                let command = `ffmpeg -f concat -safe 0 -i <(find ${audioDir} -name '*.mp4' -printf "file '${audioDir}/%p'\n") -c copy ${videoFile}`;
+                exec(command, (error, stdout, stderr) => {
+                    if (error) {
+                        console.error(`exec error: ${error}`);
+                        return;
+                    }
+                    console.log(`stdout: ${stdout}`);
+                    console.error(`stderr: ${stderr}`);
+                });
+            }
+            return;
         }
     } catch (err) {
         console.error('❌ Failed to generate video:', err);
