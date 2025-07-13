@@ -41,6 +41,13 @@ const topicsPath = `${dir}/${topicsFile}`;
             for (const audioFile of audioFiles) {
                 console.log(audioFile);
                 const vIndex = audioFile.slice(0, audioFile.lastIndexOf('.'));
+                const outputFile = `${audioDir}/${vIndex}.mp4`;
+
+                if (fs.existsSync(outputFile)) {
+                    console.log(`✅ ${outputFile} exists, skipping...`);
+                    continue;
+                }
+
                 const subTextDir = `${textDir}/${vIndex}`;
                 if (!fs.existsSync(subTextDir)) {
                     console.log(`✅ ${subTextDir} does not exist, skipping...`);
@@ -51,13 +58,14 @@ const topicsPath = `${dir}/${topicsFile}`;
                     .sort();
                 let lineHeight = 32;
                 let offset = -(textFiles.length - 1) * lineHeight / 2;
-                let c = [];
+                let filters = [];
                 for (const textFile of textFiles) {
-                    c.push(`drawtext=textfile=${textDir}/${vIndex}/${textFile}:fontcolor=white:fontsize=${lineHeight - 2}:x=(w-text_w)/2:y=(h-text_h)/2-${offset}`);
+                    console.log(offset);
+                    filters.push(`drawtext=textfile=${textDir}/${vIndex}/${textFile}:fontcolor=white:fontsize=${lineHeight - 2}:x=(w-text_w)/2:y=(h-text_h)/2-${offset}`);
                     offset += lineHeight;
                 }
-                command += c.join(',');
-                command += `[out]" -c:v libx264 -tune stillimage -c:a aac -b:a 192k -shortest -pix_fmt yuv420p ${audioDir}/${vIndex}.mp4`;
+                command += filters.join(',');
+                command += `[out]" -c:v libx264 -tune stillimage -c:a aac -b:a 192k -shortest -pix_fmt yuv420p ${outputFile}`;
                 console.log(command);
 
                 exec(command, (error, stdout, stderr) => {
