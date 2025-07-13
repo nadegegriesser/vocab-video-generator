@@ -12,7 +12,7 @@ on:
     - cron: '0 * * * *'
 
 jobs:
-  generate-vocab:
+  generate-images:
     runs-on: ubuntu-latest
     strategy:
       max-parallel: 1
