@@ -12,8 +12,8 @@
     "target": "Das Alphabet"
   },
   {
-    "source": "Les nombres de 0 à 20",
-    "target": "Die Zahlen von 0 bis 20"
+    "source": "Les nombres de 0 à 10",
+    "target": "Die Zahlen von 0 bis 10"
   },
   {
     "source": "Les couleurs",
@@ -28,20 +28,20 @@
     "target": "Die Berufe"
   },
   {
-    "source": "Les pays et les nationalités",
-    "target": "Länder und Nationalitäten"
+    "source": "Les pays",
+    "target": "Länder"
   },
   {
     "source": "Demander et donner des directions",
     "target": "Nach dem Weg fragen und den Weg beschreiben"
   },
   {
-    "source": "Au restaurant et commander",
-    "target": "Im Restaurant und bestellen"
+    "source": "Au restaurant",
+    "target": "Im Restaurant"
   },
   {
-    "source": "L'alimentation et les boissons",
-    "target": "Das Essen und die Getränke"
+    "source": "La nourriture et les boissons",
+    "target": "Essen und Trinken"
   },
   {
     "source": "La routine quotidienne",
@@ -52,16 +52,20 @@
     "target": "Die Wochentage"
   },
   {
-    "source": "Les mois et les saisons",
-    "target": "Die Monate und Jahreszeiten"
+    "source": "Les mois de l'année",
+    "target": "Die Monate des Jahres"
+  },
+  {
+    "source": "Les saisons",
+    "target": "Die Jahreszeiten"
   },
   {
     "source": "La météo",
     "target": "Das Wetter"
   },
   {
-    "source": "Les loisirs et le temps libre",
-    "target": "Die Hobbys und die Freizeit"
+    "source": "Les loisirs",
+    "target": "Die Hobbys"
   },
   {
     "source": "Décrire les personnes",
@@ -72,8 +76,8 @@
     "target": "Gegenstände beschreiben"
   },
   {
-    "source": "À la maison et les pièces",
-    "target": "Zuhause und die Zimmer"
+    "source": "La maison et les pièces",
+    "target": "Das Haus und die Räume"
   },
   {
     "source": "Les meubles",
@@ -100,23 +104,23 @@
     "target": "Die Körperteile"
   },
   {
-    "source": "La santé et les maladies",
-    "target": "Die Gesundheit und die Krankheiten"
+    "source": "La santé",
+    "target": "Die Gesundheit"
   },
   {
     "source": "Les animaux",
     "target": "Die Tiere"
   },
   {
-    "source": "L'école et les études",
-    "target": "Die Schule und das Studium"
+    "source": "L'école",
+    "target": "Die Schule"
   },
   {
-    "source": "L'heure et dire l'heure",
-    "target": "Die Uhrzeit und die Uhrzeit sagen"
+    "source": "L'heure",
+    "target": "Die Uhrzeit"
   },
   {
-    "source": "Les vacances et les voyages",
-    "target": "Die Ferien und die Reisen"
+    "source": "Les vacances",
+    "target": "Die Ferien"
   }
 ]
