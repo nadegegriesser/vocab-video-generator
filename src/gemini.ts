@@ -237,7 +237,7 @@ SCRIPT:`;
     let i = 0;
     for (const v of vocab) {
         text += `
-${i % 2 == 0 ? name1 : name2}: ${v}`;
+${i % 2 == 0 ? name1 : name2}: (speaks in ${i % 2 == 0 ? sourceLang : targetLang} language) ${v}`;
         i++;
     }
     console.log(text);
