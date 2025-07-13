@@ -46,16 +46,18 @@ const topicsPath = `${dir}/${topicsFile}`;
                     console.log(`✅ ${subTextDir} does not exist, skipping...`);
                     continue;
                 }
-                let command = `ffmpeg -y -loop 1 -i data/image.jpg -i ${audioDir}/${audioFile} `;
+                let command = `ffmpeg -y -loop 1 -i data/image.jpg -i ${audioDir}/${audioFile} -vf "[in]`;
                 const textFiles = fs.readdirSync(`${textDir}/${vIndex}`)
                     .sort();
                 let lineHeight = 32;
                 let offset = (textFiles.length - 1) * lineHeight / 2;
+                let c = [];
                 for (const textFile of textFiles) {
-                    command += `-vf "drawtext=textfile=${textDir}/${vIndex}/${textFile}:fontcolor=white:fontsize=${lineHeight - 2}:x=(w-text_w)/2:y=(h-text_h)/2-${offset}" `;
+                    c.push(`drawtext=textfile=${textDir}/${vIndex}/${textFile}:fontcolor=white:fontsize=${lineHeight - 2}:x=(w-text_w)/2:y=(h-text_h)/2-${offset}`);
                     offset += lineHeight;
                 }
-                command += `-c:v libx264 -tune stillimage -c:a aac -b:a 192k -shortest -pix_fmt yuv420p ${audioDir}/${vIndex}.mp4`;
+                command += c.join(',');
+                command += `[out]" -c:v libx264 -tune stillimage -c:a aac -b:a 192k -shortest -pix_fmt yuv420p ${audioDir}/${vIndex}.mp4`;
                 console.log(command);
 
                 exec(command, (error, stdout, stderr) => {
