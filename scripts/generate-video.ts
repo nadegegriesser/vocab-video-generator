@@ -57,12 +57,12 @@ const topicsPath = `${dir}/${topicsFile}`;
                 let command = `ffmpeg -y -loop 1 -i ${vocabDir}/image.jpg -i ${audioDir}/${audioFile} -vf "[in]`;
                 const textFiles = fs.readdirSync(`${textDir}/${vIndex}`)
                     .sort();
-                let lineHeight = 32;
+                let lineHeight = 34;
                 let offset = (textFiles.length - 1) * lineHeight / 2;
                 let filters = [];
                 for (const textFile of textFiles) {
                     console.log(offset);
-                    filters.push(`drawtext=textfile=${textDir}/${vIndex}/${textFile}:fontcolor=white:fontsize=${lineHeight - 2}:x=(w-text_w)/2:y=(h-text_h)/2${(offset < 0? '+' + (-offset) : '-' + offset)}`);
+                    filters.push(`drawtext=textfile=${textDir}/${vIndex}/${textFile}:fontcolor=white:fontsize=${lineHeight - 4}:x=(w-text_w)/2:y=(h-text_h)/2${(offset < 0? '+' + (-offset) : '-' + offset)}`);
                     offset -= lineHeight;
                 }
                 command += filters.join(',');
