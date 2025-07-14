@@ -13,6 +13,8 @@ on:
 jobs:
   generate-topics:
     runs-on: ubuntu-latest
+    concurrency:
+      group: example-group
     strategy:
       max-parallel: 1
       matrix:

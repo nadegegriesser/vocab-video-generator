@@ -14,6 +14,8 @@ on:
 jobs:
   generate-images:
     runs-on: ubuntu-latest
+    concurrency:
+      group: example-group
     strategy:
       max-parallel: 1
       matrix:
