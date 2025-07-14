@@ -230,10 +230,7 @@ export async function synthesizeSpeech(
             },
         },
     };
-    let text = `STYLE DESCRIPTION:
-${name1}: speaks ${sourceLang} language. She is ${style1}.
-${name2}: speaks ${targetLang} language. He is ${style2}.
-SCRIPT:`;
+    let text = `TTS the following conversation between ${name1}, who speaks ${sourceLang} language - she is ${style1} - and ${name2}, who speaks ${targetLang} language - he is ${style2}.`;
     let i = 0;
     for (const v of vocab) {
         text += `
