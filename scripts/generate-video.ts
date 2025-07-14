@@ -93,7 +93,7 @@ const topicsPath = `${dir}/${topicsFile}`;
             console.log(textDirs, mp4Files);
             if (textDirs.length == mp4Files.length) {
                 let commands = [
-                    `find ${audioDir} -name '*.mp4' -printf "file '%p'\n" > ${audioDir}/input.txt`,
+                    `find ${audioDir} -name '*.mp4' -printf "file '%f'\n" | sort -z > ${audioDir}/input.txt`,
                     `ffmpeg -f concat -safe 0 -i ${audioDir}/input.txt -c copy ${videoFile}`,
                     `rm ${audioDir}/input.txt`
                 ];
