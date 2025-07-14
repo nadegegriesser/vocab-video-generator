@@ -17,8 +17,7 @@ jobs:
     strategy:
       max-parallel: 1
       matrix:
-        level: [A1, A2]
-        count: [10]
+        level: [A1]
         sourceLang: [fr]
         targetLang: [de]
     steps:

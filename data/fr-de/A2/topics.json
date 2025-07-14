@@ -12,8 +12,8 @@
     "target": "Essen und Trinken"
   },
   {
-    "source": "La maison et les pièces",
-    "target": "Das Haus und die Räume"
+    "source": "La maison et ses pièces",
+    "target": "Das Haus und seine Zimmer"
   },
   {
     "source": "Les activités quotidiennes",
@@ -40,8 +40,8 @@
     "target": "Die Wochentage"
   },
   {
-    "source": "Les mois de l'année",
-    "target": "Die Monate des Jahres"
+    "source": "Les mois",
+    "target": "Die Monate"
   },
   {
     "source": "Les saisons",
@@ -88,6 +88,10 @@
     "target": "Im Restaurant"
   },
   {
+    "source": "Demander et donner des directions",
+    "target": "Nach dem Weg fragen und den Weg beschreiben"
+  },
+  {
     "source": "Voyager",
     "target": "Reisen"
   },
@@ -106,10 +110,6 @@
   {
     "source": "Le sport",
     "target": "Die Sportarten"
-  },
-  {
-    "source": "La description physique",
-    "target": "Die körperliche Beschreibung"
   },
   {
     "source": "Les objets du quotidien",

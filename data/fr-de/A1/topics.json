@@ -32,10 +32,6 @@
     "target": "Länder"
   },
   {
-    "source": "Demander et donner des directions",
-    "target": "Nach dem Weg fragen und den Weg beschreiben"
-  },
-  {
     "source": "Au restaurant",
     "target": "Im Restaurant"
   },
@@ -52,8 +48,8 @@
     "target": "Die Wochentage"
   },
   {
-    "source": "Les mois de l'année",
-    "target": "Die Monate des Jahres"
+    "source": "Les mois",
+    "target": "Die Monate"
   },
   {
     "source": "Les saisons",
@@ -76,8 +72,8 @@
     "target": "Gegenstände beschreiben"
   },
   {
-    "source": "La maison et les pièces",
-    "target": "Das Haus und die Räume"
+    "source": "La maison",
+    "target": "Das Haus"
   },
   {
     "source": "Les meubles",
@@ -92,8 +88,8 @@
     "target": "Einkaufen"
   },
   {
-    "source": "Les transports en commun",
-    "target": "Die öffentlichen Verkehrsmittel"
+    "source": "Les transports",
+    "target": "Die Verkehrsmittel"
   },
   {
     "source": "En ville",
