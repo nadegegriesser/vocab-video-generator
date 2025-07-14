@@ -1,7 +1,7 @@
 import fs from 'fs';
 import { loadFile } from '../src/file.js';
 import { TopicEntry } from '../src/types.js';
-import { exec } from 'child_process';
+import { exec, execSync } from 'child_process';
 import { off } from 'process';
 
 const args = process.argv.slice(2);
@@ -93,17 +93,12 @@ const topicsPath = `${dir}/${topicsFile}`;
             console.log(textDirs, mp4Files);
             if (textDirs.length == mp4Files.length) {
                 let commands = [
-                    `cd ${audioDir} && find . -name '*.mp4' -printf "file '%f'\n" | sort > input.txt && ffmpeg -f concat -i input.txt -c copy output.mp4 && cd -`
+                    `find . -name '*.mp4' -printf "file '%f'\n" | sort > ${audioDir}/input.txt`,
+                    `ffmpeg -f concat -save 0 -i ${audioDir}/input.txt -c copy ${videoFile}`,
+                    `rm ${audioDir}/input.txt`
                 ];
                 for (let command of commands) {
-                    exec(command, (error, stdout, stderr) => {
-                        if (error) {
-                            console.error(`exec error: ${error}`);
-                            return;
-                        }
-                        console.log(`stdout: ${stdout}`);
-                        console.error(`stderr: ${stderr}`);
-                    });
+                    execSync(command);
                 }
             }
             return;
