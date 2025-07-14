@@ -95,6 +95,7 @@ const topicsPath = `${dir}/${topicsFile}`;
                 let commands = [
                     `find ${audioDir} -name '*.mp4' -printf "file '%f'\n" | sort > ${audioDir}/input.txt`,
                     `cat ${audioDir}/input.txt`,
+                    `ls -lR ${audioDir}`,
                     `ffmpeg -f concat -safe 0 -i ${audioDir}/input.txt -c copy ${videoFile}`,
                     `rm ${audioDir}/input.txt`
                 ];
