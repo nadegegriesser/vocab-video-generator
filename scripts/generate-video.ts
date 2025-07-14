@@ -87,20 +87,25 @@ const topicsPath = `${dir}/${topicsFile}`;
 
                 break;
             }
-            
+
             let textDirs = fs.readdirSync(`${textDir}`);
             let mp4Files = fs.readdirSync(audioDir).filter(file => file.endsWith('.mp4'));
             console.log(textDirs, mp4Files);
             if (textDirs.length == mp4Files.length) {
-                let command = `ffmpeg -f concat -safe 0 -i <(find ${audioDir} -name '*.mp4' -printf "file '${audioDir}/%p'\n") -c copy ${videoFile}`;
-                exec(command, (error, stdout, stderr) => {
-                    if (error) {
-                        console.error(`exec error: ${error}`);
-                        return;
-                    }
-                    console.log(`stdout: ${stdout}`);
-                    console.error(`stderr: ${stderr}`);
-                });
+                let commands = [
+                    `find ${audioDir} -name '*.mp4' -printf "file '${audioDir}/%p'\n" > ${audioDir}/input.txt`,
+                    `ffmpeg -f concat -safe 0 -i ${audioDir}/input.txt -c copy ${videoFile}`
+                ];
+                for (let command of commands) {
+                    exec(command, (error, stdout, stderr) => {
+                        if (error) {
+                            console.error(`exec error: ${error}`);
+                            return;
+                        }
+                        console.log(`stdout: ${stdout}`);
+                        console.error(`stderr: ${stderr}`);
+                    });
+                }
             }
             return;
         }
