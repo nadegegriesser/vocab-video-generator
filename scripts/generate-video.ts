@@ -94,8 +94,8 @@ const topicsPath = `${dir}/${topicsFile}`;
             if (textDirs.length == mp4Files.length) {
                 let commands = [
                     `find ${audioDir} -name '*.mp4' -printf "file '%p'\n" > ${audioDir}/input.txt`,
-                    `cat ${audioDir}/input.txt`,
-                    `ffmpeg -f concat -safe 0 -i ${audioDir}/input.txt -c copy ${videoFile}`
+                    `ffmpeg -f concat -safe 0 -i ${audioDir}/input.txt -c copy ${videoFile}`,
+                    `rm ${audioDir}/input.txt`
                 ];
                 for (let command of commands) {
                     exec(command, (error, stdout, stderr) => {
