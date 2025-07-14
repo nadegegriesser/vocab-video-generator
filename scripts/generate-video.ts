@@ -1,8 +1,7 @@
 import fs from 'fs';
 import { loadFile } from '../src/file.js';
 import { TopicEntry } from '../src/types.js';
-import { exec, execSync } from 'child_process';
-import { off } from 'process';
+import { execSync } from 'child_process';
 
 const args = process.argv.slice(2);
 const dir = args[0];
@@ -76,14 +75,7 @@ const topicsPath = `${dir}/${topicsFile}`;
                 command += `[out]" -c:v libx264 -tune stillimage -c:a aac -b:a 192k -shortest -pix_fmt yuv420p ${outputFile}`;
                 console.log(command);
 
-                exec(command, (error, stdout, stderr) => {
-                    if (error) {
-                        console.error(`exec error: ${error}`);
-                        return;
-                    }
-                    console.log(`stdout: ${stdout}`);
-                    console.error(`stderr: ${stderr}`);
-                });
+                execSync(command);
 
                 break;
             }
