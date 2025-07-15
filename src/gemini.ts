@@ -256,7 +256,7 @@ export async function generateImage(
     color: string
 ) {
     const prompt = `
-Generate a 16:9 landscape background image for an educational YouTube video about "${topic}". 
+Generate a 1280x720 pixels landscape background image for an educational YouTube video about "${topic}". 
 The design should illustrate the theme using abstract icons around the edges. 
 Do not include any words, labels, or text in the image. 
 Leave the central area completely blank and filled with a smooth, uniform ${color} color, so readable overlay text can be added later. 
