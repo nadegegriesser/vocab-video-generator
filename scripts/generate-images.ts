@@ -21,8 +21,15 @@ const topicsPath = `${dir}/${topicsFile}`;
 
             const jpgFile = `${vocabDir}/image.jpg`;
             if (fs.existsSync(jpgFile)) {
-                console.log(`✅ ${jpgFile} already exists, skipping...`);
-                continue;
+                const jpgImage = sharp(jpgFile);
+                const metadata = await jpgImage.metadata();
+                if (metadata.width != 1280 || metadata.height != 720) {
+                    console.log('wrong dims');
+                    fs.unlinkSync(jpgFile);
+                } else {
+                    console.log(`✅ ${jpgFile} already exists, skipping...`);
+                    continue;
+                }
             }
 
             const image = await generateImage(topic.source, color);
