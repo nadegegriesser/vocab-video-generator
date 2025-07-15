@@ -6,7 +6,8 @@ on:
       .github/workflows/generate-images.yml,
       scripts/generate-images.ts,
       src/**,
-      data/**/topics.json
+      data/**/topics.json,
+      data/**/image.jpg
     ]
   schedule:
     - cron: '0 * * * *'
