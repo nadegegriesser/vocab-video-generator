@@ -31,8 +31,10 @@ const topicsPath = `${dir}/${topicsFile}`;
                 fs.writeFileSync(pngFile, image);
                 const pngImage = sharp(pngFile);
                 const metadata = await pngImage.metadata();
-                if (metadata.width == 1280 && metadata.height == 720) {
+                const ratio = metadata.width / metadata.height;
+                if (ratio > Math.floor(16/9) && ratio < Math.ceil(16/9)) {
                     await pngImage
+                        .resize(1280, 720)
                         .jpeg({ quality: 90 })
                         .toFile(jpgFile);
                 } else {
