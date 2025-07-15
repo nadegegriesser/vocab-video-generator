@@ -29,9 +29,15 @@ const topicsPath = `${dir}/${topicsFile}`;
             if (image) {
                 const pngFile = `${vocabDir}/image.png`;
                 fs.writeFileSync(pngFile, image);
-                await sharp(pngFile)
-                    .jpeg({ quality: 90 })
-                    .toFile(jpgFile);
+                const pngImage = sharp(pngFile);
+                const metadata = await pngImage.metadata();
+                if (metadata.width == 1280 && metadata.height == 720) {
+                    await pngImage
+                        .jpeg({ quality: 90 })
+                        .toFile(jpgFile);
+                } else {
+                    console.error('❌ Wrong dimensions', metadata.width, metadata.height);
+                }
                 fs.unlinkSync(pngFile);
             }
             return;

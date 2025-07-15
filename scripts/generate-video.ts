@@ -31,11 +31,14 @@ const topicsPath = `${dir}/${topicsFile}`;
                 continue;
             }
 
-            const videoFile = `${audioDir}/output.mp4`;
+            const videoDir = `${vocabDir}/video`;
+            const videoFile = `${videoDir}/output.mp4`;
             if (fs.existsSync(videoFile)) {
                 console.log(`✅ ${videoFile} already exists, skipping...`);
                 continue;
             }
+
+            fs.mkdirSync(videoDir, { recursive: true });
 
             const audioFiles = fs.readdirSync(audioDir)
                 .filter(file => file.endsWith('.wav'))
@@ -48,7 +51,7 @@ const topicsPath = `${dir}/${topicsFile}`;
             for (const audioFile of audioFiles) {
                 console.log(audioFile);
                 const vIndex = audioFile.slice(0, audioFile.lastIndexOf('.'));
-                const outputFile = `${audioDir}/${vIndex}.mp4`;
+                const outputFile = `${videoDir}/${vIndex}.mp4`;
 
                 if (fs.existsSync(outputFile)) {
                     console.log(`✅ ${outputFile} exists, skipping...`);
