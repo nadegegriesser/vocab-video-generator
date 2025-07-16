@@ -84,13 +84,13 @@ const topicsPath = `${dir}/${topicsFile}`;
             }
 
             let textDirs = fs.readdirSync(`${textDir}`);
-            let mp4Files = fs.readdirSync(audioDir).filter(file => file.endsWith('.mp4'));
+            let mp4Files = fs.readdirSync(videoDir).filter(file => file.endsWith('.mp4'));
             console.log(textDirs, mp4Files);
             if (textDirs.length == mp4Files.length) {
                 let commands = [
-                    `find . -name '*.mp4' -printf "file '%f'\n" | sort > ${audioDir}/input.txt`,
-                    `ffmpeg -f concat -save 0 -i ${audioDir}/input.txt -c copy ${videoFile}`,
-                    `rm ${audioDir}/input.txt`
+                    `find ${videoDir} -name '*.mp4' -printf "file '%f'\n" | sort > ${videoDir}/input.txt`,
+                    `ffmpeg -f concat -save 0 -i ${videoDir}/input.txt -c copy ${videoFile}`,
+                    `rm ${videoDir}/input.txt`
                 ];
                 for (let command of commands) {
                     execSync(command);
