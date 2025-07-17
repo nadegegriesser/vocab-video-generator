@@ -43,6 +43,7 @@ const topicsPath = `${dir}/${topicsFile}`;
             
             fs.mkdirSync(videoDir, { recursive: true });
             
+            let cnt = 0;
             for (const audioFile of audioFiles) {
                 console.log(audioFile);
                 const vIndex = audioFile.slice(0, audioFile.lastIndexOf('.'));
@@ -76,7 +77,10 @@ const topicsPath = `${dir}/${topicsFile}`;
 
                 execSync(command);
 
-                break;
+                cnt++;
+                if (cnt >= 5) {
+                    break;
+                }
             }
 
             let textDirs = fs.readdirSync(`${textDir}`);
