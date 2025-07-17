@@ -18,10 +18,11 @@ const topicsPath = `${dir}/${topicsFile}`;
             t++;
             const tIndex = String(t).padStart(2, '0');
             const vocabDir = `${dir}/${tIndex}`;
-            const filePath = `${vocabDir}/output.mp4`
 
-            if (fs.existsSync(filePath)) {
-                console.log(`✅ ${filePath} already exists, skipping...`);
+            const videoDir = `${vocabDir}/video`;
+            const videoFile = `${videoDir}/output.mp4`;
+            if (fs.existsSync(videoFile)) {
+                console.log(`✅ ${videoFile} already exists, skipping...`);
                 continue;
             }
 
@@ -31,15 +32,6 @@ const topicsPath = `${dir}/${topicsFile}`;
                 continue;
             }
 
-            const videoDir = `${vocabDir}/video`;
-            const videoFile = `${videoDir}/output.mp4`;
-            if (fs.existsSync(videoFile)) {
-                console.log(`✅ ${videoFile} already exists, skipping...`);
-                continue;
-            }
-
-            fs.mkdirSync(videoDir, { recursive: true });
-
             const audioFiles = fs.readdirSync(audioDir)
                 .filter(file => file.endsWith('.wav'))
                 .sort();
@@ -48,6 +40,9 @@ const topicsPath = `${dir}/${topicsFile}`;
                 console.log(`✅ ${textDir} does not exist, skipping...`);
                 continue;
             }
+            
+            fs.mkdirSync(videoDir, { recursive: true });
+            
             for (const audioFile of audioFiles) {
                 console.log(audioFile);
                 const vIndex = audioFile.slice(0, audioFile.lastIndexOf('.'));
@@ -63,6 +58,7 @@ const topicsPath = `${dir}/${topicsFile}`;
                     console.log(`✅ ${subTextDir} does not exist, skipping...`);
                     continue;
                 }
+                
                 let command = `ffmpeg -y -loop 1 -i ${vocabDir}/image.jpg -i ${audioDir}/${audioFile} -vf "[in]`;
                 const textFiles = fs.readdirSync(`${textDir}/${vIndex}`)
                     .sort();

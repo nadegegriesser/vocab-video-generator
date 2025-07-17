@@ -1,10 +1,10 @@
-name: Generate Audio
+name: Generate Video
 
 on:
   push:
     paths: [
-      .github/workflows/generate-audio.yml,
-      scripts/generate-audio.ts,
+      .github/workflows/generate-video.yml,
+      scripts/generate-video.ts,
       src/**,
       data/fr-de/A1/01/**
     ]
@@ -12,7 +12,7 @@ on:
     - cron: '0 * * * *'
 
 jobs:
-  generate-audio:
+  generate-video:
     runs-on: ubuntu-latest
     concurrency:
       group: example-group
@@ -34,29 +34,23 @@ jobs:
 
       - run: npm run build
 
-      - name: Generate audio
-        run: |
-          node dist/scripts/generate-audio.js \
-            "${{ vars.NAME1 }}" \
-            "${{ vars.VOICE1 }}" \
-            "${{ vars.STYLE1 }}" \
-            "${{ vars.NAME2 }}" \
-            "${{ vars.VOICE2 }}" \
-            "${{ vars.STYLE2 }}" \
-            ${{ matrix.sourceLang }} \
-            ${{ matrix.targetLang }} \
-            data/${{ matrix.sourceLang }}-${{ matrix.targetLang }}/${{ matrix.level }}
-        env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      - run: |
+          sudo apt install ffmpeg libfreetype6 libfreetype6-dev
 
-      - name: 💾 Commit generated audio file
+      - name: Generate video
+        run: |    
+          ls /usr/share/fonts
+          node dist/scripts/generate-video.js \
+            data/${{ matrix.sourceLang }}-${{ matrix.targetLang }}/${{ matrix.level }}
+
+      - name: 💾 Commit generated video file
         if: success()
         run: |
           git pull
           git config user.name "github-actions"
           git config user.email "actions@github.com"
           git add data/${{ matrix.sourceLang }}-${{ matrix.targetLang }}/${{ matrix.level }}/*
-          git diff --quiet && git diff --staged --quiet || git commit -m "📚 Add audio"
+          git diff --quiet && git diff --staged --quiet || git commit -m "📚 Add video"
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
