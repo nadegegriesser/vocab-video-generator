@@ -38,8 +38,7 @@ jobs:
           sudo apt install ffmpeg libfreetype6 libfreetype6-dev
 
       - name: Generate video
-        run: |    
-          ls /usr/share/fonts
+        run: |
           node dist/scripts/generate-video.js \
             data/${{ matrix.sourceLang }}-${{ matrix.targetLang }}/${{ matrix.level }}
 
