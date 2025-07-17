@@ -58,7 +58,7 @@ const topicsPath = `${dir}/${topicsFile}`;
                     console.log(`✅ ${subTextDir} does not exist, skipping...`);
                     continue;
                 }
-                
+
                 let command = `ffmpeg -y -loop 1 -i ${vocabDir}/image.jpg -i ${audioDir}/${audioFile} -vf "[in]`;
                 const textFiles = fs.readdirSync(`${textDir}/${vIndex}`)
                     .sort();
@@ -67,7 +67,7 @@ const topicsPath = `${dir}/${topicsFile}`;
                 let filters = [];
                 for (const textFile of textFiles) {
                     console.log(offset);
-                    filters.push(`drawtext=textfile=${textDir}/${vIndex}/${textFile}:fontcolor=white:fontsize=${lineHeight - 32}:x=ceil((w-text_w)/2):y=ceil((h-text_h)/2)${(offset < 0 ? '+' + (-offset) : '-' + offset)}`);
+                    filters.push(`drawtext=textfile=${textDir}/${vIndex}/${textFile}:font=/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf:fontcolor=white:fontsize=${lineHeight - 32}:x=ceil((w-text_w)/2):y=ceil((h-text_h)/2)${(offset < 0 ? '+' + (-offset) : '-' + offset)}`);
                     offset -= lineHeight;
                 }
                 command += filters.join(',');
