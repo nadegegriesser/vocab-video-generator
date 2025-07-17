@@ -78,7 +78,7 @@ const topicsPath = `${dir}/${topicsFile}`;
                 execSync(command);
 
                 cnt++;
-                if (cnt >= 5) {
+                if (cnt >= 6) {
                     break;
                 }
             }
