@@ -230,7 +230,7 @@ export async function synthesizeSpeech(
             },
         },
     };
-    let text = `TTS the following conversation between ${name1}, who speaks ${sourceLang} language - she is ${style1} - and ${name2}, who speaks ${targetLang} language - he is ${style2}.`;
+    let text = `TTS the following conversation between ${name1}, who speaks ${sourceLang} language - she is ${style1} - and ${name2}, who speaks ${targetLang} language - he is ${style2}. Say the following text exactly as written. Do not paraphrase or simplify.`;
     let i = 0;
     for (const v of vocab) {
         text += `
