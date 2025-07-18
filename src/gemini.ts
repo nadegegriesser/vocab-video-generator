@@ -234,7 +234,8 @@ export async function synthesizeSpeech(
     let i = 0;
     for (const v of vocab) {
         text += `
-${i % 2 == 0 ? name1 : name2}: ${v} .`;
+${i % 2 == 0 ? name1 : name2}: ${v} ${i < 2 ? '.' : ''}
+`;
         i++;
     }
     console.log(text);
