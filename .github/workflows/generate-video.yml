@@ -6,7 +6,9 @@ on:
       .github/workflows/generate-video.yml,
       scripts/generate-video.ts,
       src/**,
-      data/fr-de/A1/01/**
+      data/**/text/*.txt,
+      data/**/audio/*.wav,
+      data/**/video/*.mp4
     ]
   schedule:
     - cron: '0 * * * *'
