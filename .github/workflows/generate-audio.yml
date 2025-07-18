@@ -6,7 +6,8 @@ on:
       .github/workflows/generate-audio.yml,
       scripts/generate-audio.ts,
       src/**,
-      data/fr-de/A1/01/**
+      data/**/script/*.txt,
+      data/**/*.wav
     ]
   schedule:
     - cron: '0 * * * *'
