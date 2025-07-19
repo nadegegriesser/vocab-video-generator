@@ -20,7 +20,7 @@ const topicsPath = `${dir}/${topicsFile}`;
             const vocabDir = `${dir}/${tIndex}`;
 
             const videoDir = `${vocabDir}/video`;
-            const videoFile = `${videoDir}/output.mp4`;
+            const videoFile = `${vocabDir}/output.mp4`;
             if (fs.existsSync(videoFile)) {
                 console.log(`✅ ${videoFile} already exists, skipping...`);
                 continue;
@@ -35,23 +35,26 @@ const topicsPath = `${dir}/${topicsFile}`;
             const audioFiles = fs.readdirSync(audioDir)
                 .filter(file => file.endsWith('.wav'))
                 .sort();
+            
             const textDir = `${vocabDir}/text`;
             if (!fs.existsSync(textDir)) {
                 console.log(`✅ ${textDir} does not exist, skipping...`);
                 continue;
             }
+
+            const textDirs = fs.readdirSync(`${textDir}`);
             
-            fs.mkdirSync(videoDir, { recursive: true });
+            console.log(textDirs, audioFiles);
+            if (textDirs.length != audioFiles.length) {
+                continue;
+            }
+
+            fs.mkdirSync(videoDir, {recursive: true});
             
             for (const audioFile of audioFiles) {
                 console.log(audioFile);
                 const vIndex = audioFile.slice(0, audioFile.lastIndexOf('.'));
                 const outputFile = `${videoDir}/${vIndex}.mp4`;
-
-                if (fs.existsSync(outputFile)) {
-                    console.log(`✅ ${outputFile} exists, skipping...`);
-                    continue;
-                }
 
                 const subTextDir = `${textDir}/${vIndex}`;
                 if (!fs.existsSync(subTextDir)) {
@@ -77,14 +80,13 @@ const topicsPath = `${dir}/${topicsFile}`;
                 execSync(command);
             }
 
-            let textDirs = fs.readdirSync(`${textDir}`);
-            let mp4Files = fs.readdirSync(videoDir).filter(file => file.endsWith('.mp4'));
+            const mp4Files = fs.readdirSync(videoDir).filter(file => file.endsWith('.mp4'));
             console.log(textDirs, mp4Files);
             if (textDirs.length == mp4Files.length) {
                 let commands = [
-                    `cd ${videoDir} && find . -name '*.mp4' -printf "file '%f'\n" | sort > input.txt`,
-                    `cd ${videoDir} && ffmpeg -f concat -i input.txt -c copy output.mp4`,
-                    `rm ${videoDir}/input.txt`
+                    `find ${videoDir} -name '*.mp4' -printf "file '%f'\n" | sort > input.txt`,
+                    `ffmpeg -f concat -i input.txt -c copy ${videoFile}`,
+                    `rm -Rf ${videoDir} input.txt`
                 ];
                 for (let command of commands) {
                     execSync(command);
