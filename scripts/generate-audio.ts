@@ -18,8 +18,7 @@ const topicsFile = 'topics.json';
 const topicsPath = `${dir}/${topicsFile}`;
 
 async function saveAudio(filePath: string, vocab: string[]) {
-    console.log(vocab);
-    if (fs.existsSync(filePath)) {
+   if (fs.existsSync(filePath)) {
         console.log(`✅ ${filePath} already exists, skipping...`);
     } else {
         let buffer = await synthesizeSpeech(name1, voice1, style1, name2, voice2, style2, sourceLang, targetLang, vocab);
@@ -68,7 +67,6 @@ async function saveWaveFile(
             for (const subScriptDir of subScriptDirs) {
                 console.log(subScriptDir);
                 const textFiles = fs.readdirSync(`${scriptDir}/${subScriptDir}`).sort();
-                console.log(textFiles);
                 if (await saveAudio(`${audioDir}/${subScriptDir}.wav`, textFiles.map(file => fs.readFileSync(`${scriptDir}/${subScriptDir}/${file}`).toString()))) {
                     return;
                 }
