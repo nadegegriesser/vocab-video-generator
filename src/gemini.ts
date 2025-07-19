@@ -211,7 +211,7 @@ export async function synthesizeSpeech(
             multiSpeakerVoiceConfig: {
                 speakerVoiceConfigs: [
                     {
-                        speaker: 'Speaker1',
+                        speaker: name1,
                         voiceConfig: {
                             prebuiltVoiceConfig: {
                                 voiceName: voice1
@@ -219,7 +219,7 @@ export async function synthesizeSpeech(
                         }
                     },
                     {
-                        speaker: 'Speaker2',
+                        speaker: name2,
                         voiceConfig: {
                             prebuiltVoiceConfig: {
                                 voiceName: voice2
@@ -234,8 +234,7 @@ export async function synthesizeSpeech(
     let i = 0;
     for (const v of vocab) {
         text += `
-${i % 2 == 0 ? name1 : name2}: ${v} ${i < 2 ? '.' : ''}
-`;
+${i % 2 == 0 ? name1 : name2}: ${v}${i < 2 ? '.' : ''}`;
         i++;
     }
     console.log(text);
