@@ -16,7 +16,7 @@ jobs:
   generate-audio:
     runs-on: ubuntu-latest
     concurrency:
-      group: example-group
+      group: audio
     strategy:
       max-parallel: 1
       matrix:
