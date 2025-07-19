@@ -84,7 +84,7 @@ const topicsPath = `${dir}/${topicsFile}`;
             console.log(textDirs, mp4Files);
             if (textDirs.length == mp4Files.length) {
                 let commands = [
-                    `find ${videoDir} -name '*.mp4' -printf "file '%f'\n" | sort > input.txt`,
+                    `find ${videoDir} -name '*.mp4' -printf "file '%p'\n" | sort > input.txt`,
                     `ffmpeg -f concat -i input.txt -c copy ${videoFile}`,
                     `rm -Rf ${videoDir} input.txt`
                 ];
