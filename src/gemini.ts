@@ -234,7 +234,7 @@ export async function synthesizeSpeech(
     let i = 0;
     for (const v of vocab) {
         text += `
-${i % 2 == 0 ? name1 : name2}: ${v + (i < 2 ? '.' : '')}`;
+${i % 2 == 0 ? name1 : name2}: ${v + (this.endsWithAny(v, ['.', '!', '?']) ? '' : '.')}`;
         i++;
     }
     console.log(text);
@@ -249,6 +249,12 @@ ${i % 2 == 0 ? name1 : name2}: ${v + (i < 2 ? '.' : '')}`;
         return Buffer.from(data, 'base64');
     }
     return;
+}
+
+function endsWithAny(string, suffixes) {
+    return suffixes.some(function (suffix) {
+        return string.endsWith(suffix);
+    });
 }
 
 export async function generateImage(
