@@ -251,7 +251,7 @@ ${i % 2 == 0 ? name1 : name2}: ${v + (endsWithAny(v, ['.', '!', '?']) ? '' : '.'
     return;
 }
 
-function endsWithAny(string, suffixes) {
+function endsWithAny(string: string, suffixes: string[]) {
     return suffixes.some(function (suffix) {
         return string.endsWith(suffix);
     });
