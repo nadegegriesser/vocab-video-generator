@@ -8,6 +8,24 @@ const dir = args[0];
 const topicsFile = 'topics.json';
 const topicsPath = `${dir}/${topicsFile}`;
 
+/*
+const CLIENT_ID = 'DEIN_CLIENT_ID';
+const CLIENT_SECRET = 'DEIN_CLIENT_SECRET';
+const REFRESH_TOKEN = 'DEIN_REFRESH_TOKEN';
+
+const oauth2Client = new google.auth.OAuth2(
+  CLIENT_ID,
+  CLIENT_SECRET,
+  'http://localhost' // Redirect URI muss nicht verwendet werden beim Refresh Token
+);
+
+oauth2Client.setCredentials({ refresh_token: REFRESH_TOKEN });
+
+const youtube = google.youtube({
+  version: 'v3',
+  auth: oauth2Client,
+});
+*/
 
 (async () => {
     try {
