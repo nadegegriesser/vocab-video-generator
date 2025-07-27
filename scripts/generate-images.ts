@@ -1,5 +1,5 @@
 import fs from 'fs';
-import { generateImage } from '../src/gemini.js';
+import { generateImage, removeBackground } from '../src/gemini.js';
 import { TopicEntry } from '../src/types.js';
 import { loadFile } from '../src/file.js';
 import sharp from 'sharp';
@@ -12,6 +12,18 @@ const topicsPath = `${dir}/${topicsFile}`;
 
 (async () => {
     try {
+        const imagePath = 'data/fr-de/A1/03/images/04.jpg';
+        const image = await removeBackground(imagePath);
+        if (image) {
+            const pngFile = `data/image.png`;
+            const jpgFile = `data/image.jpg`;
+            fs.writeFileSync(pngFile, image);
+            const pngImage = sharp(pngFile);
+            await pngImage
+                .jpeg({ quality: 90 })
+                .toFile(jpgFile);
+            fs.unlinkSync(pngFile);
+        }
         let t = 0;
         for (const topic of loadFile<TopicEntry>(topicsPath)) {
             let cnt = 0;
@@ -60,7 +72,7 @@ const topicsPath = `${dir}/${topicsFile}`;
                     }
                 }
 
-                const image = await generateImage(topic.source, vocab, color);
+                const image = await generateImage(topic.source, vocab, color, 'data/image.jpg');
                 if (image) {
                     const pngFile = `${imageDir}/${subTextDir}.png`;
                     fs.writeFileSync(pngFile, image);
