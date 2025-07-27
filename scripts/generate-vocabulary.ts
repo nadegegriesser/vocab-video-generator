@@ -33,7 +33,7 @@ async function handleData(subTextDir: string, datas: string[]) {
     let vt = 0;
     for (const data of datas) {
         const vtIndex = String(vt).padStart(2, '0');
-        fs.writeFileSync(`${subTextDir}/${vtIndex}.txt`, data);
+        fs.writeFileSync(`${subTextDir}/${vtIndex}.txt`, data.replaceAll(' \?', '?'));
         vt++;
     }
 }
