@@ -19,7 +19,12 @@ const topicsPath = `${dir}/${topicsFile}`;
             const tIndex = String(t).padStart(2, '0');
             const topicDir = `${dir}/${tIndex}`;
             const textDir = `${topicDir}/text`;
-            const imageDir = `${topicDir}/imapes`;
+            if (!fs.existsSync(textDir)) {
+                console.log(`✅ ${textDir} does not exist, skipping...`);
+                continue;
+            }
+
+            const imageDir = `${topicDir}/images`;
 
             fs.mkdirSync(imageDir, { recursive: true });
 
@@ -40,13 +45,11 @@ const topicsPath = `${dir}/${topicsFile}`;
                     }
                 }
 
-
-                console.log(`${textDir}/${subTextDir}`);
+                console.log(`|${textDir}/${subTextDir}|`);
                 const textFiles = fs.readdirSync(`${textDir}/${subTextDir}`).sort();
-                if (textFiles.length = 0) {
+                if (textFiles.length == 0) {
                     continue;
                 }
-                console.log(textFiles, textFiles.length, textFiles[0]);
                 const textFile = textFiles[0];
 
                 const vocab = fs.readFileSync(`${textDir}/${subTextDir}/${textFile}`).toString();
