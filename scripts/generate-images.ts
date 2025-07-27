@@ -46,7 +46,7 @@ const topicsPath = `${dir}/${topicsFile}`;
                 if (textFiles.length = 0) {
                     continue;
                 }
-                console.log(textFiles);
+                console.log(textFiles, textFiles.length, textFiles[0]);
                 const textFile = textFiles[0];
 
                 const vocab = fs.readFileSync(`${textDir}/${subTextDir}/${textFile}`).toString();
