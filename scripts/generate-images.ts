@@ -44,13 +44,20 @@ const topicsPath = `${dir}/${topicsFile}`;
                     }
                 }
 
-                const textFiles = fs.readdirSync(`${textDir}/${subTextDir}`).sort();
-                if (textFiles.length == 0) {
-                    continue;
+                let vocab = '';
+                if (subTextDir == '00') {
+                    vocab = 'Introduction';
                 }
-                const textFile = textFiles[0];
-
-                const vocab = fs.readFileSync(`${textDir}/${subTextDir}/${textFile}`).toString();
+                else if (subTextDir == String(subTextDirs.length  - 1).padStart(2, '0')) {
+                    vocab = 'Conclusion';
+                }
+                else {
+                    const textFiles = fs.readdirSync(`${textDir}/${subTextDir}`).sort();
+                    if (textFiles.length > 0) {
+                        const textFile = textFiles[0];
+                        vocab = fs.readFileSync(`${textDir}/${subTextDir}/${textFile}`).toString();
+                    }
+                }
 
                 const image = await generateImage(topic.source, vocab, color);
                 if (image) {
