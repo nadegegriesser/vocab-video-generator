@@ -27,11 +27,21 @@ const topicsPath = `${dir}/${topicsFile}`;
                 continue;
             }
 
+            const imageDir = `${vocabDir}/images`;
+            if (!fs.existsSync(imageDir)) {
+                console.log(`✅ ${imageDir} does not exist, skipping...`);
+                continue;
+            }
+
             const audioDir = `${vocabDir}/audio`;
             if (!fs.existsSync(audioDir)) {
                 console.log(`✅ ${audioDir} does not exist, skipping...`);
                 continue;
             }
+
+            const imageFiles = fs.readdirSync(imageDir)
+                .filter(file => file.endsWith('.jpg'))
+                .sort();
 
             const audioFiles = fs.readdirSync(audioDir)
                 .filter(file => file.endsWith('.wav'))
@@ -45,8 +55,8 @@ const topicsPath = `${dir}/${topicsFile}`;
 
             const textDirs = fs.readdirSync(`${textDir}`);
             
-            console.log(textDirs, audioFiles);
-            if (textDirs.length != audioFiles.length) {
+            console.log(imageFiles, textDirs, audioFiles);
+            if (imageFiles.length != audioFiles.length || textDirs.length != audioFiles.length) {
                 continue;
             }
 
@@ -59,21 +69,26 @@ const topicsPath = `${dir}/${topicsFile}`;
                 const vIndex = audioFile.slice(0, audioFile.lastIndexOf('.'));
                 const outputFile = `${videoDir}/${vIndex}.mp4`;
 
+                const imageFile = `${imageDir}/${vIndex}.jpg`;
+                if (!fs.existsSync(imageFile)) {
+                    console.log(`✅ ${imageFile} does not exist, skipping...`);
+                    continue;
+                }
+
                 const subTextDir = `${textDir}/${vIndex}`;
                 if (!fs.existsSync(subTextDir)) {
                     console.log(`✅ ${subTextDir} does not exist, skipping...`);
                     continue;
                 }
 
-                let command = `ffmpeg -y -loop 1 -i ${vocabDir}/image.jpg -i ${audioDir}/${audioFile} -vf "[in]`;
-                const textFiles = fs.readdirSync(`${textDir}/${vIndex}`)
-                    .sort();
+                let command = `ffmpeg -y -loop 1 -i ${imageFile} -i ${audioDir}/${audioFile} -vf "[in]`;
+                const textFiles = fs.readdirSync(`${subTextDir}`).sort();
                 let lineHeight = 64;
                 let offset = (textFiles.length - 1) * lineHeight / 2;
                 let filters = [];
                 for (const textFile of textFiles) {
                     console.log(offset);
-                    filters.push(`drawtext=textfile=${textDir}/${vIndex}/${textFile}:font=/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf:fontcolor=white:fontsize=${lineHeight - 32}:x=ceil((w-text_w)/2):y=ceil((h-text_h)/2)${(offset < 0 ? '+' + (-offset) : '-' + offset)}`);
+                    filters.push(`drawtext=textfile=${subTextDir}/${textFile}:font=/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf:fontcolor=white:fontsize=${lineHeight - 32}:x=ceil((w-text_w)/2):y=ceil((h-text_h)/2)${(offset < 0 ? '+' + (-offset) : '-' + offset)}`);
                     offset -= lineHeight;
                 }
                 command += filters.join(',');
