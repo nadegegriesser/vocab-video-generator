@@ -21,7 +21,7 @@ const topicsPath = `${dir}/${topicsFile}`;
                 fs.writeFileSync(pngFile, image);
                 const pngImage = sharp(pngFile);
                 await pngImage
-                    .jpeg({ quality: 90 })
+                    .jpeg({ quality: 100 })
                     .toFile(jpgFile);
                 fs.unlinkSync(pngFile);
             }
@@ -84,7 +84,7 @@ const topicsPath = `${dir}/${topicsFile}`;
                     if (ratio > Math.floor(16 / 9) && ratio < Math.ceil(16 / 9)) {
                         await pngImage
                             .resize(1280, 720)
-                            .jpeg({ quality: 90 })
+                            .jpeg({ quality: 100 })
                             .toFile(jpgFile);
                     } else {
                         console.error('❌ Wrong dimensions', metadata.width, metadata.height);
