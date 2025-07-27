@@ -45,14 +45,15 @@ async function getNewToken(callback: (oauth2Client: OAuth2Client) => void) {
     scope: SCOPES
   });
   console.log('Authorize this app by visiting this url: ', authUrl);
-  console.log('AAAA', await axios.get(authUrl));
-  const code: string = '';
+  //console.log('AAAA', await axios.get(authUrl));
+  const code: string = '4/0AVMBsJhOw9SG8xT-915I915mQtH7UktgCHYo7zTxckA_KdMlKQtnfKiOwleNkefLRSWa7w';
   oauth2Client.getToken(code, function(err: GaxiosError<any> | null, token: Credentials | null | undefined) {
     if (err) {
       console.log('Error while trying to retrieve access token', err);
       return;
     }
     if (token) {
+      console.log(token);
       oauth2Client.credentials = token;
       storeToken(token);
       callback(oauth2Client);
