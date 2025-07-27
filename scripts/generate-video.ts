@@ -93,7 +93,7 @@ const topicsPath = `${dir}/${topicsFile}`;
                 if (vIndex == '00') {
                     text = 'Einführung';
                 }
-                else if (vIndex == String(textDirs.length).padStart(2, '0')) {
+                else if (vIndex == String(textDirs.length  - 1).padStart(2, '0')) {
                     text = 'Zusammenfassung';
                 }
                 else if (textFiles.length > 1) {
