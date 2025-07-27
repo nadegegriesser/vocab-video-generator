@@ -69,8 +69,8 @@ const topicsPath = `${dir}/${topicsFile}`;
                     }
                     fs.unlinkSync(pngFile);
                 }
-                return;
             }
+            return;
         }
     } catch (err) {
         console.error('❌ Failed to generate image:', err);
