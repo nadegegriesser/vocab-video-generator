@@ -30,6 +30,7 @@ function authorize(callback: (oauth2Client: OAuth2Client) => void) {
   // Check if we have previously stored a token.
   fs.readFile(TOKEN_PATH, 'utf-8', async function(err: NodeJS.ErrnoException | null, token: string) {
     if (err) {
+      console.log(err);
       await getNewToken(callback);
     } else {
       oauth2Client.setCredentials({ refresh_token: JSON.parse(token).refresh_token });
