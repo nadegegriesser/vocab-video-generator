@@ -14,6 +14,7 @@ const topicsPath = `${dir}/${topicsFile}`;
     try {
         let t = 0;
         for (const topic of loadFile<TopicEntry>(topicsPath)) {
+            let cnt = 0;
             console.log(topic);
             t++;
             const tIndex = String(t).padStart(2, '0');
@@ -75,9 +76,12 @@ const topicsPath = `${dir}/${topicsFile}`;
                         console.error('❌ Wrong dimensions', metadata.width, metadata.height);
                     }
                     fs.unlinkSync(pngFile);
+                    cnt++;
                 }
             }
-            return;
+            if (cnt > 0) {
+                return;
+            }
         }
     } catch (err) {
         console.error('❌ Failed to generate image:', err);
