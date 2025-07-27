@@ -43,7 +43,7 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
             
-      - name: 💾 Commit generated vocabulary file
+      - name: 💾 Commit generated image file
         run: |
           git pull
           git config user.name "github-actions"

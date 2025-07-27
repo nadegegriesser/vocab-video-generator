@@ -45,8 +45,10 @@ const topicsPath = `${dir}/${topicsFile}`;
                 if (textFiles.length = 0) {
                     continue;
                 }
+                console.log(textFiles);
+                const textFile = textFiles[0];
 
-                const vocab = fs.readFileSync(`${textDir}/${subTextDir}/${textFiles[0]}`).toString();
+                const vocab = fs.readFileSync(`${textDir}/${subTextDir}/${textFile}`).toString();
 
                 const image = await generateImage(topic.source, vocab, color);
                 if (image) {
@@ -69,6 +71,6 @@ const topicsPath = `${dir}/${topicsFile}`;
             }
         }
     } catch (err) {
-        console.error('❌ Failed to generate vocab:', err);
+        console.error('❌ Failed to generate image:', err);
     }
 })();
