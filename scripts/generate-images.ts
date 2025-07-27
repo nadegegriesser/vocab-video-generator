@@ -76,7 +76,10 @@ const topicsPath = `${dir}/${topicsFile}`;
                         console.error('❌ Wrong dimensions', metadata.width, metadata.height);
                     }
                     fs.unlinkSync(pngFile);
-                    cnt++;
+                }
+                cnt++;
+                if (cnt >= 10) {
+                    return;
                 }
             }
             if (cnt > 0) {
