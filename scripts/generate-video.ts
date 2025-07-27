@@ -2,6 +2,7 @@ import fs from 'fs';
 import { loadFile } from '../src/file.js';
 import { TopicEntry } from '../src/types.js';
 import { execSync } from 'child_process';
+import { Z_FIXED } from 'zlib';
 
 const args = process.argv.slice(2);
 const dir = args[0];
@@ -51,6 +52,9 @@ const topicsPath = `${dir}/${topicsFile}`;
 
             fs.mkdirSync(videoDir, {recursive: true});
             
+            let desc = '00:00 Einführung';
+            let min = 0;
+            let sec = 0;
             for (const audioFile of audioFiles) {
                 console.log(audioFile);
                 const vIndex = audioFile.slice(0, audioFile.lastIndexOf('.'));
@@ -78,7 +82,28 @@ const topicsPath = `${dir}/${topicsFile}`;
                 console.log(command);
 
                 execSync(command);
+
+                command = `ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 ${audioDir}/${audioFile}`;
+                console.log(command);
+
+                const res = execSync(command);
+                console.log(res);
+
+                if (vIndex == '00') {
+                    continue;
+                }
+                if (vIndex == String(textDirs.length + 1).padStart(2, '0')) {
+                    desc += `${min}:${sec} Zusammenfassung`;
+                }
+                else if (textFiles.length > 0) {
+                    const textFile = textFiles[0];
+                    const textPath = `${textDir}/${vIndex}/${textFile}`;
+                    const text = fs.readFileSync(textPath, 'utf-8');
+                    desc += `${min}:${sec} ${text}`;
+                }
             }
+
+            fs.writeFileSync(`${vocabDir}/desc.txt`, desc);
 
             const mp4Files = fs.readdirSync(videoDir).filter(file => file.endsWith('.mp4'));
             console.log(textDirs, mp4Files);
