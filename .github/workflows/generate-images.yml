@@ -10,7 +10,7 @@ on:
       data/**/image.jpg
     ]
   schedule:
-    - cron: '0 * * * *'
+    - cron: '0/10 * * * *'
 
 jobs:
   generate-images:
