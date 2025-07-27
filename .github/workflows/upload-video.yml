@@ -34,11 +34,10 @@ jobs:
       - name: Upload video
         run: |
           node dist/scripts/upload-video.js \
-            data/${{ matrix.sourceLang }}-${{ matrix.targetLang }}/${{ matrix.level }}
+            data/${{ matrix.sourceLang }}-${{ matrix.targetLang }}/${{ matrix.level }}/01
         env:
           CLIENT_ID: ${{ secrets.CLIENT_ID }}
           CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
-          REFRESH_TOKEN: ${{ secrets.REFRESH_TOKEN }}
 
       - name: 💾 Commit updated file
         if: success()
