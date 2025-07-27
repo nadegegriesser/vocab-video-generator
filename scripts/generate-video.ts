@@ -52,9 +52,8 @@ const topicsPath = `${dir}/${topicsFile}`;
 
             fs.mkdirSync(videoDir, {recursive: true});
             
-            let desc = '00:00 Einführung';
-            let min = 0;
-            let sec = 0;
+            let desc = '';
+            let totalDuration = 0;
             for (const audioFile of audioFiles) {
                 console.log(audioFile);
                 const vIndex = audioFile.slice(0, audioFile.lastIndexOf('.'));
@@ -87,20 +86,25 @@ const topicsPath = `${dir}/${topicsFile}`;
                 console.log(command);
 
                 const res = execSync(command);
-                console.log(res);
-
+                const duration = parseFloat(res.toString().trim());
+                console.log(duration);
+                
+                let text = '';
                 if (vIndex == '00') {
-                    continue;
+                    text = 'Einführung';
                 }
-                if (vIndex == String(textDirs.length + 1).padStart(2, '0')) {
-                    desc += `${min}:${sec} Zusammenfassung`;
+                else if (vIndex == String(textDirs.length + 1).padStart(2, '0')) {
+                    text = 'Zusammenfassung';
                 }
-                else if (textFiles.length > 0) {
-                    const textFile = textFiles[0];
+                else if (textFiles.length > 1) {
+                    const textFile = textFiles[1];
                     const textPath = `${textDir}/${vIndex}/${textFile}`;
-                    const text = fs.readFileSync(textPath, 'utf-8');
-                    desc += `${min}:${sec} ${text}`;
+                    text = fs.readFileSync(textPath, 'utf-8');
                 }
+                const m = String(Math.floor(totalDuration / 60)).padStart(2, '0');
+                const s = String(Math.round(totalDuration % 60)).padStart(2, '0');
+                desc += `${m}:${s} ${text}\n`;
+                totalDuration += duration;
             }
 
             fs.writeFileSync(`${vocabDir}/desc.txt`, desc);
