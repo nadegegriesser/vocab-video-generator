@@ -262,18 +262,30 @@ export async function generateImage(
     vocab: string,
     color: string
 ) {
+    const imagePath = 'data/fr-de/A1/03/images/04.jpg';
+    const imageData = fs.readFileSync(imagePath);
+    const base64Image = imageData.toString("base64");
     const prompt = `
 Generate a 1280x720 pixels landscape background image for an educational YouTube video about "${topic}". 
-The design should illustrate the chapter "${vocab}" without naming it using abstract icons around the edges. 
+The design should illustrate the chapter "${vocab}" without writing its name using abstract icons around the edges. 
 Do not include any words, labels, or text in the image. 
 Leave the central area completely blank and filled with a smooth, uniform ${color} color, so readable overlay text can be added later. 
-In the bottom right corner add a small realistic picture of a young, dominant and elegant french teacher, slightly smiling and looking at the person watching the video. She wears a white v neck blouse slightly open. Her hair is dark in a slick bun and she has sharp red lipstick and glasses. She looks stern but composed. Parisian chic fashion style. 
+In the bottom right corner add the young lady shown on the picture, slightly smiling and looking at the person watching the video. She wears a white v neck blouse slightly open. Her hair is in a slick bun and she has sharp red lipstick and glasses. 
 The style should be modern, warm, and minimal, with no embedded text or typography.`;
     console.log(prompt);
+    const contents = [
+    { text: prompt },
+    {
+      inlineData: {
+        mimeType: "image/png",
+        data: base64Image,
+      },
+    },
+  ];
 
     const response = await ai.models.generateContent({
         model: "gemini-2.0-flash-preview-image-generation",
-        contents: prompt,
+        contents: contents,
         config: {
             responseModalities: [Modality.TEXT, Modality.IMAGE]
         }
