@@ -41,6 +41,7 @@ const topicsPath = `${dir}/${topicsFile}`;
                 }
 
 
+                console.log(`${textDir}/${subTextDir}`);
                 const textFiles = fs.readdirSync(`${textDir}/${subTextDir}`).sort();
                 if (textFiles.length = 0) {
                     continue;
