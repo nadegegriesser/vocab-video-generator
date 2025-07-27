@@ -1,3 +1,4 @@
+import fs from 'fs';
 import { GoogleGenAI, Modality, Type } from '@google/genai';
 import { TopicEntry, VocabEntry } from './types';
 import dotenv from 'dotenv';
