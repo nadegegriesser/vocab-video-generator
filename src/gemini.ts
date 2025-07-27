@@ -267,7 +267,7 @@ Generate a 1280x720 pixels landscape background image for an educational YouTube
 The design should illustrate the entry "${vocab}" using abstract icons around the edges. 
 Do not include any words, labels, or text in the image. 
 Leave the central area completely blank and filled with a smooth, uniform ${color} color, so readable overlay text can be added later. 
-On the bottom right add a picture of a young, dominant and elegant french teacher. She wears a white blouse. Her hair is dark in a slick bun and she has sharp red lipstick and glasses. She looks stern but composed. Parisian chic fashion style. 
+In the bottom right corner add a realistic picture of a young, dominant and elegant french teacher. She wears a white blouse. Her hair is dark in a slick bun and she has sharp red lipstick and glasses. She looks stern but composed. Parisian chic fashion style. 
 The style should be modern, warm, and minimal, with no embedded text or typography.`;
     console.log(prompt);
 
