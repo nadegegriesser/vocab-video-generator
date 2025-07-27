@@ -4,11 +4,13 @@ import { TopicEntry } from '../src/types.js';
 import { execSync } from 'child_process';
 import { google } from 'googleapis';
 import { Credentials, OAuth2Client } from 'google-auth-library';
-import { GaxiosError } from 'gaxios';
+import { GaxiosError, GaxiosResponse } from 'gaxios';
 import dotenv from 'dotenv';
 
 const args = process.argv.slice(2);
 const dir = args[0];
+const videoFile = 'output.mp4';
+const videoPath = `${dir}/${videoFile}`;
 
 dotenv.config();
 
@@ -28,7 +30,7 @@ const TOKEN_PATH = TOKEN_DIR + 'token.json';
 
 function authorize(callback: (oauth2Client: OAuth2Client) => void) {
   // Check if we have previously stored a token.
-  fs.readFile(TOKEN_PATH, 'utf-8', async function(err: NodeJS.ErrnoException | null, token: string) {
+  fs.readFile(TOKEN_PATH, 'utf-8', async function (err: NodeJS.ErrnoException | null, token: string) {
     if (err) {
       console.log(err);
       await getNewToken(callback);
@@ -48,7 +50,7 @@ async function getNewToken(callback: (oauth2Client: OAuth2Client) => void) {
   console.log('Authorize this app by visiting this url: ', authUrl);
   //console.log('AAAA', await axios.get(authUrl));
   const code: string = '4/0AVMBsJhOw9SG8xT-915I915mQtH7UktgCHYo7zTxckA_KdMlKQtnfKiOwleNkefLRSWa7w';
-  oauth2Client.getToken(code, function(err: GaxiosError<any> | null, token: Credentials | null | undefined) {
+  oauth2Client.getToken(code, function (err: GaxiosError<any> | null, token: Credentials | null | undefined) {
     if (err) {
       console.log('Error while trying to retrieve access token', err);
       return;
@@ -90,12 +92,36 @@ async function getChannel(oauth2Client: OAuth2Client): Promise<void> {
       console.log('All:', channel);
     }
   }
+  youtube.videos.insert({
+    part: ['snippet', 'status'],
+    requestBody: {
+      snippet: {
+        title: '📽️ My Automated Upload',
+        description: 'Uploaded via Node.js and YouTube API',
+        tags: ['nodejs', 'youtube', 'api'],
+      },
+      status: {
+        privacyStatus: 'unlisted', // public | unlisted | private
+      },
+    },
+    media: {
+      body: fs.createReadStream(videoPath)
+    }
+  }, (err: Error | null, res?: GaxiosResponse<any> | null) => {
+      if (res) {
+        console.log('✅ Video uploaded successfully!');
+        console.log('🔗 Video ID:', res.data.id);
+        console.log(`📺 Watch at: https://www.youtube.com/watch?v=${res.data.id}`);
+      }
+    }
+  );
+
 }
 
 (async () => {
-    try {
-        authorize(getChannel);
-    } catch (err) {
-        console.error('❌ Failed to upload video:', err);
-    }
+  try {
+    authorize(getChannel);
+  } catch (err) {
+    console.error('❌ Failed to upload video:', err);
+  }
 })();
