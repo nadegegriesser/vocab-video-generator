@@ -21,6 +21,7 @@ const oauth2Client = new google.auth.OAuth2(
 );
 
 oauth2Client.setCredentials({ refresh_token: REFRESH_TOKEN });
+console.log(oauth2Client);
 
 const youtube = google.youtube({
   version: 'v3',

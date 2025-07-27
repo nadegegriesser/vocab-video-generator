@@ -5,7 +5,6 @@ on:
     paths: [
       .github/workflows/generate-video.yml,
       scripts/generate-video.ts,
-      scripts/upload-video.ts,
       src/**,
       data/**/text/*.txt,
       data/**/audio/*.wav,
@@ -43,11 +42,6 @@ jobs:
       - name: Generate video
         run: |
           node dist/scripts/generate-video.js \
-            data/${{ matrix.sourceLang }}-${{ matrix.targetLang }}/${{ matrix.level }}
-
-      - name: Upload video
-        run: |
-          node dist/scripts/upload-video.js \
             data/${{ matrix.sourceLang }}-${{ matrix.targetLang }}/${{ matrix.level }}
 
       - name: 💾 Commit generated video file

@@ -1,0 +1,38 @@
+name: Upload Video
+
+on:
+  push:
+    paths: [
+      .github/workflows/upload-video.yml,
+      scripts/upload-video.ts
+    ]
+  schedule:
+    - cron: '0 6 * * *'
+
+jobs:
+  upload-video:
+    runs-on: ubuntu-latest
+    concurrency:
+      group: example-group
+    strategy:
+      max-parallel: 1
+      matrix:
+        level: [A1]
+        sourceLang: [fr]
+        targetLang: [de]
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - run: npm install
+
+      - run: npm run build
+
+      - name: Upload video
+        run: |
+          node dist/scripts/upload-video.js \
+            data/${{ matrix.sourceLang }}-${{ matrix.targetLang }}/${{ matrix.level }}
