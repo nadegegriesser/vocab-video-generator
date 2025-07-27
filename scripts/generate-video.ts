@@ -91,15 +91,19 @@ const topicsPath = `${dir}/${topicsFile}`;
                 
                 let text = '';
                 if (vIndex == '00') {
-                    text = 'Einführung';
+                    text = 'Introduction - Einführung';
                 }
                 else if (vIndex == String(textDirs.length  - 1).padStart(2, '0')) {
-                    text = 'Zusammenfassung';
+                    text = 'Conclusion - Zusammenfassung';
                 }
                 else if (textFiles.length > 1) {
-                    const textFile = textFiles[1];
-                    const textPath = `${textDir}/${vIndex}/${textFile}`;
+                    let textFile = textFiles[0];
+                    let textPath = `${textDir}/${vIndex}/${textFile}`;
                     text = fs.readFileSync(textPath, 'utf-8');
+                    text += ' - ';
+                    textFile = textFiles[1];
+                    textPath = `${textDir}/${vIndex}/${textFile}`;
+                    text += fs.readFileSync(textPath, 'utf-8');
                 }
                 const m = String(Math.floor(totalDuration / 60)).padStart(2, '0');
                 const s = String(Math.round(totalDuration % 60)).padStart(2, '0');
