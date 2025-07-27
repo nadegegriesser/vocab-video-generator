@@ -12,8 +12,6 @@ on:
 jobs:
   upload-video:
     runs-on: ubuntu-latest
-    concurrency:
-      group: example-group
     strategy:
       max-parallel: 1
       matrix:
