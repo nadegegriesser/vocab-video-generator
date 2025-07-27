@@ -261,9 +261,9 @@ function endsWithAny(string: string, suffixes: string[]) {
 export async function generateImage(
     topic: string,
     vocab: string,
-    color: string
+    color: string,
+    imagePath: string
 ) {
-    const imagePath = 'data/fr-de/A1/03/images/04.jpg';
     const imageData = fs.readFileSync(imagePath);
     const base64Image = imageData.toString("base64");
     const prompt = `
@@ -273,6 +273,44 @@ Do not include any words, labels, or text in the image.
 Leave the central area completely blank and filled with a smooth, uniform ${color} color, so readable overlay text can be added later. 
 In the bottom right corner add the young lady shown on the picture, slightly smiling and looking at the person watching the video. She wears a white v neck blouse slightly open. Her hair is in a slick bun and she has sharp red lipstick and glasses. 
 The style should be modern, warm, and minimal, with no embedded text or typography.`;
+    console.log(prompt);
+    const contents = [
+    { text: prompt },
+    {
+      inlineData: {
+        mimeType: "image/png",
+        data: base64Image,
+      },
+    },
+  ];
+
+    const response = await ai.models.generateContent({
+        model: "gemini-2.0-flash-preview-image-generation",
+        contents: contents,
+        config: {
+            responseModalities: [Modality.TEXT, Modality.IMAGE]
+        }
+    });
+    for (const part of response.candidates?.[0]?.content?.parts || []) {
+        if (part.text) {
+            console.log(part.text);
+        } else if (part.inlineData) {
+            const imageData = part.inlineData.data;
+            if (imageData) {
+                return Buffer.from(imageData, "base64");
+            }
+        }
+    }
+    return;
+}
+
+export async function removeBackground(
+    imagePath: string
+) {
+    const imageData = fs.readFileSync(imagePath);
+    const base64Image = imageData.toString("base64");
+    const prompt = `
+Remove the background of the picture and put the person in the center`;
     console.log(prompt);
     const contents = [
     { text: prompt },
