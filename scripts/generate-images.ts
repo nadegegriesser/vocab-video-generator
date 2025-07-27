@@ -17,39 +17,56 @@ const topicsPath = `${dir}/${topicsFile}`;
             console.log(topic);
             t++;
             const tIndex = String(t).padStart(2, '0');
-            const vocabDir = `${dir}/${tIndex}`;
+            const topicDir = `${dir}/${tIndex}`;
+            const textDir = `${topicDir}/text`;
+            const imageDir = `${topicDir}/imapes`;
 
-            const jpgFile = `${vocabDir}/image.jpg`;
-            if (fs.existsSync(jpgFile)) {
-                const jpgImage = sharp(jpgFile);
-                const metadata = await jpgImage.metadata();
-                if (metadata.width != 1280 || metadata.height != 720) {
-                    console.log('wrong dims');
-                    fs.unlinkSync(jpgFile);
-                } else {
-                    console.log(`✅ ${jpgFile} already exists, skipping...`);
+            fs.mkdirSync(imageDir, { recursive: true });
+
+            const subTextDirs = fs.readdirSync(`${textDir}`).sort();
+            for (const subTextDir of subTextDirs) {
+                console.log(subTextDir);
+
+                const jpgFile = `${imageDir}/${subTextDir}.jpg`;
+                if (fs.existsSync(jpgFile)) {
+                    const jpgImage = sharp(jpgFile);
+                    const metadata = await jpgImage.metadata();
+                    if (metadata.width != 1280 || metadata.height != 720) {
+                        console.log('wrong dims');
+                        fs.unlinkSync(jpgFile);
+                    } else {
+                        console.log(`✅ ${jpgFile} already exists, skipping...`);
+                        continue;
+                    }
+                }
+
+
+                const textFiles = fs.readdirSync(`${textDir}/${subTextDir}`).sort();
+                if (textFiles.length = 0) {
                     continue;
                 }
-            }
 
-            const image = await generateImage(topic.source, color);
-            if (image) {
-                const pngFile = `${vocabDir}/image.png`;
-                fs.writeFileSync(pngFile, image);
-                const pngImage = sharp(pngFile);
-                const metadata = await pngImage.metadata();
-                const ratio = metadata.width / metadata.height;
-                if (ratio > Math.floor(16/9) && ratio < Math.ceil(16/9)) {
-                    await pngImage
-                        .resize(1280, 720)
-                        .jpeg({ quality: 90 })
-                        .toFile(jpgFile);
-                } else {
-                    console.error('❌ Wrong dimensions', metadata.width, metadata.height);
+                const vocab = fs.readFileSync(`${textDir}/${subTextDir}/${textFiles[0]}`).toString();
+
+                const image = await generateImage(topic.source, vocab, color);
+                if (image) {
+                    const pngFile = `${imageDir}/${subTextDir}.png`;
+                    fs.writeFileSync(pngFile, image);
+                    const pngImage = sharp(pngFile);
+                    const metadata = await pngImage.metadata();
+                    const ratio = metadata.width / metadata.height;
+                    if (ratio > Math.floor(16 / 9) && ratio < Math.ceil(16 / 9)) {
+                        await pngImage
+                            .resize(1280, 720)
+                            .jpeg({ quality: 90 })
+                            .toFile(jpgFile);
+                    } else {
+                        console.error('❌ Wrong dimensions', metadata.width, metadata.height);
+                    }
+                    fs.unlinkSync(pngFile);
                 }
-                fs.unlinkSync(pngFile);
+                return;
             }
-            return;
         }
     } catch (err) {
         console.error('❌ Failed to generate vocab:', err);
