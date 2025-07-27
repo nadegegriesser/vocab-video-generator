@@ -12,17 +12,19 @@ const topicsPath = `${dir}/${topicsFile}`;
 
 (async () => {
     try {
-        const imagePath = 'data/fr-de/A1/03/images/04.jpg';
-        const image = await removeBackground(imagePath);
-        if (image) {
-            const pngFile = `data/image.png`;
-            const jpgFile = `data/image.jpg`;
-            fs.writeFileSync(pngFile, image);
-            const pngImage = sharp(pngFile);
-            await pngImage
-                .jpeg({ quality: 90 })
-                .toFile(jpgFile);
-            fs.unlinkSync(pngFile);
+        const jpgFile = `data/image.jpg`;
+        if (!fs.existsSync(jpgFile)) {
+            const imagePath = 'data/fr-de/A1/03/images/04.jpg';
+            const image = await removeBackground(imagePath);
+            if (image) {
+                const pngFile = `data/image.png`;
+                fs.writeFileSync(pngFile, image);
+                const pngImage = sharp(pngFile);
+                await pngImage
+                    .jpeg({ quality: 90 })
+                    .toFile(jpgFile);
+                fs.unlinkSync(pngFile);
+            }
         }
         let t = 0;
         for (const topic of loadFile<TopicEntry>(topicsPath)) {
