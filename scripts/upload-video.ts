@@ -5,7 +5,6 @@ import { execSync } from 'child_process';
 import { google } from 'googleapis';
 import { Credentials, OAuth2Client } from 'google-auth-library';
 import { GaxiosError } from 'gaxios';
-import axios from 'axios';
 import dotenv from 'dotenv';
 
 const args = process.argv.slice(2);
@@ -21,7 +20,6 @@ const oauth2Client = new google.auth.OAuth2(
   CLIENT_SECRET,
   'http://localhost' // Redirect URI muss nicht verwendet werden beim Refresh Token
 );
-oauth2Client.setCredentials({ refresh_token: 'REFRESH_T1//05U1y5Rbf2mPBCgYIARAAGAUSNwF-L9IrFEkXOVWwZGl5-SVUcIXLFwZWlLSXB-0V-6uMRquukfzSagkCUnwPhMjjk3G6Y7uNziQOKEN' });
 
 const SCOPES = ['https://www.googleapis.com/auth/youtube.readonly', 'https://www.googleapis.com/auth/youtube.upload'];
 const TOKEN_DIR = '.credentials/';
@@ -34,7 +32,7 @@ function authorize(callback: (oauth2Client: OAuth2Client) => void) {
     if (err) {
       await getNewToken(callback);
     } else {
-      //oauth2Client.credentials = JSON.parse(token);
+      oauth2Client.setCredentials({ refresh_token: JSON.parse(token).refresh_token });
       callback(oauth2Client);
     }
   });
