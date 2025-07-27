@@ -30,7 +30,6 @@ const topicsPath = `${dir}/${topicsFile}`;
 
             const subTextDirs = fs.readdirSync(`${textDir}`).sort();
             for (const subTextDir of subTextDirs) {
-                console.log(subTextDir);
 
                 const jpgFile = `${imageDir}/${subTextDir}.jpg`;
                 if (fs.existsSync(jpgFile)) {
@@ -45,7 +44,6 @@ const topicsPath = `${dir}/${topicsFile}`;
                     }
                 }
 
-                console.log(`|${textDir}/${subTextDir}|`);
                 const textFiles = fs.readdirSync(`${textDir}/${subTextDir}`).sort();
                 if (textFiles.length == 0) {
                     continue;
