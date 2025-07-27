@@ -4,7 +4,8 @@ on:
   push:
     paths: [
       .github/workflows/upload-video.yml,
-      scripts/upload-video.ts
+      scripts/upload-video.ts,
+      .credentials/*
     ]
   schedule:
     - cron: '0 6 * * *'
