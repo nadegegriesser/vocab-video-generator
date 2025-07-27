@@ -8,7 +8,7 @@ on:
       src/**,
       data/**/text/*.txt,
       data/**/audio/*.wav,
-      data/**/video/*.mp4
+      data/**/*.mp4
     ]
   schedule:
     - cron: '0 * * * *'
