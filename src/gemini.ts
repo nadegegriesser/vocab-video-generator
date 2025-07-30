@@ -271,7 +271,10 @@ Generate a 1280x720 pixels landscape background image for an educational YouTube
 The design should illustrate the chapter "${vocab}" without writing its name using abstract icons around the edges. 
 Do not include any words, labels, or text in the image. 
 Leave the central area completely blank and filled with a smooth, uniform ${color} color, so readable overlay text can be added later. 
-In the bottom right corner add the young lady shown on the picture, slightly smiling and looking at the person watching the video. She wears a white v neck blouse slightly open. Her hair is in a slick bun and she has sharp red lipstick and glasses. 
+In the bottom right corner add the young lady shown on the picture, slightly smiling. She wears a white v neck blouse slightly open. 
+Her hair is in a slick bun and she has sharp red lipstick and clear stylish glasses. 
+Her eyes are detailed and photorealistic, visible through the lenses with no distortion or reflection artifacts.
+She has a soft, natural gaze with symmetrical irises, clear pupils and is looking at the person watching the video.
 The style should be modern, warm, and minimal, with no embedded text or typography.`;
     console.log(prompt);
     const contents = [
