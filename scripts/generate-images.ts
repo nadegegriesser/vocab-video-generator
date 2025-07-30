@@ -14,7 +14,7 @@ const topicsPath = `${dir}/${topicsFile}`;
     try {
         const jpgFile = `data/image.jpg`;
         if (!fs.existsSync(jpgFile)) {
-            const imagePath = 'data/fr-de/A1/03/images/04.jpg';
+            const imagePath = 'data/fr-de/A1/01/images/10.jpg';
             const image = await removeBackground(imagePath);
             if (image) {
                 const pngFile = `data/image.png`;
