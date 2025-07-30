@@ -273,8 +273,10 @@ Do not include any words, labels, or text in the image.
 Leave the central area completely blank and filled with a smooth, uniform ${color} color, so readable overlay text can be added later. 
 In the bottom right corner add the young lady shown on the picture, slightly smiling. She wears a white v neck blouse slightly open. 
 Her hair is in a slick bun and she has sharp red lipstick and clear stylish glasses. 
-Her eyes are highly detailed and photorealistic, visible through the glasses with no distortion or reflection.
-She has a soft, natural gaze with symmetrical irises, clear brown pupils and is looking at the person watching the video.
+Fix the eyes behind the glasses: remove any glare or reflection on the lenses and make the eyes fully visible and realistic. 
+Correct any distortion caused by the lenses. 
+Keep the eye color. 
+Make her look at the person watching the video.
 The style should be modern, warm, and minimal, with no embedded text or typography.`;
     console.log(prompt);
     const contents = [
@@ -314,9 +316,10 @@ export async function removeBackground(
     const base64Image = imageData.toString("base64");
     const prompt = `
 Remove the background of the picture.
-Improve the eyes of the lady.
-Her eyes should be highly detailed and photorealistic, visible through the glasses with no distortion or reflection.
-Give her has a soft, natural gaze with symmetrical irises and clear brown pupils.`;
+Fix the eyes behind the glasses: remove any glare or reflection on the lenses and make the eyes fully visible and realistic. 
+Correct any distortion caused by the lenses. 
+Change the eye color to a natural-looking medium brown. 
+Keep the glasses, facial expression, and overall lighting unchanged.`;
     console.log(prompt);
     const contents = [
     { text: prompt },
