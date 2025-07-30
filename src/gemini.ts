@@ -271,12 +271,12 @@ Generate a 1280x720 pixels landscape background image for an educational YouTube
 The design should illustrate the chapter "${vocab}" without writing its name using abstract icons around the edges. 
 Do not include any words, labels, or text in the image. 
 Leave the central area completely blank and filled with a smooth, uniform ${color} color, so readable overlay text can be added later. 
-In the bottom right corner add the young lady shown on the picture, slightly smiling. She wears a white v neck blouse slightly open. 
+In the bottom right corner add the young lady shown on the picture, slightly smiling. 
+She wears a white v neck blouse slightly open. 
 Her hair is in a slick bun and she has sharp red lipstick and clear stylish glasses. 
-Fix the eyes behind the glasses: remove any glare or reflection on the lenses and make the eyes fully visible and realistic. 
-Correct any distortion caused by the lenses. 
-Keep the eye color. 
-Make her look at the person watching the video.
+She is looking at the person watching the video.
+There is no glare or reflection on the lenses of the glasses.
+Make the eyes fully visible and realistic and keep the eye color. 
 The style should be modern, warm, and minimal, with no embedded text or typography.`;
     console.log(prompt);
     const contents = [
@@ -315,7 +315,7 @@ export async function removeBackground(
     const imageData = fs.readFileSync(imagePath);
     const base64Image = imageData.toString("base64");
     const prompt = `
-Remove the background of the picture.
+Give the background of the picture a uniform color.
 Fix the eyes behind the glasses: remove any glare or reflection on the lenses and make the eyes fully visible and realistic. 
 Correct any distortion caused by the lenses. 
 Change the eye color to a natural-looking medium brown. 
