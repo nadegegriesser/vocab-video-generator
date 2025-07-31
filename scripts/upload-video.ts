@@ -113,7 +113,7 @@ async function getChannel(oauth2Client: OAuth2Client): Promise<void> {
             t++;
             const tIndex = String(t).padStart(2, '0');
             const vocabDir = `${dir}/${tIndex}`;
-            const title = `Vokabular ${topic.target}`;
+            const title = `Französisch lernen A1: ${topic.target} – Vokabeln, Beispiele & Übersetzungen`;
             console.log(title);
 
           
