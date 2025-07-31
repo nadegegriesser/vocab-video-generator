@@ -121,7 +121,7 @@ async function getChannel(oauth2Client: OAuth2Client): Promise<void> {
             const videos = res.data.items?.filter(item => item.snippet?.title == title);
             console.log(videos);
 
-            if (videos.length == 0) {
+            if (videos && videos.length == 0) {
            const response1 = await youtube.videos.insert({
       part: ['snippet', 'status'],
       requestBody: {
