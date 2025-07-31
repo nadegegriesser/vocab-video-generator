@@ -115,7 +115,7 @@ async function getChannel(oauth2Client: OAuth2Client): Promise<void> {
             const videoPath = `${vocabDir}/${videoFile}`;
 
             if (fs.existsSync(videoPath)) {
-            const title = `Französisch lernen A1: ${topic.target} – Vokabeln, Beispiele & Übersetzungen`;
+            const title = `Französisch lernen A1: ${topic.target} - Vokabeln, Beispiele und Übersetzungen`;
             console.log(title);
 
             const videos = res.data.items?.filter(item => item.snippet?.title == title);
