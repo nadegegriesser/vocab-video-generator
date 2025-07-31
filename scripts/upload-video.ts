@@ -9,6 +9,8 @@ import dotenv from 'dotenv';
 
 const args = process.argv.slice(2);
 const dir = args[0];
+const topicsFile = 'topics.json';
+const topicsPath = `${dir}/${topicsFile}`;
 const videoFile = 'output.mp4';
 const videoPath = `${dir}/${videoFile}`;
 
