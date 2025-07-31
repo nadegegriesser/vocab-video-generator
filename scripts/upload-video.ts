@@ -103,6 +103,19 @@ async function getChannel(oauth2Client: OAuth2Client): Promise<void> {
         console.log(item);
         console.log(`📹 ${item.snippet?.title} — https://youtube.com/watch?v=${item.id?.videoId}`);
       });
+
+      
+        let t = 0;
+        for (const topic of loadFile<TopicEntry>(topicsPath)) {
+            console.log(topic);
+            t++;
+            const tIndex = String(t).padStart(2, '0');
+            const vocabDir = `${dir}/${tIndex}`;
+            const title = `Vokabular ${topic.target}`;
+            console.log(title);
+
+          
+        }
     }
   }
 
