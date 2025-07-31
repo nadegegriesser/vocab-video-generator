@@ -106,27 +106,27 @@ async function getChannel(oauth2Client: OAuth2Client): Promise<void> {
     }
   }
 
-
-  const response1 = await youtube.videos.insert({
-    part: ['snippet', 'status'],
-    requestBody: {
-      snippet: {
-        title: '📽️ My Automated Upload',
-        description: 'Uploaded via Node.js and YouTube API',
-        tags: ['nodejs', 'youtube', 'api'],
+  if (fs.existsSync(videoPath)) {
+    const response1 = await youtube.videos.insert({
+      part: ['snippet', 'status'],
+      requestBody: {
+        snippet: {
+          title: '📽️ My Automated Upload',
+          description: 'Uploaded via Node.js and YouTube API',
+          tags: ['nodejs', 'youtube', 'api'],
+        },
+        status: {
+          privacyStatus: 'public'
+        },
       },
-      status: {
-        privacyStatus: 'public'
-      },
-    },
-    media: {
-      body: fs.createReadStream(videoPath)
-    }
-  });
-  console.log('✅ Video uploaded successfully!');
-  console.log('🔗 Video ID:', response1.data!.id);
-  console.log(`📺 Watch at: https://www.youtube.com/watch?v=${response1.data.id}`);
-
+      media: {
+        body: fs.createReadStream(videoPath)
+      }
+    });
+    console.log('✅ Video uploaded successfully!');
+    console.log('🔗 Video ID:', response1.data!.id);
+    console.log(`📺 Watch at: https://www.youtube.com/watch?v=${response1.data.id}`);
+  }
 
 }
 
