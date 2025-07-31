@@ -90,9 +90,24 @@ async function getChannel(oauth2Client: OAuth2Client): Promise<void> {
       console.log('👥 Abonnenten:', channel.statistics?.subscriberCount);
       console.log('🎥 Videos:', channel.statistics?.videoCount);
       console.log('All:', channel);
+
+      const res = await youtube.search.list({
+        part: ["snippet"],
+        channelId: channel.id!,
+        maxResults: 10,
+        order: "date"
+      });
+
+
+      res.data.items?.forEach((item) => {
+        console.log(item);
+        console.log(`📹 ${item.snippet?.title} — https://youtube.com/watch?v=${item.id?.videoId}`);
+      });
     }
   }
-  youtube.videos.insert({
+  
+
+  /*youtube.videos.insert({
     part: ['snippet', 'status'],
     requestBody: {
       snippet: {
@@ -101,20 +116,20 @@ async function getChannel(oauth2Client: OAuth2Client): Promise<void> {
         tags: ['nodejs', 'youtube', 'api'],
       },
       status: {
-        privacyStatus: 'unlisted', // public | unlisted | private
+        privacyStatus: 'unlisted', 
       },
     },
     media: {
       body: fs.createReadStream(videoPath)
     }
   }, (err: Error | null, res?: GaxiosResponse<any> | null) => {
-      if (res) {
-        console.log('✅ Video uploaded successfully!');
-        console.log('🔗 Video ID:', res.data.id);
-        console.log(`📺 Watch at: https://www.youtube.com/watch?v=${res.data.id}`);
-      }
+    if (res) {
+      console.log('✅ Video uploaded successfully!');
+      console.log('🔗 Video ID:', res.data.id);
+      console.log(`📺 Watch at: https://www.youtube.com/watch?v=${res.data.id}`);
     }
-  );
+  }
+  );*/
 
 }
 
