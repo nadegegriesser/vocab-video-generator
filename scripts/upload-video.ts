@@ -116,6 +116,9 @@ async function getChannel(oauth2Client: OAuth2Client): Promise<void> {
             const title = `Französisch lernen A1: ${topic.target} – Vokabeln, Beispiele & Übersetzungen`;
             console.log(title);
 
+            const video = res.data.items?.filter(item => item.snippet?.title == title);
+            console.log(video);
+
           
         }
     }
