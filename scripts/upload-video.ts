@@ -141,6 +141,7 @@ body: fs.createReadStream(videoPath)
   console.log('✅ Video uploaded successfully!');
     console.log('🔗 Video ID:', response1.data!.id);
     console.log(`📺 Watch at: https://www.youtube.com/watch?v=${response1.data.id}`);
+              return;
       }
         }
     }
