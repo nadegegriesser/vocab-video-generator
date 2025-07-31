@@ -273,7 +273,7 @@ Do not include any words, labels, or text in the image.
 Leave the central area completely blank and filled with a smooth, uniform ${color} color, so readable overlay text can be added later. 
 In the bottom right corner add the young lady shown on the picture, slightly smiling. 
 She wears a white v neck blouse slightly open. 
-Her hair is in a slick bun and she has sharp red lipstick and clear stylish glasses. 
+Her hair is in a slick bun and she has sharp red lipstick and clear stylish full-rimmed glasses. 
 She is looking at the person watching the video.
 There is no glare or reflection on the lenses of the glasses.
 Make the eyes fully visible and realistic and keep the eye color. 
