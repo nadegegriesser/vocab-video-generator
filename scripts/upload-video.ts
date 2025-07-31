@@ -12,7 +12,6 @@ const dir = args[0];
 const topicsFile = 'topics.json';
 const topicsPath = `${dir}/${topicsFile}`;
 const videoFile = 'output.mp4';
-const videoPath = `${dir}/${videoFile}`;
 
 dotenv.config();
 
@@ -113,37 +112,39 @@ async function getChannel(oauth2Client: OAuth2Client): Promise<void> {
             t++;
             const tIndex = String(t).padStart(2, '0');
             const vocabDir = `${dir}/${tIndex}`;
+            const videoPath = `${vocabDir}/${videoFile}`;
+
+            if (fs.existsSync(videoPath)) {
             const title = `Französisch lernen A1: ${topic.target} – Vokabeln, Beispiele & Übersetzungen`;
             console.log(title);
 
-            const video = res.data.items?.filter(item => item.snippet?.title == title);
-            console.log(video);
+            const videos = res.data.items?.filter(item => item.snippet?.title == title);
+            console.log(videos);
 
-          
-        }
-    }
-  }
-
-  if (fs.existsSync(videoPath)) {
-    const response1 = await youtube.videos.insert({
+            if (videos.length == 0) {
+           const response1 = await youtube.videos.insert({
       part: ['snippet', 'status'],
       requestBody: {
         snippet: {
-          title: '📽️ My Automated Upload',
+          title: title,
           description: 'Uploaded via Node.js and YouTube API',
-          tags: ['nodejs', 'youtube', 'api'],
+          tags: ['Vokabeln', 'Französisch', 'A1', topic.target, topic.source]
         },
         status: {
           privacyStatus: 'public'
         },
       },
       media: {
-        body: fs.createReadStream(videoPath)
+body: fs.createReadStream(videoPath)
       }
     });
-    console.log('✅ Video uploaded successfully!');
+  console.log('✅ Video uploaded successfully!');
     console.log('🔗 Video ID:', response1.data!.id);
     console.log(`📺 Watch at: https://www.youtube.com/watch?v=${response1.data.id}`);
+      }
+        }
+    }
+  }
   }
 
 }
