@@ -105,9 +105,9 @@ async function getChannel(oauth2Client: OAuth2Client): Promise<void> {
       });
     }
   }
-  
 
-  /*youtube.videos.insert({
+
+  const response1 = await youtube.videos.insert({
     part: ['snippet', 'status'],
     requestBody: {
       snippet: {
@@ -116,20 +116,17 @@ async function getChannel(oauth2Client: OAuth2Client): Promise<void> {
         tags: ['nodejs', 'youtube', 'api'],
       },
       status: {
-        privacyStatus: 'unlisted', 
+        privacyStatus: 'public'
       },
     },
     media: {
       body: fs.createReadStream(videoPath)
     }
-  }, (err: Error | null, res?: GaxiosResponse<any> | null) => {
-    if (res) {
-      console.log('✅ Video uploaded successfully!');
-      console.log('🔗 Video ID:', res.data.id);
-      console.log(`📺 Watch at: https://www.youtube.com/watch?v=${res.data.id}`);
-    }
-  }
-  );*/
+  });
+  console.log('✅ Video uploaded successfully!');
+  console.log('🔗 Video ID:', response1.data!.id);
+  console.log(`📺 Watch at: https://www.youtube.com/watch?v=${res.data.id}`);
+
 
 }
 
