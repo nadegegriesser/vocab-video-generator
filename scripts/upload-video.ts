@@ -122,13 +122,19 @@ async function getChannel(oauth2Client: OAuth2Client): Promise<void> {
             console.log(videos);
 
             if (videos && videos.length == 0) {
+                          const descPath = `${vocabDir}/desc.txt`;
+              const description = fs.readFileSync(descPath, 'utf-8');
            const response1 = await youtube.videos.insert({
       part: ['snippet', 'status'],
       requestBody: {
         snippet: {
           title: title,
-          description: 'Uploaded via Node.js and YouTube API',
-          tags: ['Vokabeln', 'Französisch', 'A1', topic.target, topic.source]
+          description: description,
+          tags: ['vokabeln', 'französisch', 'a1', topic.target, topic.source, 
+                 'französisch vokabeln', 'französisch a1', 'französisch lernen anfänger', 
+                 'französisch deutsch', 'französisch vokabeln a1', 'französisch mit übersetzung', 'französisch für anfänger', 
+                 'französisch einfach lernen', 'französisch lernen deutsch', 'französisch grundwortschatz', 
+                 'französisch online lernen', 'französisch a1 vokabeln']
         },
         status: {
           privacyStatus: 'public'
