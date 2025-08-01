@@ -1,0 +1,12 @@
+00:00 Introduction - Einführung
+00:18 l'heure - die Uhrzeit
+00:24 midi - Mittag
+00:32 minuit - Mitternacht
+00:42 le matin - der Morgen
+00:51 l'après-midi - der Nachmittag
+00:59 le soir - der Abend
+01:08 Quelle heure est-il?data/fr-de/A1/29/text/05 - Wie spät ist es?
+01:16 Il est... heures. - Es ist... Uhr.
+01:26 et demie - halb (Uhrzeit)
+01:34 et quart - Viertel nach
+01:43 Conclusion - Zusammenfassung
