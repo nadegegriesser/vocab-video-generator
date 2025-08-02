@@ -54,7 +54,7 @@ async function getNewToken(callback: (oauth2Client: OAuth2Client) => void) {
     scope: SCOPES
   });
   console.log('Authorize this app by visiting this url: ', authUrl);
-  const code: string = '4/0AVMBsJhOw9SG8xT-915I915mQtH7UktgCHYo7zTxckA_KdMlKQtnfKiOwleNkefLRSWa7w';
+  const code: string = '4/0AVMBsJiGpsS26PoR-I09GR8CiSa23T8eq-wlJx4va8NhkzqjncQlat9v3z3GiaLg-_MXIw';
   oauth2Client.getToken(code, function (err: GaxiosError<any> | null, token: Credentials | null | undefined) {
     if (err) {
       console.log('Error while trying to retrieve access token', err);
