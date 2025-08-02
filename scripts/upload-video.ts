@@ -1,7 +1,6 @@
 import fs from 'fs';
 import { loadFile } from '../src/file.js';
 import { TopicEntry } from '../src/types.js';
-import { execSync } from 'child_process';
 import { google } from 'googleapis';
 import { Credentials, OAuth2Client } from 'google-auth-library';
 import { GaxiosError, GaxiosResponse } from 'gaxios';
