@@ -35,7 +35,7 @@ const topicsPath = `${dir}/${topicsFile}`;
                 'Photorealistic portrait of Maîtresse Dominique with transparent background. She is a fictional French teacher in her late 20s. Brown eyes, brown hair in bun, olive skin. Wearing a white lace top, elegant and tasteful. Thin, elegant full-rimmed clear glasses. Remove any glare or reflection on the lenses. Make the eyes symetric, fully visible and realistic. Correct any distortion caused by the lenses. Looking confident, slightly amused expression. Transparent background. Consistent lighting and framing.',
                 'Photorealistic portrait of Maîtresse Dominique with transparent background to ask for likes and channel subscription. She is a fictional French teacher in her late 20s. Brown eyes, loose brown hair, olive skin. Wearing a white V-neck top, slightly open, elegant and tasteful. No glasses. Looking straight forward with confident, slightly amused expression, happy the lesson is over. Transparent background. Consistent lighting and framing.'
             ];
-            let p = 4;
+            let p = 8;
             for (let prompt of prompts) {
                 const pngFile = `${imagesDir}/${p}.png`;
                 if (!fs.existsSync(pngFile)) {
