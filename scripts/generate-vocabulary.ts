@@ -33,7 +33,7 @@ async function handleData(subTextDir: string, datas: string[]) {
     let vt = 0;
     for (const data of datas) {
         const vtIndex = String(vt).padStart(2, '0');
-        fs.writeFileSync(`${subTextDir}/${vtIndex}.txt`, data.replaceAll(' \?', '?'));
+        fs.writeFileSync(`${subTextDir}/${vtIndex}.txt`, data.replaceAll(' \?', '?').replaceAll(' \!', '!').replaceAll(' \.', '.'));
         vt++;
     }
 }
@@ -83,6 +83,7 @@ async function handleData(subTextDir: string, datas: string[]) {
             if (subTextDir && subScriptDir) {
                 const sub = await generateAskForSubscription(name1, style1, level, sourceLang);
                 await handleData(subTextDir, sub);
+                await handleData(subScriptDir, ['']);
                 return;
             }
         }

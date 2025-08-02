@@ -111,8 +111,11 @@ const topicsPath = `${dir}/${topicsFile}`;
                     console.log(command);
                     execSync(command);
                 }
-                else if (vIndex == String(textDirs.length - 1).padStart(2, '0')) {
+                else if (vIndex == String(textDirs.length - 2).padStart(2, '0')) {
                     text = 'Conclusion - Zusammenfassung';
+                }
+                else if (vIndex == String(textDirs.length - 1).padStart(2, '0')) {
+                    text = 'Abonnement';
                 }
                 else if (textFiles.length > 1) {
                     let textFile = textFiles[0];
