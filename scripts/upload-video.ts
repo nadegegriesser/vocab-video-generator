@@ -152,6 +152,8 @@ async function uploadVideo(oauth2Client: OAuth2Client): Promise<void> {
               });
             }
             return;
+          } else {
+            console.log(`Video with title ${title} exists.`);
           }
         }
       }
