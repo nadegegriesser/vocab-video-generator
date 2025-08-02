@@ -17,6 +17,7 @@ dotenv.config();
 
 const CLIENT_ID = process.env.CLIENT_ID;
 const CLIENT_SECRET = process.env.CLIENT_SECRET;
+const REFRESH_TOKEN = process.env.REFRESH_TOKEN;
 
 const oauth2Client = new google.auth.OAuth2(
   CLIENT_ID,
@@ -41,7 +42,7 @@ function authorize(callback: (oauth2Client: OAuth2Client) => void) {
       console.log(err);
       await getNewToken(callback);
     } else {
-      oauth2Client.setCredentials({ refresh_token: JSON.parse(token).refresh_token });
+      oauth2Client.setCredentials({ refresh_token: REFRESH_TOKEN });
       callback(oauth2Client);
     }
   });
