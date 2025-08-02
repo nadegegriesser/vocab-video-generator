@@ -309,6 +309,43 @@ The style should be modern, warm, and minimal, with no embedded text or typograp
     return;
 }
 
+export async function generateImageSet(
+    prompt: string,
+    imagePath: string
+) {
+    const imageData = fs.readFileSync(imagePath);
+    const base64Image = imageData.toString("base64");
+    console.log(prompt);
+    const contents = [
+        { text: prompt },
+        {
+            inlineData: {
+                mimeType: "image/png",
+                data: base64Image
+            },
+        },
+    ];
+
+    const response = await ai.models.generateContent({
+        model: "gemini-2.0-flash-preview-image-generation",
+        contents: contents,
+        config: {
+            responseModalities: [Modality.TEXT, Modality.IMAGE]
+        }
+    });
+    for (const part of response.candidates?.[0]?.content?.parts || []) {
+        if (part.text) {
+            console.log(part.text);
+        } else if (part.inlineData) {
+            const imageData = part.inlineData.data;
+            if (imageData) {
+                return Buffer.from(imageData, "base64");
+            }
+        }
+    }
+    return;
+}
+
 export async function removeBackground(
     imagePath: string
 ) {

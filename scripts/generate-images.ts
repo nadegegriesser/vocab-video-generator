@@ -1,5 +1,5 @@
 import fs from 'fs';
-import { generateImage, removeBackground } from '../src/gemini.js';
+import { generateImage, generateImageSet, removeBackground } from '../src/gemini.js';
 import { TopicEntry } from '../src/types.js';
 import { loadFile } from '../src/file.js';
 import sharp from 'sharp';
@@ -26,6 +26,29 @@ const topicsPath = `${dir}/${topicsFile}`;
                 fs.unlinkSync(pngFile);
             }
         }
+        const imagesDir = `data/images`;
+        if (!fs.existsSync(imagesDir)) {
+            fs.mkdirSync(imagesDir, { recursive: true });
+            const prompts = [
+                'Photorealistic portrait of Maîtresse Dominique 320x360 pixels, a fictional French teacher in her late 20s. Brown eyes, brown hair in bun, olive skin. Wearing a white V-neck blouse, slightly open, elegant and tasteful. Thin, elegant full-rimmed glasses. Neither glare nor reflection on the lenses. Make the eyes symetric, fully visible and realistic. Correct any distortion caused by the lenses. Looking at the top-left corner with confident, slightly amused expression. Transparent background. Consistent lighting and framing.',
+                'Photorealistic portrait of Maîtresse Dominique 320x360 pixels, a fictional French teacher in her late 20s. Brown eyes, brown hair in ponytail, olive skin. Wearing a white V-neck blazer, slightly open, elegant and tasteful. Thin, elegant full-rimmed glasses. Neither glare nor reflection on the lenses. Make the eyes symetric, fully visible and realistic. Correct any distortion caused by the lenses. Looking at the top-left corner with confident, slightly amused expression. Transparent background. Consistent lighting and framing.',
+                'Photorealistic portrait of Maîtresse Dominique 320x360 pixels, a fictional French teacher in her late 20s. Brown eyes, brown hair in bun, olive skin. Wearing a white V-neck lace top, slightly open, elegant and tasteful. Thin, elegant full-rimmed glasses. Neither glare nor reflection on the lenses. Make the eyes symetric, fully visible and realistic. Correct any distortion caused by the lenses. Looking at the top-left corner with confident, slightly amused expression. Transparent background. Consistent lighting and framing.',
+                'Photorealistic portrait of Maîtresse Dominique 320x360 pixels, a fictional French teacher in her late 20s. Brown eyes, loose brown hair, olive skin. Wearing a white V-neck top, slightly open, elegant and tasteful. No glasses. Looking at the top-left corner with confident, slightly amused expression. Transparent background. Consistent lighting and framing.'
+            ];
+            let p = 0;
+            for (let prompt of prompts) {
+                const pngFile = `${imagesDir}/${p}.png`;
+                if (!fs.existsSync(pngFile)) {
+                    const image = await generateImageSet(prompt, 'data/image.jpg');
+                    if (image) {
+                        fs.writeFileSync(pngFile, image);
+                    }
+                }
+                p++;
+            }
+            return;
+        }
+
         let t = 0;
         for (const topic of loadFile<TopicEntry>(topicsPath)) {
             let cnt = 0;
