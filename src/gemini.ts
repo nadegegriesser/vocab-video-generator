@@ -193,6 +193,42 @@ Return as JSON object with keys: source, target.
     return [entry.source, entry.target];
 }
 
+export async function generateAskForSubscription(
+    name1: string,
+    style1: string,
+    level: string,
+    sourceLang: string
+): Promise<string[]> {
+    const prompt = `
+${name1} is a female teacher for ${sourceLang} language. She is ${style1}.
+Generate a sentence in ${sourceLang} to ask language learners at ${level} level to subscribe the channel or like the video for ${name1}.
+Return as JSON object with keys: source.
+  `;
+    console.log(prompt);
+
+    const response = await ai.models.generateContent({
+        model: 'gemini-2.5-flash',
+        contents: prompt,
+        config: {
+            responseMimeType: "application/json",
+            responseSchema: {
+                type: Type.OBJECT,
+                properties: {
+                    source: {
+                        type: Type.STRING
+                    }
+                },
+                propertyOrdering: ["source"]
+            }
+        }
+    });
+
+    console.log(response.text);
+    const entry = <VocabEntry>JSON.parse(response.text!);
+    return [entry.source];
+}
+
+
 export async function synthesizeSpeech(
     name1: string,
     voice1: string,

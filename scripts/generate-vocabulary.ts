@@ -1,5 +1,5 @@
 import fs from 'fs';
-import { generateIntroForTopic, generateOutroForTopic, generateVocabForTopic } from '../src/gemini.js';
+import { generateAskForSubscription, generateIntroForTopic, generateOutroForTopic, generateVocabForTopic } from '../src/gemini.js';
 import { TopicEntry } from '../src/types.js';
 import { loadFile } from '../src/file.js';
 
@@ -50,52 +50,41 @@ async function handleData(subTextDir: string, datas: string[]) {
             const scriptDir = `${vocabDir}/script`;
 
             let v = 0;
-
             let subTextDir = await createSubTextDir(textDir, v);
-            if (!subTextDir) {
-                continue;
-            }
-
             let subScriptDir = await createSubTextDir(scriptDir, v);
-            if (!subScriptDir) {
-                continue;
+            if (subTextDir && subScriptDir) {
+                const intros = await generateIntroForTopic(name1, style1, name2, style2, level, sourceLang, targetLang, topic);
+                await handleData(subTextDir, [topic.source, topic.target]);
+                await handleData(subScriptDir, intros);
             }
-
-            const intros = await generateIntroForTopic(name1, style1, name2, style2, level, sourceLang, targetLang, topic);
-            await handleData(subTextDir, [topic.source, topic.target]);
-            await handleData(subScriptDir, intros);
 
             for (const vocabs of await generateVocabForTopic(level, count, sourceLang, targetLang, topic)) {
                 v++;
                 subTextDir = await createSubTextDir(textDir, v);
-                if (!subTextDir) {
-                    continue;
-                }
                 subScriptDir = await createSubTextDir(scriptDir, v);
-                if (!subScriptDir) {
-                    continue;
+                if (subTextDir && subScriptDir) {
+                    await handleData(subTextDir, vocabs);
+                    await handleData(subScriptDir, vocabs);
                 }
-
-                await handleData(subTextDir, vocabs);
-                await handleData(subScriptDir, vocabs);
             }
 
             v++;
-
             subTextDir = await createSubTextDir(textDir, v);
-            if (!subTextDir) {
-                continue;
-            }
-
             subScriptDir = await createSubTextDir(scriptDir, v);
-            if (!subScriptDir) {
-                continue;
+            if (subTextDir && subScriptDir) {
+                const outros = await generateOutroForTopic(name1, style1, name2, style2, level, sourceLang, targetLang, topic);
+                await handleData(subTextDir, [topic.source, topic.target]);
+                await handleData(subScriptDir, outros);
             }
 
-            const outros = await generateOutroForTopic(name1, style1, name2, style2, level, sourceLang, targetLang, topic);
-            await handleData(subTextDir, [topic.source, topic.target]);
-            await handleData(subScriptDir, outros);
-            return;
+            v++;
+            subTextDir = await createSubTextDir(textDir, v);
+            subScriptDir = await createSubTextDir(scriptDir, v);
+            if (subTextDir && subScriptDir) {
+                const sub = await generateAskForSubscription(name1, style1, level, sourceLang);
+                await handleData(subTextDir, sub);
+                return;
+            }
         }
     } catch (err) {
         console.error('❌ Failed to generate vocab:', err);
