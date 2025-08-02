@@ -27,25 +27,20 @@ const oauth2Client = new google.auth.OAuth2(
 
 const SCOPES = [
   'https://www.googleapis.com/auth/youtube',
-  'https://www.googleapis.com/auth/youtubepartner', 
+  'https://www.googleapis.com/auth/youtubepartner',
   'https://www.googleapis.com/auth/youtube.force-ssl',
-  'https://www.googleapis.com/auth/youtube.readonly', 
+  'https://www.googleapis.com/auth/youtube.readonly',
   'https://www.googleapis.com/auth/youtube.upload'];
-const TOKEN_DIR = '.credentials/';
-const TOKEN_PATH = TOKEN_DIR + 'token.json';
 
 
-function authorize(callback: (oauth2Client: OAuth2Client) => void) {
+async function authorize(callback: (oauth2Client: OAuth2Client) => void) {
   // Check if we have previously stored a token.
-  fs.readFile(TOKEN_PATH, 'utf-8', async function (err: NodeJS.ErrnoException | null, token: string) {
-    if (err) {
-      console.log(err);
-      await getNewToken(callback);
-    } else {
-      oauth2Client.setCredentials({ refresh_token: REFRESH_TOKEN });
-      callback(oauth2Client);
-    }
-  });
+  if (REFRESH_TOKEN != undefined && REFRESH_TOKEN != '') {
+    oauth2Client.setCredentials({ refresh_token: REFRESH_TOKEN });
+    callback(oauth2Client);
+  } else {
+    await getNewToken(callback);
+  }
 }
 
 async function getNewToken(callback: (oauth2Client: OAuth2Client) => void) {
@@ -64,21 +59,12 @@ async function getNewToken(callback: (oauth2Client: OAuth2Client) => void) {
     if (token) {
       console.log(token);
       oauth2Client.credentials = token;
-      storeToken(token);
       callback(oauth2Client);
     }
   });
 }
 
-function storeToken(token: Credentials) {
-  fs.mkdirSync(TOKEN_DIR);
-  fs.writeFile(TOKEN_PATH, JSON.stringify(token), (err) => {
-    if (err) throw err;
-    console.log('Token stored to ' + TOKEN_PATH);
-  });
-}
-
-async function getChannel(oauth2Client: OAuth2Client): Promise<void> {
+async function uploadVideo(oauth2Client: OAuth2Client): Promise<void> {
   const youtube = google.youtube({
     version: 'v3',
     auth: oauth2Client,
@@ -176,7 +162,7 @@ async function getChannel(oauth2Client: OAuth2Client): Promise<void> {
 
 (async () => {
   try {
-    authorize(getChannel);
+    await authorize(uploadVideo);
   } catch (err) {
     console.error('❌ Failed to upload video:', err);
   }
