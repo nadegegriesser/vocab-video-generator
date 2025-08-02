@@ -27,7 +27,7 @@ const topicsPath = `${dir}/${topicsFile}`;
             }
         }
         const imagesDir = `data/images`;
-        if (true /*!fs.existsSync(imagesDir)*/) {
+        if (!fs.existsSync(imagesDir + 'a')) {
             fs.mkdirSync(imagesDir, { recursive: true });
             const prompts = [
                 'Photorealistic portrait of Maîtresse Dominique with transparent background. She is a fictional French teacher in her late 20s. Brown eyes, brown hair in bun, olive skin. Wearing a white blouse, elegant and tasteful. Thin, elegant full-rimmed clear glasses. Remove any glare or reflection on the lenses. Make the eyes symetric, fully visible and realistic. Correct any distortion caused by the lenses. Looking confident, slightly amused expression. Transparent background. Consistent lighting and framing.',
