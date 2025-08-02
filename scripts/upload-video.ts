@@ -25,7 +25,12 @@ const oauth2Client = new google.auth.OAuth2(
   'http://localhost' // Redirect URI muss nicht verwendet werden beim Refresh Token
 );
 
-const SCOPES = ['https://www.googleapis.com/auth/youtube.readonly', 'https://www.googleapis.com/auth/youtube.upload'];
+const SCOPES = [
+  'https://www.googleapis.com/auth/youtube',
+  'https://www.googleapis.com/auth/youtubepartner', 
+  'https://www.googleapis.com/auth/youtube.force-ssl',
+  'https://www.googleapis.com/auth/youtube.readonly', 
+  'https://www.googleapis.com/auth/youtube.upload'];
 const TOKEN_DIR = '.credentials/';
 const TOKEN_PATH = TOKEN_DIR + 'token.json';
 
@@ -50,7 +55,6 @@ async function getNewToken(callback: (oauth2Client: OAuth2Client) => void) {
     scope: SCOPES
   });
   console.log('Authorize this app by visiting this url: ', authUrl);
-  //console.log('AAAA', await axios.get(authUrl));
   const code: string = '4/0AVMBsJhOw9SG8xT-915I915mQtH7UktgCHYo7zTxckA_KdMlKQtnfKiOwleNkefLRSWa7w';
   oauth2Client.getToken(code, function (err: GaxiosError<any> | null, token: Credentials | null | undefined) {
     if (err) {
