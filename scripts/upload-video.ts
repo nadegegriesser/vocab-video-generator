@@ -113,8 +113,9 @@ async function getChannel(oauth2Client: OAuth2Client): Promise<void> {
         const tIndex = String(t).padStart(2, '0');
         const vocabDir = `${dir}/${tIndex}`;
         const videoPath = `${vocabDir}/${videoFile}`;
+        const thumbnailPath = `${vocabDir}/thumbnail.png`;
 
-        if (fs.existsSync(videoPath)) {
+        if (fs.existsSync(videoPath) && fs.existsSync(thumbnailPath)) {
           const title = `Französisch lernen A1: ${topic.target} - Vokabeln, Beispiele und Übersetzungen`;
           console.log(title);
 
@@ -137,16 +138,27 @@ async function getChannel(oauth2Client: OAuth2Client): Promise<void> {
                     'französisch online lernen', 'französisch a1 vokabeln']
                 },
                 status: {
-                  privacyStatus: 'public'
-                },
+                  privacyStatus: 'public',
+                  madeForKids: false
+                }
               },
               media: {
                 body: fs.createReadStream(videoPath)
-              }
+              },
+              notifySubscribers: true
             });
             console.log('✅ Video uploaded successfully!');
             console.log('🔗 Video ID:', response1.data!.id);
             console.log(`📺 Watch at: https://www.youtube.com/watch?v=${response1.data.id}`);
+            if (response1.data) {
+              const response2 = await youtube.thumbnails.set({
+                videoId: response1.data.id!,
+                media: {
+                  mimeType: 'image/jpg',
+                  body: fs.createReadStream(thumbnailPath)
+                }
+              });
+            }
             return;
           }
         }
