@@ -107,6 +107,9 @@ const topicsPath = `${dir}/${topicsFile}`;
                 let text = '';
                 if (vIndex == '00') {
                     text = 'Introduction - Einführung';
+                    command = `ffmpeg -i ${outputFile} -ss 00:00:01 -vframes 1 ${vocabDir}/thumbnail.png`;
+                    console.log(command);
+                    execSync(command);
                 }
                 else if (vIndex == String(textDirs.length - 1).padStart(2, '0')) {
                     text = 'Conclusion - Zusammenfassung';
