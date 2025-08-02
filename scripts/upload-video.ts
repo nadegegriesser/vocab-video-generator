@@ -156,7 +156,7 @@ async function getChannel(oauth2Client: OAuth2Client): Promise<void> {
               const response2 = await youtube.thumbnails.set({
                 videoId: response1.data.id!,
                 media: {
-                  mimeType: 'image/jpg',
+                  mimeType: 'image/png',
                   body: fs.createReadStream(thumbnailPath)
                 }
               });
