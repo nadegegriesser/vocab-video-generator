@@ -82,8 +82,8 @@ async function handleData(subTextDir: string, datas: string[]) {
             subScriptDir = await createSubTextDir(scriptDir, v);
             if (subTextDir && subScriptDir) {
                 const sub = await generateAskForSubscription(name1, style1, level, sourceLang);
-                await handleData(subTextDir, sub);
-                await handleData(subScriptDir, ['']);
+                await handleData(subTextDir, ['']);
+                await handleData(subScriptDir, sub);
                 return;
             }
         }
