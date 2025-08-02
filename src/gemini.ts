@@ -207,7 +207,7 @@ ${name1} is a female teacher for ${sourceLang} language. She is ${style1}.
 ${name2} is her male assistant for translating into ${targetLang} language. He is ${style2}.
 Generate a sentence in ${sourceLang} to ask language learners at ${level} level to subscribe the channel or like the video for ${name1}.
 Generate a sentence in ${targetLang} to ask language learners at ${level} level to do what ${name1} says for ${name2}.
-Return as JSON object with keys: source.
+Return as JSON object with keys: source, target.
   `;
     console.log(prompt);
 
@@ -221,16 +221,19 @@ Return as JSON object with keys: source.
                 properties: {
                     source: {
                         type: Type.STRING
+                    },
+                    target: {
+                        type: Type.STRING
                     }
                 },
-                propertyOrdering: ["source"]
+                propertyOrdering: ["source", "target"]
             }
         }
     });
 
     console.log(response.text);
     const entry = <VocabEntry>JSON.parse(response.text!);
-    return [entry.source];
+    return [entry.source, entry.target];
 }
 
 
