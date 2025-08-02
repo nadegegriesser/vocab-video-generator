@@ -8,7 +8,8 @@ import { GaxiosError, GaxiosResponse } from 'gaxios';
 import dotenv from 'dotenv';
 
 const args = process.argv.slice(2);
-const dir = args[0];
+const level = args[0] || 'A1';
+const dir = args[1];
 const topicsFile = 'topics.json';
 const topicsPath = `${dir}/${topicsFile}`;
 const videoFile = 'output.mp4';
@@ -116,7 +117,7 @@ async function getChannel(oauth2Client: OAuth2Client): Promise<void> {
         const thumbnailPath = `${vocabDir}/thumbnail.png`;
 
         if (fs.existsSync(videoPath) && fs.existsSync(thumbnailPath)) {
-          const title = `Französisch lernen A1: ${topic.target} - Vokabeln, Beispiele und Übersetzungen`;
+          const title = `Französisch lernen ${level}: ${topic.target} - Vokabeln, Beispiele und Übersetzungen`;
           console.log(title);
 
           const videos = res.data.items?.filter(item => item.snippet?.title == title);
@@ -125,17 +126,18 @@ async function getChannel(oauth2Client: OAuth2Client): Promise<void> {
           if (videos && videos.length == 0) {
             const descPath = `${vocabDir}/desc.txt`;
             const description = fs.readFileSync(descPath, 'utf-8');
+            const levelTag = level.toLowerCase();
             const response1 = await youtube.videos.insert({
               part: ['snippet', 'status'],
               requestBody: {
                 snippet: {
                   title: title,
                   description: description,
-                  tags: ['vokabeln', 'französisch', 'a1', topic.target, topic.source,
-                    'französisch vokabeln', 'französisch a1', 'französisch lernen anfänger',
-                    'französisch deutsch', 'französisch vokabeln a1', 'französisch mit übersetzung', 'französisch für anfänger',
+                  tags: ['vokabeln', 'französisch', levelTag, topic.target, topic.source,
+                    'französisch vokabeln', `französisch ${levelTag}`, 'französisch lernen anfänger',
+                    'französisch deutsch', `französisch vokabeln ${levelTag}`, 'französisch mit übersetzung', 'französisch für anfänger',
                     'französisch einfach lernen', 'französisch lernen deutsch', 'französisch grundwortschatz',
-                    'französisch online lernen', 'französisch a1 vokabeln']
+                    'französisch online lernen', `französisch ${levelTag} vokabeln`]
                 },
                 status: {
                   privacyStatus: 'public',
