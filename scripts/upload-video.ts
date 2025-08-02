@@ -131,7 +131,8 @@ async function uploadVideo(oauth2Client: OAuth2Client): Promise<void> {
                 },
                 status: {
                   privacyStatus: 'public',
-                  madeForKids: false
+                  madeForKids: false,
+                  selfDeclaredMadeForKids: false
                 }
               },
               media: {
