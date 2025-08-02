@@ -6,7 +6,7 @@ on:
       .github/workflows/generate-audio.yml,
       scripts/generate-audio.ts,
       src/**,
-      data/**/script/*.txt,
+      data/**/script/**/*.txt,
       data/**/*.wav
     ]
   schedule:
