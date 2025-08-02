@@ -63,7 +63,7 @@ const topicsPath = `${dir}/${topicsFile}`;
                 if (subTextDir == '00') {
                     vocab = 'Introduction';
                 }
-                else if (subTextDir == String(subTextDirs.length  - 1).padStart(2, '0')) {
+                else if (subTextDir == String(subTextDirs.length - 1).padStart(2, '0')) {
                     vocab = 'Conclusion';
                 }
                 else {

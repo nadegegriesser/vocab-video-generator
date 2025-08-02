@@ -18,7 +18,7 @@ const topicsFile = 'topics.json';
 const topicsPath = `${dir}/${topicsFile}`;
 
 async function saveAudio(filePath: string, vocab: string[]) {
-   if (fs.existsSync(filePath)) {
+    if (fs.existsSync(filePath)) {
         console.log(`✅ ${filePath} already exists, skipping...`);
     } else {
         let buffer = await synthesizeSpeech(name1, voice1, style1, name2, voice2, style2, sourceLang, targetLang, vocab);

@@ -46,7 +46,7 @@ const topicsPath = `${dir}/${topicsFile}`;
             const audioFiles = fs.readdirSync(audioDir)
                 .filter(file => file.endsWith('.wav'))
                 .sort();
-            
+
             const textDir = `${vocabDir}/text`;
             if (!fs.existsSync(textDir)) {
                 console.log(`✅ ${textDir} does not exist, skipping...`);
@@ -54,14 +54,14 @@ const topicsPath = `${dir}/${topicsFile}`;
             }
 
             const textDirs = fs.readdirSync(`${textDir}`);
-            
+
             console.log(imageFiles, textDirs, audioFiles);
             if (imageFiles.length != audioFiles.length || textDirs.length != audioFiles.length) {
                 continue;
             }
 
-            fs.mkdirSync(videoDir, {recursive: true});
-            
+            fs.mkdirSync(videoDir, { recursive: true });
+
             let desc = '';
             let totalDuration = 0;
             for (const audioFile of audioFiles) {
@@ -103,12 +103,12 @@ const topicsPath = `${dir}/${topicsFile}`;
                 const res = execSync(command);
                 const duration = parseFloat(res.toString().trim());
                 console.log(duration);
-                
+
                 let text = '';
                 if (vIndex == '00') {
                     text = 'Introduction - Einführung';
                 }
-                else if (vIndex == String(textDirs.length  - 1).padStart(2, '0')) {
+                else if (vIndex == String(textDirs.length - 1).padStart(2, '0')) {
                     text = 'Conclusion - Zusammenfassung';
                 }
                 else if (textFiles.length > 1) {

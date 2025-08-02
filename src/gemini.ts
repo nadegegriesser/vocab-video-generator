@@ -280,14 +280,14 @@ Make the eyes fully visible and realistic and keep the eye color.
 The style should be modern, warm, and minimal, with no embedded text or typography.`;
     console.log(prompt);
     const contents = [
-    { text: prompt },
-    {
-      inlineData: {
-        mimeType: "image/png",
-        data: base64Image,
-      },
-    },
-  ];
+        { text: prompt },
+        {
+            inlineData: {
+                mimeType: "image/png",
+                data: base64Image,
+            },
+        },
+    ];
 
     const response = await ai.models.generateContent({
         model: "gemini-2.0-flash-preview-image-generation",
@@ -322,14 +322,14 @@ Change the eye color to a natural-looking medium brown.
 Keep the glasses, facial expression, and overall lighting unchanged.`;
     console.log(prompt);
     const contents = [
-    { text: prompt },
-    {
-      inlineData: {
-        mimeType: "image/png",
-        data: base64Image,
-      },
-    },
-  ];
+        { text: prompt },
+        {
+            inlineData: {
+                mimeType: "image/png",
+                data: base64Image,
+            },
+        },
+    ];
 
     const response = await ai.models.generateContent({
         model: "gemini-2.0-flash-preview-image-generation",

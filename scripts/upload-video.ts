@@ -105,53 +105,53 @@ async function getChannel(oauth2Client: OAuth2Client): Promise<void> {
         console.log(`📹 ${item.snippet?.title} — https://youtube.com/watch?v=${item.id?.videoId}`);
       });
 
-      
-        let t = 0;
-        for (const topic of loadFile<TopicEntry>(topicsPath)) {
-            console.log(topic);
-            t++;
-            const tIndex = String(t).padStart(2, '0');
-            const vocabDir = `${dir}/${tIndex}`;
-            const videoPath = `${vocabDir}/${videoFile}`;
 
-            if (fs.existsSync(videoPath)) {
-            const title = `Französisch lernen A1: ${topic.target} - Vokabeln, Beispiele und Übersetzungen`;
-            console.log(title);
+      let t = 0;
+      for (const topic of loadFile<TopicEntry>(topicsPath)) {
+        console.log(topic);
+        t++;
+        const tIndex = String(t).padStart(2, '0');
+        const vocabDir = `${dir}/${tIndex}`;
+        const videoPath = `${vocabDir}/${videoFile}`;
 
-            const videos = res.data.items?.filter(item => item.snippet?.title == title);
-            console.log(videos);
+        if (fs.existsSync(videoPath)) {
+          const title = `Französisch lernen A1: ${topic.target} - Vokabeln, Beispiele und Übersetzungen`;
+          console.log(title);
 
-            if (videos && videos.length == 0) {
-                          const descPath = `${vocabDir}/desc.txt`;
-              const description = fs.readFileSync(descPath, 'utf-8');
-           const response1 = await youtube.videos.insert({
-      part: ['snippet', 'status'],
-      requestBody: {
-        snippet: {
-          title: title,
-          description: description,
-          tags: ['vokabeln', 'französisch', 'a1', topic.target, topic.source, 
-                 'französisch vokabeln', 'französisch a1', 'französisch lernen anfänger', 
-                 'französisch deutsch', 'französisch vokabeln a1', 'französisch mit übersetzung', 'französisch für anfänger', 
-                 'französisch einfach lernen', 'französisch lernen deutsch', 'französisch grundwortschatz', 
-                 'französisch online lernen', 'französisch a1 vokabeln']
-        },
-        status: {
-          privacyStatus: 'public'
-        },
-      },
-      media: {
-body: fs.createReadStream(videoPath)
-      }
-    });
-  console.log('✅ Video uploaded successfully!');
-    console.log('🔗 Video ID:', response1.data!.id);
-    console.log(`📺 Watch at: https://www.youtube.com/watch?v=${response1.data.id}`);
-              return;
-      }
+          const videos = res.data.items?.filter(item => item.snippet?.title == title);
+          console.log(videos);
+
+          if (videos && videos.length == 0) {
+            const descPath = `${vocabDir}/desc.txt`;
+            const description = fs.readFileSync(descPath, 'utf-8');
+            const response1 = await youtube.videos.insert({
+              part: ['snippet', 'status'],
+              requestBody: {
+                snippet: {
+                  title: title,
+                  description: description,
+                  tags: ['vokabeln', 'französisch', 'a1', topic.target, topic.source,
+                    'französisch vokabeln', 'französisch a1', 'französisch lernen anfänger',
+                    'französisch deutsch', 'französisch vokabeln a1', 'französisch mit übersetzung', 'französisch für anfänger',
+                    'französisch einfach lernen', 'französisch lernen deutsch', 'französisch grundwortschatz',
+                    'französisch online lernen', 'französisch a1 vokabeln']
+                },
+                status: {
+                  privacyStatus: 'public'
+                },
+              },
+              media: {
+                body: fs.createReadStream(videoPath)
+              }
+            });
+            console.log('✅ Video uploaded successfully!');
+            console.log('🔗 Video ID:', response1.data!.id);
+            console.log(`📺 Watch at: https://www.youtube.com/watch?v=${response1.data.id}`);
+            return;
+          }
         }
+      }
     }
-  }
   }
 
 }

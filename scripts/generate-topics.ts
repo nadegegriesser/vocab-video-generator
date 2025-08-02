@@ -22,7 +22,7 @@ const topicsPath = `${dir}/${topicsFile}`;
         fs.mkdirSync(dir, { recursive: true });
 
         fs.writeFileSync(topicsPath, JSON.stringify(topics, null, 2));
-        
+
         console.log(`✅ Saved topics to ${topicsPath}`);
     } catch (err) {
         console.error('❌ Failed to generate topics:', err);
