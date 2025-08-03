@@ -40,6 +40,7 @@ const topicsPath = `${dir}/${topicsFile}`;
                         + `She is a fictional French teacher in her late 20s. Brown eyes, olive skin. Wearing a white ${clothes}, elegant and tasteful. `
                         + `Her brown hair is in a professional ${hair} and she has sharp red lipstick and clear stylish full-rimmed black glasses. `
                         + 'She is shown from the waist up and looking at the person viewing the image with a confident, self assured, slightly amused expression. '
+                        + 'Her head is fully visible and the top of her head is not not cropped. '
                         + 'Remove any glare or reflection on the lenses. Make the eyes symetric, fully visible and realistic. Correct any distortion caused by the lenses.',
                     );
                 }
