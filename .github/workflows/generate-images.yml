@@ -34,6 +34,8 @@ jobs:
 
       - run: npm install
 
+      - run: pip install rembg
+
       - run: npm run build
 
       - name: Generate images

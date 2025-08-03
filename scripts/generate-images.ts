@@ -3,6 +3,7 @@ import { generateImage, generateImageSet, removeBackground } from '../src/gemini
 import { TopicEntry } from '../src/types.js';
 import { loadFile } from '../src/file.js';
 import sharp from 'sharp';
+import { execSync } from 'child_process';
 
 const args = process.argv.slice(2);
 const color = args[0];
@@ -30,15 +31,15 @@ const topicsPath = `${dir}/${topicsFile}`;
         if (!fs.existsSync(imagesDir + 'a')) {
             fs.mkdirSync(imagesDir, { recursive: true });
             let prompts = [];
-            for (let hair of ['slick bun', 'bun with some wavy hair strands', 'slick ponytail', 'slick braid']) {
+            for (let hair of ['slick bun', 'messy bun', 'ponytail', 'braid']) {
                 for (let clothes of ['blouse', 'lace top', 'blazer']) {
                     prompts.push(
                         'Generate a 1280x720 pixels landscape image with a solid green background (#00FF00) for later removal. '
-                        + 'Add a photorealistic representation of Maîtresse Dominique shown from the waist up. '
-                        + 'She must be displayed at the bottom-right corner of the image and only use the lower half, the center must remain free to add text later. '
+                        + 'Add a small photorealistic representation of Maîtresse Dominique at the bottom-right corner. '
+                        + 'The center of the image must remain free to add text later. '
                         + `She is a fictional French teacher in her late 20s. Brown eyes, olive skin. Wearing a white ${clothes}, elegant and tasteful. `
                         + `Her brown hair is in a professional ${hair} and she has sharp red lipstick and clear stylish full-rimmed black glasses. `
-                        + 'She is looking at the person viewing the image with a confident, self assured, slightly amused expression. '
+                        + 'She is shown from the waist up and looking at the person viewing the image with a confident, self assured, slightly amused expression. '
                         + 'Remove any glare or reflection on the lenses. Make the eyes symetric, fully visible and realistic. Correct any distortion caused by the lenses.',
                     );
                 }
@@ -60,6 +61,7 @@ const topicsPath = `${dir}/${topicsFile}`;
             let p = 0;
             for (let prompt of prompts) {
                 const pngFile = `${imagesDir}/${p}.png`;
+                const pngFileNoBg = `${imagesDir}/${p}_no_bg.png`;
                 if (!fs.existsSync(pngFile)) {
                     const image = await generateImageSet(prompt, 'data/images/no_glasses.png');
                     if (image) {
@@ -78,6 +80,9 @@ const topicsPath = `${dir}/${topicsFile}`;
                             fs.unlinkSync(pngFile);
                         }
                     }
+                }
+                if (fs.existsSync(pngFile) && !fs.existsSync(pngFileNoBg)) {
+                    execSync(`rembg i ${pngFile} ${pngFileNoBg}`);
                 }
                 p++;
             }
