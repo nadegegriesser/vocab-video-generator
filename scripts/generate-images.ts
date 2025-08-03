@@ -30,12 +30,14 @@ const topicsPath = `${dir}/${topicsFile}`;
         if (!fs.existsSync(imagesDir + 'a')) {
             fs.mkdirSync(imagesDir, { recursive: true });
             const prompts = [
-                'Photorealistic portrait of Maîtresse Dominique with transparent background. She is a fictional French teacher in her late 20s. Brown eyes, brown hair in bun, olive skin. Wearing a white blouse, elegant and tasteful. Thin, elegant full-rimmed clear glasses. Remove any glare or reflection on the lenses. Make the eyes symetric, fully visible and realistic. Correct any distortion caused by the lenses. Looking confident, slightly amused expression. Transparent background. Consistent lighting and framing.',
-                'Photorealistic portrait of Maîtresse Dominique with transparent background. She is a fictional French teacher in her late 20s. Brown eyes, brown hair in ponytail, olive skin. Wearing a white blazer, elegant and tasteful. Thin, elegant full-rimmed clear glasses. Remove any glare or reflection on the lenses. Make the eyes symetric, fully visible and realistic. Correct any distortion caused by the lenses. Looking confident, slightly amused expression. Transparent background. Consistent lighting and framing.',
-                'Photorealistic portrait of Maîtresse Dominique with transparent background. She is a fictional French teacher in her late 20s. Brown eyes, brown hair in bun, olive skin. Wearing a white lace top, elegant and tasteful. Thin, elegant full-rimmed clear glasses. Remove any glare or reflection on the lenses. Make the eyes symetric, fully visible and realistic. Correct any distortion caused by the lenses. Looking confident, slightly amused expression. Transparent background. Consistent lighting and framing.',
-                'Photorealistic portrait of Maîtresse Dominique with transparent background to ask for likes and channel subscription. She is a fictional French teacher in her late 20s. Brown eyes, loose brown hair, olive skin. Wearing a white V-neck top, slightly open, elegant and tasteful. No glasses. Looking straight forward with confident, slightly amused expression, happy the lesson is over. Transparent background. Consistent lighting and framing.'
+                'Generate a 1280x720 pixels landscape image with a solid green background (#00FF00) for later removal. '
+                + 'Add a photorealistic representation of Maîtresse Dominique at the bottom-right corner. '
+                + 'She is a fictional French teacher in her late 20s. Brown eyes, olive skin. Wearing a white blouse, elegant and tasteful. '
+                + 'Her brown hair is in a slick bun and she has sharp red lipstick and clear stylish full-rimmed black glasses.'
+                + 'Remove any glare or reflection on the lenses. Make the eyes symetric, fully visible and realistic. Correct any distortion caused by the lenses. '
+                + 'She is looking at the viewer with a confident, self assured, slightly amused expression.'
             ];
-            let p = 8;
+            let p = 0;
             for (let prompt of prompts) {
                 const pngFile = `${imagesDir}/${p}.png`;
                 if (!fs.existsSync(pngFile)) {
