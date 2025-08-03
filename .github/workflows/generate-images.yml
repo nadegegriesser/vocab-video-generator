@@ -34,7 +34,9 @@ jobs:
 
       - run: npm install
 
-      - run: pip install rembg
+      - run: |
+          pip install rembg[cpu]
+          pip install "rembg[cpu,cli]"
 
       - run: npm run build
 
