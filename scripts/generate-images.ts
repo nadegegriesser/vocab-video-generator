@@ -84,11 +84,12 @@ const topicsPath = `${dir}/${topicsFile}`;
                 }
                 if (fs.existsSync(pngFile) && !fs.existsSync(pngFileNoBg)) {
                     execSync(`rembg i ${pngFile} ${pngFileNoBg}`);
-                    sharp(pngFileNoBg)
+                    await sharp(pngFileNoBg)
                         .ensureAlpha()
                         .trim()
+                        .withMetadata()
                         .toFile(pngFileNoBg + '_');
-                    sharp(pngFileNoBg + '_')
+                    await sharp(pngFileNoBg + '_')
                         .resize({height: Math.floor(720 * 2 / 3)})
                         .withMetadata()
                         .toFile(pngFileNoBg);
