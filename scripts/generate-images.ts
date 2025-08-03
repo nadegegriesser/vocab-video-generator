@@ -30,15 +30,15 @@ const topicsPath = `${dir}/${topicsFile}`;
         if (!fs.existsSync(imagesDir + 'a')) {
             fs.mkdirSync(imagesDir, { recursive: true });
             let prompts = [];
-            for (let hair in ['slick bun', 'bun with some wavy hair strands', 'slick ponytail', 'slick braid']) {
-                for (let clothes in ['blouse', 'lace top', 'blazer']) {
+            for (let hair of ['slick bun', 'bun with some wavy hair strands', 'slick ponytail', 'slick braid']) {
+                for (let clothes of ['blouse', 'lace top', 'blazer']) {
                     prompts.push(
                         'Generate a 1280x720 pixels landscape image with a solid green background (#00FF00) for later removal. '
-                        + 'Add a photorealistic representation of Maîtresse Dominique shown from the waist up, standing as if she was next to a school board. '
+                        + 'Add a photorealistic representation of Maîtresse Dominique shown from the waist up. '
                         + 'She must be displayed at the bottom-right corner of the image and only use the lower half, the center must remain free to add text later. '
                         + `She is a fictional French teacher in her late 20s. Brown eyes, olive skin. Wearing a white ${clothes}, elegant and tasteful. `
                         + `Her brown hair is in a professional ${hair} and she has sharp red lipstick and clear stylish full-rimmed black glasses. `
-                        + 'She is looking at the person vieweing the image with a confident, self assured, slightly amused expression. '
+                        + 'She is looking at the person viewing the image with a confident, self assured, slightly amused expression. '
                         + 'Remove any glare or reflection on the lenses. Make the eyes symetric, fully visible and realistic. Correct any distortion caused by the lenses.',
                     );
                 }
@@ -49,6 +49,13 @@ const topicsPath = `${dir}/${topicsFile}`;
                 + 'She is a fictional French teacher in her late 20s. Brown eyes, olive skin. Wearing a white blouse, slightly open, elegant and tasteful. '
                 + 'Her brown hair is loose and wavy and she has sharp red lipstick and has taken off her glasses.'
                 + 'She is looking at the viewer with a confident, self assured, slightly amused expression asking for subscriptions or likes that she will definitely get.'
+            );
+            prompts.push(
+                'Generate a 1280x720 pixels landscape image with a solid green background (#00FF00) for later removal. '
+                + 'Add a photorealistic representation of Maîtresse Dominique, shown from the waist up, at the center of the picture. '
+                + 'She is a fictional French teacher in her late 20s. Brown eyes, olive skin. Wearing a white blouse, slightly open, elegant and tasteful. '
+                + 'Her brown hair is loose and wavy and she has sharp red lipstick and has taken off her glasses.'
+                + 'She is winking at the viewer with a confident, self assured, slightly amused expression asking for subscriptions or likes that she will definitely get.'
             );
             let p = 0;
             for (let prompt of prompts) {
