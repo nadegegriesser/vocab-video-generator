@@ -32,35 +32,48 @@ const topicsPath = `${dir}/${topicsFile}`;
             const prompts = [
                 'Generate a 1280x720 pixels landscape image with a solid green background (#00FF00) for later removal. '
                 + 'Add a photorealistic representation of Maîtresse Dominique at the bottom-right corner. '
+                + 'The center of the image should remain free to add text later. '
                 + 'She is a fictional French teacher in her late 20s. Brown eyes, olive skin. Wearing a white blouse, elegant and tasteful. '
                 + 'Her brown hair is in a slick bun and she has sharp red lipstick and clear stylish full-rimmed black glasses. '
                 + 'She is looking at the viewer with a confident, self assured, slightly amused expression. '
                 + 'Remove any glare or reflection on the lenses. Make the eyes symetric, fully visible and realistic. Correct any distortion caused by the lenses.',
                 'Generate a 1280x720 pixels landscape image with a solid green background (#00FF00) for later removal. '
                 + 'Add a photorealistic representation of Maîtresse Dominique at the bottom-right corner. '
+                + 'The center of the image should remain free to add text later. '
                 + 'She is a fictional French teacher in her late 20s. Brown eyes, olive skin. Wearing a white lace top, elegant and tasteful. '
                 + 'Her brown hair is in a sexy bun and she has sharp red lipstick and clear stylish full-rimmed black glasses. '
                 + 'She is looking at the viewer with a confident, self assured, slightly amused expression. '
                 + 'Remove any glare or reflection on the lenses. Make the eyes symetric, fully visible and realistic. Correct any distortion caused by the lenses.',
                 'Generate a 1280x720 pixels landscape image with a solid green background (#00FF00) for later removal. '
                 + 'Add a photorealistic representation of Maîtresse Dominique at the bottom-right corner. '
+                + 'The center of the image should remain free to add text later. '
                 + 'She is a fictional French teacher in her late 20s. Brown eyes, olive skin. Wearing a white blazer, elegant and tasteful. '
                 + 'Her brown hair is in a slick ponytail and she has sharp red lipstick and clear stylish full-rimmed black glasses. '
                 + 'She is looking at the viewer with a confident, self assured, slightly amused expression. '
                 + 'Remove any glare or reflection on the lenses. Make the eyes symetric, fully visible and realistic. Correct any distortion caused by the lenses.',
                 'Generate a 1280x720 pixels landscape image with a solid green background (#00FF00) for later removal. '
-                + 'Add a photorealistic representation of Maîtresse Dominique at the center. '
+                + 'Add a photorealistic representation of Maîtresse Dominique at the center of the picture. '
                 + 'She is a fictional French teacher in her late 20s. Brown eyes, olive skin. Wearing a white blouse, slightly open, elegant and tasteful. '
                 + 'Her brown hair is loose and wavy and she has sharp red lipstick and no glasses.'
-                + 'She is looking at the viewer with a confident, self assured, slightly amused expression.'
+                + 'She is looking at the viewer with a confident, self assured, slightly amused expression asking for subscriptions or likes.'
             ];
-            let p = 1;
+            let p = 4;
             for (let prompt of prompts) {
                 const pngFile = `${imagesDir}/${p}.png`;
                 if (!fs.existsSync(pngFile)) {
                     const image = await generateImageSet(prompt, 'data/images/no_glasses.png');
                     if (image) {
                         fs.writeFileSync(pngFile, image);
+                        const pngImage = sharp(pngFile);
+                        const metadata = await pngImage.metadata();
+                        const ratio = metadata.width / metadata.height;
+                        if (ratio > Math.floor(16 / 9) && ratio < Math.ceil(16 / 9)) {
+                            await pngImage
+                                .resize(1280, 720)
+                                .toFile(pngFile);
+                        } else {
+                            console.error('❌ Wrong dimensions', metadata.width, metadata.height);
+                        }
                     }
                 }
                 p++;
