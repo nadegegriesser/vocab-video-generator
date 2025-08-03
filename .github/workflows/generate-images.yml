@@ -7,7 +7,7 @@ on:
       scripts/generate-images.ts,
       src/**,
       data/**/topics.json,
-      data/**/images/*.jpg,
+      data/**/images/*.png,
       data/**/image.jpg
     ]
   schedule:
