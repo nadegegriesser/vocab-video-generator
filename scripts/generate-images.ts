@@ -73,6 +73,7 @@ const topicsPath = `${dir}/${topicsFile}`;
                                 .toFile(pngFile);
                         } else {
                             console.error('❌ Wrong dimensions', metadata.width, metadata.height);
+                            fs.unlinkSync(pngFile);
                         }
                     }
                 }
