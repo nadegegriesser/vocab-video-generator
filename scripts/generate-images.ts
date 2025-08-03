@@ -93,6 +93,7 @@ const topicsPath = `${dir}/${topicsFile}`;
                         .resize({height: Math.floor(720 * 2 / 3)})
                         .withMetadata()
                         .toFile(pngFileNoBg);
+                    fs.unlinkSync(pngFileNoBg + '_');
                 }
                 p++;
             }
