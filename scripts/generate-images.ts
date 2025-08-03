@@ -35,7 +35,7 @@ const topicsPath = `${dir}/${topicsFile}`;
                 for (let clothes of ['blouse', 'lace top', 'blazer']) {
                     prompts.push(
                         'Generate a 1280x720 pixels landscape image with a solid green background (#00FF00) for later removal. '
-                        + 'Add a small photorealistic representation of Maîtresse Dominique at the bottom-right corner. '
+                        + 'Add a photorealistic representation of Maîtresse Dominique at the bottom-right corner. '
                         + 'The center of the image must remain free to add text later. '
                         + `She is a fictional French teacher in her late 20s. Brown eyes, olive skin. Wearing a white ${clothes}, elegant and tasteful. `
                         + `Her brown hair is in a professional ${hair} and she has sharp red lipstick and clear stylish full-rimmed black glasses. `
@@ -72,6 +72,7 @@ const topicsPath = `${dir}/${topicsFile}`;
                         if (ratio > Math.floor(16 / 9) && ratio < Math.ceil(16 / 9)) {
                             await pngImage
                                 .resize(1280, 720)
+                                .withMetadata()
                                 .toFile(pngFile + '_');
                             fs.unlinkSync(pngFile);
                             fs.renameSync(pngFile + '_', pngFile);
@@ -83,6 +84,14 @@ const topicsPath = `${dir}/${topicsFile}`;
                 }
                 if (fs.existsSync(pngFile) && !fs.existsSync(pngFileNoBg)) {
                     execSync(`rembg i ${pngFile} ${pngFileNoBg}`);
+                    sharp(pngFileNoBg)
+                        .ensureAlpha()
+                        .trim()
+                        .toFile(pngFileNoBg + '_');
+                    sharp(pngFileNoBg + '_')
+                        .resize({height: Math.floor(720 * 2 / 3)})
+                        .withMetadata()
+                        .toFile(pngFileNoBg);
                 }
                 p++;
             }
