@@ -364,7 +364,6 @@ export async function generateImageSet(
         { text: prompt },
         {
             inlineData: {
-                mimeType: "image/png",
                 data: base64Image
             },
         },

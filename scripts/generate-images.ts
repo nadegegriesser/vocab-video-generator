@@ -33,15 +33,15 @@ const topicsPath = `${dir}/${topicsFile}`;
                 'Generate a 1280x720 pixels landscape image with a solid green background (#00FF00) for later removal. '
                 + 'Add a photorealistic representation of Maîtresse Dominique at the bottom-right corner. '
                 + 'She is a fictional French teacher in her late 20s. Brown eyes, olive skin. Wearing a white blouse, elegant and tasteful. '
-                + 'Her brown hair is in a slick bun and she has sharp red lipstick and clear stylish full-rimmed black glasses.'
+                + 'Her brown hair is in a slick bun and she has sharp red lipstick and clear stylish full-rimmed black glasses. '
+                + 'She is looking at the viewer with a confident, self assured, slightly amused expression. '
                 + 'Remove any glare or reflection on the lenses. Make the eyes symetric, fully visible and realistic. Correct any distortion caused by the lenses. '
-                + 'She is looking at the viewer with a confident, self assured, slightly amused expression.'
             ];
             let p = 0;
             for (let prompt of prompts) {
                 const pngFile = `${imagesDir}/${p}.png`;
                 if (!fs.existsSync(pngFile)) {
-                    const image = await generateImageSet(prompt, 'data/image.jpg');
+                    const image = await generateImageSet(prompt, 'data/images/3.png');
                     if (image) {
                         fs.writeFileSync(pngFile, image);
                     }
