@@ -37,6 +37,7 @@ jobs:
       - run: npm run build
 
       - run: |
+          sudo apt update
           sudo apt install ffmpeg libfreetype6 libfreetype6-dev
 
       - name: Generate video
