@@ -59,6 +59,13 @@ const topicsPath = `${dir}/${topicsFile}`;
                 + 'Her brown hair is loose and wavy and she has sharp red lipstick and has taken off her glasses. '
                 + 'She is winking at the viewer with a confident, self assured, slightly amused expression asking for subscriptions or likes that she will definitely get.'
             );
+             prompts.push(
+                'Generate a 1280x720 pixels landscape image with a solid green background (#00FF00) for later removal. '
+                + 'Add a photorealistic representation of Maîtresse Dominique, shown from the waist up, at the center of the picture. '
+                + 'She is a fictional French teacher in her late 20s. Brown eyes, olive skin. Wearing a white blouse, slightly open, elegant and tasteful. '
+                + 'Her brown hair is loose and wavy and she has sharp red lipstick and has taken off her glasses. '
+                + 'She is winking at the viewer with a confident, self assured, slightly amused expression asking for subscriptions or likes that she will definitely get.'
+            );
             let p = 0;
             for (let prompt of prompts) {
                 const pngFile = `${imagesDir}/${p}.png`;
